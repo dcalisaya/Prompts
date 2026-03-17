@@ -14,7 +14,7 @@ const files = [
 ];
 
 async function loadJson(name) {
-  const res = await fetch(`../../base/json/${name}`);
+  const res = await fetch(`./data/${name}`);
   if (!res.ok) throw new Error(`No se pudo cargar ${name}`);
   return res.json();
 }
