@@ -1,0 +1,30 @@
+{
+  "base_clauses": [
+    "vigencia de la propuesta",
+    "forma de pago",
+    "porcentaje de anticipo",
+    "tiempos sujetos a aprobacion y entrega de insumos",
+    "limite de revisiones incluidas",
+    "manejo de cambios de alcance",
+    "propiedad intelectual",
+    "autorizaciones de uso",
+    "suspension por falta de pagos o insumos",
+    "exclusiones explicitas"
+  ],
+  "policies": {
+    "pagos": [
+      "definir si se trabaja con anticipo, hitos o pago completo",
+      "no iniciar produccion sin validacion comercial minima",
+      "entregas finales sujetas a pagos acordados"
+    ],
+    "revisiones": [
+      "especificar cuantas rondas estan incluidas",
+      "toda revision adicional puede generar costo extra",
+      "cambios estructurales no cuentan como ajuste menor"
+    ],
+    "alcance": [
+      "lo no descrito expresamente no se considera incluido",
+      "cambios posteriores al cierre de propuesta deben documentarse"
+    ]
+  }
+}

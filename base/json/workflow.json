@@ -1,0 +1,118 @@
+{
+  "stages": [
+    {
+      "stage_code": "L01",
+      "estado": "Lead recibido",
+      "objetivo": "registrar necesidad inicial",
+      "responsable principal": "Comercial"
+    },
+    {
+      "stage_code": "L02",
+      "estado": "Calificacion",
+      "objetivo": "entender si hay fit y prioridad",
+      "responsable principal": "Comercial"
+    },
+    {
+      "stage_code": "L03",
+      "estado": "Brief en levantamiento",
+      "objetivo": "reunir insumos minimos",
+      "responsable principal": "Comercial / Coordinacion"
+    },
+    {
+      "stage_code": "L04",
+      "estado": "Proforma preliminar",
+      "objetivo": "traducir requerimiento en servicios",
+      "responsable principal": "Administracion / Comercial"
+    },
+    {
+      "stage_code": "L05",
+      "estado": "Cotizacion final",
+      "objetivo": "emitir propuesta validada",
+      "responsable principal": "Comercial"
+    },
+    {
+      "stage_code": "L06",
+      "estado": "Negociacion",
+      "objetivo": "resolver objeciones y ajustes",
+      "responsable principal": "Comercial"
+    },
+    {
+      "stage_code": "L07",
+      "estado": "Aprobado",
+      "objetivo": "confirmar cierre y condiciones",
+      "responsable principal": "Comercial / Administracion"
+    },
+    {
+      "stage_code": "O01",
+      "estado": "Kickoff interno",
+      "objetivo": "transferir contexto a operacion",
+      "responsable principal": "Coordinacion"
+    },
+    {
+      "stage_code": "O02",
+      "estado": "Produccion en curso",
+      "objetivo": "ejecutar servicio",
+      "responsable principal": "Area responsable"
+    },
+    {
+      "stage_code": "O03",
+      "estado": "Revision interna",
+      "objetivo": "validar contra calidad",
+      "responsable principal": "Coordinacion / Calidad"
+    },
+    {
+      "stage_code": "O04",
+      "estado": "Entrega cliente",
+      "objetivo": "enviar entregable o hito",
+      "responsable principal": "Area responsable"
+    },
+    {
+      "stage_code": "O05",
+      "estado": "Cambios",
+      "objetivo": "gestionar observaciones",
+      "responsable principal": "Area responsable"
+    },
+    {
+      "stage_code": "O06",
+      "estado": "Cierre",
+      "objetivo": "cerrar entrega y documentar",
+      "responsable principal": "Coordinacion"
+    },
+    {
+      "stage_code": "O07",
+      "estado": "Postventa",
+      "objetivo": "detectar continuidad, upsell o soporte",
+      "responsable principal": "Comercial / Cuenta"
+    }
+  ],
+  "recommended_flow": [
+    "Comercial recibe necesidad",
+    "Usa COM-001 para orientar servicio si el requerimiento esta verde",
+    "Usa COM-002 para estructurar proforma si ya hay una necesidad concreta",
+    "Valida servicios con 09-SERVICE-MATRIX.md",
+    "Valida pricing con 10-PRICING-INTERNO.md",
+    "Emite propuesta segun 11-REGLAS-DE-COTIZACION.md",
+    "Una vez aprobado, Coordinacion arma kickoff",
+    "Operacion trabaja con brief y prompt correspondiente",
+    "Antes de entregar, pasa por calidad",
+    "Se documenta cierre y siguiente oportunidad"
+  ],
+  "kickoff_checklist": [
+    "brief aprobado",
+    "alcance aprobado",
+    "responsables definidos",
+    "cronograma preliminar",
+    "canal de comunicacion",
+    "activos recibidos",
+    "riesgos detectados",
+    "criterio de entrega definido"
+  ],
+  "frequent_risks": [
+    "venta sin brief completo",
+    "mezcla de servicios en una sola linea",
+    "ausencia de exclusiones",
+    "tiempos comprometidos sin validacion",
+    "cambios de alcance no documentados",
+    "activos del cliente incompletos"
+  ]
+}

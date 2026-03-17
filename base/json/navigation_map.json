@@ -1,0 +1,49 @@
+{
+  "entry_points": [
+    "README.md",
+    "base/masters/company/00-INICIO-RAPIDO.md",
+    "base/masters/company/06-MAPA-POR-ROLES.md",
+    "base/masters/company/07-MAPA-VISUAL-EXPLORACION.md",
+    "base/masters/prompts-operativos/INDEX.md"
+  ],
+  "routes": {
+    "servicio": [
+      "README",
+      "00-INICIO-RAPIDO",
+      "06-MAPA-POR-ROLES",
+      "COM-001",
+      "08-SERVICES",
+      "09-SERVICE-MATRIX"
+    ],
+    "proforma": [
+      "README",
+      "00-INICIO-RAPIDO",
+      "06-MAPA-POR-ROLES",
+      "COM-002",
+      "08-SERVICES",
+      "09-SERVICE-MATRIX",
+      "10-PRICING-INTERNO",
+      "11-REGLAS-DE-COTIZACION",
+      "14-MARCO-LEGAL-COMERCIAL"
+    ],
+    "creatividad": [
+      "README",
+      "06-MAPA-POR-ROLES",
+      "Prompt operativo",
+      "Agente maestro",
+      "Manual tecnico",
+      "AuditorCalidad"
+    ],
+    "empresa": [
+      "README",
+      "09-SERVICE-MATRIX",
+      "10-PRICING-INTERNO",
+      "11-REGLAS-DE-COTIZACION",
+      "12-BRIEFS-POR-SERVICIO",
+      "13-FLUJO-COMERCIAL-Y-OPERATIVO",
+      "14-MARCO-LEGAL-COMERCIAL",
+      "15-BASE-DE-CONOCIMIENTO-COMERCIAL",
+      "16-ARQUITECTURA-DATOS-AUTOMATIZACION"
+    ]
+  }
+}

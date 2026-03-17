@@ -1,0 +1,57 @@
+{
+  "faq": [
+    {
+      "question": "Cuando usar COM-001",
+      "answer": "Cuando una persona necesita responder que servicio aplica o como orientar a un cliente."
+    },
+    {
+      "question": "Cuando usar COM-002",
+      "answer": "Cuando ya existe una necesidad concreta y hay que estructurar una proforma o alcance preliminar."
+    },
+    {
+      "question": "Cuando no deberia salir una cotizacion final",
+      "answer": "Cuando el brief esta incompleto, el servicio no existe en la matriz, el pricing sigue pendiente o operacion no valido factibilidad."
+    }
+  ],
+  "common_cases": [
+    {
+      "case": "cliente pide video por dos dias en Quito",
+      "expected_services": [
+        "AV-005",
+        "AV-001"
+      ],
+      "possible_complements": [
+        "AV-004",
+        "AV-007",
+        "AV-008",
+        "AV-011"
+      ]
+    },
+    {
+      "case": "cliente pide pauta Spotify para multiples episodios",
+      "expected_services": [
+        "MK-004"
+      ],
+      "possible_complements": [
+        "AV-010",
+        "AV-011",
+        "AV-013"
+      ]
+    },
+    {
+      "case": "cliente quiere una landing para captacion",
+      "expected_services": [
+        "DEV-001"
+      ],
+      "possible_complements": [
+        "MK-002",
+        "MK-004"
+      ]
+    }
+  ],
+  "common_objections": [
+    "Solo quiero un precio rapido",
+    "Quiero todo incluido",
+    "Necesito para ya"
+  ]
+}

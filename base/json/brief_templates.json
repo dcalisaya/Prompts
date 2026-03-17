@@ -1,0 +1,107 @@
+[
+  {
+    "brief_type": "comercial_general",
+    "fields": [
+      "nombre del cliente",
+      "contacto responsable",
+      "necesidad principal",
+      "servicios solicitados",
+      "fecha objetivo",
+      "presupuesto referencial si existe",
+      "canal de entrega esperado"
+    ]
+  },
+  {
+    "brief_type": "audiovisual",
+    "fields": [
+      "objetivo del video o pieza",
+      "tipo de pieza",
+      "cantidad de piezas",
+      "duracion estimada",
+      "formato requerido",
+      "locacion",
+      "fechas tentativas",
+      "voceros o talento",
+      "referencias visuales",
+      "branding disponible"
+    ]
+  },
+  {
+    "brief_type": "podcast",
+    "fields": [
+      "nombre del podcast",
+      "tematica",
+      "publico objetivo",
+      "cantidad de episodios",
+      "duracion por episodio",
+      "invitados o formato",
+      "CTA principal",
+      "plataformas destino"
+    ]
+  },
+  {
+    "brief_type": "marketing_funnel",
+    "fields": [
+      "producto o servicio",
+      "propuesta de valor",
+      "buyer persona",
+      "nivel de consciencia",
+      "objetivo de conversion",
+      "ticket o valor de referencia",
+      "activos existentes",
+      "canales prioritarios"
+    ]
+  },
+  {
+    "brief_type": "pauta",
+    "fields": [
+      "objetivo de campana",
+      "plataforma",
+      "presupuesto de medios",
+      "duracion",
+      "audiencias",
+      "geografia",
+      "activos creativos disponibles",
+      "pixel o tracking disponible",
+      "conversion esperada"
+    ]
+  },
+  {
+    "brief_type": "branding_diseno",
+    "fields": [
+      "objetivo de la pieza",
+      "formato",
+      "mensajes clave",
+      "branding existente",
+      "referencias",
+      "medidas o specs",
+      "versionado requerido"
+    ]
+  },
+  {
+    "brief_type": "web_desarrollo",
+    "fields": [
+      "problema a resolver",
+      "usuarios objetivo",
+      "funcionalidades requeridas",
+      "integraciones",
+      "stack deseado si aplica",
+      "accesos existentes",
+      "dependencias externas",
+      "criterio de exito"
+    ]
+  },
+  {
+    "brief_type": "ia_automatizacion",
+    "fields": [
+      "proceso actual",
+      "tarea a automatizar",
+      "entradas",
+      "salidas",
+      "herramientas involucradas",
+      "frecuencia",
+      "riesgo operativo",
+      "validacion humana requerida"
+    ]
+  }
+]

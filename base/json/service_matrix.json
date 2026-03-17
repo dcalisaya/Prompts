@@ -1,0 +1,694 @@
+[
+  {
+    "service_code": "AV-001",
+    "service_name": "Grabacion en Quito",
+    "category": "Produccion Audiovisual",
+    "unit": "jornada",
+    "scope_base": "Grabacion profesional en Quito con equipos",
+    "not_included": "Edicion, locucion, pauta, viaticos fuera de Quito",
+    "inputs": [
+      "fecha",
+      "locacion",
+      "objetivo",
+      "tipo de pieza"
+    ],
+    "owner_area": "Produccion"
+  },
+  {
+    "service_code": "AV-002",
+    "service_name": "Grabacion en Sierra",
+    "category": "Produccion Audiovisual",
+    "unit": "jornada",
+    "scope_base": "Grabacion fuera de Quito en region Sierra",
+    "not_included": "Edicion extra, pauta, costos no definidos de cliente",
+    "inputs": [
+      "fecha",
+      "ciudad",
+      "locacion",
+      "plan de rodaje"
+    ],
+    "owner_area": "Produccion"
+  },
+  {
+    "service_code": "AV-003",
+    "service_name": "Grabacion en Costa",
+    "category": "Produccion Audiovisual",
+    "unit": "jornada",
+    "scope_base": "Grabacion en provincias de la Costa",
+    "not_included": "Edicion extra, pauta, costos no definidos de cliente",
+    "inputs": [
+      "fecha",
+      "ciudad",
+      "locacion",
+      "plan de rodaje"
+    ],
+    "owner_area": "Produccion"
+  },
+  {
+    "service_code": "AV-004",
+    "service_name": "Edicion de Video",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Edicion de material existente",
+    "not_included": "Rodaje, locucion, subtitulado extra, motion avanzado",
+    "inputs": [
+      "material fuente",
+      "objetivo",
+      "formato final"
+    ],
+    "owner_area": "Postproduccion"
+  },
+  {
+    "service_code": "AV-005",
+    "service_name": "Video Corporativo",
+    "category": "Produccion Audiovisual",
+    "unit": "proyecto",
+    "scope_base": "Preproduccion, grabacion y postproduccion de video corporativo",
+    "not_included": "Pauta, multiples versiones no acordadas, traducciones",
+    "inputs": [
+      "brief",
+      "objetivo",
+      "locacion",
+      "voceros",
+      "referencias"
+    ],
+    "owner_area": "Produccion"
+  },
+  {
+    "service_code": "AV-006",
+    "service_name": "Video Animado 2D",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Video animado explicativo o corporativo",
+    "not_included": "Grabacion real, voz no incluida salvo acuerdo",
+    "inputs": [
+      "guion",
+      "branding",
+      "duracion",
+      "referencias"
+    ],
+    "owner_area": "Diseno/Animacion"
+  },
+  {
+    "service_code": "AV-007",
+    "service_name": "Video Formato Vertical",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Adaptacion o edicion a formato vertical",
+    "not_included": "Rodaje adicional no acordado",
+    "inputs": [
+      "material base",
+      "plataforma",
+      "duracion"
+    ],
+    "owner_area": "Postproduccion"
+  },
+  {
+    "service_code": "AV-008",
+    "service_name": "Subtitulacion",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Subtitulado de video en idioma definido",
+    "not_included": "Traduccion, quemado en varios formatos salvo acuerdo",
+    "inputs": [
+      "video final",
+      "idioma",
+      "estilo"
+    ],
+    "owner_area": "Postproduccion"
+  },
+  {
+    "service_code": "AV-009",
+    "service_name": "Traduccion de Video",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Traduccion de guion o contenido audiovisual",
+    "not_included": "Locucion y subtitulado salvo acuerdo",
+    "inputs": [
+      "guion o video",
+      "idioma origen/destino"
+    ],
+    "owner_area": "Contenido"
+  },
+  {
+    "service_code": "AV-010",
+    "service_name": "Produccion Radial",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Cuna radial con estructura base",
+    "not_included": "Compra de medios, multiples voces no acordadas",
+    "inputs": [
+      "brief",
+      "duracion",
+      "CTA",
+      "tono"
+    ],
+    "owner_area": "Audio"
+  },
+  {
+    "service_code": "AV-011",
+    "service_name": "Locucion Espanol",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Locucion profesional en espanol",
+    "not_included": "Edicion compleja de audio, traduccion",
+    "inputs": [
+      "texto final",
+      "tono",
+      "duracion"
+    ],
+    "owner_area": "Audio"
+  },
+  {
+    "service_code": "AV-012",
+    "service_name": "Locucion Ingles",
+    "category": "Produccion Audiovisual",
+    "unit": "pieza",
+    "scope_base": "Locucion profesional en ingles",
+    "not_included": "Traduccion y casting ampliado",
+    "inputs": [
+      "texto final",
+      "tono",
+      "variante de ingles"
+    ],
+    "owner_area": "Audio"
+  },
+  {
+    "service_code": "AV-013",
+    "service_name": "Podcast (A/V)",
+    "category": "Produccion Audiovisual",
+    "unit": "episodio",
+    "scope_base": "Produccion de episodio de podcast en audio y video",
+    "not_included": "Pauta, distribucion paga, cortes ilimitados",
+    "inputs": [
+      "concepto",
+      "invitados",
+      "duracion",
+      "formato"
+    ],
+    "owner_area": "Produccion"
+  },
+  {
+    "service_code": "AV-014",
+    "service_name": "Sesion Fotografica",
+    "category": "Produccion Audiovisual",
+    "unit": "sesion",
+    "scope_base": "Sesion fotografica con iluminacion y retoque base",
+    "not_included": "Arte complejo, modelos, alquileres no definidos",
+    "inputs": [
+      "objetivo",
+      "locacion",
+      "shot list"
+    ],
+    "owner_area": "Fotografia"
+  },
+  {
+    "service_code": "AV-015",
+    "service_name": "Cobertura Evento",
+    "category": "Produccion Audiovisual",
+    "unit": "evento",
+    "scope_base": "Cobertura fotografica de evento",
+    "not_included": "Video, streaming, edicion compleja no acordada",
+    "inputs": [
+      "agenda",
+      "locacion",
+      "horario",
+      "entregables"
+    ],
+    "owner_area": "Fotografia"
+  },
+  {
+    "service_code": "AV-016",
+    "service_name": "Fotografia Producto",
+    "category": "Produccion Audiovisual",
+    "unit": "lote",
+    "scope_base": "Fotografia de producto para catalogo o e-commerce",
+    "not_included": "Modelado 3D, arte no acordado, copy",
+    "inputs": [
+      "cantidad de productos",
+      "fondo",
+      "estilo"
+    ],
+    "owner_area": "Fotografia"
+  },
+  {
+    "service_code": "MK-001",
+    "service_name": "Analisis de Redes",
+    "category": "Marketing Digital",
+    "unit": "diagnostico",
+    "scope_base": "Revision de redes actuales con recomendaciones",
+    "not_included": "Community management o pauta",
+    "inputs": [
+      "links",
+      "objetivo",
+      "publico",
+      "benchmark"
+    ],
+    "owner_area": "Marketing"
+  },
+  {
+    "service_code": "MK-002",
+    "service_name": "Estrategia Digital",
+    "category": "Marketing Digital",
+    "unit": "proyecto",
+    "scope_base": "Estrategia de marketing y plan de contenidos",
+    "not_included": "Ejecucion operativa mensual salvo acuerdo",
+    "inputs": [
+      "objetivo",
+      "oferta",
+      "publico",
+      "canales"
+    ],
+    "owner_area": "Estrategia"
+  },
+  {
+    "service_code": "MK-003",
+    "service_name": "Community Manager",
+    "category": "Marketing Digital",
+    "unit": "mes",
+    "scope_base": "Gestion mensual de contenido, publicacion y respuesta",
+    "not_included": "Produccion audiovisual compleja, pauta",
+    "inputs": [
+      "canales",
+      "tono",
+      "calendario",
+      "accesos"
+    ],
+    "owner_area": "Social Media"
+  },
+  {
+    "service_code": "MK-004",
+    "service_name": "Pauta Digital",
+    "category": "Marketing Digital",
+    "unit": "mes",
+    "scope_base": "Gestion de campanas pagadas en plataformas definidas",
+    "not_included": "Presupuesto de medios, produccion creativa salvo acuerdo",
+    "inputs": [
+      "objetivo",
+      "presupuesto",
+      "pixel",
+      "activos"
+    ],
+    "owner_area": "Paid Media"
+  },
+  {
+    "service_code": "BR-001",
+    "service_name": "Diseno de Identidad",
+    "category": "Diseno y Branding",
+    "unit": "proyecto",
+    "scope_base": "Logo, paleta, tipografia y manual base",
+    "not_included": "Registro de marca, web completa",
+    "inputs": [
+      "brief",
+      "referencias",
+      "valores de marca"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-002",
+    "service_name": "Diseno Presentacion",
+    "category": "Diseno y Branding",
+    "unit": "pieza",
+    "scope_base": "Presentacion corporativa en PPT o Google Slides",
+    "not_included": "Copy extenso o investigacion profunda salvo acuerdo",
+    "inputs": [
+      "contenido",
+      "branding",
+      "objetivo"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-003",
+    "service_name": "Diseno Impreso",
+    "category": "Diseno y Branding",
+    "unit": "pieza",
+    "scope_base": "Diseno de material impreso",
+    "not_included": "Impresion y distribucion salvo acuerdo",
+    "inputs": [
+      "medidas",
+      "contenido",
+      "branding"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-004",
+    "service_name": "Infografia",
+    "category": "Diseno y Branding",
+    "unit": "pieza",
+    "scope_base": "Infografia para presentacion o redes",
+    "not_included": "Data cleaning complejo o animacion",
+    "inputs": [
+      "contenido",
+      "jerarquia",
+      "branding"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-005",
+    "service_name": "Roll Up",
+    "category": "Diseno y Branding",
+    "unit": "unidad",
+    "scope_base": "Diseno y/o gestion de roll up",
+    "not_included": "Logistica adicional no acordada",
+    "inputs": [
+      "medida",
+      "mensaje",
+      "branding"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-006",
+    "service_name": "Banner",
+    "category": "Diseno y Branding",
+    "unit": "m2",
+    "scope_base": "Diseno y/o gestion de banner en lona",
+    "not_included": "Instalacion in situ salvo acuerdo",
+    "inputs": [
+      "medida",
+      "ubicacion",
+      "branding"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-007",
+    "service_name": "Flyer (Impresion)",
+    "category": "Diseno y Branding",
+    "unit": "lote",
+    "scope_base": "Diseno y/o impresion de flyers",
+    "not_included": "Distribucion, copy extenso",
+    "inputs": [
+      "medida",
+      "cantidad",
+      "mensaje",
+      "branding"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "BR-008",
+    "service_name": "Tarjetas (Impresion)",
+    "category": "Diseno y Branding",
+    "unit": "lote",
+    "scope_base": "Diseno y/o impresion de tarjetas",
+    "not_included": "Branding completo, redaccion extensa",
+    "inputs": [
+      "nombres",
+      "cargos",
+      "branding",
+      "cantidad"
+    ],
+    "owner_area": "Diseno"
+  },
+  {
+    "service_code": "INF-001",
+    "service_name": "Dominio .com/.org",
+    "category": "Infraestructura y Web",
+    "unit": "anualidad",
+    "scope_base": "Gestion de registro de dominio internacional",
+    "not_included": "Diseno web, hosting",
+    "inputs": [
+      "dominio deseado",
+      "titular",
+      "correo"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-002",
+    "service_name": "Dominio .ec",
+    "category": "Infraestructura y Web",
+    "unit": "bienio",
+    "scope_base": "Gestion de dominio Ecuador",
+    "not_included": "Diseno web, hosting",
+    "inputs": [
+      "dominio deseado",
+      "titular",
+      "correo"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-003",
+    "service_name": "Hosting Economico",
+    "category": "Infraestructura y Web",
+    "unit": "anualidad",
+    "scope_base": "Hosting compartido con configuracion base",
+    "not_included": "Desarrollo, migracion compleja, soporte premium",
+    "inputs": [
+      "dominio",
+      "volumen estimado",
+      "correo tecnico"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-004",
+    "service_name": "Hosting Premium",
+    "category": "Infraestructura y Web",
+    "unit": "anualidad",
+    "scope_base": "Hosting premium con backups diarios",
+    "not_included": "Desarrollo, devops avanzado",
+    "inputs": [
+      "dominio",
+      "trafico estimado",
+      "requerimientos"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-005",
+    "service_name": "Servidor VPS",
+    "category": "Infraestructura y Web",
+    "unit": "mensualidad",
+    "scope_base": "Provision y configuracion base de VPS",
+    "not_included": "Arquitectura compleja, soporte 24/7 salvo acuerdo",
+    "inputs": [
+      "stack",
+      "trafico",
+      "acceso",
+      "sistema"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-006",
+    "service_name": "Certificado SSL",
+    "category": "Infraestructura y Web",
+    "unit": "anualidad",
+    "scope_base": "Emision e instalacion de SSL",
+    "not_included": "Migracion o hardening extra",
+    "inputs": [
+      "dominio",
+      "hosting",
+      "acceso tecnico"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-007",
+    "service_name": "SSL Wildcard",
+    "category": "Infraestructura y Web",
+    "unit": "anualidad",
+    "scope_base": "SSL para multiples subdominios",
+    "not_included": "Arquitectura compleja y DNS no acordado",
+    "inputs": [
+      "dominio raiz",
+      "subdominios",
+      "acceso tecnico"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "INF-008",
+    "service_name": "Email Corporativo",
+    "category": "Infraestructura y Web",
+    "unit": "cuenta",
+    "scope_base": "Configuracion de correo corporativo por usuario",
+    "not_included": "Migraciones masivas no acordadas",
+    "inputs": [
+      "dominio",
+      "cuentas",
+      "proveedor"
+    ],
+    "owner_area": "Infraestructura"
+  },
+  {
+    "service_code": "DEV-001",
+    "service_name": "Landing Page",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "Landing responsive con formulario y analitica",
+    "not_included": "CRM complejo, automatizaciones no acordadas",
+    "inputs": [
+      "brief",
+      "copy",
+      "branding",
+      "CTA"
+    ],
+    "owner_area": "Desarrollo Web"
+  },
+  {
+    "service_code": "DEV-002",
+    "service_name": "Web Corporativa",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "Sitio corporativo con CMS y SEO base",
+    "not_included": "Integraciones complejas, ecommerce",
+    "inputs": [
+      "mapa de sitio",
+      "branding",
+      "contenido"
+    ],
+    "owner_area": "Desarrollo Web"
+  },
+  {
+    "service_code": "DEV-003",
+    "service_name": "E-commerce",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "Tienda online con carrito, pagos y gestion",
+    "not_included": "ERP complejo, marketplace multivendor salvo acuerdo",
+    "inputs": [
+      "catalogo",
+      "pagos",
+      "envios",
+      "branding"
+    ],
+    "owner_area": "Desarrollo Web"
+  },
+  {
+    "service_code": "DEV-004",
+    "service_name": "App Movil",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "Desarrollo de app iOS/Android",
+    "not_included": "Backend complejo no acordado, soporte extendido",
+    "inputs": [
+      "alcance funcional",
+      "usuarios",
+      "plataformas"
+    ],
+    "owner_area": "Desarrollo"
+  },
+  {
+    "service_code": "DEV-005",
+    "service_name": "Sistema de Gestion",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "Software empresarial a medida",
+    "not_included": "Integraciones y migraciones no definidas",
+    "inputs": [
+      "procesos",
+      "usuarios",
+      "modulos",
+      "reglas"
+    ],
+    "owner_area": "Desarrollo"
+  },
+  {
+    "service_code": "DEV-006",
+    "service_name": "CRM Personalizado",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "proyecto",
+    "scope_base": "CRM adaptado a operacion comercial",
+    "not_included": "Automatizaciones externas no acordadas",
+    "inputs": [
+      "proceso comercial",
+      "usuarios",
+      "pipeline"
+    ],
+    "owner_area": "Desarrollo"
+  },
+  {
+    "service_code": "DEV-007",
+    "service_name": "Aplicacion Web Custom",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "hora/proyecto",
+    "scope_base": "Desarrollo de web app segun alcance",
+    "not_included": "Soporte ilimitado, infraestructura no definida",
+    "inputs": [
+      "requerimiento funcional",
+      "prioridad"
+    ],
+    "owner_area": "Desarrollo"
+  },
+  {
+    "service_code": "DEV-008",
+    "service_name": "Integracion API",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "integracion",
+    "scope_base": "Conexion con terceros y endpoints",
+    "not_included": "Licencias de terceros, soporte extendido",
+    "inputs": [
+      "API docs",
+      "credenciales",
+      "flujo esperado"
+    ],
+    "owner_area": "Desarrollo"
+  },
+  {
+    "service_code": "DEV-009",
+    "service_name": "Mantenimiento Web",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "mes",
+    "scope_base": "Actualizaciones, backups y soporte base",
+    "not_included": "Desarrollo evolutivo grande",
+    "inputs": [
+      "accesos",
+      "stack",
+      "frecuencia",
+      "SLA acordado"
+    ],
+    "owner_area": "Soporte"
+  },
+  {
+    "service_code": "DEV-010",
+    "service_name": "Soporte Tecnico",
+    "category": "Desarrollo de Software y Apps",
+    "unit": "hora/bolsa",
+    "scope_base": "Soporte tecnico y desarrollo adicional",
+    "not_included": "Rebuild completo, guardias no acordadas",
+    "inputs": [
+      "incidencia",
+      "prioridad",
+      "accesos"
+    ],
+    "owner_area": "Soporte"
+  },
+  {
+    "service_code": "IA-001",
+    "service_name": "Chatbot Informativo",
+    "category": "Soluciones IA y Automatizacion",
+    "unit": "proyecto",
+    "scope_base": "Implementacion de chatbot informativo",
+    "not_included": "Entrenamiento avanzado, integraciones no acordadas",
+    "inputs": [
+      "objetivo",
+      "FAQs",
+      "canal",
+      "tono"
+    ],
+    "owner_area": "IA"
+  },
+  {
+    "service_code": "IA-002",
+    "service_name": "Automatizacion con IA",
+    "category": "Soluciones IA y Automatizacion",
+    "unit": "proyecto",
+    "scope_base": "Solucion de automatizacion de procesos con IA",
+    "not_included": "Reingenieria completa no definida",
+    "inputs": [
+      "proceso actual",
+      "inputs",
+      "outputs",
+      "riesgos"
+    ],
+    "owner_area": "IA"
+  }
+]

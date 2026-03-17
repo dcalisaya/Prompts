@@ -1,0 +1,242 @@
+[
+  {
+    "service_name": "Grabacion en Quito",
+    "category": "1. Produccion Audiovisual",
+    "description": "Grabacion de video profesional en Quito. Incluye equipos profesionales."
+  },
+  {
+    "service_name": "Grabacion en Sierra",
+    "category": "1. Produccion Audiovisual",
+    "description": "Grabacion de video fuera de Quito en region Sierra. Incluye viaticos y transporte."
+  },
+  {
+    "service_name": "Grabacion en Costa",
+    "category": "1. Produccion Audiovisual",
+    "description": "Grabacion de video en provincias de la Costa. Incluye viaticos y transporte."
+  },
+  {
+    "service_name": "Edicion de Video",
+    "category": "1. Produccion Audiovisual",
+    "description": "Servicio de edicion profesional de material audiovisual existente."
+  },
+  {
+    "service_name": "Video Corporativo",
+    "category": "1. Produccion Audiovisual",
+    "description": "Produccion completa de video corporativo (preproduccion, grabacion y postproduccion)."
+  },
+  {
+    "service_name": "Video Animado 2D",
+    "category": "1. Produccion Audiovisual",
+    "description": "Animacion 2D para videos explicativos y motion graphics."
+  },
+  {
+    "service_name": "Video Formato Vertical",
+    "category": "1. Produccion Audiovisual",
+    "description": "Edicion y adaptacion para Reels, TikTok y Stories (9:16)."
+  },
+  {
+    "service_name": "Subtitulacion",
+    "category": "1. Produccion Audiovisual",
+    "description": "Subtitulacion en espanol, ingles u otros idiomas."
+  },
+  {
+    "service_name": "Traduccion de Video",
+    "category": "1. Produccion Audiovisual",
+    "description": "Traduccion de guiones y contenido audiovisual."
+  },
+  {
+    "service_name": "Produccion Radial",
+    "category": "1. Produccion Audiovisual",
+    "description": "Cuna radial profesional con voces, musica y efectos."
+  },
+  {
+    "service_name": "Locucion Espanol",
+    "category": "1. Produccion Audiovisual",
+    "description": "Locucion profesional en espanol."
+  },
+  {
+    "service_name": "Locucion Ingles",
+    "category": "1. Produccion Audiovisual",
+    "description": "Locucion profesional en ingles con hablante nativo."
+  },
+  {
+    "service_name": "Podcast (A/V)",
+    "category": "1. Produccion Audiovisual",
+    "description": "Produccion completa de episodio de podcast en audio y video."
+  },
+  {
+    "service_name": "Sesion Fotografica",
+    "category": "1. Produccion Audiovisual",
+    "description": "Sesion de 4 horas. Incluye camara, iluminacion y retoque."
+  },
+  {
+    "service_name": "Cobertura Evento",
+    "category": "1. Produccion Audiovisual",
+    "description": "Cobertura fotografica de eventos corporativos o sociales."
+  },
+  {
+    "service_name": "Fotografia Producto",
+    "category": "1. Produccion Audiovisual",
+    "description": "Fotografia profesional para catalogo o e-commerce."
+  },
+  {
+    "service_name": "Analisis de Redes",
+    "category": "2. Marketing Digital y Contenidos",
+    "description": "Evaluacion de redes actuales con recomendaciones accionables."
+  },
+  {
+    "service_name": "Estrategia Digital",
+    "category": "2. Marketing Digital y Contenidos",
+    "description": "Desarrollo de estrategia de marketing digital y plan de contenidos."
+  },
+  {
+    "service_name": "Community Manager",
+    "category": "2. Marketing Digital y Contenidos",
+    "description": "Gestion mensual de redes: contenido, publicaciones y respuestas."
+  },
+  {
+    "service_name": "Pauta Digital",
+    "category": "2. Marketing Digital y Contenidos",
+    "description": "Gestion de campanas publicitarias en redes y Google."
+  },
+  {
+    "service_name": "Diseno de Identidad",
+    "category": "3. Diseno y Branding",
+    "description": "Logo, paleta de color, tipografia y manual de marca."
+  },
+  {
+    "service_name": "Diseno Presentacion",
+    "category": "3. Diseno y Branding",
+    "description": "Presentacion corporativa en PPT o Google Slides."
+  },
+  {
+    "service_name": "Diseno Impreso",
+    "category": "3. Diseno y Branding",
+    "description": "Flyers, brochures, tarjetas y material promocional."
+  },
+  {
+    "service_name": "Infografia",
+    "category": "3. Diseno y Branding",
+    "description": "Diseno de infografias para presentaciones o redes."
+  },
+  {
+    "service_name": "Roll Up",
+    "category": "3. Diseno y Branding",
+    "description": "Impresion de roll up 85x200 cm con estructura."
+  },
+  {
+    "service_name": "Banner",
+    "category": "3. Diseno y Branding",
+    "description": "Impresion de banner en lona (precio por m2)."
+  },
+  {
+    "service_name": "Flyer (Impresion)",
+    "category": "3. Diseno y Branding",
+    "description": "Impresion de flyers en papel couche laminado."
+  },
+  {
+    "service_name": "Tarjetas (Impresion)",
+    "category": "3. Diseno y Branding",
+    "description": "Impresion de tarjetas 9x5 cm, couche 300 gr."
+  },
+  {
+    "service_name": "Dominio .com/.org",
+    "category": "4. Infraestructura y Web",
+    "description": "Registro anual de dominio internacional."
+  },
+  {
+    "service_name": "Dominio .ec",
+    "category": "4. Infraestructura y Web",
+    "description": "Registro de dominio Ecuador (por 2 anos)."
+  },
+  {
+    "service_name": "Hosting Economico",
+    "category": "4. Infraestructura y Web",
+    "description": "Hosting compartido anual (10 GB, SSL, cPanel)."
+  },
+  {
+    "service_name": "Hosting Premium",
+    "category": "4. Infraestructura y Web",
+    "description": "Hosting premium anual (40 GB, backups diarios)."
+  },
+  {
+    "service_name": "Servidor VPS",
+    "category": "4. Infraestructura y Web",
+    "description": "Servidor virtual (4 vCPU, 8 GB RAM, 400 GB SSD)."
+  },
+  {
+    "service_name": "Certificado SSL",
+    "category": "4. Infraestructura y Web",
+    "description": "Certificado SSL anual con instalacion."
+  },
+  {
+    "service_name": "SSL Wildcard",
+    "category": "4. Infraestructura y Web",
+    "description": "SSL para multiples subdominios."
+  },
+  {
+    "service_name": "Email Corporativo",
+    "category": "4. Infraestructura y Web",
+    "description": "Configuracion de correo por usuario."
+  },
+  {
+    "service_name": "Landing Page",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Desarrollo en WordPress (responsive, formulario y analitica)."
+  },
+  {
+    "service_name": "Web Corporativa",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Sitio completo con CMS, SEO y capacitacion."
+  },
+  {
+    "service_name": "E-commerce",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Tienda online con carrito, pagos y gestion."
+  },
+  {
+    "service_name": "App Movil",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Desarrollo iOS/Android (Flutter o React Native)."
+  },
+  {
+    "service_name": "Sistema de Gestion",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Desarrollo de software empresarial a medida."
+  },
+  {
+    "service_name": "CRM Personalizado",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "CRM para gestion de clientes y ventas."
+  },
+  {
+    "service_name": "Aplicacion Web Custom",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Desarrollo de web app a medida por horas."
+  },
+  {
+    "service_name": "Integracion API",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Integracion con terceros y desarrollo de endpoints."
+  },
+  {
+    "service_name": "Mantenimiento Web",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Actualizaciones, backups y soporte mensual."
+  },
+  {
+    "service_name": "Soporte Tecnico",
+    "category": "5. Desarrollo de Software y Apps",
+    "description": "Horas de soporte y desarrollo adicional."
+  },
+  {
+    "service_name": "Chatbot Informativo",
+    "category": "6. Soluciones IA y Automatizacion",
+    "description": "Implementacion para sitio web o WhatsApp."
+  },
+  {
+    "service_name": "Automatizacion con IA",
+    "category": "6. Soluciones IA y Automatizacion",
+    "description": "Soluciones de IA para optimizacion de procesos."
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "role": "Comercial / Ventas",
+    "documents": [
+      "COM-001",
+      "08-SERVICES.md"
+    ],
+    "outcome": [
+      "recomendacion de servicio",
+      "respuesta profesional",
+      "siguiente paso comercial"
+    ]
+  },
+  {
+    "role": "Administracion / Proformas / Cotizacion",
+    "documents": [
+      "COM-002",
+      "08-SERVICES.md",
+      "09-SERVICE-MATRIX.md",
+      "11-REGLAS-DE-COTIZACION.md",
+      "10-PRICING-INTERNO.md"
+    ],
+    "outcome": [
+      "listado de servicios para proforma",
+      "alcance base",
+      "vacios de informacion"
+    ]
+  },
+  {
+    "role": "Estratega / Marketing / Funnel",
+    "documents": [
+      "FUN-001",
+      "STRAT-002",
+      "EstrategaDigital.md"
+    ],
+    "outcome": [
+      "diagnostico",
+      "arquitectura de funnel",
+      "insights estrategicos"
+    ]
+  },
+  {
+    "role": "Director de Contenido / Podcast / Copy",
+    "documents": [
+      "PROD-001",
+      "SCRIPT-001",
+      "DirectorAudiovisual.md",
+      "GuionistaCinematografico.md"
+    ],
+    "outcome": [
+      "plan de contenido",
+      "guiones",
+      "retencion"
+    ]
+  },
+  {
+    "role": "Creador de Imagenes / Storyboard / Video IA",
+    "documents": [
+      "DirectorFotografiaT2I.md",
+      "ArtistaStoryboard.md",
+      "DirectorTecnicoI2V.md",
+      "guia_maestra_t2i.md",
+      "guia_maestra_storyboard.md",
+      "guia_maestra_i2v.md"
+    ],
+    "outcome": [
+      "prompts visuales",
+      "continuidad",
+      "movimiento IA"
+    ]
+  },
+  {
+    "role": "Trafficker / Paid Media",
+    "documents": [
+      "ADS-001",
+      "TraffickerEspecialista.md"
+    ],
+    "outcome": [
+      "guiones de pauta",
+      "estructura de medios"
+    ]
+  },
+  {
+    "role": "Coordinacion / PM / Revision Final",
+    "documents": [
+      "05-ESTANDAR-DE-CALIDAD.md",
+      "AuditorCalidad.md",
+      "03-FLOW-PODCAST.md",
+      "12-BRIEFS-POR-SERVICIO.md",
+      "13-FLUJO-COMERCIAL-Y-OPERATIVO.md",
+      "14-MARCO-LEGAL-COMERCIAL.md"
+    ],
+    "outcome": [
+      "consistencia",
+      "entregabilidad",
+      "control de calidad"
+    ]
+  },
+  {
+    "role": "Direccion / Finanzas / Control Comercial",
+    "documents": [
+      "09-SERVICE-MATRIX.md",
+      "10-PRICING-INTERNO.md",
+      "11-REGLAS-DE-COTIZACION.md",
+      "14-MARCO-LEGAL-COMERCIAL.md",
+      "16-ARQUITECTURA-DATOS-AUTOMATIZACION.md"
+    ],
+    "outcome": [
+      "margen",
+      "pricing",
+      "estandarizacion"
+    ]
+  }
+]

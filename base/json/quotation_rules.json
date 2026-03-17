@@ -1,0 +1,34 @@
+{
+  "principles": [
+    "se cotiza por servicios existentes",
+    "el alcance debe escribirse en lenguaje claro",
+    "cada linea de proforma debe tener unidad logica",
+    "toda ambiguedad debe quedar marcada antes de emitir valor final",
+    "la propuesta no debe vender algo que operacion no puede cumplir"
+  ],
+  "minimum_flow": [
+    "recibir requerimiento",
+    "clasificar por area",
+    "mapear servicios con service_code",
+    "detectar vacios",
+    "definir alcance base y exclusiones",
+    "validar pricing",
+    "emitir proforma o propuesta"
+  ],
+  "minimum_proforma_structure": [
+    "datos del cliente",
+    "resumen del requerimiento",
+    "servicios cotizados",
+    "alcance base por servicio",
+    "exclusiones o no incluidos",
+    "supuestos del proyecto",
+    "informacion faltante",
+    "valor",
+    "condiciones comerciales"
+  ],
+  "risk_semaphore": {
+    "Verde": "requerimiento claro, servicio estandar, pricing definido",
+    "Amarillo": "alcance parcialmente claro, faltan insumos o definiciones",
+    "Rojo": "servicio no estandar, pricing no definido o alta incertidumbre"
+  }
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "id": "FUN-001",
+    "name": "Generador de Arquitectura de Funnel",
+    "category": "Estrategia y Funnels",
+    "agent_core": "EstrategaDigital",
+    "source_of_truth": [],
+    "objective": "Crear un mapa estructural completo de un embudo de ventas, definiendo cada etapa desde la captaci\u00f3n hasta la conversi\u00f3n final.",
+    "when_to_use": "Usa este prompt cuando necesites definir el \"esqueleto\" de una campa\u00f1a. Ideal para integrarse con la infraestructura tecnol\u00f3gica de Live Developer.",
+    "input_required": [
+      "Nombre del producto, precio sugerido y p\u00fablico objetivo."
+    ],
+    "expected_output": [
+      "Documento estrat\u00e9gico con el flujo paso a paso y copy sugerido para los titulares principales."
+    ],
+    "example_input": "producto: \"Mentoria de ventas B2B\", precio sugerido: \"USD 800\", publico objetivo: \"duenos de pymes de servicios\".",
+    "example_output": [
+      "lead magnet,",
+      "estructura TOFU / MOFU / BOFU,",
+      "secciones de landing,",
+      "secuencia de correos,",
+      "stack tecnico recomendado."
+    ],
+    "path": "base/masters/prompts-operativos/01-Estrategia-Funnels/FUN-001-Generador-Arquitectura.md"
+  },
+  {
+    "id": "STRAT-002",
+    "name": "Auditor\u00eda de Ecosistema Digital",
+    "category": "Estrategia y Funnels",
+    "agent_core": "EstrategaDigital",
+    "source_of_truth": [],
+    "objective": "Evaluar la presencia digital actual de un cliente y detectar fugas de conversi\u00f3n o debilidades tecnol\u00f3gicas.",
+    "when_to_use": "Ideal para la fase de \"Onboarding\" de nuevos clientes en Live Developer.",
+    "input_required": [
+      "Enlaces a activos digitales y objetivo principal del cliente."
+    ],
+    "expected_output": [
+      "Reporte ejecutivo con sem\u00e1foro de estado (Rojo/Amarillo/Verde) por \u00e1rea."
+    ],
+    "example_input": "\"Audita https://midominio.com y mi Instagram para detectar por que no genero leads.\"",
+    "example_output": [
+      "diagnostico de mensaje,",
+      "revision UX/UI,",
+      "fugas de conversion,",
+      "quick wins,",
+      "semaforo por area."
+    ],
+    "path": "base/masters/prompts-operativos/01-Estrategia-Funnels/STRAT-002-Auditoria-Ecosistema.md"
+  },
+  {
+    "id": "PROD-001",
+    "name": "Estructurador de Temporada de Podcast",
+    "category": "Producci\u00f3n Audiovisual",
+    "agent_core": "DirectorAudiovisual",
+    "source_of_truth": [],
+    "objective": "Dise\u00f1ar el arco narrativo y la lista de temas para una temporada completa de podcast (10-20 episodios).",
+    "when_to_use": "Usa este prompt para el caso de estudio de los \"20 Podcasts\". Asegura que el contenido sea relevante y retenga a la audiencia.",
+    "input_required": [
+      "Concepto general y cantidad de episodios."
+    ],
+    "expected_output": [
+      "Tabla organizada con la planificaci\u00f3n de toda la temporada."
+    ],
+    "example_input": "\"Quiero una temporada de 12 episodios para un podcast de liderazgo y ventas.\"",
+    "example_output": [
+      "tabla de episodios,",
+      "hook por episodio,",
+      "puntos clave,",
+      "CTA por capitulo,",
+      "coherencia de temporada."
+    ],
+    "path": "base/masters/prompts-operativos/02-Produccion-Audiovisual/PROD-001-Temporada-Podcast.md"
+  },
+  {
+    "id": "SCRIPT-001",
+    "name": "Generador de Guiones Hook-Retenci\u00f3n-CTA",
+    "category": "Producci\u00f3n Audiovisual",
+    "agent_core": "DirectorAudiovisual",
+    "source_of_truth": [],
+    "objective": "Producir guiones r\u00e1pidos para videos verticales o introducciones de podcasts que maximicen el tiempo de visualizaci\u00f3n.",
+    "when_to_use": "Ideal para Reels, TikToks y Shorts que el equipo de Live Developer debe producir.",
+    "input_required": [
+      "Tema central y plataforma (ej. TikTok vs LinkedIn)."
+    ],
+    "expected_output": [
+      "Guion listo para locuci\u00f3n con sugerencias de texto en pantalla."
+    ],
+    "example_input": "\"Escribe un guion de 30 segundos para TikTok sobre errores comunes al vender servicios.\"",
+    "example_output": [
+      "hook inicial,",
+      "desarrollo rapido,",
+      "open loop,",
+      "CTA final,",
+      "texto sugerido en pantalla."
+    ],
+    "path": "base/masters/prompts-operativos/02-Produccion-Audiovisual/SCRIPT-001-Guiones-Retencion.md"
+  },
+  {
+    "id": "ADS-001",
+    "name": "Guionista para Spotify Ads",
+    "category": "Tr\u00e1fico y Spotify",
+    "agent_core": "TraffickerEspecialista",
+    "source_of_truth": [],
+    "objective": "Crear guiones de audio de 15 a 30 segundos dise\u00f1ados para captar la atenci\u00f3n de usuarios en modo \"screenless\".",
+    "when_to_use": "Usa este prompt para potenciar los episodios pagados del podcast en Spotify Ad Studio.",
+    "input_required": [
+      "Objetivo del anuncio y audiencia (ej. personas que escuchan m\u00fasica Jazz)."
+    ],
+    "expected_output": [
+      "Guion creativo con tiempos marcados (00:00 - 00:30)."
+    ],
+    "example_input": "\"Necesito un anuncio de Spotify para promover un podcast de negocios a personas que escuchan podcast de emprendimiento.\"",
+    "example_output": [
+      "ambiente sonoro,",
+      "locucion,",
+      "CTA vocal,",
+      "idea de banner,",
+      "tiempos del guion."
+    ],
+    "path": "base/masters/prompts-operativos/03-Trafico-Spotify/ADS-001-Spotify-Ads-Script.md"
+  },
+  {
+    "id": "COM-001",
+    "name": "Asesor Comercial de Servicios Live Developer",
+    "category": "Atencion-Comercial",
+    "agent_core": "AsesorComercialServicios",
+    "source_of_truth": [
+      "08-SERVICES.md"
+    ],
+    "objective": "Prompt maestro para atender consultas internas o de clientes con respuestas concretas, profesionales y alineadas al catalogo oficial de servicios.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [
+      "diagnostico breve,",
+      "servicio recomendado,",
+      "por que aplica,",
+      "complementos opcionales,",
+      "siguiente paso comercial."
+    ],
+    "example_input": "\"Necesito una pagina de aterrizaje para captar leads de un curso online.\"",
+    "example_output": [
+      "diagnostico breve,",
+      "servicio recomendado,",
+      "por que aplica,",
+      "complementos opcionales,",
+      "siguiente paso comercial."
+    ],
+    "path": "base/masters/prompts-operativos/04-Atencion-Comercial/COM-001-Asesor-Servicios-LiveDeveloper.md"
+  },
+  {
+    "id": "COM-002",
+    "name": "Armador de Proforma y Alcance Preliminar Live Developer",
+    "category": "Atencion-Comercial",
+    "agent_core": "AsesorComercialServicios",
+    "source_of_truth": [
+      "08-SERVICES.md"
+    ],
+    "objective": "Prompt operativo para personal administrativo, comercial o de coordinacion que necesita convertir un requerimiento en una proforma preliminar clara, ordenada y basada en el catalogo oficial.",
+    "when_to_use": "Usalo cuando alguien diga:\n\n- \"Arma la proforma de esto\"\n- \"Que servicios entran aqui\"\n- \"Como desglosamos este requerimiento para cotizar\"\n- \"Que deberia incluir la propuesta base\"",
+    "input_required": [],
+    "expected_output": [
+      "resumen del requerimiento,",
+      "servicios sugeridos para proforma,",
+      "alcance preliminar,",
+      "complementos opcionales,",
+      "vacios por confirmar,",
+      "observacion comercial."
+    ],
+    "example_input": "\"Cliente solicita produccion de video por dos dias en Quito y adaptaciones para redes.\"",
+    "example_output": [
+      "resumen del requerimiento,",
+      "servicios sugeridos para proforma,",
+      "alcance preliminar,",
+      "complementos opcionales,",
+      "vacios por confirmar,",
+      "observacion comercial."
+    ],
+    "path": "base/masters/prompts-operativos/04-Atencion-Comercial/COM-002-Armador-Proforma-LiveDeveloper.md"
+  }
+]
