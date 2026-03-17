@@ -4,8 +4,10 @@
 
 **Proyecto:** Serie de 34 podcasts  
 **Duracion estimada del plan:** 8 meses  
+**Periodo estimado:** Mayo a diciembre de 2026  
 **Marca:** Live Developer  
-**Tipo de documento:** Propuesta economica y operativa preliminar
+**Fecha de emision:** 2026-03-17  
+**Tipo de documento:** Propuesta comercial
 
 ---
 
@@ -77,7 +79,7 @@ Como parte del alcance operativo, Live Developer gestionara la publicacion y dis
 - Apple Podcasts
 
 Nota:
-La gestion de publicacion comprende la carga, configuracion y salida de los episodios en las plataformas indicadas, con base en los insumos entregados y aprobados por el cliente. No se entiende como servicio independiente de community management o administracion editorial continua.
+La gestion de publicacion comprende la carga, configuracion y salida base de los episodios en las plataformas indicadas, con base en los insumos entregados y aprobados por el cliente. No incluye community management, administracion editorial continua ni gestion permanente de comentarios.
 
 ---
 
@@ -151,13 +153,13 @@ Esta propuesta parte de los siguientes supuestos:
 | :--- | ---: |
 | Produccion de clips, highlights y hooks | 2.400 |
 | Planeacion, gestion y administracion de pauta (fee agencia) | 995 |
-| Cargos tributarios y financieros aplicables sobre pauta internacional (estimacion referencial) | 650 |
+| Cargos tributarios y financieros aplicables sobre pauta internacional (estimacion referencial) | 150 a 650 |
 | Inversion directa en pauta digital | 8.955 |
-| **Total general estimado** | **13.000** |
+| **Total general estimado** | **12.500 a 13.000** |
 
 ### Aclaracion sobre cargos externos
 
-Los cargos tributarios y financieros asociados a la pauta internacional se liquidaran segun facturacion real de cada plataforma, medio de pago utilizado, tratamiento tributario aplicable en Ecuador y condiciones vigentes al momento del cobro. Este valor se presenta como estimacion referencial y puede ajustarse en la propuesta final.
+Los cargos tributarios y financieros asociados a la pauta internacional se liquidaran segun facturacion real de cada plataforma, medio de pago utilizado, tratamiento tributario aplicable en Ecuador y condiciones vigentes al momento del cobro. Esta linea se presenta como una banda presupuestaria referencial y no como un valor fijo cerrado.
 
 ---
 
@@ -180,37 +182,12 @@ Promedio mensual estimado durante 8 meses:
 | :--- | ---: |
 | Produccion promocional | 300 |
 | Gestion agencia | 124 |
-| Cargos externos referenciales prorrateados | 81 |
+| Cargos externos referenciales prorrateados del periodo (no fijos por mes) | 19 a 81 |
 | Pauta digital | 1.119 |
-| **Total mensual estimado** | **1.624** |
+| **Total mensual estimado** | **1.563 a 1.624** |
 
-### Recomendacion para formato de proforma
-
-Para efectos comerciales y administrativos, no se recomienda presentar toda la operacion en un solo item global. La estructura mas clara para proforma es separar al menos:
-
-- **Produccion promocional mensual**
-- **Planeacion, gestion y administracion de pauta**
-- **Seguimiento, optimizacion y analitica mensual**
-- **Inversion directa en medios**
-- **Cargos o impuestos externos aplicables**
-
-Esta separacion mejora:
-
-- claridad para el cliente,
-- control interno de alcance,
-- facilidad de ajuste por mes,
-- lectura financiera de lo que corresponde a servicio vs inversion en medios.
-
-### Modelo recomendado de items para proforma
-
-| Item recomendado | Tipo |
-| :--- | :--- |
-| Produccion promocional derivada | servicio |
-| Gestion de publicacion en YouTube, Spotify y Apple Podcasts | servicio |
-| Gestion y administracion de pauta multicanal | servicio |
-| Seguimiento, optimizacion y analitica mensual | servicio |
-| Inversion en pauta digital | inversion directa |
-| Cargos tributarios y financieros aplicables | cargo externo |
+Nota:
+El valor mensual de cargos externos se presenta solo como referencia de prorrateo sobre el total estimado del periodo. No corresponde necesariamente a un cobro fijo mensual, ya que su aplicacion real dependera de la facturacion efectiva de plataformas, el medio de pago utilizado y el tratamiento tributario vigente al momento de cada cargo.
 
 ---
 
@@ -286,32 +263,17 @@ Esta propuesta no incluye, salvo que se acuerde expresamente por separado:
 
 ## 12. Condiciones Comerciales Base
 
-- La presente propuesta tiene caracter preliminar y debe validarse contra disponibilidad operativa y brief final aprobado.
+- La presente propuesta corresponde al alcance y condiciones descritas en este documento.
 - El cronograma de ejecucion iniciara una vez aprobado el alcance y recibidos los insumos necesarios.
 - Cambios de alcance, volumen o formatos podran requerir ajuste economico.
 - La inversion en pauta esta sujeta a la dinamica real de plataformas y costos vigentes al momento de ejecucion.
-- La emision final de proforma o contrato debera incorporar forma de pago, vigencia de propuesta y condiciones de aprobacion.
+- Vigencia de la propuesta: 15 dias calendario desde la fecha de emision.
+- Forma de pago y condiciones administrativas: a definir en la proforma final aprobada por ambas partes.
 
 ---
 
-## 13. Recomendacion Final
+## 13. Cierre
 
-La propuesta es viable y estrategicamente coherente si se presenta como un plan de amplificacion digital de mediano plazo, con produccion derivada y pauta optimizada por rendimiento.
+La presente propuesta plantea un esquema de amplificacion digital sostenida para 34 episodios de podcast, con una combinacion de produccion promocional, gestion de publicacion y pauta multicanal orientada a resultados.
 
-La recomendacion es cerrar esta propuesta bajo una narrativa de:
-
-- plan de visibilidad sostenida,
-- priorizacion editorial por episodios,
-- optimizacion de medios por resultados,
-- crecimiento progresivo de audiencia y posicionamiento.
-
----
-
-## 14. Accion Requerida
-
-Para emitir version final de proforma o propuesta comercial cerrada, se recomienda confirmar:
-
-- si los 34 episodios ya existen y en que formato se entregaran,
-- si los cargos tributarios y financieros deben mantenerse como estimacion referencial o recalcularse,
-- si el fee de gestion cubre solo administracion de pauta o tambien reporteria y optimizacion creativa,
-- si el cliente requiere incluir o excluir servicios complementarios adicionales.
+El enfoque prioriza eficiencia de medios, optimizacion progresiva y construccion de visibilidad a lo largo del periodo de ejecucion.
