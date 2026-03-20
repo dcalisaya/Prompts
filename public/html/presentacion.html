@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilidad Urbana Sostenible · Propuesta Pauta Digital · GIZ × Live Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0c0e;
+            color: #e2e8f0;
+        }
+        .glass {
+            background: rgba(23, 23, 26, 0.72);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.09);
+        }
+        .section-snap {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2.5rem 3rem 6rem;
+        }
+        .scroll-container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0c0c0e; }
+        ::-webkit-scrollbar-thumb { background: #2d3748; border-radius: 3px; }
+
+        .nav-item.active { color: #818cf8; border-bottom: 2px solid #818cf8; }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* SmartTV-first typography scale — slightly reduced for breathing room */
+        .tv-h1   { font-size: clamp(2.8rem, 4.5vw, 5.5rem);  font-weight: 800; line-height: 1.1; }
+        .tv-h2   { font-size: clamp(2rem,   3vw,   3.5rem);   font-weight: 700; line-height: 1.15; }
+        .tv-h3   { font-size: clamp(1.35rem, 2vw,   2rem);    font-weight: 600; }
+        .tv-h4   { font-size: clamp(1.05rem, 1.5vw, 1.55rem); font-weight: 600; }
+        .tv-body { font-size: clamp(0.95rem, 1.25vw, 1.3rem); line-height: 1.75; }
+        .tv-sm   { font-size: clamp(0.85rem, 1.05vw, 1.1rem); }
+        .tv-xs   { font-size: clamp(0.72rem, 0.88vw, 0.95rem); letter-spacing: 0.05em; }
+        .tv-label{ font-size: clamp(0.6rem,  0.78vw, 0.82rem); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+
+        /* Card badge counter */
+        .stat-num { font-size: clamp(1.8rem, 3vw, 3.5rem); font-weight: 800; }
+
+        /* ─── PRINT / PDF ─────────────────────────────────────────── */
+        @media print {
+            /* Reset page layout */
+            @page { size: A4 landscape; margin: 1.2cm 1.5cm; }
+
+            html, body {
+                overflow: visible !important;
+                height: auto !important;
+                background: #fff !important;
+                color: #111 !important;
+            }
+
+            /* Make scroll container flow normally */
+            .scroll-container {
+                scroll-snap-type: none !important;
+                overflow: visible !important;
+                height: auto !important;
+            }
+
+            /* Each section = one printed page */
+            .section-snap {
+                scroll-snap-align: none !important;
+                min-height: 0 !important;
+                height: auto !important;
+                page-break-after: always;
+                break-after: page;
+                padding: 1.5rem 2rem 2rem !important;
+                display: block !important;
+            }
+
+            /* Light card backgrounds */
+            .glass {
+                background: #f8f9fa !important;
+                backdrop-filter: none !important;
+                border: 1px solid #dee2e6 !important;
+            }
+
+            /* Fix gradient text — browsers strip -webkit-text-fill-color in print */
+            .gradient-text {
+                -webkit-text-fill-color: #4f46e5 !important;
+                background: none !important;
+                color: #4f46e5 !important;
+            }
+
+            /* Text colors → dark on white */
+            .text-slate-300, .text-slate-400, .text-slate-500,
+            .text-slate-600, .text-white { color: #222 !important; }
+            .text-indigo-400, .text-indigo-300 { color: #4338ca !important; }
+            .text-purple-400 { color: #7c3aed !important; }
+            .text-emerald-400 { color: #059669 !important; }
+            .text-blue-400    { color: #1d4ed8 !important; }
+            .text-yellow-400  { color: #b45309 !important; }
+
+            /* Table rows */
+            .divide-y > * { border-color: #e5e7eb !important; }
+            .bg-white\/5, .bg-slate-800, .bg-slate-900 { background: #f1f5f9 !important; }
+            .bg-indigo-500\/10, .bg-indigo-500\/5 { background: #eef2ff !important; }
+
+            /* Progress bars */
+            .bg-slate-800.rounded-full { background: #e5e7eb !important; }
+
+            /* Tags / chips */
+            .border-white\/5  { border-color: #cbd5e1 !important; }
+            .border-white\/10 { border-color: #cbd5e1 !important; }
+
+            /* Animated bounce arrow — hide in print */
+            .animate-bounce { display: none !important; }
+
+            /* Hide navigation bar */
+            nav { display: none !important; }
+
+            /* Radial gradient background overlay */
+            [class*="bg-[radial-gradient"] { background: none !important; }
+
+            /* Fix absolute decorative blobs */
+            .absolute.inset-0 { display: none !important; }
+
+            /* Background glow on cards */
+            .blur { filter: none !important; }
+        }
+
+    </style>
+</head>
+<body class="overflow-hidden">
+
+<div class="scroll-container" id="scroll-container">
+
+    <!-- ──────────── SLIDE 1: PORTADA ──────────── -->
+    <section id="intro" class="section-snap relative overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_50%_55%,rgba(99,102,241,0.18),transparent_55%)]"></div>
+        <div class="max-w-6xl mx-auto z-10 text-center">
+            <span class="tv-label px-4 py-2 text-indigo-400 bg-indigo-400/10 rounded-full">Propuesta Comercial · Cliente: GIZ · Ejecutor: Live Developer · 2026</span>
+            <h1 class="tv-h1 mt-6">
+                <span class="gradient-text">Movilidad Urbana Sostenible</span>
+            </h1>
+            <p class="tv-h3 mt-2 text-slate-400">Estrategia de Producción Promocional y Pauta Digital Multicanal</p>
+            <p class="tv-body mt-6 text-slate-500 max-w-4xl mx-auto">
+                Serie de <strong class="text-slate-300">36 podcasts</strong> · 8 meses de ejecución · Mayo–Diciembre 2026<br>
+                Plataformas: YouTube · Meta Platforms · Spotify
+            </p>
+            <div class="mt-8 grid grid-cols-3 md:grid-cols-6 gap-4 text-left">
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Podcast</p>
+                    <p class="tv-sm font-bold">Movilidad Urbana Sostenible</p>
+                </div>
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Cliente Final</p>
+                    <p class="tv-sm font-bold text-indigo-400">GIZ</p>
+                </div>
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Ejecutor</p>
+                    <p class="tv-sm font-bold">Live Developer</p>
+                </div>
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Episodios</p>
+                    <p class="tv-sm font-bold">36 Podcasts</p>
+                </div>
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Piezas Promo</p>
+                    <p class="tv-sm font-bold">108 en total</p>
+                </div>
+                <div class="p-5 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-1">Impactos</p>
+                    <p class="tv-sm font-bold">400k – 700k</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-28 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 2: RESUMEN EJECUTIVO ──────────── -->
+    <section id="resumen" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">01</span>
+                Resumen Ejecutivo
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-8">
+                    <p class="tv-body text-slate-300 leading-relaxed">
+                        Desarrollar una estrategia integral de <span class="text-indigo-400 font-semibold">amplificación digital</span> para 36 episodios de podcast, combinando producción promocional derivada del contenido principal y gestión de pauta multicanal.
+                    </p>
+                    <p class="tv-body text-slate-400">
+                        La estrategia está orientada a incrementar <strong class="text-white">alcance, visibilidad y recordación</strong> del contenido en Ecuador, con prioridad en audiencias urbanas y digitales en seis ciudades principales.
+                    </p>
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-5 text-indigo-300">Enfoque Operativo</h3>
+                        <ul class="tv-sm space-y-4 text-slate-300">
+                            <li class="flex items-start gap-3"><svg class="w-6 h-6 mt-0.5 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Producción de clips, highlights y hooks derivada de cada episodio</li>
+                            <li class="flex items-start gap-3"><svg class="w-6 h-6 mt-0.5 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Distribución pagada en YouTube, Meta y Spotify</li>
+                            <li class="flex items-start gap-3"><svg class="w-6 h-6 mt-0.5 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Gestión de publicación en YouTube, Spotify y Apple Podcasts</li>
+                            <li class="flex items-start gap-3"><svg class="w-6 h-6 mt-0.5 text-indigo-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Optimización progresiva de inversión según rendimiento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+                    <div class="relative p-10 bg-slate-900 rounded-2xl h-full flex flex-col justify-center gap-6">
+                        <div>
+                            <p class="tv-label text-slate-500 mb-2">Podcast</p>
+                            <p class="tv-h3 font-bold">Movilidad Urbana Sostenible</p>
+                        </div>
+                        <div class="pt-4 border-t border-white/5 grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="tv-label text-slate-500 mb-1">Cliente Final</p>
+                                <p class="tv-h4 font-bold text-indigo-400">GIZ</p>
+                            </div>
+                            <div>
+                                <p class="tv-label text-slate-500 mb-1">Ejecutor</p>
+                                <p class="tv-h4 font-bold">Live Developer</p>
+                            </div>
+                        </div>
+                        <div class="pt-4 border-t border-white/5">
+                            <p class="tv-label text-slate-500 mb-2">Objetivo General</p>
+                            <p class="tv-sm font-light italic leading-snug text-slate-300">"Incrementar el alcance y posicionamiento digital durante 8 meses."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 3: ALCANCE ──────────── -->
+    <section id="alcance" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">02</span>
+                Alcance del Servicio
+            </h2>
+            <div class="grid md:grid-cols-3 gap-7">
+                <!-- Producción -->
+                <div class="p-8 rounded-2xl glass border-t-4 border-indigo-500">
+                    <h3 class="tv-h3 mb-3">Producción</h3>
+                    <p class="tv-sm text-slate-400 mb-5">Piezas derivadas por cada episodio.</p>
+                    <ul class="tv-sm space-y-3 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-indigo-400 shrink-0"></div>1 Clip promocional</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-indigo-400 shrink-0"></div>1 Highlight temático</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-indigo-400 shrink-0"></div>1 Hook corto de impacto</li>
+                    </ul>
+                    <div class="mt-7 pt-5 border-t border-white/5 text-center tv-h4 font-bold text-indigo-400">108 piezas totales</div>
+                </div>
+                <!-- Formatos -->
+                <div class="p-8 rounded-2xl glass border-t-4 border-purple-500">
+                    <h3 class="tv-h3 mb-3">Formatos</h3>
+                    <p class="tv-sm text-slate-400 mb-5">Adaptación para todos los canales.</p>
+                    <ul class="tv-sm space-y-3 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>Formato vertical (Reels / Shorts)</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>Formato horizontal</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>Social media ads</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>Video Discovery</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-purple-400 shrink-0"></div>Piezas de audio y pauta</li>
+                    </ul>
+                </div>
+                <!-- Distribución -->
+                <div class="p-8 rounded-2xl glass border-t-4 border-emerald-500">
+                    <h3 class="tv-h3 mb-3">Distribución</h3>
+                    <p class="tv-sm text-slate-400 mb-5">Publicación y gestión base de episodios.</p>
+                    <ul class="tv-sm space-y-3 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-red-500 shrink-0"></div>YouTube</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-green-500 shrink-0"></div>Spotify</li>
+                        <li class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-slate-400 shrink-0"></div>Apple Podcasts</li>
+                    </ul>
+                    <p class="tv-xs text-slate-500 mt-6">Incluye carga, configuración y publicación base. No incluye community management ni gestión editorial continua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 4: ESTRATEGIA DE MEDIOS ──────────── -->
+    <section id="medios" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">03</span>
+                Estrategia Operativa de Medios
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-7">
+                    <!-- Distribución pauta -->
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-6 text-indigo-300">Distribución Inicial de Pauta</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <div class="flex justify-between tv-sm mb-2"><span class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-red-500 inline-block"></div> YouTube</span><strong>50%</strong></div>
+                                <div class="w-full bg-slate-800 rounded-full h-3"><div class="bg-red-500 h-3 rounded-full" style="width:50%"></div></div>
+                                <p class="tv-xs text-slate-500 mt-1">Descubrimiento audiovisual, reproducción y escalamiento de visualizaciones.</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between tv-sm mb-2"><span class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-blue-500 inline-block"></div> Meta Platforms</span><strong>30%</strong></div>
+                                <div class="w-full bg-slate-800 rounded-full h-3"><div class="bg-blue-500 h-3 rounded-full" style="width:30%"></div></div>
+                                <p class="tv-xs text-slate-500 mt-1">Alcance, video views, audiencias urbanas y remarketing.</p>
+                            </div>
+                            <div>
+                                <div class="flex justify-between tv-sm mb-2"><span class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-green-500 inline-block"></div> Spotify</span><strong>20%</strong></div>
+                                <div class="w-full bg-slate-800 rounded-full h-3"><div class="bg-green-500 h-3 rounded-full" style="width:20%"></div></div>
+                                <p class="tv-xs text-slate-500 mt-1">Afinidad con audiencia consumidora de audio y refuerzo del producto podcast.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-7">
+                    <!-- Priorización editorial -->
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-5 text-indigo-300">Priorización Editorial</h3>
+                        <p class="tv-sm text-slate-400 mb-5">No todos los episodios reciben el mismo empuje publicitario.</p>
+                        <div class="flex gap-8 items-center mb-5">
+                            <div class="text-center">
+                                <div class="stat-num text-indigo-400">12</div>
+                                <div class="tv-xs text-slate-500">Episodios Prioritarios</div>
+                                <p class="tv-xs text-slate-600 mt-1">Mayor empuje y presupuesto</p>
+                            </div>
+                            <div class="w-[1px] bg-white/10 h-16"></div>
+                            <div class="text-center">
+                                <div class="stat-num">24</div>
+                                <div class="tv-xs text-slate-500">Episodios Tácticos</div>
+                                <p class="tv-xs text-slate-600 mt-1">Soporte y visibilidad complementaria</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Geografía -->
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-4 text-indigo-300">Cobertura Geográfica</h3>
+                        <p class="tv-xs text-slate-500 mb-4">Segmentación inicial prioritaria en Ecuador:</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Quito</span>
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Guayaquil</span>
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Cuenca</span>
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Ambato</span>
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Manta</span>
+                            <span class="px-4 py-2 tv-sm bg-slate-800 rounded-lg border border-white/5 font-semibold">Loja</span>
+                        </div>
+                        <p class="tv-xs text-slate-600 mt-4">La distribución podrá ajustarse durante la ejecución según rendimiento y afinidad de audiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 5: INVERSIÓN ──────────── -->
+    <section id="inversion" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">04</span>
+                Desglose Económico
+            </h2>
+            <div class="grid md:grid-cols-5 gap-8">
+                <!-- Tabla general -->
+                <div class="col-span-3 rounded-2xl overflow-hidden glass">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-white/5">
+                                <th class="p-5 tv-sm font-semibold text-slate-400">Concepto</th>
+                                <th class="p-5 tv-sm font-semibold text-slate-400 text-right">Valor USD</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/5">
+                            <tr>
+                                <td class="p-5 tv-sm text-slate-300">Producción de clips, highlights y hooks</td>
+                                <td class="p-5 tv-sm font-bold text-right">2.400</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 tv-sm text-slate-300">Planeación y gestión de pauta (fee agencia)</td>
+                                <td class="p-5 tv-sm font-bold text-right">995</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 tv-sm text-slate-300">Inversión directa en pauta digital</td>
+                                <td class="p-5 tv-sm font-bold text-right">8.955</td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 tv-sm text-slate-400">Cargos tributarios y financieros (estimación)</td>
+                                <td class="p-5 tv-sm text-slate-500 text-right">150 a 650</td>
+                            </tr>
+                            <tr class="bg-indigo-500/10">
+                                <td class="p-6 tv-h4 font-bold text-indigo-400">Total general estimado</td>
+                                <td class="p-6 tv-h3 font-bold text-indigo-400 text-right">$12.500 – $13.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Tarjetas de pauta -->
+                <div class="col-span-2 space-y-5">
+                    <div class="p-6 rounded-2xl glass">
+                        <p class="tv-label text-slate-500 mb-3">Pauta por Plataforma</p>
+                        <div class="space-y-3 tv-sm">
+                            <div class="flex justify-between"><span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-red-500"></div>YouTube (50%)</span><strong>$4.477</strong></div>
+                            <div class="flex justify-between"><span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-blue-500"></div>Meta (30%)</span><strong>$2.686</strong></div>
+                            <div class="flex justify-between"><span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-green-500"></div>Spotify (20%)</span><strong>$1.792</strong></div>
+                            <div class="flex justify-between pt-3 border-t border-white/5 font-bold"><span>Total</span><span class="text-indigo-400">$8.955</span></div>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl glass">
+                        <p class="tv-label text-slate-500 mb-2">Mensual promedio (8 meses)</p>
+                        <p class="tv-h3 font-bold">$1.563 – $1.624</p>
+                        <div class="mt-4 space-y-2 tv-xs text-slate-400">
+                            <div class="flex justify-between"><span>Producción</span><span>$300 / mes</span></div>
+                            <div class="flex justify-between"><span>Gestión agencia</span><span>$124 / mes</span></div>
+                            <div class="flex justify-between"><span>Pauta digital</span><span>$1.119 / mes</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 6: KPI ──────────── -->
+    <section id="kpi" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">05</span>
+                KPI Proyectados del Periodo
+            </h2>
+            <div class="grid md:grid-cols-3 gap-7 mb-8">
+                <div class="col-span-1 p-8 rounded-2xl glass relative overflow-hidden group">
+                    <div class="absolute -right-6 -bottom-6 text-[7rem] text-indigo-500/5">★</div>
+                    <p class="tv-label text-slate-500 mb-2">Impactos Digitales</p>
+                    <p class="stat-num text-indigo-400 mb-1">400k – 700k</p>
+                    <p class="tv-sm text-slate-400">alcance acumulado durante 8 meses</p>
+                </div>
+                <div class="col-span-1 p-8 rounded-2xl glass relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 text-[7rem] text-purple-500/5">▶</div>
+                    <p class="tv-label text-slate-500 mb-2">Reproducciones</p>
+                    <p class="stat-num text-purple-400 mb-1">90k – 160k</p>
+                    <p class="tv-sm text-slate-400">views de contenido derivado</p>
+                </div>
+                <div class="col-span-1 p-8 rounded-2xl glass">
+                    <p class="tv-label text-slate-500 mb-5">Mensual de referencia</p>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="tv-xs text-slate-500">Impactos</p>
+                            <p class="tv-h4 font-bold">50k – 87.5k / mes</p>
+                        </div>
+                        <div class="pt-3 border-t border-white/5">
+                            <p class="tv-xs text-slate-500">Reproducciones</p>
+                            <p class="tv-h4 font-bold">11.2k – 20k / mes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabla fases KPI -->
+            <div class="rounded-2xl overflow-hidden glass">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="bg-white/5">
+                            <th class="p-4 tv-xs text-slate-500">Mes</th>
+                            <th class="p-4 tv-xs text-slate-500">Fase</th>
+                            <th class="p-4 tv-xs text-slate-500 text-right">Impactos</th>
+                            <th class="p-4 tv-xs text-slate-500 text-right">Reproducciones</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5 tv-sm">
+                        <tr><td class="p-4 font-semibold">Mayo</td><td class="p-4 text-slate-400">Arranque y testeo</td><td class="p-4 text-right">40k – 55k</td><td class="p-4 text-right">9k – 12k</td></tr>
+                        <tr><td class="p-4 font-semibold">Junio</td><td class="p-4 text-slate-400">Ajuste y aprendizaje</td><td class="p-4 text-right">45k – 60k</td><td class="p-4 text-right">10k – 13k</td></tr>
+                        <tr><td class="p-4 font-semibold">Jul – Ago</td><td class="p-4 text-slate-400">Escalamiento</td><td class="p-4 text-right">50k – 90k</td><td class="p-4 text-right">11k – 19k</td></tr>
+                        <tr><td class="p-4 font-semibold">Sep – Oct</td><td class="p-4 text-slate-400">Fase fuerte</td><td class="p-4 text-right">55k – 100k</td><td class="p-4 text-right">12k – 22k</td></tr>
+                        <tr><td class="p-4 font-semibold">Nov</td><td class="p-4 text-slate-400">Optimización</td><td class="p-4 text-right">50k – 95k</td><td class="p-4 text-right">12k – 20k</td></tr>
+                        <tr class="bg-indigo-500/5"><td class="p-4 font-bold text-indigo-400">Diciembre</td><td class="p-4 text-slate-400">Cierre y refuerzo</td><td class="p-4 text-right font-bold text-indigo-400">50k – 115k</td><td class="p-4 text-right font-bold text-indigo-400">12k – 34k</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 7: FASES / CRONOGRAMA ──────────── -->
+    <section id="fases" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">06</span>
+                Cronograma Operativo
+            </h2>
+            <div class="grid md:grid-cols-4 gap-5 mb-8">
+                <div class="p-7 rounded-2xl glass border-t-4 border-indigo-500">
+                    <p class="tv-label text-indigo-400 mb-2">Mayo – Junio</p>
+                    <p class="tv-h4 font-bold mb-3">Arranque</p>
+                    <p class="tv-sm text-slate-400">Calibración inicial de audiencias, formatos y plataformas. Primeros episodios publicados y piezas en rotación.</p>
+                </div>
+                <div class="p-7 rounded-2xl glass border-t-4 border-blue-500">
+                    <p class="tv-label text-blue-400 mb-2">Julio – Agosto</p>
+                    <p class="tv-h4 font-bold mb-3">Escalamiento</p>
+                    <p class="tv-sm text-slate-400">Mayor empuje a episodios prioritarios. Redistribución táctica basada en datos del primer bimestre.</p>
+                </div>
+                <div class="p-7 rounded-2xl glass border-t-4 border-purple-500">
+                    <p class="tv-label text-purple-400 mb-2">Sep – Octubre</p>
+                    <p class="tv-h4 font-bold mb-3">Fase Fuerte</p>
+                    <p class="tv-sm text-slate-400">Concentración en episodios con mejor respuesta. Continuidad de empuje a contenidos de mayor potencial.</p>
+                </div>
+                <div class="p-7 rounded-2xl glass border-t-4 border-emerald-500">
+                    <p class="tv-label text-emerald-400 mb-2">Nov – Diciembre</p>
+                    <p class="tv-h4 font-bold mb-3">Cierre</p>
+                    <p class="tv-sm text-slate-400">Refinamiento por rendimiento histórico. Refuerzo final sobre mejores episodios y audiencias acumuladas.</p>
+                </div>
+            </div>
+            <!-- Regla de optimización -->
+            <div class="p-7 rounded-2xl glass">
+                <h3 class="tv-h4 mb-4 text-indigo-300">Regla de Optimización</h3>
+                <p class="tv-sm text-slate-400 mb-4">La distribución entre plataformas es un punto de partida. Durante la ejecución, la inversión se redistribuirá según:</p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 tv-xs bg-slate-800 border border-white/5 rounded-lg">Costo por reproducción</span>
+                    <span class="px-4 py-2 tv-xs bg-slate-800 border border-white/5 rounded-lg">Tasa de visualización</span>
+                    <span class="px-4 py-2 tv-xs bg-slate-800 border border-white/5 rounded-lg">Nivel de retención</span>
+                    <span class="px-4 py-2 tv-xs bg-slate-800 border border-white/5 rounded-lg">Respuesta por ciudad</span>
+                    <span class="px-4 py-2 tv-xs bg-slate-800 border border-white/5 rounded-lg">Rendimiento episodios prioritarios</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ──────────── SLIDE 8: CONDICIONES / CIERRE ──────────── -->
+    <section id="cierre" class="section-snap">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="tv-h2 mb-10 flex items-center gap-5">
+                <span class="w-14 h-14 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 tv-h4">07</span>
+                Condiciones y Cierre
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-4 text-indigo-300">Condiciones Comerciales</h3>
+                        <ul class="tv-sm space-y-3 text-slate-300">
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 rounded-full bg-indigo-400 mt-2 shrink-0"></div>Ejecución inicia tras aprobación del alcance e insumos.</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 rounded-full bg-indigo-400 mt-2 shrink-0"></div>Cambios de alcance o volumen pueden requerir ajuste económico.</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 rounded-full bg-indigo-400 mt-2 shrink-0"></div>Pauta sujeta a dinámica real de plataformas al momento de ejecución.</li>
+                            <li class="flex items-start gap-3"><div class="w-2 h-2 rounded-full bg-yellow-400 mt-2 shrink-0"></div><span><strong class="text-yellow-400">Vigencia:</strong> 15 días calendario desde la fecha de emisión (2026-03-17).</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-7 rounded-2xl glass">
+                        <h3 class="tv-h4 mb-4 text-slate-400">No Incluye</h3>
+                        <ul class="tv-xs space-y-2 text-slate-500">
+                            <li>• Producción o grabación del podcast principal</li>
+                            <li>• Community management continuo</li>
+                            <li>• Diseño de identidad visual del programa</li>
+                            <li>• Motion graphics avanzados no contemplados</li>
+                            <li>• Compra de medios adicional fuera del monto indicado</li>
+                            <li>• Reportes tipo dashboard BI o integraciones técnicas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between gap-6">
+                    <div class="relative group flex-1">
+                        <div class="absolute -inset-1 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-700"></div>
+                        <div class="relative p-10 bg-slate-900 rounded-2xl h-full flex flex-col justify-center text-center">
+                            <p class="tv-label text-slate-500 mb-4">Inversión Total Estimada</p>
+                            <p class="tv-h1 gradient-text">$12.500</p>
+                            <p class="tv-h3 text-slate-400">– $13.000 USD</p>
+                            <p class="tv-xs text-slate-500 mt-4">8 meses · 36 episodios · 108 piezas</p>
+                        </div>
+                    </div>
+                    <div class="p-7 rounded-2xl glass text-center">
+                        <p class="tv-h3 font-bold italic">"El enfoque prioriza eficiencia de medios, optimización progresiva y construcción de visibilidad."</p>
+                        <p class="tv-sm text-slate-500 mt-3">— Live Developer para GIZ · Podcast Movilidad Urbana Sostenible · 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div><!-- /scroll-container -->
+
+<!-- ──────── BOTTOM NAVIGATION ──────── -->
+<nav class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 px-5 py-3 glass rounded-2xl">
+    <div class="flex items-center justify-between gap-3 md:gap-7">
+        <a href="#intro"     class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="intro">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <span class="hidden md:inline">Inicio</span>
+        </a>
+        <a href="#resumen"   class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="resumen">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span class="hidden md:inline">Resumen</span>
+        </a>
+        <a href="#alcance"   class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="alcance">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            <span class="hidden md:inline">Alcance</span>
+        </a>
+        <a href="#medios"    class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="medios">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+            <span class="hidden md:inline">Estrategia</span>
+        </a>
+        <a href="#inversion" class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="inversion">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="hidden md:inline">Inversión</span>
+        </a>
+        <a href="#kpi"       class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="kpi">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            <span class="hidden md:inline">KPI</span>
+        </a>
+        <a href="#fases"     class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="fases">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <span class="hidden md:inline">Fases</span>
+        </a>
+        <a href="#cierre"    class="nav-item flex flex-col items-center gap-1 tv-label text-slate-500 hover:text-indigo-400 transition pb-1" data-section="cierre">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span class="hidden md:inline">Cierre</span>
+        </a>
+    </div>
+</nav>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('.nav-item');
+    const container = document.querySelector('#scroll-container');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('data-section') === entry.target.id) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { root: container, threshold: 0.5 });
+
+    sections.forEach(s => observer.observe(s));
+
+    navItems.forEach(item => {
+        item.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(item.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+</body>
+</html>

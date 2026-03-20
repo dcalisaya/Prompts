@@ -2,7 +2,10 @@
 
 ## Estrategia de Produccion Promocional y Pauta Digital Multicanal
 
-**Proyecto:** Serie de 34 podcasts  
+**Proyecto:** Serie de 36 podcasts  
+**Nombre del Podcast:** Movilidad Urbana Sostenible  
+**Cliente Final:** GIZ  
+**Ejecutor:** Live Developer  
 **Duracion estimada del plan:** 8 meses  
 **Periodo estimado:** Mayo a diciembre de 2026  
 **Marca:** Live Developer  
@@ -13,7 +16,7 @@
 
 ## 1. Resumen Ejecutivo
 
-La presente propuesta tiene como objetivo desarrollar una estrategia integral de amplificacion digital para una serie de 34 episodios de podcast, combinando produccion promocional derivada del contenido principal y gestion de pauta digital multicanal.
+La presente propuesta tiene como objetivo desarrollar una estrategia integral de amplificacion digital para una serie de 36 episodios de podcast, combinando produccion promocional derivada del contenido principal y gestion de pauta digital multicanal.
 
 La estrategia esta orientada a incrementar alcance, visibilidad y recordacion del contenido en Ecuador, con prioridad en audiencias urbanas y digitales en seis ciudades principales del pais.
 
@@ -29,7 +32,7 @@ El enfoque operativo combina:
 
 ## 2. Objetivo General
 
-Incrementar el alcance y posicionamiento digital de la serie de 34 podcasts mediante una estrategia sostenida de contenido promocional y pauta segmentada durante 8 meses, con foco en descubrimiento, reproduccion y crecimiento progresivo de audiencia.
+Incrementar el alcance y posicionamiento digital de la serie de 36 podcasts mediante una estrategia sostenida de contenido promocional y pauta segmentada durante 8 meses, con foco en descubrimiento, reproduccion y crecimiento progresivo de audiencia.
 
 ---
 
@@ -47,10 +50,10 @@ A partir de cada episodio principal del podcast se desarrollaran piezas promocio
 
 **Total estimado del plan:**
 
-- 34 clips promocionales
-- 34 highlights tematicos
-- 34 hooks cortos
-- **102 piezas promocionales en total**
+- 36 clips promocionales
+- 36 highlights tematicos
+- 36 hooks cortos
+- **108 piezas promocionales en total**
 
 ### 3.2 Adaptacion de formatos
 
@@ -103,7 +106,7 @@ La distribucion geografica podra ajustarse durante la ejecucion segun rendimient
 No todos los episodios recibiran el mismo nivel de empuje publicitario. Para optimizar la inversion, se propone una estructura de priorizacion editorial y de medios:
 
 - **12 episodios prioritarios:** mayor empuje publicitario, mayor frecuencia de rotacion creativa y mayor foco presupuestario.
-- **22 episodios tacticos:** soporte segmentado, refuerzo de visibilidad y distribucion complementaria.
+- **24 episodios tacticos:** soporte segmentado, refuerzo de visibilidad y distribucion complementaria.
 
 ### Distribucion inicial recomendada de pauta
 
@@ -138,7 +141,7 @@ La distribucion entre plataformas funcionara como punto de partida. Durante la e
 
 Esta propuesta parte de los siguientes supuestos:
 
-- el cliente dispone de los 34 episodios base del podcast,
+- el cliente dispone de los 36 episodios base del podcast,
 - cada episodio estara disponible en calidad apta para derivacion promocional,
 - el material principal sera entregado en version aprobada para edicion,
 - la aprobacion de piezas se realizara dentro de tiempos razonables para no afectar cronograma,
@@ -274,6 +277,6 @@ Esta propuesta no incluye, salvo que se acuerde expresamente por separado:
 
 ## 13. Cierre
 
-La presente propuesta plantea un esquema de amplificacion digital sostenida para 34 episodios de podcast, con una combinacion de produccion promocional, gestion de publicacion y pauta multicanal orientada a resultados.
+La presente propuesta plantea un esquema de amplificacion digital sostenida para 36 episodios de podcast, con una combinacion de produccion promocional, gestion de publicacion y pauta multicanal orientada a resultados.
 
 El enfoque prioriza eficiencia de medios, optimizacion progresiva y construccion de visibilidad a lo largo del periodo de ejecucion.
