@@ -1,0 +1,19 @@
+.path-box {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.path-box code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+}
+
+.path-note {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}

@@ -1,0 +1,100 @@
+.agent-header .header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.agent-large-icon {
+  font-size: 4rem;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.agent-badge {
+  background-color: var(--primary-color) !important;
+}
+
+.check-list, .task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li, .task-list li {
+  padding-left: 1.75rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.task-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.info-desc {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.related-resource-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-resource-list li {
+  margin-bottom: 0.75rem;
+}
+
+.related-resource-list a {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #f8fafc;
+  transition: background-color 0.2s;
+}
+
+.related-resource-list a:hover {
+  background-color: #f1f5f9;
+}
+
+.res-id {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.res-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  .agent-header .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}

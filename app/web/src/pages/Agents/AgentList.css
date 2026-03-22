@@ -1,0 +1,16 @@
+.agent-card {
+  padding-top: 3rem;
+}
+
+.agent-avatar {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  opacity: 0.2;
+}
+
+.agent-list-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}

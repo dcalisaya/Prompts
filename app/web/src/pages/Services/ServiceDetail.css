@@ -1,0 +1,23 @@
+.scope-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--secondary-color);
+}
+
+.scope-box strong {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.detail-section.warning {
+  border-left: 4px solid #ef4444;
+}
+
+.detail-section.warning h2 {
+  color: #b91c1c;
+}
