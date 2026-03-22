@@ -16,6 +16,14 @@ Esta carpeta concentra la documentacion de producto, arquitectura funcional y de
 - [PROMPT-AGENTE-BLOQUE-1C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-1C.md): prompt operativo para delegar la implementacion del Bloque 1C.
 - [FASE-1-BLOQUE-1D.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-1-BLOQUE-1D.md): alcance, criterios y dependencias para la busqueda inicial del producto.
 - [PROMPT-AGENTE-BLOQUE-1D.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-1D.md): prompt operativo para delegar la implementacion del Bloque 1D.
+- [FASE-2-BLOQUE-2A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-2-BLOQUE-2A.md): alcance, contratos y definicion de terminado para el motor de briefs.
+- [PROMPT-AGENTE-BLOQUE-2A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2A.md): prompt operativo para delegar la implementacion del Bloque 2A.
+- [FASE-2-BLOQUE-2B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-2-BLOQUE-2B.md): alcance, contratos y definicion de terminado para el lanzador de prompts.
+- [PROMPT-AGENTE-BLOQUE-2B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2B.md): prompt operativo para delegar la implementacion del Bloque 2B.
+- [FASE-2-BLOQUE-2C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-2-BLOQUE-2C.md): alcance, contratos y definicion de terminado para las vistas de salida.
+- [PROMPT-AGENTE-BLOQUE-2C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2C.md): prompt operativo para delegar la implementacion del Bloque 2C.
+- [FASE-2-BLOQUE-2D.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-2-BLOQUE-2D.md): alcance, contratos y definicion de terminado para flujos operativos guiados.
+- [PROMPT-AGENTE-BLOQUE-2D.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2D.md): prompt operativo para delegar la implementacion del Bloque 2D.
 
 ## Regla de uso
 

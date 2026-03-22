@@ -1,3 +1,25 @@
+.detail-header {
+  margin-bottom: 3rem;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-main h1 {
+  margin: 0;
+  flex: 1;
+}
+
+.action-button {
+  box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+  white-space: nowrap;
+}
+
 .detail-section.highlight {
   border-left: 4px solid var(--primary-color);
 }

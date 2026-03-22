@@ -80,6 +80,50 @@ a {
   opacity: 0.9;
 }
 
+/* Common Buttons */
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.primary-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+}
+
+.secondary-button {
+  background-color: white;
+  color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.secondary-button:hover {
+  background-color: #f8fafc;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
 /* Resource Cards */
 .resource-card {
   background-color: var(--card-bg);

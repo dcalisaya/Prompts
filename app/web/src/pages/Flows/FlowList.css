@@ -1,0 +1,93 @@
+.flow-list-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.flow-card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.flow-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.flow-icon {
+  font-size: 3rem;
+  background: #f1f5f9;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.flow-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.flow-content p {
+  margin: 0 0 1rem 0;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.flow-steps-count {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  background: #eff6ff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .flow-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .flow-icon {
+    margin: 0 auto;
+  }
+}

@@ -14,8 +14,10 @@ import ServiceList from './pages/Services/ServiceList';
 import ServiceDetail from './pages/Services/ServiceDetail';
 import ManualList from './pages/Manuals/ManualList';
 import ManualDetail from './pages/Manuals/ManualDetail';
+import BriefPage from './pages/Briefs/BriefPage';
+import FlowList from './pages/Flows/FlowList';
+import FlowDetail from './pages/Flows/FlowDetail';
 import SearchPage from './pages/Search/SearchPage';
-import Placeholder from './components/Placeholder';
 
 const App: React.FC = () => {
   return (
@@ -33,6 +35,8 @@ const App: React.FC = () => {
           <Route path="prompts" element={<PromptList />} />
           <Route path="prompts/:id" element={<PromptDetail />} />
           
+          <Route path="brief/:promptId" element={<BriefPage />} />
+          
           <Route path="agentes" element={<AgentList />} />
           <Route path="agentes/:name" element={<AgentDetail />} />
           
@@ -42,7 +46,9 @@ const App: React.FC = () => {
           <Route path="manuales" element={<ManualList />} />
           <Route path="manuales/:id" element={<ManualDetail />} />
           
-          <Route path="flujos" element={<Placeholder title="Explorar por Flujo" />} />
+          <Route path="flujos" element={<FlowList />} />
+          <Route path="flujos/:flowId" element={<FlowDetail />} />
+          
           <Route path="buscar" element={<SearchPage />} />
         </Route>
       </Routes>

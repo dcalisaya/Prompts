@@ -77,6 +77,88 @@ export interface Manual {
   related_prompts: string[];
 }
 
+export interface FlowStep {
+  id: string;
+  label: string;
+  promptId: string;
+  description: string;
+}
+
+export interface Flow {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  steps: FlowStep[];
+}
+
+export interface BriefInput {
+  field: string;
+  value: string | string[];
+}
+
+export interface Brief {
+  id: string;
+  promptId: string;
+  promptName: string;
+  input_type: string;
+  deliverable_type: string;
+  agent_core: string;
+  related_services: string[];
+  inputs: BriefInput[];
+  additionalContext: string;
+  notes: string;
+  createdAt: string;
+  status: 'draft' | 'ready';
+}
+
+export interface ExecutionResult {
+  content: string;
+  structured_data?: unknown;
+  type: 'text' | 'checklist' | 'plan' | 'scheme' | 'summary';
+}
+
+export interface ExecutionContext {
+  promptId: string;
+  promptName: string;
+  objective: string;
+  deliverableType: string;
+  agentRole: string;
+  userInputs: Array<{
+    field: string;
+    value: string | string[];
+  }>;
+  additionalContext: string;
+  notes: string;
+  services: Array<{
+    code: string;
+    name: string;
+  }>;
+  manuals: Array<{
+    id: string;
+    name: string;
+    path: string;
+  }>;
+}
+
+export interface Execution {
+  id: string;
+  brief: Brief;
+  prompt: Prompt;
+  agent?: Agent;
+  services: Service[];
+  manuals: Manual[];
+  status: 'pending' | 'running' | 'completed' | 'failed';
+  preparedAt: string;
+  executionContext: ExecutionContext;
+  outputBlueprint: {
+    expected_type: string;
+    render_as: 'text' | 'checklist' | 'plan' | 'scheme' | 'summary';
+    expected_sections: string[];
+  };
+  result?: ExecutionResult;
+}
+
 export type SearchResourceType = 'prompt' | 'agent' | 'service' | 'manual';
 
 export interface SearchIndexEntry {

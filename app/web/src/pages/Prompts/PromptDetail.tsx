@@ -50,7 +50,12 @@ const PromptDetail: React.FC = () => {
           <span className="card-badge">{prompt.id}</span>
           <span className="version-tag">v{prompt.version}</span>
         </div>
-        <h1>{prompt.name}</h1>
+        <div className="header-main">
+          <h1>{prompt.name}</h1>
+          <Link to={`/brief/${prompt.id}`} className="primary-button action-button">
+            Preparar Brief
+          </Link>
+        </div>
         <div className="discipline-path">{prompt.discipline} / {prompt.category}</div>
       </header>
 
