@@ -1,1 +1,0 @@
-../base/masters/company/01-SKILLS.md

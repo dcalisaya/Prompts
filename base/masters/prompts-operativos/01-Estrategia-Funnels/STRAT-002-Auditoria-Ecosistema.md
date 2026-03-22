@@ -2,9 +2,20 @@
 id: STRAT-002
 name: Auditoría de Ecosistema Digital
 version: 1.0.0
-category: Estrategia y Funnels
+category: Marketing Digital y Contenidos
 agent_core: EstrategaDigital
-tags: [auditoria, diagnostico, redes-sociales, web]
+tags:
+- auditoria
+- diagnostico
+- redes-sociales
+- web
+discipline: Estrategia Digital
+related_services:
+- MK-001
+- MK-002
+stage: audit
+input_type: activos actuales, URLs, canales y contexto del negocio
+deliverable_type: diagnostico estrategico
 ---
 
 # Prompt: Auditoría de Ecosistema Digital

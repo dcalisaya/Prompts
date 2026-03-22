@@ -1,0 +1,92 @@
+# Live Developer - Local LLM Infrastructure
+# Mac Studio M4 Max Edition
+# 
+# Uso:
+#   cd app/docker
+#   docker-compose up -d
+#
+# Accesos:
+#   - Open WebUI: http://localhost:3000
+#   - LiteLLM Proxy: http://localhost:4000
+#   - API Live Developer: http://localhost:8000
+
+version: '3.8'
+
+services:
+  # LiteLLM Proxy - Router inteligente con fallback
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    container_name: ld-litellm
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./litellm-config.local.yaml:/app/config.yaml
+      - litellm-db:/app/data
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - DATABASE_URL=sqlite:///app/data/litellm.db
+    command: >
+      --config /app/config.yaml
+      --port 4000
+      --num_workers 4
+    restart: unless-stopped
+    networks:
+      - ld-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Open WebUI - Interfaz para el equipo
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: ld-openwebui
+    ports:
+      - "3000:8080"
+    volumes:
+      - open-webui-data:/app/backend/data
+    environment:
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - OPENAI_API_BASE=http://litellm:4000/v1
+      - ENABLE_SIGNUP=true
+      - DEFAULT_LOCALE=es
+      - DEFAULT_MODELS=llama-3.1-70b-ld
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    networks:
+      - ld-network
+    depends_on:
+      - litellm
+
+  # API Live Developer (FastAPI)
+  # Nota: Esto asume que el código está en app/api/
+  # y tiene un Dockerfile. Descomentar cuando esté listo.
+  #
+  # ld-api:
+  #   build:
+  #     context: ../api
+  #     dockerfile: Dockerfile
+  #   container_name: ld-api
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - ../../base/json:/app/data:ro
+  #   environment:
+  #     - DATA_DIR=/app/data
+  #     - LITELLM_URL=http://litellm:4000
+  #   restart: unless-stopped
+  #   networks:
+  #     - ld-network
+  #   depends_on:
+  #     - litellm
+
+volumes:
+  litellm-db:
+  open-webui-data:
+
+networks:
+  ld-network:
+    driver: bridge

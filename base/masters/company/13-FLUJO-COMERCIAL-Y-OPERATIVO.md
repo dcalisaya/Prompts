@@ -26,9 +26,9 @@ Este documento define el recorrido del trabajo desde la consulta inicial hasta e
 1. Comercial recibe necesidad.
 2. Usa `COM-001` para orientar servicio si el requerimiento esta verde.
 3. Usa `COM-002` para estructurar proforma si ya hay una necesidad concreta.
-4. Valida servicios con [09-SERVICE-MATRIX.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/09-SERVICE-MATRIX.md).
-5. Valida pricing con [10-PRICING-INTERNO.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/10-PRICING-INTERNO.md).
-6. Emite propuesta segun [11-REGLAS-DE-COTIZACION.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/11-REGLAS-DE-COTIZACION.md).
+4. Valida servicios con [09-SERVICE-MATRIX.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/09-SERVICE-MATRIX.md).
+5. Valida pricing con [10-PRICING-INTERNO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/10-PRICING-INTERNO.md).
+6. Emite propuesta segun [11-REGLAS-DE-COTIZACION.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/11-REGLAS-DE-COTIZACION.md).
 7. Una vez aprobado, Coordinacion arma kickoff.
 8. Operacion trabaja con brief y prompt correspondiente.
 9. Antes de entregar, pasa por calidad.

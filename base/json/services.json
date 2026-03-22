@@ -1,242 +1,472 @@
 [
   {
-    "service_name": "Grabacion en Quito",
-    "category": "1. Produccion Audiovisual",
-    "description": "Grabacion de video profesional en Quito. Incluye equipos profesionales."
+    "service_name": "Grabaci\u00f3n en Quito",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Jornada de grabaci\u00f3n profesional en Quito. Incluye equipamiento t\u00e9cnico de alto nivel."
   },
   {
-    "service_name": "Grabacion en Sierra",
-    "category": "1. Produccion Audiovisual",
-    "description": "Grabacion de video fuera de Quito en region Sierra. Incluye viaticos y transporte."
+    "service_name": "Grabaci\u00f3n en Sierra",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Grabaci\u00f3n fuera de Quito en la regi\u00f3n Sierra. Incluye vi\u00e1ticos y log\u00edstica de transporte."
   },
   {
-    "service_name": "Grabacion en Costa",
-    "category": "1. Produccion Audiovisual",
-    "description": "Grabacion de video en provincias de la Costa. Incluye viaticos y transporte."
+    "service_name": "Grabaci\u00f3n en Costa",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Grabaci\u00f3n en provincias de la regi\u00f3n Costa. Incluye vi\u00e1ticos y log\u00edstica de transporte."
   },
   {
-    "service_name": "Edicion de Video",
-    "category": "1. Produccion Audiovisual",
-    "description": "Servicio de edicion profesional de material audiovisual existente."
+    "service_name": "Edici\u00f3n de Video",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Montaje y postproducci\u00f3n profesional de material audiovisual existente."
   },
   {
     "service_name": "Video Corporativo",
-    "category": "1. Produccion Audiovisual",
-    "description": "Produccion completa de video corporativo (preproduccion, grabacion y postproduccion)."
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Producci\u00f3n integral: preproducci\u00f3n, rodaje y postproducci\u00f3n de piezas corporativas."
   },
   {
     "service_name": "Video Animado 2D",
-    "category": "1. Produccion Audiovisual",
-    "description": "Animacion 2D para videos explicativos y motion graphics."
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Animaci\u00f3n digital para videos explicativos, infograf\u00edas animadas y motion graphics."
   },
   {
     "service_name": "Video Formato Vertical",
-    "category": "1. Produccion Audiovisual",
-    "description": "Edicion y adaptacion para Reels, TikTok y Stories (9:16)."
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Creaci\u00f3n y adaptaci\u00f3n de contenido optimizado para Reels, TikTok y Stories (9:16)."
   },
   {
-    "service_name": "Subtitulacion",
-    "category": "1. Produccion Audiovisual",
-    "description": "Subtitulacion en espanol, ingles u otros idiomas."
+    "service_name": "Subtitulaci\u00f3n",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Generaci\u00f3n y sincronizaci\u00f3n de subt\u00edtulos en espa\u00f1ol, ingl\u00e9s u otros idiomas requeridos."
   },
   {
-    "service_name": "Traduccion de Video",
-    "category": "1. Produccion Audiovisual",
-    "description": "Traduccion de guiones y contenido audiovisual."
+    "service_name": "Traducci\u00f3n de Video",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Adaptaci\u00f3n ling\u00fc\u00edstica de guiones y contenidos audiovisuales."
   },
   {
-    "service_name": "Produccion Radial",
-    "category": "1. Produccion Audiovisual",
-    "description": "Cuna radial profesional con voces, musica y efectos."
+    "service_name": "Producci\u00f3n Radial",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Creaci\u00f3n de cu\u00f1as radiales profesionales con locuci\u00f3n, dise\u00f1o sonoro y efectos."
   },
   {
-    "service_name": "Locucion Espanol",
-    "category": "1. Produccion Audiovisual",
-    "description": "Locucion profesional en espanol."
+    "service_name": "Locuci\u00f3n Espa\u00f1ol",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Servicio de locuci\u00f3n profesional con talentos de voz en espa\u00f1ol."
   },
   {
-    "service_name": "Locucion Ingles",
-    "category": "1. Produccion Audiovisual",
-    "description": "Locucion profesional en ingles con hablante nativo."
+    "service_name": "Locuci\u00f3n Ingl\u00e9s",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Locuci\u00f3n profesional en ingl\u00e9s con hablantes nativos."
   },
   {
     "service_name": "Podcast (A/V)",
-    "category": "1. Produccion Audiovisual",
-    "description": "Produccion completa de episodio de podcast en audio y video."
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Producci\u00f3n completa de episodios de podcast en formatos de audio y video."
   },
   {
-    "service_name": "Sesion Fotografica",
-    "category": "1. Produccion Audiovisual",
-    "description": "Sesion de 4 horas. Incluye camara, iluminacion y retoque."
+    "service_name": "Sesi\u00f3n Fotogr\u00e1fica",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Jornada de 4 horas de fotograf\u00eda profesional. Incluye iluminaci\u00f3n y retoque digital."
   },
   {
-    "service_name": "Cobertura Evento",
-    "category": "1. Produccion Audiovisual",
-    "description": "Cobertura fotografica de eventos corporativos o sociales."
+    "service_name": "Cobertura de Eventos",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Registro fotogr\u00e1fico profesional para eventos corporativos o sociales."
   },
   {
-    "service_name": "Fotografia Producto",
-    "category": "1. Produccion Audiovisual",
-    "description": "Fotografia profesional para catalogo o e-commerce."
+    "service_name": "Fotograf\u00eda de Producto",
+    "category": "1. Producci\u00f3n Audiovisual",
+    "description": "Fotograf\u00eda profesional optimizada para cat\u00e1logos digitales o e-commerce."
   },
   {
-    "service_name": "Analisis de Redes",
+    "service_name": "An\u00e1lisis de Redes",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Evaluacion de redes actuales con recomendaciones accionables."
+    "description": "Auditor\u00eda de canales digitales con recomendaciones estrat\u00e9gicas accionables."
   },
   {
     "service_name": "Estrategia Digital",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Desarrollo de estrategia de marketing digital y plan de contenidos."
+    "description": "Dise\u00f1o de planes de marketing digital y hojas de ruta de contenidos."
   },
   {
     "service_name": "Community Manager",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Gestion mensual de redes: contenido, publicaciones y respuestas."
+    "description": "Gesti\u00f3n mensual de redes sociales: creaci\u00f3n de contenido, publicaci\u00f3n y moderaci\u00f3n."
   },
   {
     "service_name": "Pauta Digital",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Gestion de campanas publicitarias en redes y Google."
+    "description": "Administraci\u00f3n estrat\u00e9gica de campa\u00f1as publicitarias en Meta, Google y otras redes."
   },
   {
-    "service_name": "Diseno de Identidad",
-    "category": "3. Diseno y Branding",
-    "description": "Logo, paleta de color, tipografia y manual de marca."
+    "service_name": "Dise\u00f1o de Identidad",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Desarrollo de marca: logotipo, paleta crom\u00e1tica, tipograf\u00eda y manual de identidad."
   },
   {
-    "service_name": "Diseno Presentacion",
-    "category": "3. Diseno y Branding",
-    "description": "Presentacion corporativa en PPT o Google Slides."
+    "service_name": "Dise\u00f1o de Presentaci\u00f3n",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Creaci\u00f3n de presentaciones corporativas impactantes en PPT o Google Slides."
   },
   {
-    "service_name": "Diseno Impreso",
-    "category": "3. Diseno y Branding",
-    "description": "Flyers, brochures, tarjetas y material promocional."
+    "service_name": "Dise\u00f1o Impreso",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Dise\u00f1o de piezas editoriales: flyers, brochures, tarjetas y material promocional."
   },
   {
-    "service_name": "Infografia",
-    "category": "3. Diseno y Branding",
-    "description": "Diseno de infografias para presentaciones o redes."
+    "service_name": "Infograf\u00eda",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Dise\u00f1o de infograf\u00edas conceptuales para presentaciones o canales digitales."
   },
   {
     "service_name": "Roll Up",
-    "category": "3. Diseno y Branding",
-    "description": "Impresion de roll up 85x200 cm con estructura."
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Dise\u00f1o e impresi\u00f3n de roll up (85x200 cm) con estructura incluida."
   },
   {
     "service_name": "Banner",
-    "category": "3. Diseno y Branding",
-    "description": "Impresion de banner en lona (precio por m2)."
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Dise\u00f1o e impresi\u00f3n de banners en lona de alta resistencia (precio por m2)."
   },
   {
-    "service_name": "Flyer (Impresion)",
-    "category": "3. Diseno y Branding",
-    "description": "Impresion de flyers en papel couche laminado."
+    "service_name": "Flyer (Impresi\u00f3n)",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Impresi\u00f3n de flyers en papel couch\u00e9 de alta calidad con laminado."
   },
   {
-    "service_name": "Tarjetas (Impresion)",
-    "category": "3. Diseno y Branding",
-    "description": "Impresion de tarjetas 9x5 cm, couche 300 gr."
+    "service_name": "Tarjetas (Impresi\u00f3n)",
+    "category": "3. Dise\u00f1o y Branding",
+    "description": "Impresi\u00f3n de tarjetas de presentaci\u00f3n (9x5 cm) en couch\u00e9 de 300 gr."
   },
   {
     "service_name": "Dominio .com/.org",
     "category": "4. Infraestructura y Web",
-    "description": "Registro anual de dominio internacional."
+    "description": "Gesti\u00f3n y registro anual de dominios internacionales."
   },
   {
     "service_name": "Dominio .ec",
     "category": "4. Infraestructura y Web",
-    "description": "Registro de dominio Ecuador (por 2 anos)."
+    "description": "Registro y administraci\u00f3n de dominios territoriales (.ec) por periodos bianuales."
   },
   {
-    "service_name": "Hosting Economico",
+    "service_name": "Hosting Econ\u00f3mico",
     "category": "4. Infraestructura y Web",
-    "description": "Hosting compartido anual (10 GB, SSL, cPanel)."
+    "description": "Alojamiento compartido anual (10 GB de almacenamiento, SSL y cPanel)."
   },
   {
     "service_name": "Hosting Premium",
     "category": "4. Infraestructura y Web",
-    "description": "Hosting premium anual (40 GB, backups diarios)."
+    "description": "Alojamiento de alto rendimiento con 40 GB y respaldos diarios automatizados."
   },
   {
     "service_name": "Servidor VPS",
     "category": "4. Infraestructura y Web",
-    "description": "Servidor virtual (4 vCPU, 8 GB RAM, 400 GB SSD)."
+    "description": "Provisi\u00f3n de servidor virtual privado (4 vCPU, 8 GB RAM, 400 GB SSD)."
   },
   {
     "service_name": "Certificado SSL",
     "category": "4. Infraestructura y Web",
-    "description": "Certificado SSL anual con instalacion."
+    "description": "Emisi\u00f3n e instalaci\u00f3n de certificado de seguridad SSL con validez anual."
   },
   {
     "service_name": "SSL Wildcard",
     "category": "4. Infraestructura y Web",
-    "description": "SSL para multiples subdominios."
+    "description": "Certificado SSL avanzado para la protecci\u00f3n de m\u00faltiples subdominios."
   },
   {
     "service_name": "Email Corporativo",
     "category": "4. Infraestructura y Web",
-    "description": "Configuracion de correo por usuario."
+    "description": "Configuraci\u00f3n de cuentas de correo institucional personalizadas."
   },
   {
     "service_name": "Landing Page",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo en WordPress (responsive, formulario y analitica)."
+    "description": "Desarrollo optimizado en WordPress (responsive, formularios de captura y anal\u00edtica)."
   },
   {
     "service_name": "Web Corporativa",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Sitio completo con CMS, SEO y capacitacion."
+    "description": "Sitio web institucional autogestionable con optimizaci\u00f3n SEO inicial y capacitaci\u00f3n."
   },
   {
     "service_name": "E-commerce",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Tienda online con carrito, pagos y gestion."
+    "description": "Plataforma de venta online con gesti\u00f3n de inventario, pasarela de pagos y env\u00edos."
   },
   {
-    "service_name": "App Movil",
+    "service_name": "App M\u00f3vil",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo iOS/Android (Flutter o React Native)."
+    "description": "Desarrollo nativo o h\u00edbrido para iOS/Android (Flutter o React Native)."
   },
   {
-    "service_name": "Sistema de Gestion",
+    "service_name": "Sistema de Gesti\u00f3n",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo de software empresarial a medida."
+    "description": "Ingenier\u00eda de software a medida para procesos empresariales espec\u00edficos."
   },
   {
     "service_name": "CRM Personalizado",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "CRM para gestion de clientes y ventas."
+    "description": "Implementaci\u00f3n y adaptaci\u00f3n de CRM para gesti\u00f3n comercial y de clientes."
   },
   {
-    "service_name": "Aplicacion Web Custom",
+    "service_name": "Aplicaci\u00f3n Web Custom",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo de web app a medida por horas."
+    "description": "Desarrollo de aplicaciones web personalizadas bajo demanda t\u00e9cnica."
   },
   {
-    "service_name": "Integracion API",
+    "service_name": "Integraci\u00f3n de API",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Integracion con terceros y desarrollo de endpoints."
+    "description": "Conexi\u00f3n con servicios de terceros y desarrollo de endpoints escalables."
   },
   {
     "service_name": "Mantenimiento Web",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Actualizaciones, backups y soporte mensual."
+    "description": "Soporte mensual preventivo: actualizaciones de seguridad y backups."
   },
   {
-    "service_name": "Soporte Tecnico",
+    "service_name": "Soporte T\u00e9cnico",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Horas de soporte y desarrollo adicional."
+    "description": "Bolsas de horas para asistencia t\u00e9cnica y desarrollo evolutivo."
   },
   {
     "service_name": "Chatbot Informativo",
-    "category": "6. Soluciones IA y Automatizacion",
-    "description": "Implementacion para sitio web o WhatsApp."
+    "category": "6. Soluciones IA y Automatizaci\u00f3n",
+    "description": "Implementaci\u00f3n de asistentes inteligentes para sitios web o WhatsApp."
   },
   {
-    "service_name": "Automatizacion con IA",
-    "category": "6. Soluciones IA y Automatizacion",
-    "description": "Soluciones de IA para optimizacion de procesos."
+    "service_name": "Automatizaci\u00f3n con IA",
+    "category": "6. Soluciones IA y Automatizaci\u00f3n",
+    "description": "Dise\u00f1o de flujos de trabajo inteligentes para la optimizaci\u00f3n de procesos operativos."
+  },
+  {
+    "service_name": "Comunicado de Prensa",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "Redacci\u00f3n estrat\u00e9gica y distribuci\u00f3n de comunicados con rigor period\u00edstico."
+  },
+  {
+    "service_name": "Plan de Comunicaci\u00f3n",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "Estrategia integral 360 con mensajes clave, selecci\u00f3n de canales y cronograma."
+  },
+  {
+    "service_name": "Media Training",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "Entrenamiento especializado de voceros para entrevistas en medios masivos y digitales."
+  },
+  {
+    "service_name": "Plan de Crisis",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "Protocolos de respuesta inmediata, manual de escenarios y gesti\u00f3n de reputaci\u00f3n."
+  },
+  {
+    "service_name": "Monitoreo de Medios",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "An\u00e1lisis de presencia de marca (clipping), social listening y an\u00e1lisis de sentimiento."
+  },
+  {
+    "service_name": "Comunicaci\u00f3n Interna",
+    "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "description": "Estrategias de endomarketing para cultura corporativa y boletines institucionales."
+  },
+  {
+    "service_name": "Dashboard de KPIs",
+    "category": "8. Data, Analytics e Insights",
+    "description": "Implementaci\u00f3n de tableros ejecutivos en Looker Studio o Power BI."
+  },
+  {
+    "service_name": "Plan de Medici\u00f3n",
+    "category": "8. Data, Analytics e Insights",
+    "description": "Dise\u00f1o de frameworks de seguimiento: GTM, p\u00edxeles de conversi\u00f3n y UTMs."
+  },
+  {
+    "service_name": "Auditor\u00eda de Datos",
+    "category": "8. Data, Analytics e Insights",
+    "description": "Evaluaci\u00f3n de integridad de datos, calidad de fuentes y brechas de medici\u00f3n."
+  },
+  {
+    "service_name": "Informe de Insights",
+    "category": "8. Data, Analytics e Insights",
+    "description": "Investigaci\u00f3n de mercado con hallazgos accionables y an\u00e1lisis competitivo."
+  },
+  {
+    "service_name": "Configuraci\u00f3n GA4 + GTM",
+    "category": "8. Data, Analytics e Insights",
+    "description": "Setup profesional de Google Analytics 4 y gesti\u00f3n avanzada de etiquetas."
+  },
+  {
+    "service_name": "Plan de Medios Integral",
+    "category": "9. Media Planning y Performance",
+    "description": "Planificaci\u00f3n publicitaria 360 con mix de canales, presupuestos y flowchart."
+  },
+  {
+    "service_name": "Campa\u00f1a Meta Ads",
+    "category": "9. Media Planning y Performance",
+    "description": "Gesti\u00f3n profesional de publicidad en Facebook e Instagram enfocada en resultados."
+  },
+  {
+    "service_name": "Campa\u00f1a Google Ads",
+    "category": "9. Media Planning y Performance",
+    "description": "Administraci\u00f3n de campa\u00f1as en Search, Display, Shopping y Performance Max."
+  },
+  {
+    "service_name": "Campa\u00f1a TikTok Ads",
+    "category": "9. Media Planning y Performance",
+    "description": "Estrategias de performance en TikTok con foco en segmentaci\u00f3n y tendencias."
+  },
+  {
+    "service_name": "Auditor\u00eda SEO",
+    "category": "9. Media Planning y Performance",
+    "description": "Diagn\u00f3stico t\u00e9cnico integral (on-page/off-page) con hoja de ruta priorizada."
+  },
+  {
+    "service_name": "SEO Mensual",
+    "category": "9. Media Planning y Performance",
+    "description": "Optimizaci\u00f3n continua de visibilidad org\u00e1nica y posicionamiento en buscadores."
+  },
+  {
+    "service_name": "Local SEO",
+    "category": "9. Media Planning y Performance",
+    "description": "Mejora de visibilidad local y optimizaci\u00f3n de perfiles en Google Business."
+  },
+  {
+    "service_name": "Diagn\u00f3stico de Madurez Digital",
+    "category": "10. Consultor\u00eda de Negocio",
+    "description": "Evaluaci\u00f3n de digitalizaci\u00f3n empresarial con scorecard detallado y roadmap."
+  },
+  {
+    "service_name": "Estrategia Go-to-Market",
+    "category": "10. Consultor\u00eda de Negocio",
+    "description": "Plan de lanzamiento integral: segmentaci\u00f3n, pricing y plan de acci\u00f3n de 90 d\u00edas."
+  },
+  {
+    "service_name": "Business Model Canvas",
+    "category": "10. Consultor\u00eda de Negocio",
+    "description": "Taller estrat\u00e9gico para el modelado y validaci\u00f3n de modelos de negocio."
+  },
+  {
+    "service_name": "Taller de Design Thinking",
+    "category": "10. Consultor\u00eda de Negocio",
+    "description": "Sesiones facilitadas para la ideaci\u00f3n, prototipado y resoluci\u00f3n de problemas."
+  },
+  {
+    "service_name": "Estrategia E-commerce",
+    "category": "11. Commerce Avanzado",
+    "description": "Consultor\u00eda integral: plataforma, cat\u00e1logo, conversi\u00f3n y log\u00edstica."
+  },
+  {
+    "service_name": "Optimizaci\u00f3n de Marketplace",
+    "category": "11. Commerce Avanzado",
+    "description": "Mejora de presencia comercial en MercadoLibre, Amazon o Shopee."
+  },
+  {
+    "service_name": "Social Commerce",
+    "category": "11. Commerce Avanzado",
+    "description": "Estrategia de venta directa desde canales sociales (Instagram y TikTok Shops)."
+  },
+  {
+    "service_name": "CRO (Conversion Rate)",
+    "category": "11. Commerce Avanzado",
+    "description": "Auditor\u00eda y optimizaci\u00f3n de tasas de conversi\u00f3n en tiendas online y landings."
+  },
+  {
+    "service_name": "Customer Journey Map",
+    "category": "12. Customer Experience y CRM",
+    "description": "Mapeo integral de la experiencia del cliente para optimizar puntos de contacto."
+  },
+  {
+    "service_name": "Implementaci\u00f3n CRM",
+    "category": "12. Customer Experience y CRM",
+    "description": "Configuraci\u00f3n avanzada de plataformas CRM (HubSpot, Salesforce, Brevo) y flujos."
+  },
+  {
+    "service_name": "Email Marketing",
+    "category": "12. Customer Experience y CRM",
+    "description": "Gesti\u00f3n de campa\u00f1as: segmentaci\u00f3n, flujos automatizados y calendario editorial."
+  },
+  {
+    "service_name": "Programa de Fidelizaci\u00f3n",
+    "category": "12. Customer Experience y CRM",
+    "description": "Dise\u00f1o estrat\u00e9gico de sistemas de lealtad (puntos, niveles y referidos)."
+  },
+  {
+    "service_name": "Auditor\u00eda CX",
+    "category": "12. Customer Experience y CRM",
+    "description": "Medici\u00f3n de calidad de servicio mediante m\u00e9tricas NPS, CSAT y CES."
+  },
+  {
+    "service_name": "Estrategia de Contenidos",
+    "category": "13. Content Strategy y Copy",
+    "description": "Dise\u00f1o de ecosistema editorial: pilares narrativos, territorios y calendarios."
+  },
+  {
+    "service_name": "Brand Voice System",
+    "category": "13. Content Strategy y Copy",
+    "description": "Definici\u00f3n de identidad verbal: tono, lenguaje y gu\u00edas de uso por canal."
+  },
+  {
+    "service_name": "Arquitectura de Mensajes",
+    "category": "13. Content Strategy y Copy",
+    "description": "Jerarquizaci\u00f3n de propuestas de valor, claims publicitarios y narrativa central."
+  },
+  {
+    "service_name": "Estrategia de Influencers",
+    "category": "14. Influencer Marketing",
+    "description": "Dise\u00f1o de campa\u00f1as con creadores: criterios de selecci\u00f3n, alcance y KPIs."
+  },
+  {
+    "service_name": "Gesti\u00f3n con Creadores",
+    "category": "14. Influencer Marketing",
+    "description": "Coordinaci\u00f3n operativa de colaboraciones, briefs y control de entregables."
+  },
+  {
+    "service_name": "Creator Sourcing",
+    "category": "14. Influencer Marketing",
+    "description": "Investigaci\u00f3n y contacto estrat\u00e9gico con talentos afines a la marca."
+  },
+  {
+    "service_name": "Concepto de Evento",
+    "category": "15. Experiential y Eventos",
+    "description": "Dise\u00f1o creativo y estrat\u00e9gico de eventos, activaciones y experiencias de marca."
+  },
+  {
+    "service_name": "Run of Show y Experiencia",
+    "category": "15. Experiential y Eventos",
+    "description": "Planificaci\u00f3n del viaje del asistente, agenda t\u00e9cnica y momentos clave del evento."
+  },
+  {
+    "service_name": "Amplificaci\u00f3n de Evento",
+    "category": "15. Experiential y Eventos",
+    "description": "Estrategia de contenidos y relaciones p\u00fablicas para maximizar el impacto post-evento."
+  },
+  {
+    "service_name": "Estrategia Healthcare",
+    "category": "16. Healthcare Marketing",
+    "description": "Marketing \u00e9tico y posicionamiento especializado para el sector salud."
+  },
+  {
+    "service_name": "Embudo para Pacientes",
+    "category": "16. Healthcare Marketing",
+    "description": "Dise\u00f1o de funnels por especialidad enfocados en confianza y conversi\u00f3n."
+  },
+  {
+    "service_name": "Contenido Educativo",
+    "category": "16. Healthcare Marketing",
+    "description": "Desarrollo de contenidos m\u00e9dicos comprensibles y alineados a regulaciones."
+  },
+  {
+    "service_name": "Estrategia Comunicativa ESG",
+    "category": "17. Sostenibilidad y ESG",
+    "description": "Narrativa institucional de impacto social, ambiental y de gobernanza."
+  },
+  {
+    "service_name": "Reporte de Sostenibilidad",
+    "category": "17. Sostenibilidad y ESG",
+    "description": "Estructuraci\u00f3n y redacci\u00f3n de memorias e informes narrativos de impacto."
+  },
+  {
+    "service_name": "Mensajer\u00eda Stakeholders",
+    "category": "17. Sostenibilidad y ESG",
+    "description": "Adaptaci\u00f3n de mensajes ESG para inversores, clientes, talento y comunidad."
   }
 ]

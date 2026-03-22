@@ -1,1 +1,0 @@
-../base/masters/company/00-INICIO-RAPIDO.md

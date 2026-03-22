@@ -1,70 +1,63 @@
-# Guía Maestra de Movimientos de Cámara para I2V (Image-to-Video)
-## Dirección de Fotografía & Prompt Engineering
+---
+id: MAN-PROD-008
+name: Guía Maestra de Movimientos de Cámara
+category: Producción Audiovisual
+discipline: Producción Audiovisual
+type: operativo
+---
 
-Esta guía adapta el lenguaje cinematográfico tradicional para optimizar la generación de video con IA (Runway, Pika, Kling, etc.), donde la precisión semántica es crucial para evitar alucinaciones o interpretaciones erróneas del modelo.
+# Guía Maestra de Movimientos de Cámara para I2V
+## Dirección de Fotografía e Ingeniería de Prompts
+
+Esta guía adapta el lenguaje cinematográfico tradicional para la optimización de la generación de video con IA (Runway, Pika, Kling, Luma), priorizando la precisión semántica sobre el lenguaje coloquial.
 
 ---
 
-### 1. Análisis de Precisión Técnica (IA Nuances)
+### 1. Análisis de Precisión Técnica
 
-Para la IA, la física real no existe, solo la interpretación de píxeles.
+En la generación por IA, es vital distinguir entre cambios ópticos y desplazamientos físicos:
 
-*   **Dolly vs. Zoom:**
-    *   *El problema:* Las IAs confunden ambos. Un "Zoom" digital solo escala píxeles.
-    *   *La solución:* Para *Dolly*, usa el prompt **"Perspective shift"** o **"Camera moves physicaly"** para forzar el paralaje y la tridimensionalidad real.
-*   **Truck vs. Pan:**
-    *   *El problema:* La IA tiende a rotar (Pan) en lugar de desplazar (Truck).
-    *   *La solución:* Usa **"Lateral camera travel"** o **"Side-scrolling movement"** en lugar de solo "Move left/right".
-*   **Roll:**
-    *   *Advertencia:* Movimiento de alto riesgo. La IA suele rotar al *sujeto* en lugar de la cámara. Usar solo si es estrictamente necesario o combinado con **"Camera angle tilts"**.
+*   **Dolly vs. Zoom**:
+    *   *Confusión común*: La IA suele escalar píxeles (Zoom) en lugar de mover la cámara.
+    *   *Solución*: Utilizar **"Perspective shift"** o **"Camera moves physically through space"** para garantizar el efecto de paralaje real.
+*   **Truck vs. Pan**:
+    *   *Confusión común*: La IA tiende a rotar sobre el eje (Pan) por simplicidad de cómputo.
+    *   *Solución*: Utilizar **"Lateral camera travel"** o **"Side-scrolling tracking shot"** para forzar el desplazamiento lateral paralelo.
 
 ---
 
-### 2. Diccionario de Comandos (Prompt Triggers)
+### 2. Diccionario de Disparadores (Triggers) de Movimiento
 
-| Movimiento | Definición Cine | Prompt Sugerido para AI (Trigger) |
+| Movimiento | Definición Técnica | Trigger Recomendado para IA |
 | :--- | :--- | :--- |
-| **Dolly In** | Acercamiento físico | `Camera moves forward towards the subject, changing perspective, 3D depth` |
-| **Dolly Out** | Alejamiento físico | `Camera pulls back revealing environment, wide angle expansion` |
-| **Truck** | Desplazamiento lateral | `Horizontal camera tracking, side-scrolling movement, parallax background` |
-| **Pedestal** | Movimiento vertical puro | `Vertical camera slide up/down, keeping axis straight` |
-| **Arc** | Giro alrededor del sujeto | `Circular arc shot around the subject, keeping the face in focus and centered` |
-| **Pan** | Rotación sobre eje | `Slow cinematic pan [left/right], scanning the horizon` |
-| **Whip Pan** | Barrido rápido | `Fast motion blur whip pan, transition effect` |
-| **Handheld** | Cámara en mano | `Shaky cam, organic handheld movement, documentary style, raw footage` |
-| **Dolly Zoom** | Efecto Vértigo | `Vertiginous composition, background expands while subject remains same size` |
+| **Dolly In** | Acercamiento físico a la acción. | `Camera moves forward, changing perspective, 3D depth.` |
+| **Dolly Out** | Alejamiento físico para revelar contexto. | `Camera pulls back, wide angle expansion, revealing environment.` |
+| **Truck** | Desplazamiento lateral paralelo. | `Horizontal camera tracking, parallax background, lateral slide.` |
+| **Pedestal** | Desplazamiento vertical puro. | `Vertical camera slide, keeping horizon level, pedestal up/down.` |
+| **Arc** | Movimiento circular orbital. | `Circular orbit shot around subject, keeping subject centered.` |
+| **Handheld** | Cámara en mano (orgánico). | `Shaky cam, organic handheld motion, documentary style.` |
 
 ---
 
 ### 3. Modificadores de Control (Tuning)
 
-#### A. Velocidad (Crucial)
-Las IAs asumen "slow motion" por defecto. Debes forzar la intención.
-*   **Lento/Solemne:** `Slow cinematic [movement]`, `Subtle floating camera`.
-*   **Rápido/Acción:** `Fast [movement]`, `Dynamic speed`, `Rapid transition`.
+#### A. Gestión de la Velocidad
+La velocidad dicta el tono narrativo de la toma:
+*   **Solemne / Estable**: `Slow cinematic movement`, `Subtle floating camera`.
+*   **Dinámico / Acción**: `Fast motion`, `Rapid camera transition`, `Dynamic tracking`.
 
 #### B. Anclaje del Sujeto (Subject Anchoring)
-Para evitar que la IA deforme al protagonista durante movimientos complejos (especialmente Arcs o Dollys agresivos):
-*   *Prompt:* `...keeping the face in focus and centered`, `Subject remains static relative to frame`.
+Crucial para evitar deformaciones del personaje durante el movimiento:
+*   *Instrucción*: `Keeping the face in focus and centered`, `Subject remains static relative to the frame`.
 
 ---
 
-### 4. Estética y Coherencia Visual ("Golden Advice")
+### 4. Estética y Coherencia Óptica
 
-Dado el uso de equipos como **Canon R5/R6 Mark II** y lentes **35mm**, inyectar estos metadatos ayuda a la IA a "renderizar" con esa calidad óptica.
-
-*   **Prompt de Calidad Base:**
-    > `Shot on Canon R5, 35mm wide angle perspective, cinematic depth of field, sharp focus, 8k resolution.`
-
-*   **Contexto Institucional (Administración/Cajero):**
-    *   Evita el *Pan* errático.
-    *   Usa: **Slow Pedestal Up** o **Slow Dolly In**.
-    *   *Por qué:* Transmiten estabilidad, autoridad y limpieza profesional.
-
-*   **Nota sobre el Zolly (Dolly Zoom):**
-    *   Es el "Santo Grial" difícil de la IA.
-    *   *Tip:* En lugar de pelear con el prompt, genera un **Dolly In** limpio en alta resolución y aplica el **Zoom Out** (digital) en post-producción para simular el efecto óptico.
+La inclusión de metadatos técnicos eleva la calidad del renderizado final:
+*   **Configuración Base**: `Shot on Canon R5, 35mm lens, cinematic depth of field, 8k resolution`.
+*   **Contexto Corporativo**: Se recomienda priorizar los movimientos de **Slow Pedestal** o **Slow Dolly In**, ya que transmiten una sensación de estabilidad, autoridad y profesionalismo.
 
 ---
 
-**Recuerda:** La IA es un "operador ciego". No asumas que conoce el contexto. Sé explícito con la *física* del movimiento, no solo con el nombre.
+**Nota Final**: La IA interpreta instrucciones físicas. No asumas que "entiende" la intención artística; sé explícito con el desplazamiento de los ejes espaciales (X, Y, Z).

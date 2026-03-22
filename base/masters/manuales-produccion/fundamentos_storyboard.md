@@ -1,53 +1,58 @@
-# Fundamentos del Storyboard (Base Teórica)
-## La Pre-visualización de la Narrativa
+---
+id: MAN-PROD-004
+name: Fundamentos del Storyboard
+category: Producción Audiovisual
+discipline: Producción Audiovisual
+type: operativo
+---
 
-El Storyboard no es un cómic bonito; es el **plano arquitectónico** de la producción audiovisual. Su función es resolver problemas *antes* de rodar (o generar).
+# Fundamentos del Storyboard
+## La Previsualización de la Narrativa
+
+El storyboard es el plano arquitectónico de una producción audiovisual. Su función principal es resolver problemas narrativos y técnicos antes de iniciar la fase de rodaje o generación.
 
 ---
 
 ### 1. La Unidad Mínima: La Toma (Shot)
 
-Veo en tu interfaz que ya dividen por "Escenas" y "Tomas". Esto es correcto.
-*   **Escena:** Unidad de acción en un mismo lugar y tiempo (e.g., "Habitación Hospital").
-*   **Toma (Shot):** La unidad ininterrumpida de grabación/generación. Si la cámara corta o cambia drasticamente de ángulo, es una nueva toma (Toma A, Toma B...).
+La organización de la producción se basa en la distinción clara entre escenas y tomas:
+*   **Escena**: Conjunto de acciones que transcurren en un mismo espacio y tiempo.
+*   **Toma (Shot)**: La unidad ininterrumpida de captura. Cada vez que existe un corte o cambio de ángulo de cámara, se genera una nueva toma (Toma A, Toma B, etc.).
 
 ---
 
-### 2. Continuidad (Raccord)
+### 2. Continuidad y Raccord
 
-El error más grave en storyboards generados por IA es la falta de continuidad.
-*   **Raccord de Mirada:** Si en la Toma A el personaje mira a la derecha, en la Toma B (contraplano) el otro personaje debe mirar a la izquierda. Si ambos miran a la derecha, parecerá que miran lo mismo, no el uno al otro.
-*   **Raccord de Movimiento:** Si un personaje sale por la derecha del cuadro, debe entrar por la izquierda en la siguiente toma.
-*   **Consistencia de Utilería:** Si en la Toma A tiene una tablet en la mano izquierda, no puede aparecer en la derecha en la Toma B sin explicación.
+El mantenimiento de la coherencia visual es crítico para la fluidez narrativa:
+*   **Raccord de Mirada**: Si un personaje mira hacia la derecha en la Toma A, el interlocutor debe mirar hacia la izquierda en la Toma B (contraplano).
+*   **Raccord de Movimiento**: La dirección de salida de un personaje debe ser coherente con su dirección de entrada en el siguiente encuadre.
+*   **Consistencia de Objetos (Atrezo)**: La posición y posesión de objetos debe mantenerse inalterada entre tomas consecutivas a menos que la acción justifique un cambio.
 
 ---
 
 ### 3. Cobertura Básica de Escena (Scene Coverage)
 
-Para que una escena funcione en edición, necesitamos variedad de planos.
-1.  **Master Shot (Plano Master):** Plano abierto que cubre toda la acción. Establece la geografía.
-2.  **Two-Shot (Plano de Dos):** Encuadre que incluye a dos personajes interactuando.
-3.  **Over the Shoulder (OTS):** Plano sobre el hombro de un personaje viendo al otro. Clásico para diálogos.
-4.  **Insert (Inserto):** Plano detalle de un objeto importante (e.g., la pantalla de la tablet, una mano temblando).
+Para garantizar un montaje fluido, cada escena debe contar con una variedad mínima de planos:
+1.  **Plano Maestro (Master Shot)**: Encuadre abierto que cubre toda la acción y establece la geografía espacial.
+2.  **Plano de Dos (Two-Shot)**: Encuadre que integra a dos personajes interactuando.
+3.  **Plano sobre el Hombro (Over the Shoulder - OTS)**: Utilizado en diálogos para situar al espectador en la perspectiva de uno de los personajes.
+4.  **Plano de Detalle / Inserto (Insert)**: Enfocado en un objeto o acción específica crucial para la trama.
 
 ---
 
-### 4. Anotaciones Técnicas (La "Data" del Storyboard)
+### 4. Anotaciones Técnicas
 
-Un buen cuadro de storyboard debe indicar:
-*   **Flechas de Movimiento:**
-    *   Flechas *dentro* del cuadro: Movimiento del personaje.
-    *   Flechas *fuera* del cuadro (o 3D): Movimiento de cámara (Pan, Tilt, Dolly).
-*   **Descripción de Audio:** ¿Qué se oye mientras vemos esto? (Diálogo, efectos SFX, música). Fundamental para calcular la duración.
+Un storyboard profesional debe incluir indicadores de movimiento:
+*   **Movimiento Interno**: Flechas dentro del cuadro que señalan el desplazamiento de los personajes.
+*   **Movimiento de Cámara**: Indicadores de desplazamientos físicos (Dolly, Truck) o rotacionales (Pan, Tilt).
+*   **Referencia de Audio**: Descripción breve de diálogos, efectos de sonido (SFX) o música para estimar la duración de la toma.
 
 ---
 
 ### 5. El Ritmo Visual
 
-*   Plano abierto = Contexto / Calma / Soledad.
-*   Plano cerrado = Emoción / Tensión / Detalle.
-*   La alternancia entre ellos crea el ritmo. No abuses de los primeros planos ni de los planos generales.
+La alternancia entre planos abiertos (contexto y calma) y planos cerrados (emoción y detalle) es lo que construye el ritmo de la pieza. El abuso de cualquier tipo de plano debilita el impacto narrativo.
 
 ---
 
-*Para tu sistema:* Es vital que el campo "Visual (Acción)" de tu software no solo diga "Enfermera camina", sino que especifique el **plano** y la **dirección** para guiar al generador de IA correctamente.
+*Nota técnica:* Es imperativo que las descripciones de acción en el sistema especifiquen el tipo de plano y la dirección de la cámara para guiar con precisión los motores de generación de IA.

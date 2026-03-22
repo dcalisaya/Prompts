@@ -1,70 +1,74 @@
-# Fundamentos del Guion Profesional (Base Teórica)
+---
+id: MAN-PROD-003
+name: Fundamentos del Guion Profesional
+category: Producción Audiovisual
+discipline: Producción Audiovisual
+type: operativo
+---
+
+# Fundamentos del Guion Profesional
 ## Estructura, Formato y Narrativa Visual
 
-Escribir un guion no es escribir literatura; es escribir "instrucciones para un equipo técnico" que a la vez deben emocionar al lector. Esta guía establece el estándar de calidad para nuestros libretos.
+Un guion no es una obra literaria, sino un conjunto de instrucciones técnicas diseñadas para emocionar. Esta guía establece el estándar de calidad para los libretos producidos en Live Developer.
 
 ---
 
-### 1. El Formato Estándar (Industry Standard)
+### 1. El Formato Estándar de la Industria
 
-El formato no es caprichoso; es funcional. 1 página ≈ 1 minuto de pantalla.
+El cumplimiento del formato es funcional: garantiza la equivalencia de **1 página por 1 minuto** de tiempo en pantalla.
 
-*   **Tipografía:** Idealmente **Courier Prime** (12pt) por su legibilidad, aunque los software modernos de guion gestionan esto automáticamente. Lo vital es que sea **monoespaciada** para mantener la regla de 1 pág = 1 min.
-*   **Encabezado de Escena (Slugline):** Siempre en MAYÚSCULAS.
+*   **Tipografía**: Utilizar **Courier Prime** (12pt). Es una fuente monoespaciada obligatoria para el cálculo preciso de la duración.
+*   **Encabezado de Escena (Slugline)**: Siempre en MAYÚSCULAS.
     *   `INT.` (Interior) o `EXT.` (Exterior).
-    *   `UBICACIÓN` (Concreta).
+    *   `UBICACIÓN` (Lugar específico).
     *   `MOMENTO` (DÍA, NOCHE, AMANECER, CONTINUO).
-    *   *Ejemplo:* `INT. OFICINA DE CARLOS - DÍA`
-*   **Acción (Big Print):** Describe lo que *vemos* y *oímos*.
-    *   Usar tiempo **Presente Activo**. (Mal: "Carlos estaba corriendo". Bien: "Carlos CORRE").
-    *   Párrafos cortos (máximo 4 líneas) para facilitar la lectura vertical.
-*   **Diálogo:**
-    *   **Personaje:** MAYÚSCULAS, centrado.
-    *   **Acotación (Parenthetical):** (opcional) minúsculas, instrucción de tono *breve*.
-    *   **Texto:** Lo que se dice.
+*   **Acción (Big Print)**: Descripción objetiva de lo que se ve y se oye.
+    *   Redactar en **Presente Activo** (Ej: "Carlos CORRE", no "está corriendo").
+    *   Párrafos breves (máximo 4 líneas) para facilitar el escaneo visual del equipo técnico.
+*   **Diálogo**:
+    *   **Personaje**: Nombre en MAYÚSCULAS y centrado.
+    *   **Acotación (Parenthetical)**: Instrucción breve sobre el tono o intención.
+    *   **Texto**: El contenido verbal propiamente dicho.
 
 ---
 
-### 2. La Regla de Oro: "Show, Don't Tell"
+### 2. La Regla de Oro: "Muestra, no cuentes" (Show, Don't Tell)
 
-En cine y video, no podemos filmar pensamientos. Solo acciones.
+En el lenguaje audiovisual, los pensamientos y estados internos deben transformarse en acciones físicas observables.
 
-*   **Error (Tell):** `María está triste porque extraña a su madre.`
-*   **Correcto (Show):** `María acaricia una vieja foto enmarcada. Una lágrima cae sobre el cristal.`
-
-*Para la IA:* Debemos exigirle que describa acciones externas, no estados internos abstractos.
+*   **Incorrecto (Tell)**: `María está triste porque extraña a su madre.`
+*   **Correcto (Show)**: `María acaricia una vieja fotografía. Una lágrima cae sobre el cristal.`
 
 ---
 
-### 3. Estructura Narrativa (El Esqueleto)
+### 3. Estructura Narrativa Universal
 
-Ya sea un spot de 30 segundos o una película, la estructura manda.
+Toda pieza audiovisual, desde un spot corto hasta un largometraje, debe poseer una estructura sólida:
 
 *   **Acto 1: El Planteamiento (The Setup)**
-    *   Presenta al protagonista en su "Mundo Ordinario".
-    *   **Inciting Incident (Detonante):** Algo rompe la rutina y crea un problema/deseo.
+    *   Establece el "Mundo Ordinario" del protagonista.
+    *   **Incidente Detonante (Inciting Incident)**: Suceso que rompe la rutina y establece el conflicto o deseo principal.
 *   **Acto 2: El Conflicto (The Confrontation)**
-    *   El protagonista lucha por conseguir su objetivo.
-    *   Enfrenta obstáculos crecientes.
-    *   *Midpoint:* Un momento de no retorno.
-*   **Acto 3: La Resolución (The Resolution)**
-    *   Clímax: El enfrentamiento final.
-    *   Resolución: La nueva normalidad.
+    *   El protagonista enfrenta obstáculos crecientes.
+    *   **Punto Medio (Midpoint)**: Un evento de no retorno que eleva las apuestas.
+*   **Acto 3: La Resolución**
+    *   **Clímax**: El enfrentamiento o decisión final.
+    *   **Resolución**: Establecimiento de una nueva normalidad.
 
 ---
 
-### 4. Tipos de Guiones en Nuestra Producción
+### 4. Tipos de Guion según la Producción
 
-*   **Narrativo (Ficción):** Se enfoca en arcos de personaje, subtexto y emoción. Estilo visual.
-*   **Comercial / Spot:** Se enfoca en el "Pain Point" (Problema) y la "Solución" (Producto/Marca). Estructura AIDA (Atención, Interés, Deseo, Acción).
-*   **Video Manifiesto (Voice Over):** Imágenes poéticas acompañadas de una voz en off inspiradora. La imagen y el audio no deben decir lo mismo (redundancia), sino complementarse.
+*   **Narrativo (Ficción)**: Centrado en arcos de personaje, subtexto y profundidad emocional.
+*   **Comercial / Spot**: Enfocado en la transición del problema (*Pain Point*) a la solución (Marca). Sigue la estructura AIDA (Atención, Interés, Deseo, Acción).
+*   **Manifiesto (Voice Over)**: Imágenes poéticas que complementan una locución inspiradora. Se busca la sinergia, evitando la redundancia directa entre lo que se dice y lo que se ve.
 
 ---
 
-### 5. Subtexto (Lo que NO se dice)
+### 5. El Uso del Subtexto
 
-El mejor diálogo es el que no explica la trama.
-*   *Texto:* "¿Me pasas la sal?"
-*   *Subtexto:* "Estoy furioso contigo pero no quiero montar una escena delante de los niños."
+El diálogo más potente es aquel que evita explicar la trama de forma literal.
+*   **Texto**: "¿Tienes la llave?"
+*   **Subtexto**: "Sé que me has estado ocultando cosas y exijo una explicación ahora mismo".
 
-*Para la IA:* Es difícil lograr subtexto. Hay que instruirla para que los personajes "eviten el tema" o hablen con indirectas.
+*Nota operativa:* Al trabajar con IA, es necesario instruir específicamente a los personajes para que eviten ser literales o "eviten el tema" para generar un subtexto creíble.

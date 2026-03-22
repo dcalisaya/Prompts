@@ -6,5 +6,5 @@
 - `pricing.json` conserva `PENDIENTE` donde no existen costos reales.
 - `workflow.json` reutiliza la tabla de estados y completa pasos adicionales desde texto narrativo.
 - Validacion de codigos faltantes en pricing vs matriz: sin faltantes.
-- Total de prompts operativos convertidos: 7.
-- Total de agentes maestros convertidos: 8.
+- Total de prompts operativos convertidos: 47.
+- Total de agentes maestros convertidos: 30.

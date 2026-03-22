@@ -10,21 +10,33 @@ Workspace de Prompts Live Developer
 +-- README.md
 |   +-- entrada principal del workspace
 |
-+-- 08-SERVICES.md
-|   +-- catalogo oficial de servicios
-|
-+-- Agentes-Marketing
++-- base/masters
     |
-    +-- 00-INICIO-RAPIDO.md
+    +-- catalog
+    |   +-- 08-SERVICES.md
+    |       +-- catalogo oficial de servicios
+    |
+    +-- company
+    |   |
+    |   +-- 00-INICIO-RAPIDO.md
     |   +-- por donde empezar si eres nuevo
-    |
-    +-- 06-MAPA-POR-ROLES.md
+    |   +-- 06-MAPA-POR-ROLES.md
     |   +-- a que documento ir segun perfil
-    |
-    +-- 07-MAPA-VISUAL-EXPLORACION.md
+    |   +-- 07-MAPA-VISUAL-EXPLORACION.md
     |   +-- mapa de navegacion del repositorio
+    |   +-- 09 al 18
+    |       +-- capa empresarial
+    |       +-- service matrix
+    |       +-- pricing
+    |       +-- cotizacion
+    |       +-- briefs
+    |       +-- flujo
+    |       +-- legal/comercial
+    |       +-- conocimiento
+    |       +-- automatizacion
+    |       +-- navegacion canonica
     |
-    +-- Prompts-Operativos
+    +-- prompts-operativos
     |   |
     |   +-- 01-Estrategia-Funnels
     |   |   +-- FUN-001
@@ -40,23 +52,39 @@ Workspace de Prompts Live Developer
     |   +-- 04-Atencion-Comercial
     |       +-- COM-001
     |       +-- COM-002
+    |   +-- 05-Programacion
+    |   |   +-- DEV-001 a DEV-008
+    |   +-- 06-PR-Comunicacion
+    |   |   +-- PR-001 a PR-003
+    |   +-- 07-Data-Analytics
+    |   |   +-- DATA-001 a DATA-003
+    |   +-- 08-Media-Performance
+    |   |   +-- MEDIA-001 / MEDIA-002 / ADS-002 / ADS-003 / SEO-001
+    |   +-- 09-Consultoria-Negocio
+    |   |   +-- BIZ-001 / BIZ-002
+    |   +-- 10-Commerce
+    |   |   +-- ECOM-001 / ECOM-002
+    |   +-- 11-CX-CRM
+    |   |   +-- CX-001 / CRM-001 / CRM-002
+    |   +-- 12-Content-Strategy-Copy
+    |   |   +-- COPY-001 / COPY-002
+    |   +-- 13-Influencer-Marketing
+    |   |   +-- INFL-001 / INFL-002
+    |   +-- 14-Experiential-Eventos
+    |   |   +-- EXP-001 / EXP-002
+    |   +-- 15-Healthcare-Marketing
+    |   |   +-- HLTH-001 / HLTH-002
+    |   +-- 16-Sostenibilidad-ESG
+    |       +-- ESG-001 / ESG-002
     |
-    +-- Agentes
+    +-- agents
     |   +-- prompts maestros por especialidad
     |
-    +-- Manuales-Produccion
+    +-- manuales-produccion
     |   +-- base tecnica para imagen, storyboard, guion e I2V
     |
-    +-- 09 al 16
-        +-- capa empresarial
-        +-- service matrix
-        +-- pricing
-        +-- cotizacion
-        +-- briefs
-        +-- flujo
-        +-- legal/comercial
-        +-- conocimiento
-        +-- automatizacion
+    +-- manuales-desarrollo
+        +-- base tecnica de arquitectura, codigo y despliegue
 ```
 
 ## Rutas de exploracion segun necesidad
@@ -104,6 +132,42 @@ README
 -> DirectorFotografiaT2I / ArtistaStoryboard / DirectorTecnicoI2V
 -> guia_maestra_t2i / storyboard / i2v
 -> AuditorCalidad
+```
+
+### Quiero construir tono de marca o sistema editorial
+
+```text
+06-MAPA-POR-ROLES
+-> Content Strategy / Copy
+-> COPY-001 / COPY-002
+-> ContentStrategist
+```
+
+### Quiero una campaña con influencers
+
+```text
+06-MAPA-POR-ROLES
+-> Influencer Marketing
+-> INFL-001 / INFL-002
+-> InfluencerStrategist
+```
+
+### Quiero diseñar un evento o activación
+
+```text
+06-MAPA-POR-ROLES
+-> Experiential / Eventos
+-> EXP-001 / EXP-002
+-> ExperientialStrategist
+```
+
+### Quiero marketing para salud o comunicación ESG
+
+```text
+06-MAPA-POR-ROLES
+-> Healthcare Marketing o Sostenibilidad / ESG
+-> HLTH-001 / HLTH-002 o ESG-001 / ESG-002
+-> HealthcareMarketer o ESGStrategist
 ```
 
 ### Quiero entender como opera la empresa

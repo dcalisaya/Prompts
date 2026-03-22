@@ -1,58 +1,74 @@
-# Sistema Multi-Agente de Marketing: Live Developer
+# Sistema Multi-Disciplina de Live Developer
 
-Este directorio concentra prompts, agentes, manuales y criterios de calidad para distintas personas del equipo de **Live Developer**.
+Este directorio concentra la capa maestra del workspace operativo de **Live Developer**: prompts, agentes, manuales, criterios de calidad, matriz comercial y arquitectura documental para disciplinas de marketing, comunicación, producción, software y crecimiento.
 
-## Antes de entrar por carpetas
+## Punto de entrada
 
-Si alguien abre este workspace por primera vez, no deberia empezar adivinando entre `Agentes/`, `Prompts-Operativos/` o `Manuales-Produccion/`.
+Si alguien entra por primera vez, no debería navegar por carpetas al azar. El orden correcto es:
 
-Empieza aqui:
+1. [00-INICIO-RAPIDO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/00-INICIO-RAPIDO.md)
+2. [06-MAPA-POR-ROLES.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/06-MAPA-POR-ROLES.md)
+3. [07-MAPA-VISUAL-EXPLORACION.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/07-MAPA-VISUAL-EXPLORACION.md)
+4. [INDEX.md](/Users/dcalisaya/Developer/Prompts/base/masters/prompts-operativos/INDEX.md)
 
-1. [00-INICIO-RAPIDO.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/00-INICIO-RAPIDO.md)
-2. [06-MAPA-POR-ROLES.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/06-MAPA-POR-ROLES.md)
-3. [07-MAPA-VISUAL-EXPLORACION.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/07-MAPA-VISUAL-EXPLORACION.md)
-4. [INDEX.md](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/Prompts-Operativos/INDEX.md)
+## Cobertura actual
 
-## Para quien esta pensado
+El sistema ya no debe leerse como una librería de marketing aislada. Hoy cubre:
 
-Este sistema ya no debe leerse solo como una libreria de marketing. Tambien esta organizado para:
+- comercial, ventas y proformas,
+- estrategia digital y funnels,
+- producción audiovisual y narrativa,
+- imagen y video IA,
+- paid media, media planning, SEO/SEM y performance,
+- PR y comunicación,
+- data, analytics e insights,
+- consultoría de negocio,
+- commerce y e-commerce,
+- CX, CRM y retención,
+- content strategy y copy,
+- influencer marketing,
+- experiential y eventos,
+- healthcare marketing,
+- sostenibilidad y ESG,
+- desarrollo de software, QA, DevOps y arquitectura.
 
-- comercial y ventas,
-- administracion y proformas,
-- estrategia y funnels,
-- produccion audiovisual,
-- creacion de imagenes y video IA,
-- trafico y pauta,
-- coordinacion y control de calidad.
+## Documentos maestros
 
-## Estructura del proyecto
+- [00-INICIO-RAPIDO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/00-INICIO-RAPIDO.md): entrada para usuarios nuevos.
+- [01-SKILLS.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/01-SKILLS.md): mapa de capacidades del sistema.
+- [02-ROADMAP-PROMPTS.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/02-ROADMAP-PROMPTS.md): estado real de cobertura y próximos gaps.
+- [03-FLOW-PODCAST.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/03-FLOW-PODCAST.md): caso de uso integral de producción + distribución.
+- [04-ARQUITECTURA-DE-USO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/04-ARQUITECTURA-DE-USO.md): guía de uso técnico del sistema.
+- [05-ESTANDAR-DE-CALIDAD.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/05-ESTANDAR-DE-CALIDAD.md): control de calidad de entregables.
+- [06-MAPA-POR-ROLES.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/06-MAPA-POR-ROLES.md): navegación por función real de trabajo.
+- [07-MAPA-VISUAL-EXPLORACION.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/07-MAPA-VISUAL-EXPLORACION.md): árbol visual del sistema.
+- [09-SERVICE-MATRIX.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/09-SERVICE-MATRIX.md): catálogo operativo con `service_code`.
+- [10-PRICING-INTERNO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/10-PRICING-INTERNO.md): estructura de pricing y márgenes.
+- [11-REGLAS-DE-COTIZACION.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/11-REGLAS-DE-COTIZACION.md): reglas de alcance y propuesta.
+- [12-BRIEFS-POR-SERVICIO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/12-BRIEFS-POR-SERVICIO.md): inputs mínimos por servicio.
+- [13-FLUJO-COMERCIAL-Y-OPERATIVO.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/13-FLUJO-COMERCIAL-Y-OPERATIVO.md): lead a entrega.
+- [14-MARCO-LEGAL-COMERCIAL.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/14-MARCO-LEGAL-COMERCIAL.md): resguardos legales base.
+- [15-BASE-DE-CONOCIMIENTO-COMERCIAL.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/15-BASE-DE-CONOCIMIENTO-COMERCIAL.md): casos frecuentes y criterios comerciales.
+- [16-ARQUITECTURA-DATOS-AUTOMATIZACION.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/16-ARQUITECTURA-DATOS-AUTOMATIZACION.md): base de CRM, proformas y automatización.
+- [17-COBERTURA-DISCIPLINAS.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/17-COBERTURA-DISCIPLINAS.md): comparación de cobertura contra disciplinas objetivo.
+- [18-NAVEGACION-CANONICA.json](/Users/dcalisaya/Developer/Prompts/base/masters/company/18-NAVEGACION-CANONICA.json): fuente única de taxonomía para roles, flujos y navegación.
+- [19-ESTANDAR-ORGANIZACION-Y-NOMENCLATURA.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/19-ESTANDAR-ORGANIZACION-Y-NOMENCLATURA.md): estándar oficial de nombres y estructura.
+- [20-PLAN-DE-EXPANSION-FASE-2.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/20-PLAN-DE-EXPANSION-FASE-2.md): reserva estructural para áreas complementarias pendientes.
 
-- `00-INICIO-RAPIDO.md`: punto de entrada para nuevos usuarios.
-- `06-MAPA-POR-ROLES.md`: navegacion segun perfil de trabajo.
-- `07-MAPA-VISUAL-EXPLORACION.md`: mapa visual del recorrido del repositorio.
-- `01-SKILLS.md`: capacidades tecnicas y estrategicas.
-- `02-ROADMAP-PROMPTS.md`: hoja de ruta de nuevos prompts.
-- [`Prompts-Operativos/INDEX.md`](/Users/dcalisaya/Developer/Prompts/Agentes-Marketing/Prompts-Operativos/INDEX.md): inventario de prompts listos para uso.
-- `09-SERVICE-MATRIX.md`: matriz operativa de servicios y codigos internos.
-- `10-PRICING-INTERNO.md`: estructura de costos, margen y precio.
-- `11-REGLAS-DE-COTIZACION.md`: reglas para proformas y propuestas.
-- `12-BRIEFS-POR-SERVICIO.md`: insumos minimos por tipo de trabajo.
-- `13-FLUJO-COMERCIAL-Y-OPERATIVO.md`: estados desde lead hasta cierre.
-- `14-MARCO-LEGAL-COMERCIAL.md`: clausulas y politicas base.
-- `15-BASE-DE-CONOCIMIENTO-COMERCIAL.md`: FAQs y casos tipicos.
-- `16-ARQUITECTURA-DATOS-AUTOMATIZACION.md`: base para CRM y automatizacion.
-- `03-FLOW-PODCAST.md`: flujo maestro de un caso de uso real.
-- `04-ARQUITECTURA-DE-USO.md`: guia tecnica de despliegue.
-- `05-ESTANDAR-DE-CALIDAD.md`: filtro final de calidad.
-- `Agentes/`: prompts maestros por especialidad.
-- `Manuales-Produccion/`: base tecnica de apoyo para produccion e IA visual.
+## Estructura operativa
 
-## Logica de uso
+- `agents/`: agentes maestros por especialidad.
+- `prompts-operativos/`: prompts listos para producir entregables.
+- `manuales-produccion/`: base técnica de producción audiovisual e IA visual.
+- `manuales-desarrollo/`: estándares de arquitectura, código, seguridad y despliegue.
+- `catalog/`: catálogo comercial de servicios.
 
-La navegacion correcta para el equipo es:
+## Lógica de uso
 
-1. identificar el rol o la tarea,
-2. abrir el prompt operativo correspondiente,
-3. si hace falta profundidad, subir al agente maestro,
-4. si hace falta ejecucion tecnica, ir al manual,
-5. antes de entregar, auditar calidad.
+La navegación correcta para el equipo es:
+
+1. identificar rol, disciplina o tipo de problema,
+2. abrir el prompt operativo adecuado,
+3. escalar al agente maestro si hace falta criterio experto,
+4. bajar al manual si hace falta profundidad técnica,
+5. validar contra calidad, pricing y reglas antes de salir a cliente.

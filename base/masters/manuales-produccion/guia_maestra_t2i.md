@@ -1,74 +1,67 @@
-# Guía Maestra de Fotografía para T2I (Text-to-Image) / I2I
-## Dirección de Fotografía & Prompt Engineering para Midjourney, SDXL, Mystic
+---
+id: MAN-PROD-007
+name: Guía Maestra de Fotografía para T2I
+category: Producción Audiovisual
+discipline: Imagen y Video IA
+type: operativo
+---
 
-Esta guía traduce el lenguaje visual de la fotografía profesional a instrucciones semánticas precisas para modelos de generación de imágenes.
+# Guía Maestra de Fotografía para T2I
+## Dirección de Fotografía e Ingeniería de Prompts para Generación de Imágenes
+
+Esta guía traduce los principios de la fotografía profesional a parámetros semánticos optimizados para modelos como Midjourney, SDXL y modelos de difusión avanzados.
 
 ---
 
-### 1. Principios Técnicos para IA
+### 1. Fundamentos Técnicos para IA
 
-A diferencia del video (I2V), en T2I el desafío es la **coherencia espacial** y la **textura**.
-*   **Tokenización de Lentes:** La IA asocia "35mm" no solo con una distancia focal, sino con un estilo de vida/documental. "85mm" lo asocia con retratos de moda. Usa el lente como "trigger de estilo".
-*   **Iluminación Volumétrica:** La luz define la forma. Sin una especificación de luz, la imagen se siente "plana" o "renderizada".
+En la generación de imágenes (*Text-to-Image*), el éxito depende de la precisión en la definición de la coherencia espacial y la textura.
+*   **Tokenización de Lentes**: Los modelos asocian distancias focales con estilos narrativos específicos. "35mm" invoca una estética documental o de *lifestyle*, mientras que "85mm" se orienta a retratos de alta costura o moda.
+*   **Iluminación Volumétrica**: La luz debe especificarse para definir la forma y evitar resultados planos o con aspecto de "render" genérico.
 
 ---
 
-### 2. Diccionario de Comandos (Prompt Triggers)
+### 2. Diccionario de Disparadores (Triggers) Técnicos
 
-| Concepto Visual | Trigger de Prompt Recomendado | Efecto en IA |
+| Concepto Visual | Trigger Recomendado | Efecto en la IA |
 | :--- | :--- | :--- |
-| **Retrato Íntimo** | `85mm lens, f/1.8, shallow depth of field, sharp focus on eyes` | Fondo desenfocado (Bokeh), sujeto separado, cara favorecida. |
-| **Escena Documental** | `35mm lens, f/5.6, deep depth of field, street photography, candid moment` | Más contexto, todo más enfocado, sensación de "estar ahí". |
-| **Arquitectura/Espacio** | `24mm wide angle lens, rectilinear lens, vanishing point, symmetrical framing` | Líneas rectas, sensación de amplitud sin distorsión ojo de pez. |
-| **Detalle Macro** | `100mm macro lens, extreme close-up, intricate texture, microscopic detail` | Texturas hiperrealistas, fondo totalmente abstracto. |
-| **Iluminación Dramática** | `Chiaroscuro, Rembrandt lighting, high contrast, volumetric god rays` | Sombras duras, drama, seriedad. |
-| **Iluminación Suave** | `Softbox lighting, diffused window light, high key, pastel tones` | Belleza, calma, comercial, médico. |
+| **Retrato Íntimo** | `85mm lens, f/1.8, shallow depth of field, sharp focus on eyes` | Separación nítida del sujeto y efecto Bokeh estético. |
+| **Escena Documental** | `35mm lens, f/5.6, deep depth of field, candid moment` | Mayor contexto ambiental y nitidez en múltiples planos. |
+| **Arquitectura** | `24mm wide angle, rectilinear lens, vanishing point` | Líneas ortogonales perfectas y sensación de amplitud espacial. |
+| **Iluminación Dramática** | `Chiaroscuro, Rembrandt lighting, high contrast` | Sombras profundas, volumen y peso narrativo. |
+| **Iluminación Suave** | `Softbox lighting, diffused window light, high key` | Estética limpia, ideal para entornos médicos o comerciales. |
 
 ---
 
-### 3. Riesgos Comunes en T2I
+### 3. Mitigación de Riesgos en T2I
 
-*   **Bleeding (Sangrado):** Cuando el color o estilo del sujeto contamina el fondo.
-    *   *Solución:* Separar descripciones con `BREAK` (en MJ) o usar pesos `(background:0.5)`.
-*   **Limbs/Hands:** El clásico problema de manos deformes.
-    *   *Solución:* `Hands in pockets`, `Holding a specific object`, o encuadre `Head and shoulders` para evitar las manos.
-*   **Plastic Skin:** Piel demasiado perfecta o cerosa.
-    *   *Solución:* `Skin texture, pores, imperfections, freckles, raw photo`.
+*   **Sangrado de Color (Bleeding)**: Evitar que los colores del sujeto contaminen el fondo utilizando descriptores de separación o pesos de prompt.
+*   **Anatomía de Manos**: Para mitigar deformaciones, se recomienda especificar acciones concretas: `hands in pockets`, `holding a device` o ajustar el encuadre a `medium close-up`.
+*   **Textura de Piel Artificial**: Combatir el aspecto "plástico" mediante términos como `skin pores, imperfections, natural skin texture, raw photo`.
 
 ---
 
-### 4. Modificadores de Estilo (The Secret Sauce)
+### 4. Modificadores de Estilo Final
 
-Añadir estos al final del prompt para cambiar el "Look & Feel":
-*   **Editorial de Moda:** `Editorial photography, Vogue style, fashion shoot, studio lighting`.
-*   **Cinematográfico:** `Cinematic still, color graded, teal and orange, movie scene`.
-*   **Analógico:** `Kodak Portra 400, film grain, analog photography, light leak`.
-*   **Corporativo/Stock:** `Stock photo, professional, crisp, bright, commercial`.
+*   **Editorial de Moda**: `Vogue style, fashion shoot, studio lighting, high-end retouching`.
+*   **Cinematográfico**: `Cinematic still, teal and orange color grading, anamorphic lens flares`.
+*   **Analógico**: `Kodak Portra 400, film grain, light leaks, nostalgic aesthetic`.
 
 ---
 
-### 5. Plantillas de Producción (Copy-Paste)
+### 5. Plantillas de Producción
 
-#### **Template A: Retrato Corporativo / LinkedIn**
-> **SUBJECT:** [Descripción del sujeto]
-> **COMPOSITION:** `Medium shot, eye level, center framing.`
-> **TECH:** `Shot on Sony A7R IV, 85mm lens, f/2.8, studio lighting, softbox.`
-> **STYLE:** `Professional headshot, sharp focus, clean background, high resolution.`
-> **NEGATIVE:** `(Casual, messy, dark, distorted eyes, extra fingers, cartoon)`
+#### **A. Retrato Corporativo Profesional**
+> **SUBJECT**: [Descripción]
+> **COMPOSITION**: `Medium shot, eye level, center framing.`
+> **TECH**: `Shot on Sony A7R IV, 85mm lens, f/2.8, softbox lighting.`
+> **STYLE**: `Sharp focus, professional headshot, clean studio background.`
 
-#### **Template B: Escena de Estilo de Vida (Lifestyle)**
-> **SUBJECT:** [Descripción de la acción]
-> **COMPOSITION:** `Wide shot, rule of thirds, candid moment.`
-> **TECH:** `Shot on Leica M10, 35mm lens, natural light, sun flare.`
-> **STYLE:** `Street photography, authentic, raw, unposed, analog aesthetic.`
-> **NEGATIVE:** `(Posed, studio, artificial light, plastic skin, render)`
-
-#### **Template C: Producto / Arquitectura (Clean)**
-> **SUBJECT:** [Descripción del objeto/espacio]
-> **COMPOSITION:** `Eye level, symmetry, minimalist framing.`
-> **TECH:** `Shot on Phase One, 50mm lens, f/8, sharp details.`
-> **STYLE:** `Architectural digest style, interior design, product photography, studio light.`
-> **NEGATIVE:** `(Dust, messy, low resolution, blurry, distorted lines)`
+#### **B. Escena de Estilo de Vida (Lifestyle)**
+> **SUBJECT**: [Acción natural]
+> **COMPOSITION**: `Wide shot, rule of thirds, candid framing.`
+> **TECH**: `Shot on Leica M10, 35mm lens, natural sunlight.`
+> **STYLE**: `Authentic, unposed, raw photography, natural colors.`
 
 ---
-*Esta guía está diseñada para estructurar la petición a la IA, asegurando que se cubran: Sujeto + Composición + Técnica + Estilo.*
+*Este manual garantiza que cada petición a la IA cubra los cuatro pilares: Sujeto, Composición, Técnica y Estilo.*

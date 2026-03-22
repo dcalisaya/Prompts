@@ -1,1 +1,0 @@
-../base/masters/company/05-ESTANDAR-DE-CALIDAD.md

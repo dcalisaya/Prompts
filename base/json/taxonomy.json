@@ -1,0 +1,1142 @@
+{
+  "cli": {
+    "primary_command": "live",
+    "aliases": [
+      "ld",
+      "live-dev"
+    ]
+  },
+  "entry_points": [
+    "README.md",
+    "base/masters/company/00-INICIO-RAPIDO.md",
+    "base/masters/company/06-MAPA-POR-ROLES.md",
+    "base/masters/company/07-MAPA-VISUAL-EXPLORACION.md",
+    "base/masters/prompts-operativos/INDEX.md"
+  ],
+  "pending_disciplines": [
+    "Branding / Dise\u00f1o",
+    "Community Management",
+    "IA / Automatizaci\u00f3n (ampliado)"
+  ],
+  "reserved_prompt_folders": [
+    "12-Content-Strategy-Copy",
+    "13-Influencer-Marketing",
+    "14-Experiential-Eventos",
+    "15-Healthcare-Marketing",
+    "16-Sostenibilidad-ESG"
+  ],
+  "roles": [
+    {
+      "id": "commercial-sales",
+      "slug": "comercial-ventas",
+      "role": "Comercial / Ventas",
+      "discipline": "Comercial y Ventas",
+      "description": "Orientaci\u00f3n comercial, recomendaci\u00f3n de servicios y respuesta consultiva al cliente.",
+      "documents": [
+        "COM-001",
+        "AsesorComercialServicios.md",
+        "08-SERVICES.md"
+      ],
+      "outcome": [
+        "recomendacion de servicio",
+        "respuesta profesional",
+        "siguiente paso comercial"
+      ]
+    },
+    {
+      "id": "quotes-proposals",
+      "slug": "administracion-proformas-cotizacion",
+      "role": "Administracion / Proformas / Cotizacion",
+      "discipline": "Cotizacion y Proformas",
+      "description": "Traducci\u00f3n de requerimientos a servicios cotizables y alcance preliminar.",
+      "documents": [
+        "COM-002",
+        "AsesorComercialServicios.md",
+        "08-SERVICES.md",
+        "09-SERVICE-MATRIX.md",
+        "11-REGLAS-DE-COTIZACION.md",
+        "10-PRICING-INTERNO.md"
+      ],
+      "outcome": [
+        "listado de servicios para proforma",
+        "alcance base",
+        "vacios de informacion antes de cotizar"
+      ]
+    },
+    {
+      "id": "digital-strategy",
+      "slug": "estrategia-digital-marketing-funnel",
+      "role": "Estrategia Digital / Marketing / Funnel",
+      "discipline": "Estrategia Digital",
+      "description": "Diagn\u00f3stico, arquitectura de funnel y planteamiento de estrategia.",
+      "documents": [
+        "FUN-001",
+        "STRAT-002",
+        "EstrategaDigital.md"
+      ],
+      "outcome": [
+        "diagnostico",
+        "arquitectura de funnel",
+        "insights estrategicos"
+      ]
+    },
+    {
+      "id": "content-podcast-copy",
+      "slug": "director-de-contenido-podcast-copy",
+      "role": "Director de Contenido / Podcast / Copy",
+      "discipline": "Contenido, Podcast y Copy",
+      "description": "Planificaci\u00f3n editorial, guion y contenido audiovisual.",
+      "documents": [
+        "PROD-001",
+        "SCRIPT-001",
+        "AUDIO-001",
+        "DirectorAudiovisual.md",
+        "GuionistaCinematografico.md"
+      ],
+      "outcome": [
+        "plan de contenido",
+        "guiones",
+        "retencion"
+      ]
+    },
+    {
+      "id": "visual-ai",
+      "slug": "creador-de-imagenes-storyboard-video-ia",
+      "role": "Creador de Imagenes / Storyboard / Video IA",
+      "discipline": "Imagen y Video IA",
+      "description": "Construcci\u00f3n de prompts visuales, continuidad y animaci\u00f3n IA.",
+      "documents": [
+        "DirectorFotografiaT2I.md",
+        "ArtistaStoryboard.md",
+        "DirectorTecnicoI2V.md",
+        "guia_maestra_t2i.md",
+        "guia_maestra_storyboard.md",
+        "guia_maestra_i2v.md"
+      ],
+      "outcome": [
+        "prompts visuales",
+        "continuidad",
+        "movimiento IA"
+      ]
+    },
+    {
+      "id": "paid-media-performance-seo",
+      "slug": "paid-media-performance-seo",
+      "role": "Paid Media / Performance / SEO",
+      "discipline": "Media, Performance y SEO",
+      "description": "Planificaci\u00f3n de medios, operaci\u00f3n de campa\u00f1as y SEO/SEM.",
+      "documents": [
+        "ADS-001",
+        "MEDIA-001",
+        "MEDIA-002",
+        "ADS-002",
+        "ADS-003",
+        "SEO-001",
+        "TraffickerEspecialista.md",
+        "PerformanceMarketer.md",
+        "MediaPlanner.md",
+        "SEOSpecialist.md"
+      ],
+      "outcome": [
+        "plan de medios",
+        "estructura de campa\u00f1a",
+        "roadmap SEO",
+        "optimizacion de performance"
+      ]
+    },
+    {
+      "id": "pr-communications",
+      "slug": "pr-comunicacion",
+      "role": "PR / Comunicaci\u00f3n",
+      "discipline": "PR y Comunicaci\u00f3n",
+      "description": "Posicionamiento institucional, reputaci\u00f3n, vocer\u00eda y crisis.",
+      "documents": [
+        "PR-001",
+        "PR-002",
+        "PR-003",
+        "PRStrategist.md",
+        "CrisisManager.md"
+      ],
+      "outcome": [
+        "comunicado",
+        "plan de crisis",
+        "brief de media training"
+      ]
+    },
+    {
+      "id": "data-analytics-insights",
+      "slug": "data-analytics-insights",
+      "role": "Data / Analytics / Insights",
+      "discipline": "Data, Analytics e Insights",
+      "description": "Medici\u00f3n, dashboards, investigaci\u00f3n e insights accionables.",
+      "documents": [
+        "DATA-001",
+        "DATA-002",
+        "DATA-003",
+        "DataAnalyst.md",
+        "InsightsStrategist.md"
+      ],
+      "outcome": [
+        "dashboard",
+        "framework de medicion",
+        "insights accionables"
+      ]
+    },
+    {
+      "id": "business-consulting",
+      "slug": "consultoria-de-negocio",
+      "role": "Consultor\u00eda de Negocio",
+      "discipline": "Consultor\u00eda de Negocio",
+      "description": "Madurez digital, modelo operativo y estrategia go-to-market.",
+      "documents": [
+        "BIZ-001",
+        "BIZ-002",
+        "BusinessConsultant.md"
+      ],
+      "outcome": [
+        "diagnostico de madurez",
+        "estrategia go-to-market",
+        "prioridades de transformacion"
+      ]
+    },
+    {
+      "id": "commerce-ecommerce",
+      "slug": "commerce-ecommerce",
+      "role": "Commerce / E-commerce",
+      "discipline": "Commerce y E-commerce",
+      "description": "Estrategia de tienda, marketplace y social commerce.",
+      "documents": [
+        "ECOM-001",
+        "ECOM-002",
+        "CommerceStrategist.md"
+      ],
+      "outcome": [
+        "estrategia ecommerce",
+        "optimizacion marketplace",
+        "hoja de ruta commerce"
+      ]
+    },
+    {
+      "id": "cx-crm-retention",
+      "slug": "cx-crm-retencion",
+      "role": "CX / CRM / Retenci\u00f3n",
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "description": "Experiencia de cliente, activaci\u00f3n de bases y fidelizaci\u00f3n.",
+      "documents": [
+        "CX-001",
+        "CRM-001",
+        "CRM-002",
+        "CXDesigner.md",
+        "CRMStrategist.md"
+      ],
+      "outcome": [
+        "journey map",
+        "flows de email",
+        "programa de fidelizacion"
+      ]
+    },
+    {
+      "id": "engineering",
+      "slug": "desarrollo-ingenieria",
+      "role": "Desarrollo / Ingenieria",
+      "discipline": "Desarrollo de Software",
+      "description": "Especificaci\u00f3n, arquitectura, implementaci\u00f3n, testing y despliegue.",
+      "documents": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "ArquitectoSoftware.md",
+        "TechLeadFullStack.md",
+        "DevOpsEngineer.md",
+        "QATester.md",
+        "CodeAuditor.md",
+        "stack_tecnologico.md",
+        "arquitectura_base.md"
+      ],
+      "outcome": [
+        "especificacion tecnica",
+        "arquitectura",
+        "estimacion",
+        "pruebas",
+        "documentacion"
+      ]
+    },
+    {
+      "id": "content-strategy-copy",
+      "slug": "content-strategy-copy",
+      "role": "Content Strategy / Copy",
+      "discipline": "Content Strategy y Copy",
+      "description": "Arquitectura editorial, mensajes, tono y sistema de contenido de marca.",
+      "documents": [
+        "COPY-001",
+        "COPY-002",
+        "ContentStrategist.md"
+      ],
+      "outcome": [
+        "brand voice",
+        "arquitectura de mensajes",
+        "sistema editorial"
+      ]
+    },
+    {
+      "id": "influencer-marketing",
+      "slug": "influencer-marketing",
+      "role": "Influencer Marketing",
+      "discipline": "Influencer Marketing",
+      "description": "Campa\u00f1as con creadores, selecci\u00f3n de perfiles, briefs y outreach.",
+      "documents": [
+        "INFL-001",
+        "INFL-002",
+        "InfluencerStrategist.md"
+      ],
+      "outcome": [
+        "estrategia creator",
+        "brief de creadores",
+        "outreach"
+      ]
+    },
+    {
+      "id": "experiential-events",
+      "slug": "experiential-eventos",
+      "role": "Experiential / Eventos",
+      "discipline": "Experiential y Eventos",
+      "description": "Concepto de eventos, experiencia de asistentes y amplificaci\u00f3n.",
+      "documents": [
+        "EXP-001",
+        "EXP-002",
+        "ExperientialStrategist.md"
+      ],
+      "outcome": [
+        "concepto de evento",
+        "run of show base",
+        "plan de amplificacion"
+      ]
+    },
+    {
+      "id": "healthcare-marketing",
+      "slug": "healthcare-marketing",
+      "role": "Healthcare Marketing",
+      "discipline": "Healthcare Marketing",
+      "description": "Captaci\u00f3n \u00e9tica de pacientes, contenido educativo y posicionamiento de salud.",
+      "documents": [
+        "HLTH-001",
+        "HLTH-002",
+        "HealthcareMarketer.md"
+      ],
+      "outcome": [
+        "estrategia healthcare",
+        "funnel de pacientes",
+        "contenido educativo"
+      ]
+    },
+    {
+      "id": "sustainability-esg",
+      "slug": "sostenibilidad-esg",
+      "role": "Sostenibilidad / ESG",
+      "discipline": "Sostenibilidad y ESG",
+      "description": "Narrativa ESG, mensajes por stakeholder y prevenci\u00f3n de greenwashing.",
+      "documents": [
+        "ESG-001",
+        "ESG-002",
+        "ESGStrategist.md"
+      ],
+      "outcome": [
+        "estrategia ESG",
+        "mensajeria de stakeholders",
+        "narrativa de reporte"
+      ]
+    },
+    {
+      "id": "coordination-pm-quality",
+      "slug": "coordinacion-pm-revision-final",
+      "role": "Coordinacion / PM / Revision Final",
+      "discipline": "Coordinaci\u00f3n y Calidad",
+      "description": "Consistencia, entregabilidad, control de calidad y PM.",
+      "documents": [
+        "05-ESTANDAR-DE-CALIDAD.md",
+        "AuditorCalidad.md",
+        "03-FLOW-PODCAST.md",
+        "12-BRIEFS-POR-SERVICIO.md",
+        "13-FLUJO-COMERCIAL-Y-OPERATIVO.md",
+        "14-MARCO-LEGAL-COMERCIAL.md"
+      ],
+      "outcome": [
+        "consistencia",
+        "entregabilidad",
+        "control de calidad"
+      ]
+    },
+    {
+      "id": "finance-commercial-control",
+      "slug": "direccion-finanzas-control-comercial",
+      "role": "Direccion / Finanzas / Control Comercial",
+      "discipline": "Direccion y Control Comercial",
+      "description": "Pricing, margen, estandarizaci\u00f3n y automatizaci\u00f3n comercial.",
+      "documents": [
+        "09-SERVICE-MATRIX.md",
+        "10-PRICING-INTERNO.md",
+        "11-REGLAS-DE-COTIZACION.md",
+        "14-MARCO-LEGAL-COMERCIAL.md",
+        "16-ARQUITECTURA-DATOS-AUTOMATIZACION.md"
+      ],
+      "outcome": [
+        "margen",
+        "pricing",
+        "estandarizacion"
+      ]
+    }
+  ],
+  "flows": {
+    "proforma": {
+      "label": "Cotizaci\u00f3n / Proforma",
+      "steps": [
+        [
+          "Inicio",
+          "base/masters/company/00-INICIO-RAPIDO.md"
+        ],
+        [
+          "Mapa por Roles",
+          "base/masters/company/06-MAPA-POR-ROLES.md"
+        ],
+        [
+          "COM-002: Armador Proforma",
+          "base/masters/prompts-operativos/04-Atencion-Comercial/COM-002-Armador-Proforma-LiveDeveloper.md"
+        ],
+        [
+          "Cat\u00e1logo Servicios",
+          "base/masters/catalog/08-SERVICES.md"
+        ],
+        [
+          "Service Matrix",
+          "base/masters/company/09-SERVICE-MATRIX.md"
+        ],
+        [
+          "Pricing Interno",
+          "base/masters/company/10-PRICING-INTERNO.md"
+        ],
+        [
+          "Reglas Cotizaci\u00f3n",
+          "base/masters/company/11-REGLAS-DE-COTIZACION.md"
+        ],
+        [
+          "Marco Legal",
+          "base/masters/company/14-MARCO-LEGAL-COMERCIAL.md"
+        ]
+      ]
+    },
+    "podcast": {
+      "label": "Producci\u00f3n Audiovisual",
+      "steps": [
+        [
+          "PROD-001: Temporada Podcast",
+          "base/masters/prompts-operativos/02-Produccion-Audiovisual/PROD-001-Temporada-Podcast.md"
+        ],
+        [
+          "Director Audiovisual",
+          "base/masters/agents/DirectorAudiovisual.md"
+        ],
+        [
+          "Guionista Cinematogr\u00e1fico",
+          "base/masters/agents/GuionistaCinematografico.md"
+        ],
+        [
+          "Gu\u00eda Maestra Guion",
+          "base/masters/manuales-produccion/guia_maestra_guion.md"
+        ],
+        [
+          "Auditor Calidad",
+          "base/masters/agents/AuditorCalidad.md"
+        ]
+      ]
+    },
+    "cotizacion": {
+      "label": "Cotizaci\u00f3n R\u00e1pida",
+      "steps": [
+        [
+          "COM-001: Asesor Servicios",
+          "base/masters/prompts-operativos/04-Atencion-Comercial/COM-001-Asesor-Servicios-LiveDeveloper.md"
+        ],
+        [
+          "Cat\u00e1logo Servicios",
+          "base/masters/catalog/08-SERVICES.md"
+        ],
+        [
+          "Service Matrix",
+          "base/masters/company/09-SERVICE-MATRIX.md"
+        ]
+      ]
+    },
+    "desarrollo": {
+      "label": "Desarrollo de Software",
+      "steps": [
+        [
+          "DEV-001: Especificador Requerimientos",
+          "base/masters/prompts-operativos/05-Programacion/DEV-001-Especificador-Requerimientos.md"
+        ],
+        [
+          "DEV-002: Arquitectura Software",
+          "base/masters/prompts-operativos/05-Programacion/DEV-002-Arquitectura-Software.md"
+        ],
+        [
+          "Arquitecto Software",
+          "base/masters/agents/ArquitectoSoftware.md"
+        ],
+        [
+          "Tech Lead FullStack",
+          "base/masters/agents/TechLeadFullStack.md"
+        ],
+        [
+          "Stack Tecnol\u00f3gico",
+          "base/masters/manuales-desarrollo/stack_tecnologico.md"
+        ],
+        [
+          "Arquitectura Base",
+          "base/masters/manuales-desarrollo/arquitectura_base.md"
+        ]
+      ]
+    }
+  },
+  "prompt_prefix_defaults": {
+    "COM": {
+      "discipline": "Comercial y Ventas",
+      "roles": [
+        "Comercial / Ventas",
+        "Administracion / Proformas / Cotizacion"
+      ],
+      "stage": "discovery",
+      "input_type": "brief comercial o requerimiento inicial",
+      "deliverable_type": "recomendacion comercial o alcance preliminar",
+      "related_services": []
+    },
+    "FUN": {
+      "discipline": "Estrategia Digital",
+      "roles": [
+        "Estrategia Digital / Marketing / Funnel"
+      ],
+      "stage": "strategy",
+      "input_type": "objetivo de negocio, oferta y audiencia",
+      "deliverable_type": "arquitectura de funnel",
+      "related_services": [
+        "MK-002"
+      ]
+    },
+    "STRAT": {
+      "discipline": "Estrategia Digital",
+      "roles": [
+        "Estrategia Digital / Marketing / Funnel"
+      ],
+      "stage": "audit",
+      "input_type": "activos actuales, URLs, canales y contexto del negocio",
+      "deliverable_type": "diagnostico estrategico",
+      "related_services": [
+        "MK-001",
+        "MK-002"
+      ]
+    },
+    "PROD": {
+      "discipline": "Producci\u00f3n Audiovisual",
+      "roles": [
+        "Director de Contenido / Podcast / Copy"
+      ],
+      "stage": "pre-production",
+      "input_type": "brief creativo, objetivo y formato",
+      "deliverable_type": "plan de contenido o temporada",
+      "related_services": [
+        "AV-013"
+      ]
+    },
+    "SCRIPT": {
+      "discipline": "Content Strategy y Copy",
+      "roles": [
+        "Director de Contenido / Podcast / Copy"
+      ],
+      "stage": "content-production",
+      "input_type": "tema, audiencia, objetivo y formato",
+      "deliverable_type": "guion o pieza de copy",
+      "related_services": [
+        "AV-011"
+      ]
+    },
+    "AUDIO": {
+      "discipline": "Producci\u00f3n Audiovisual",
+      "roles": [
+        "Director de Contenido / Podcast / Copy"
+      ],
+      "stage": "production",
+      "input_type": "brief creativo y referencias sonoras",
+      "deliverable_type": "guia musical o direccion de audio",
+      "related_services": [
+        "AV-011"
+      ]
+    },
+    "ADS": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "campaign-planning",
+      "input_type": "objetivo de campa\u00f1a, audiencia, oferta y presupuesto",
+      "deliverable_type": "estructura de campa\u00f1a o guion publicitario",
+      "related_services": [
+        "MK-004",
+        "MED-002",
+        "MED-003",
+        "MED-004"
+      ]
+    },
+    "PR": {
+      "discipline": "PR y Comunicaci\u00f3n",
+      "roles": [
+        "PR / Comunicaci\u00f3n"
+      ],
+      "stage": "communications-planning",
+      "input_type": "brief institucional, contexto reputacional y audiencia",
+      "deliverable_type": "activo de comunicacion o protocolo reputacional",
+      "related_services": [
+        "PR-001",
+        "PR-002",
+        "PR-003",
+        "PR-004"
+      ]
+    },
+    "DATA": {
+      "discipline": "Data, Analytics e Insights",
+      "roles": [
+        "Data / Analytics / Insights"
+      ],
+      "stage": "measurement",
+      "input_type": "objetivos, fuentes de datos y KPIs",
+      "deliverable_type": "dashboard, framework o informe de insights",
+      "related_services": [
+        "DAT-001",
+        "DAT-002",
+        "DAT-005"
+      ]
+    },
+    "MEDIA": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "media-planning",
+      "input_type": "objetivo, presupuesto, audiencia y canales",
+      "deliverable_type": "plan de medios o estructura de performance",
+      "related_services": [
+        "MED-001"
+      ]
+    },
+    "SEO": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "audit",
+      "input_type": "URL, mercado, competencia y keywords",
+      "deliverable_type": "auditoria SEO y roadmap",
+      "related_services": [
+        "MED-005",
+        "MED-006"
+      ]
+    },
+    "BIZ": {
+      "discipline": "Consultor\u00eda de Negocio",
+      "roles": [
+        "Consultor\u00eda de Negocio"
+      ],
+      "stage": "business-diagnosis",
+      "input_type": "contexto de negocio, operaci\u00f3n y objetivos",
+      "deliverable_type": "diagnostico o estrategia de negocio",
+      "related_services": [
+        "BIZ-001",
+        "BIZ-002",
+        "BIZ-003"
+      ]
+    },
+    "ECOM": {
+      "discipline": "Commerce y E-commerce",
+      "roles": [
+        "Commerce / E-commerce"
+      ],
+      "stage": "commerce-strategy",
+      "input_type": "cat\u00e1logo, canal, operaci\u00f3n y metas comerciales",
+      "deliverable_type": "estrategia ecommerce o marketplace",
+      "related_services": [
+        "ECO-001",
+        "ECO-002"
+      ]
+    },
+    "CX": {
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "roles": [
+        "CX / CRM / Retenci\u00f3n"
+      ],
+      "stage": "experience-design",
+      "input_type": "journey actual, audiencias y fricciones",
+      "deliverable_type": "journey map o blueprint de experiencia",
+      "related_services": [
+        "CX-001"
+      ]
+    },
+    "CRM": {
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "roles": [
+        "CX / CRM / Retenci\u00f3n"
+      ],
+      "stage": "retention",
+      "input_type": "base de datos, lifecycle y objetivos de retencion",
+      "deliverable_type": "flujo CRM, programa de fidelizacion o roadmap de email",
+      "related_services": [
+        "CX-002",
+        "CX-003",
+        "CX-004"
+      ]
+    },
+    "COPY": {
+      "discipline": "Content Strategy y Copy",
+      "roles": [
+        "Content Strategy / Copy"
+      ],
+      "stage": "editorial-strategy",
+      "input_type": "posicionamiento, audiencia, canales y tono deseado",
+      "deliverable_type": "brand voice, messaging architecture o sistema editorial",
+      "related_services": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003"
+      ]
+    },
+    "INFL": {
+      "discipline": "Influencer Marketing",
+      "roles": [
+        "Influencer Marketing"
+      ],
+      "stage": "creator-strategy",
+      "input_type": "objetivo de campa\u00f1a, audiencia, presupuesto y categor\u00eda",
+      "deliverable_type": "estrategia creator, brief o outreach",
+      "related_services": [
+        "IMK-001",
+        "IMK-002",
+        "IMK-003"
+      ]
+    },
+    "EXP": {
+      "discipline": "Experiential y Eventos",
+      "roles": [
+        "Experiential / Eventos"
+      ],
+      "stage": "experience-design",
+      "input_type": "objetivo, audiencia, formato y restricciones del evento",
+      "deliverable_type": "concepto de evento o plan de amplificacion",
+      "related_services": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ]
+    },
+    "HLTH": {
+      "discipline": "Healthcare Marketing",
+      "roles": [
+        "Healthcare Marketing"
+      ],
+      "stage": "healthcare-strategy",
+      "input_type": "especialidad, paciente objetivo, servicio y restricciones",
+      "deliverable_type": "estrategia healthcare o plan de contenido educativo",
+      "related_services": [
+        "HLT-001",
+        "HLT-002",
+        "HLT-003"
+      ]
+    },
+    "ESG": {
+      "discipline": "Sostenibilidad y ESG",
+      "roles": [
+        "Sostenibilidad / ESG"
+      ],
+      "stage": "esg-communications",
+      "input_type": "iniciativas ESG, evidencia, stakeholders y objetivos",
+      "deliverable_type": "estrategia ESG o narrativa de reporte",
+      "related_services": [
+        "ESG-001",
+        "ESG-002",
+        "ESG-003"
+      ]
+    },
+    "DEV": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "engineering",
+      "input_type": "requerimiento funcional o tecnico",
+      "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006"
+      ]
+    }
+  },
+  "agent_metadata": {
+    "EstrategaDigital": {
+      "discipline": "Estrategia Digital",
+      "roles": [
+        "Estrategia Digital / Marketing / Funnel"
+      ],
+      "stage": "strategy",
+      "deliverable_type": "estrategia, arquitectura de funnel e insights",
+      "related_services": [
+        "MK-001",
+        "MK-002"
+      ]
+    },
+    "DirectorAudiovisual": {
+      "discipline": "Producci\u00f3n Audiovisual",
+      "roles": [
+        "Director de Contenido / Podcast / Copy"
+      ],
+      "stage": "pre-production",
+      "deliverable_type": "concepto, estructura y direccion audiovisual",
+      "related_services": [
+        "AV-001",
+        "AV-010",
+        "AV-011"
+      ]
+    },
+    "GuionistaCinematografico": {
+      "discipline": "Content Strategy y Copy",
+      "roles": [
+        "Director de Contenido / Podcast / Copy"
+      ],
+      "stage": "content-production",
+      "deliverable_type": "guion o narrativa secuencial",
+      "related_services": [
+        "AV-011"
+      ]
+    },
+    "DirectorFotografiaT2I": {
+      "discipline": "Imagen y Video IA",
+      "roles": [
+        "Creador de Imagenes / Storyboard / Video IA"
+      ],
+      "stage": "visual-direction",
+      "deliverable_type": "prompt visual y direccion fotografica",
+      "related_services": [
+        "IA-001",
+        "IA-002"
+      ]
+    },
+    "ArtistaStoryboard": {
+      "discipline": "Imagen y Video IA",
+      "roles": [
+        "Creador de Imagenes / Storyboard / Video IA"
+      ],
+      "stage": "storyboarding",
+      "deliverable_type": "storyboard y continuidad visual",
+      "related_services": [
+        "IA-001",
+        "IA-002"
+      ]
+    },
+    "DirectorTecnicoI2V": {
+      "discipline": "Imagen y Video IA",
+      "roles": [
+        "Creador de Imagenes / Storyboard / Video IA"
+      ],
+      "stage": "animation",
+      "deliverable_type": "direccion de movimiento y video IA",
+      "related_services": [
+        "IA-001",
+        "IA-002"
+      ]
+    },
+    "TraffickerEspecialista": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "campaign-execution",
+      "deliverable_type": "estructura de pauta y optimizacion",
+      "related_services": [
+        "MK-004"
+      ]
+    },
+    "PerformanceMarketer": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "performance",
+      "deliverable_type": "campa\u00f1as de conversion y growth loops",
+      "related_services": [
+        "MK-004"
+      ]
+    },
+    "MediaPlanner": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "media-planning",
+      "deliverable_type": "plan de medios y mix de canales",
+      "related_services": [
+        "MK-004"
+      ]
+    },
+    "SEOSpecialist": {
+      "discipline": "Media, Performance y SEO",
+      "roles": [
+        "Paid Media / Performance / SEO"
+      ],
+      "stage": "seo",
+      "deliverable_type": "auditoria SEO, keyword map y arquitectura",
+      "related_services": [
+        "SEO-001"
+      ]
+    },
+    "PRStrategist": {
+      "discipline": "PR y Comunicaci\u00f3n",
+      "roles": [
+        "PR / Comunicaci\u00f3n"
+      ],
+      "stage": "communications-planning",
+      "deliverable_type": "estrategia de PR y voceria",
+      "related_services": [
+        "PR-001",
+        "PR-003"
+      ]
+    },
+    "CrisisManager": {
+      "discipline": "PR y Comunicaci\u00f3n",
+      "roles": [
+        "PR / Comunicaci\u00f3n"
+      ],
+      "stage": "crisis",
+      "deliverable_type": "protocolo de crisis",
+      "related_services": [
+        "PR-002"
+      ]
+    },
+    "DataAnalyst": {
+      "discipline": "Data, Analytics e Insights",
+      "roles": [
+        "Data / Analytics / Insights"
+      ],
+      "stage": "measurement",
+      "deliverable_type": "framework de medicion y dashboard",
+      "related_services": [
+        "DAT-001",
+        "DAT-002",
+        "DAT-005"
+      ]
+    },
+    "InsightsStrategist": {
+      "discipline": "Data, Analytics e Insights",
+      "roles": [
+        "Data / Analytics / Insights"
+      ],
+      "stage": "insights",
+      "deliverable_type": "insights accionables y lectura de mercado",
+      "related_services": [
+        "DAT-004"
+      ]
+    },
+    "BusinessConsultant": {
+      "discipline": "Consultor\u00eda de Negocio",
+      "roles": [
+        "Consultor\u00eda de Negocio"
+      ],
+      "stage": "business-diagnosis",
+      "deliverable_type": "diagnostico y roadmap de negocio",
+      "related_services": [
+        "BIZ-001",
+        "BIZ-002"
+      ]
+    },
+    "CommerceStrategist": {
+      "discipline": "Commerce y E-commerce",
+      "roles": [
+        "Commerce / E-commerce"
+      ],
+      "stage": "commerce-strategy",
+      "deliverable_type": "estrategia ecommerce o marketplace",
+      "related_services": [
+        "ECO-001",
+        "ECO-002"
+      ]
+    },
+    "CXDesigner": {
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "roles": [
+        "CX / CRM / Retenci\u00f3n"
+      ],
+      "stage": "experience-design",
+      "deliverable_type": "journey map y service design",
+      "related_services": [
+        "CX-001"
+      ]
+    },
+    "CRMStrategist": {
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "roles": [
+        "CX / CRM / Retenci\u00f3n"
+      ],
+      "stage": "retention",
+      "deliverable_type": "arquitectura CRM y automatizacion",
+      "related_services": [
+        "CRM-001",
+        "CRM-002"
+      ]
+    },
+    "ContentStrategist": {
+      "discipline": "Content Strategy y Copy",
+      "roles": [
+        "Content Strategy / Copy"
+      ],
+      "stage": "editorial-strategy",
+      "deliverable_type": "brand voice, messaging architecture y sistema editorial",
+      "related_services": [
+        "CNT-001",
+        "CNT-002",
+        "CNT-003"
+      ]
+    },
+    "InfluencerStrategist": {
+      "discipline": "Influencer Marketing",
+      "roles": [
+        "Influencer Marketing"
+      ],
+      "stage": "creator-strategy",
+      "deliverable_type": "estrategia creator, brief y outreach",
+      "related_services": [
+        "IMK-001",
+        "IMK-002",
+        "IMK-003"
+      ]
+    },
+    "ExperientialStrategist": {
+      "discipline": "Experiential y Eventos",
+      "roles": [
+        "Experiential / Eventos"
+      ],
+      "stage": "experience-design",
+      "deliverable_type": "concepto experiencial y plan de amplificacion",
+      "related_services": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003"
+      ]
+    },
+    "HealthcareMarketer": {
+      "discipline": "Healthcare Marketing",
+      "roles": [
+        "Healthcare Marketing"
+      ],
+      "stage": "healthcare-strategy",
+      "deliverable_type": "estrategia healthcare y contenido educativo",
+      "related_services": [
+        "HLT-001",
+        "HLT-002",
+        "HLT-003"
+      ]
+    },
+    "ESGStrategist": {
+      "discipline": "Sostenibilidad y ESG",
+      "roles": [
+        "Sostenibilidad / ESG"
+      ],
+      "stage": "esg-communications",
+      "deliverable_type": "narrativa ESG y mensajes por stakeholder",
+      "related_services": [
+        "ESG-001",
+        "ESG-002",
+        "ESG-003"
+      ]
+    },
+    "ArquitectoSoftware": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "architecture",
+      "deliverable_type": "arquitectura de software",
+      "related_services": [
+        "DEV-002",
+        "DEV-003"
+      ]
+    },
+    "TechLeadFullStack": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "implementation",
+      "deliverable_type": "decision tecnica, implementacion y code review",
+      "related_services": [
+        "DEV-001",
+        "DEV-004",
+        "DEV-007"
+      ]
+    },
+    "DevOpsEngineer": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "deployment",
+      "deliverable_type": "infraestructura y despliegue",
+      "related_services": [
+        "DEV-006"
+      ]
+    },
+    "QATester": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "quality",
+      "deliverable_type": "plan y suite de pruebas",
+      "related_services": [
+        "DEV-008"
+      ]
+    },
+    "CodeAuditor": {
+      "discipline": "Desarrollo de Software",
+      "roles": [
+        "Desarrollo / Ingenieria"
+      ],
+      "stage": "review",
+      "deliverable_type": "auditoria de codigo",
+      "related_services": [
+        "DEV-004",
+        "DEV-007"
+      ]
+    },
+    "AuditorCalidad": {
+      "discipline": "Coordinaci\u00f3n y Calidad",
+      "roles": [
+        "Coordinacion / PM / Revision Final"
+      ],
+      "stage": "quality-control",
+      "deliverable_type": "filtro final de calidad",
+      "related_services": []
+    },
+    "AsesorComercialServicios": {
+      "discipline": "Comercial y Ventas",
+      "roles": [
+        "Comercial / Ventas",
+        "Administracion / Proformas / Cotizacion"
+      ],
+      "stage": "discovery",
+      "deliverable_type": "recomendacion comercial y alcance preliminar",
+      "related_services": []
+    }
+  }
+}

@@ -7,6 +7,10 @@ Esta carpeta queda preparada para la siguiente fase del workspace:
 - pipeline de construccion JSON,
 - futuras integraciones con CRM o dashboard.
 
+La vision de producto del `app` ahora vive en:
+
+- [docs/VISION-APP.md](/Users/dcalisaya/Developer/Prompts/docs/VISION-APP.md)
+
 ## Estructura actual
 
 - `scripts/build_json.py`: genera la base JSON desde las fuentes maestras actuales.
@@ -15,4 +19,4 @@ Esta carpeta queda preparada para la siguiente fase del workspace:
 
 1. actualizar documentos en `base/masters/`,
 2. correr `python3 app/scripts/build_json.py`,
-3. consumir `base/json/*.json` desde `public/html/` o una futura API.
+3. consumir `base/json/*.json` desde la API o desde la futura interfaz del `app`.

@@ -3,10 +3,15 @@ id: COM-001
 name: Asesor Comercial de Servicios Live Developer
 version: 2.0
 agent_core: AsesorComercialServicios
-category: Atencion-Comercial
+category: Gestión Comercial
 source_of_truth:
-  - 08-SERVICES.md
+- catalog/08-SERVICES.md
 language: es
+discipline: Comercial y Ventas
+related_services: []
+stage: discovery
+input_type: brief comercial o requerimiento inicial
+deliverable_type: recomendacion comercial o alcance preliminar
 ---
 
 # Prompt Operativo: Asesor Comercial de Servicios Live Developer

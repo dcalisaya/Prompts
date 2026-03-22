@@ -3,10 +3,17 @@ id: COM-002
 name: Armador de Proforma y Alcance Preliminar Live Developer
 version: 1.0
 agent_core: AsesorComercialServicios
-category: Atencion-Comercial
+category: Gestión Comercial
 source_of_truth:
-  - 08-SERVICES.md
+- catalog/08-SERVICES.md
+- company/09-SERVICE-MATRIX.md
+- company/10-PRICING-INTERNO.md
 language: es
+discipline: Comercial y Ventas
+related_services: []
+stage: discovery
+input_type: brief comercial o requerimiento inicial
+deliverable_type: recomendacion comercial o alcance preliminar
 ---
 
 # Prompt Operativo: Armador de Proforma y Alcance Preliminar Live Developer

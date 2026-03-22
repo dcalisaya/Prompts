@@ -2,9 +2,16 @@
   {
     "id": "FUN-001",
     "name": "Generador de Arquitectura de Funnel",
-    "category": "Estrategia y Funnels",
+    "version": "1.0.0",
+    "category": "Marketing Digital y Contenidos",
+    "discipline": "Estrategia Digital",
     "agent_core": "EstrategaDigital",
     "source_of_truth": [],
+    "related_services": [],
+    "stage": "strategy",
+    "input_type": "objetivo de negocio, oferta y audiencia",
+    "deliverable_type": "arquitectura de funnel",
+    "tags": [],
     "objective": "Crear un mapa estructural completo de un embudo de ventas, definiendo cada etapa desde la captaci\u00f3n hasta la conversi\u00f3n final.",
     "when_to_use": "Usa este prompt cuando necesites definir el \"esqueleto\" de una campa\u00f1a. Ideal para integrarse con la infraestructura tecnol\u00f3gica de Live Developer.",
     "input_required": [
@@ -26,9 +33,16 @@
   {
     "id": "STRAT-002",
     "name": "Auditor\u00eda de Ecosistema Digital",
-    "category": "Estrategia y Funnels",
+    "version": "1.0.0",
+    "category": "Marketing Digital y Contenidos",
+    "discipline": "Estrategia Digital",
     "agent_core": "EstrategaDigital",
     "source_of_truth": [],
+    "related_services": [],
+    "stage": "audit",
+    "input_type": "activos actuales, URLs, canales y contexto del negocio",
+    "deliverable_type": "diagnostico estrategico",
+    "tags": [],
     "objective": "Evaluar la presencia digital actual de un cliente y detectar fugas de conversi\u00f3n o debilidades tecnol\u00f3gicas.",
     "when_to_use": "Ideal para la fase de \"Onboarding\" de nuevos clientes en Live Developer.",
     "input_required": [
@@ -48,11 +62,43 @@
     "path": "base/masters/prompts-operativos/01-Estrategia-Funnels/STRAT-002-Auditoria-Ecosistema.md"
   },
   {
-    "id": "PROD-001",
-    "name": "Estructurador de Temporada de Podcast",
+    "id": "AUDIO-001",
+    "name": "Generador de M\u00fasica para Video Animado (Ecuador Context)",
+    "version": "1.0.0",
     "category": "Producci\u00f3n Audiovisual",
+    "discipline": "Producci\u00f3n Audiovisual",
     "agent_core": "DirectorAudiovisual",
     "source_of_truth": [],
+    "related_services": [],
+    "stage": "production",
+    "input_type": "brief creativo y referencias sonoras",
+    "deliverable_type": "guia musical o direccion de audio",
+    "tags": [],
+    "objective": "Generar una banda sonora original que capture la esencia de la Sierra y Amazon\u00eda ecuatoriana, manteniendo un tono de inclusi\u00f3n, esperanza y dinamismo para animaci\u00f3n.",
+    "when_to_use": "Usa este prompt en herramientas como **Suno v3.5, Udio o similar**. Est\u00e1 dise\u00f1ado para el proyecto GEDSI, donde la diversidad cultural y funcional es el eje central.",
+    "input_required": [
+      "Duraci\u00f3n del video (ej. 3 min) y puntos de acento (ej. 0:50 barreras, 2:50 celebraci\u00f3n)."
+    ],
+    "expected_output": [
+      "Pista de audio de alta fidelidad que evolucione de un inicio sobrio a un final vibrante y colorido."
+    ],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/02-Produccion-Audiovisual/AUDIO-001-Musica-Animacion.md"
+  },
+  {
+    "id": "PROD-001",
+    "name": "Estructurador de Temporada de Podcast",
+    "version": "1.0.0",
+    "category": "Producci\u00f3n Audiovisual",
+    "discipline": "Producci\u00f3n Audiovisual",
+    "agent_core": "DirectorAudiovisual",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "pre-production",
+    "input_type": "brief creativo, objetivo y formato",
+    "deliverable_type": "plan de contenido o temporada",
+    "tags": [],
     "objective": "Dise\u00f1ar el arco narrativo y la lista de temas para una temporada completa de podcast (10-20 episodios).",
     "when_to_use": "Usa este prompt para el caso de estudio de los \"20 Podcasts\". Asegura que el contenido sea relevante y retenga a la audiencia.",
     "input_required": [
@@ -74,9 +120,16 @@
   {
     "id": "SCRIPT-001",
     "name": "Generador de Guiones Hook-Retenci\u00f3n-CTA",
+    "version": "1.0.0",
     "category": "Producci\u00f3n Audiovisual",
+    "discipline": "Producci\u00f3n Audiovisual",
     "agent_core": "DirectorAudiovisual",
     "source_of_truth": [],
+    "related_services": [],
+    "stage": "content-production",
+    "input_type": "tema, audiencia, objetivo y formato",
+    "deliverable_type": "guion o pieza de copy",
+    "tags": [],
     "objective": "Producir guiones r\u00e1pidos para videos verticales o introducciones de podcasts que maximicen el tiempo de visualizaci\u00f3n.",
     "when_to_use": "Ideal para Reels, TikToks y Shorts que el equipo de Live Developer debe producir.",
     "input_required": [
@@ -98,9 +151,16 @@
   {
     "id": "ADS-001",
     "name": "Guionista para Spotify Ads",
-    "category": "Tr\u00e1fico y Spotify",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
     "agent_core": "TraffickerEspecialista",
     "source_of_truth": [],
+    "related_services": [],
+    "stage": "campaign-planning",
+    "input_type": "objetivo de campa\u00f1a, audiencia, oferta y presupuesto",
+    "deliverable_type": "estructura de campa\u00f1a o guion publicitario",
+    "tags": [],
     "objective": "Crear guiones de audio de 15 a 30 segundos dise\u00f1ados para captar la atenci\u00f3n de usuarios en modo \"screenless\".",
     "when_to_use": "Usa este prompt para potenciar los episodios pagados del podcast en Spotify Ad Studio.",
     "input_required": [
@@ -122,11 +182,16 @@
   {
     "id": "COM-001",
     "name": "Asesor Comercial de Servicios Live Developer",
-    "category": "Atencion-Comercial",
+    "version": "2.0",
+    "category": "Gesti\u00f3n Comercial",
+    "discipline": "Comercial y Ventas",
     "agent_core": "AsesorComercialServicios",
-    "source_of_truth": [
-      "08-SERVICES.md"
-    ],
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "discovery",
+    "input_type": "brief comercial o requerimiento inicial",
+    "deliverable_type": "recomendacion comercial o alcance preliminar",
+    "tags": [],
     "objective": "Prompt maestro para atender consultas internas o de clientes con respuestas concretas, profesionales y alineadas al catalogo oficial de servicios.",
     "when_to_use": "",
     "input_required": [],
@@ -150,11 +215,16 @@
   {
     "id": "COM-002",
     "name": "Armador de Proforma y Alcance Preliminar Live Developer",
-    "category": "Atencion-Comercial",
+    "version": "1.0",
+    "category": "Gesti\u00f3n Comercial",
+    "discipline": "Comercial y Ventas",
     "agent_core": "AsesorComercialServicios",
-    "source_of_truth": [
-      "08-SERVICES.md"
-    ],
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "discovery",
+    "input_type": "brief comercial o requerimiento inicial",
+    "deliverable_type": "recomendacion comercial o alcance preliminar",
+    "tags": [],
     "objective": "Prompt operativo para personal administrativo, comercial o de coordinacion que necesita convertir un requerimiento en una proforma preliminar clara, ordenada y basada en el catalogo oficial.",
     "when_to_use": "Usalo cuando alguien diga:\n\n- \"Arma la proforma de esto\"\n- \"Que servicios entran aqui\"\n- \"Como desglosamos este requerimiento para cotizar\"\n- \"Que deberia incluir la propuesta base\"",
     "input_required": [],
@@ -176,5 +246,1118 @@
       "observacion comercial."
     ],
     "path": "base/masters/prompts-operativos/04-Atencion-Comercial/COM-002-Armador-Proforma-LiveDeveloper.md"
+  },
+  {
+    "id": "DEV-001",
+    "name": "Especificador de Requerimientos T\u00e9cnicos",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "ArquitectoSoftware",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Transformar necesidades de negocio vagas o generales en especificaciones t\u00e9cnicas detalladas, accionables y estimables.",
+    "when_to_use": "- Un cliente presenta una necesidad de negocio sin especificaciones t\u00e9cnicas\n- Se requiere estimar una funcionalidad nueva pero falta definici\u00f3n\n- El equipo t\u00e9cnico necesita claridad sobre alcance y comportamiento esperado\n- Se debe documentar el an\u00e1lisis de un requerimiento para aprobaci\u00f3n del cliente",
+    "input_required": [],
+    "expected_output": [
+      "- An\u00e1lisis del problema identificando la fricci\u00f3n actual del usuario"
+    ],
+    "example_input": "\"Necesitamos que los clientes puedan rastrear sus pedidos en tiempo real desde la app m\u00f3vil. Ahora mismo reciben un email con el n\u00famero de seguimiento, pero tienen que ir a la p\u00e1gina del transportista. Queremos que vean el estado directamente en nuestra app.\"",
+    "example_output": [
+      "An\u00e1lisis del problema identificando la fricci\u00f3n actual del usuario",
+      "User stories para: visualizaci\u00f3n de tracking, integraci\u00f3n con transportistas, notificaciones de cambio de estado",
+      "Criterios de aceptaci\u00f3n Gherkin para cada escenario (tracking encontrado, no encontrado, error de API)",
+      "Dependencias: APIs de transportistas (DHL, FedEx, etc.), base de datos de pedidos, servicio de notificaciones push",
+      "Riesgos: disponibilidad de APIs de terceros, rate limits, normalizaci\u00f3n de datos entre transportistas",
+      "Preguntas abiertas: \u00bfQu\u00e9 transportistas priorizar?, \u00bfSe requiere mapa en tiempo real o solo estados?"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-001-Especificador-Requerimientos.md"
+  },
+  {
+    "id": "DEV-002",
+    "name": "Arquitectura de Software",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "ArquitectoSoftware",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Dise\u00f1ar la arquitectura t\u00e9cnica completa de una soluci\u00f3n de software, definiendo stack, estructura, componentes y decisiones arquitect\u00f3nicas fundamentadas.",
+    "when_to_use": "- Inicio de un proyecto nuevo que requiere definici\u00f3n arquitect\u00f3nica\n- Evaluaci\u00f3n de migraci\u00f3n a nuevas tecnolog\u00edas\n- Documentaci\u00f3n de la arquitectura actual para onboarding\n- Decisiones entre m\u00faltiples alternativas tecnol\u00f3gicas\n- Dise\u00f1o de una funcionalidad que impacta m\u00faltiples capas del sistema",
+    "input_required": [],
+    "expected_output": [
+      "- Stack: React + TypeScript (frontend), Node.js/NestJS (backend), PostgreSQL (BD), Redis (cache), AWS (infra)"
+    ],
+    "example_input": "\"Plataforma de reserva de citas m\u00e9dicas para cl\u00ednica con 50 m\u00e9dicos. Debe permitir a pacientes ver disponibilidad en tiempo real, agendar citas, recibir recordatorios. Los m\u00e9dicos necesitan gestionar su agenda. Integraci\u00f3n con sistema de historias cl\u00ednicas existente v\u00eda API REST. Requisitos de HIPAA compliance. 10,000 pacientes activos estimados.\"",
+    "example_output": [
+      "Stack: React + TypeScript (frontend), Node.js/NestJS (backend), PostgreSQL (BD), Redis (cache), AWS (infra)",
+      "Estructura de carpetas siguiendo Clean Architecture con separaci\u00f3n de domain/application/infrastructure",
+      "Diagrama de componentes: API Gateway \u2192 Auth Service \u2192 Appointment Service \u2192 Notification Service \u2192 External HIS API",
+      "Endpoints REST documentados: GET /doctors/{id}/availability, POST /appointments, etc.",
+      "Modelo ER: Patient, Doctor, Appointment, Schedule, Notification",
+      "ADRs: Uso de CQRS para consultas de disponibilidad, elecci\u00f3n de PostgreSQL sobre Mongo por ACID",
+      "Seguridad: OAuth2 + JWT, encriptaci\u00f3n PHI, audit logs",
+      "Deployment: Docker + Kubernetes en AWS"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-002-Arquitectura-Software.md"
+  },
+  {
+    "id": "DEV-003",
+    "name": "Estimador de Esfuerzo",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "TechLeadFullStack",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Calcular estimaciones de esfuerzo precisas y realistas para funcionalidades de software, considerando toda la complejidad involucrada.",
+    "when_to_use": "- Se requiere estimar una funcionalidad nueva para presupuesto\n- Planificaci\u00f3n de roadmap/sprints\n- Re-evaluaci\u00f3n de estimaciones ante cambios de alcance\n- Comparaci\u00f3n de estimaciones vs. capacidad del equipo\n- Identificaci\u00f3n de funcionalidades que deben dividirse (muy grandes)",
+    "input_required": [],
+    "expected_output": [
+      "- Resumen: 120 horas totales, rango 100-150 horas, 3 semanas calendario"
+    ],
+    "example_input": "\"Feature de checkout con m\u00faltiples m\u00e9todos de pago (tarjeta de cr\u00e9dito, PayPal, transferencia). Debe incluir: carrito persistente, c\u00e1lculo de impuestos seg\u00fan regi\u00f3n, validaci\u00f3n de tarjeta en tiempo real, confirmaci\u00f3n por email, y panel admin para ver transacciones. Integraci\u00f3n con Stripe y PayPal APIs.\"",
+    "example_output": [
+      "Resumen: 120 horas totales, rango 100-150 horas, 3 semanas calendario",
+      "Frontend: 40h (formulario checkout, validaciones, estados de pago)",
+      "Backend: 50h (endpoints de pago, webhooks, l\u00f3gica de impuestos)",
+      "BD: 10h (tablas de transacciones, \u00f3rdenes, carritos)",
+      "Integraciones: 20h (Stripe, PayPal, email service)",
+      "Testing: 15h (unitarios, integraci\u00f3n con gateways sandbox)",
+      "Buffer 20% aplicado por dependencia de APIs externas",
+      "Riesgos: cambios en APIs de pago (+8h), complejidad de impuestos internacionales (+10h)",
+      "Recomendaci\u00f3n: implementar un m\u00e9todo de pago primero, luego extender"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-003-Estimador-Esfuerzo.md"
+  },
+  {
+    "id": "DEV-004",
+    "name": "Code Review System\u00e1tico",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "CodeAuditor",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Revisar c\u00f3digo fuente de manera exhaustiva seg\u00fan est\u00e1ndares del equipo, identificando bugs, problemas de performance, deuda t\u00e9cnica y vulnerabilidades de seguridad.",
+    "when_to_use": "- Revisi\u00f3n de PR antes de enviar a reviewers humanos\n- Revisi\u00f3n de c\u00f3digo generado por herramientas de IA\n- Auditor\u00eda de c\u00f3digo cr\u00edtico (pagos, seguridad, datos sensibles)\n- Onboarding: revisar c\u00f3digo de desarrolladores nuevos\n- Refactorizaci\u00f3n: revisar cambios en c\u00f3digo legacy",
+    "input_required": [],
+    "expected_output": [
+      "- Veredicto: \u274c Cambios requeridos"
+    ],
+    "example_input": "```javascript",
+    "example_output": [
+      "Veredicto: \u274c Cambios requeridos",
+      "Cr\u00edtico: SQL Injection en queries (l\u00ednea 2, 14), falta manejo de errores de Stripe",
+      "Mayor: No se verifica ownership de la orden, no hay idempotency key",
+      "Seguridad: datos de tarjeta procesados sin validaci\u00f3n adicional",
+      "Performance: queries sin prepared statements",
+      "Refactoring: extraer l\u00f3gica de pago a servicio, usar repository pattern",
+      "Positivo: uso de async/await"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-004-Code-Review.md"
+  },
+  {
+    "id": "DEV-005",
+    "name": "Documentador T\u00e9cnico",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "TechLeadFullStack",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Generar documentaci\u00f3n t\u00e9cnica completa y profesional para proyectos de software, incluyendo READMEs, ADRs, documentaci\u00f3n de APIs y gu\u00edas de contribuci\u00f3n.",
+    "when_to_use": "- Inicio de proyecto: crear README y docs base\n- Dise\u00f1o arquitect\u00f3nico: documentar decisiones (ADRs)\n- Desarrollo de APIs: crear documentaci\u00f3n OpenAPI/Swagger\n- Onboarding de nuevos desarrolladores: gu\u00edas de contribuci\u00f3n\n- Transferencia de proyecto: documentaci\u00f3n de contexto\n- Actualizaci\u00f3n post-refactorizaci\u00f3n",
+    "input_required": [],
+    "expected_output": [
+      "- ADR completo con estado \"Accepted\""
+    ],
+    "example_input": "\"Tipo: ADR. Decisi\u00f3n entre usar PostgreSQL vs MongoDB para sistema de e-commerce. Contexto: equipo con experiencia en SQL, necesidad de transacciones ACID, modelo de datos relacional, pero posible crecimiento en cat\u00e1logo de productos. Stack actual: Node.js.\"",
+    "example_output": [
+      "ADR completo con estado \"Accepted\"",
+      "Contexto: necesidad de consistencia en \u00f3rdenes vs. flexibilidad de cat\u00e1logo",
+      "Opciones evaluadas: PostgreSQL, MongoDB, ambas (h\u00edbrido)",
+      "Decisi\u00f3n: PostgreSQL con JSONB para atributos de productos",
+      "Justificaci\u00f3n: ACID para transacciones financieras, conocimiento del equipo, JSONB da flexibilidad",
+      "Consecuencias: curva menor, consistencia garantizada, sharding m\u00e1s complejo si escala masivamente"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-005-Documentador-Tecnico.md"
+  },
+  {
+    "id": "DEV-006",
+    "name": "Debugger System\u00e1tico",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "TechLeadFullStack",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Analizar errores y bugs de manera met\u00f3dica para identificar la causa ra\u00edz y proponer soluciones robustas con testing y prevenci\u00f3n futura.",
+    "when_to_use": "- Bug en producci\u00f3n que requiere an\u00e1lisis urgente\n- Error dif\u00edcil de reproducir intermitente\n- Bug que involucra m\u00faltiples componentes\n- Necesidad de documentar post-mortem de incidente\n- Bugs que se han intentado arreglar antes pero regresan",
+    "input_required": [],
+    "expected_output": [
+      "- An\u00e1lisis de logs: timeout de 30s en llamada a Stripe, sin retry"
+    ],
+    "example_input": "\"Intermittent 500 errors en endpoint /api/orders. Logs muestran 'Connection timeout' en servicio de pagos. Ocurre ~5% de requests, m\u00e1s frecuente en horas pico. Stack: Node.js, PostgreSQL, Stripe API. Cambio reciente: upgrade de versi\u00f3n de axios.\"",
+    "example_output": [
+      "An\u00e1lisis de logs: timeout de 30s en llamada a Stripe, sin retry",
+      "Hip\u00f3tesis: H1) Falta timeout configurado en axios v1.x vs v0.x, H2) Rate limiting de Stripe, H3) Pool de conexiones agotado",
+      "Verificaci\u00f3n: H1 confirmada - axios v1 cambi\u00f3 default timeout a 0 (sin timeout)",
+      "Causa ra\u00edz: falta de timeout expl\u00edcito + falta de retry + falta de circuit breaker",
+      "Opciones: A) Agregar timeout (r\u00e1pido), B) Agregar timeout + retry + circuit breaker (recomendado)",
+      "Soluci\u00f3n: c\u00f3digo con timeout de 10s, retry con backoff exponencial, circuit breaker",
+      "Tests: test de timeout, test de retry, test de circuit breaker abierto",
+      "Preventivo: revisar otros servicios externos por mismo patr\u00f3n, agregar monitoreo de latencia"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-006-Debugger-Systematico.md"
+  },
+  {
+    "id": "DEV-007",
+    "name": "Optimizador de Performance",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "DevOpsEngineer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Analizar y mejorar la performance de c\u00f3digo identificando cuellos de botella mediante profiling, proponiendo optimizaciones cuantificables y validando mejoras con benchmarking.",
+    "when_to_use": "- Reporte de lentitud en funcionalidad espec\u00edfica\n- Preparaci\u00f3n para evento de alta carga (black friday, etc.)\n- Optimizaci\u00f3n de queries lentas identificadas en APM\n- Mejora de m\u00e9tricas Core Web Vitals\n- Reducci\u00f3n de uso de recursos (CPU, memoria, ancho de banda)",
+    "input_required": [],
+    "expected_output": [
+      "- Baseline: query con ILIKE sobre 3 campos, sequential scan, 2.5s"
+    ],
+    "example_input": "\"Endpoint GET /api/products/search lento (p95 de 2.5s, target 500ms). Codebase: Python/Django, PostgreSQL. Query actual usa icontains en m\u00faltiples campos. Tabla tiene 500k productos. Profiling muestra 80% tiempo en DB query.\"",
+    "example_output": [
+      "Baseline: query con ILIKE sobre 3 campos, sequential scan, 2.5s",
+      "Hotspots: H1) falta de \u00edndices full-text, H2) N+1 queries para categor\u00edas, H3) serializaci\u00f3n s\u00edncrona",
+      "Optimizaciones:",
+      "Migrar a PostgreSQL full-text search con \u00edndice GIN (~300ms)",
+      "Select_related para categor\u00edas (~200ms)",
+      "Serializaci\u00f3n async con prefetch (~150ms)",
+      "After: p95 de 150ms (94% mejora)",
+      "Benchmarks: script de carga con k6 mostrando throughput de 20\u2192150 rps",
+      "Monitoreo: alerta si p95 > 300ms, tracking de query plans"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-007-Optimizador-Performance.md"
+  },
+  {
+    "id": "DEV-008",
+    "name": "Generador de Tests",
+    "version": "1.0.0",
+    "category": "Desarrollo de Software y Apps",
+    "discipline": "Desarrollo de Software",
+    "agent_core": "QATester",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "engineering",
+    "input_type": "requerimiento funcional o tecnico",
+    "deliverable_type": "especificacion, arquitectura, estimacion, codigo o testing",
+    "tags": [],
+    "objective": "Generar suites de tests completas (unitarios, integraci\u00f3n, E2E) para c\u00f3digo existente, incluyendo casos edge, mocks apropiados, cobertura objetivo, y siguiendo patrones AAA o Given-When-Then.",
+    "when_to_use": "- Nuevo c\u00f3digo necesita tests antes de merge\n- Aumentar cobertura de m\u00f3dulo existente\n- Tests de regresi\u00f3n tras bug encontrado\n- Refactorizaci\u00f3n que requiere safety net\n- Documentar comportamiento de c\u00f3digo legacy",
+    "input_required": [],
+    "expected_output": [
+      "- Unit tests: validaci\u00f3n de amount, validaci\u00f3n de m\u00e9todo de pago, l\u00f3gica con mocks"
+    ],
+    "example_input": "\"Funci\u00f3n de procesamiento de pagos: recibe orderId, amount, paymentMethod. Valida que amount > 0, que order exista en BD, que m\u00e9todo de pago sea v\u00e1lido, llama a PaymentGateway.charge(), guarda transacci\u00f3n en BD, retorna resultado. Errores: OrderNotFound, InvalidAmount, PaymentFailed.\"",
+    "example_output": [
+      "Unit tests: validaci\u00f3n de amount, validaci\u00f3n de m\u00e9todo de pago, l\u00f3gica con mocks",
+      "Integration tests: flujo completo con test DB",
+      "E2E: flujo de checkout desde UI",
+      "Casos edge: amount=0, amount negativo, amount muy grande, order inexistente",
+      "Error tests: gateway timeout, gateway rechaza, BD no disponible",
+      "Fixtures: builders para orders, m\u00e9todos de pago",
+      "Mocks: PaymentGateway con respuestas controladas",
+      "Cobertura objetivo: 90% branches"
+    ],
+    "path": "base/masters/prompts-operativos/05-Programacion/DEV-008-Generador-Tests.md"
+  },
+  {
+    "id": "PR-001",
+    "name": "Generador de Comunicado de Prensa",
+    "version": "1.0.0",
+    "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "discipline": "PR y Comunicaci\u00f3n",
+    "agent_core": "PRStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "communications-planning",
+    "input_type": "brief institucional, contexto reputacional y audiencia",
+    "deliverable_type": "activo de comunicacion o protocolo reputacional",
+    "tags": [],
+    "objective": "Crear comunicados de prensa profesionales con estructura period\u00edstica (pir\u00e1mide invertida), mensajes clave alineados y plan de distribuci\u00f3n a medios.",
+    "when_to_use": "Usa este prompt cuando necesites anunciar un lanzamiento, evento, alianza, logro o posicionamiento institucional a medios de comunicaci\u00f3n.",
+    "input_required": [
+      "Tipo de noticia, empresa/marca, datos clave, vocero designado, fecha del evento."
+    ],
+    "expected_output": [
+      "Comunicado listo para env\u00edo con plan de distribuci\u00f3n."
+    ],
+    "example_input": "\"Lanzamiento de app m\u00f3vil de delivery para restaurantes en Quito. Empresa: FoodEC. Vocero: Mar\u00eda L\u00f3pez, CEO.\"",
+    "example_output": [
+      "titular y subt\u00edtulo,",
+      "lead con las 5W,",
+      "cuerpo con cita del vocero,",
+      "boilerplate,",
+      "plan de distribuci\u00f3n a medios ecuatorianos."
+    ],
+    "path": "base/masters/prompts-operativos/06-PR-Comunicacion/PR-001-Comunicado-Prensa.md"
+  },
+  {
+    "id": "PR-002",
+    "name": "Plan de Crisis Comunicacional",
+    "version": "1.0.0",
+    "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "discipline": "PR y Comunicaci\u00f3n",
+    "agent_core": "CrisisManager",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "communications-planning",
+    "input_type": "brief institucional, contexto reputacional y audiencia",
+    "deliverable_type": "activo de comunicacion o protocolo reputacional",
+    "tags": [],
+    "objective": "Dise\u00f1ar un protocolo de crisis comunicacional completo con escenarios tipificados, cadena de mando, templates de respuesta y plan de recuperaci\u00f3n.",
+    "when_to_use": "Usa este prompt de forma **preventiva** antes de lanzamientos sensibles, o de forma **reactiva** cuando una crisis ya est\u00e1 en curso y necesitas un plan de contenci\u00f3n inmediato.",
+    "input_required": [
+      "Nombre de empresa, industria, tipo de crisis (real o preventiva), stakeholders clave."
+    ],
+    "expected_output": [
+      "Manual de crisis completo listo para aprobar y activar."
+    ],
+    "example_input": "\"Empresa de turismo que opera en Gal\u00e1pagos. Preventivo. Stakeholders: turistas, autoridades ambientales, comunidad local.\"",
+    "example_output": [
+      "escenarios tipificados,",
+      "cadena de mando,",
+      "holding statements,",
+      "protocolo por horas,",
+      "preguntas y respuestas clave."
+    ],
+    "path": "base/masters/prompts-operativos/06-PR-Comunicacion/PR-002-Plan-Crisis.md"
+  },
+  {
+    "id": "PR-003",
+    "name": "Brief de Media Training",
+    "version": "1.0.0",
+    "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+    "discipline": "PR y Comunicaci\u00f3n",
+    "agent_core": "PRStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "communications-planning",
+    "input_type": "brief institucional, contexto reputacional y audiencia",
+    "deliverable_type": "activo de comunicacion o protocolo reputacional",
+    "tags": [],
+    "objective": "Preparar a un vocero para entrevistas con medios mediante la definici\u00f3n de mensajes clave, Q&A anticipado, bridging techniques y simulaci\u00f3n de preguntas dif\u00edciles.",
+    "when_to_use": "Usa este prompt antes de cualquier aparici\u00f3n en medios (TV, radio, prensa, podcasts) para que el vocero tenga mensajes alineados, respuestas preparadas y t\u00e9cnicas de manejo de entrevista.",
+    "input_required": [
+      "Nombre y cargo del vocero, medio y formato, tema principal, contexto sensible si aplica."
+    ],
+    "expected_output": [
+      "Documento de preparaci\u00f3n listo para sesi\u00f3n de entrenamiento."
+    ],
+    "example_input": "\"Juan P\u00e9rez, Director General de EcoTech, entrevista en Teleamazonas (TV en vivo) sobre innovaci\u00f3n tecnol\u00f3gica en Ecuador.\"",
+    "example_output": [
+      "3 mensajes clave con puntos de soporte,",
+      "Q&A con preguntas hostiles,",
+      "t\u00e9cnicas de bridging,",
+      "tips espec\u00edficos para TV."
+    ],
+    "path": "base/masters/prompts-operativos/06-PR-Comunicacion/PR-003-Media-Training.md"
+  },
+  {
+    "id": "DATA-001",
+    "name": "Dashboard de KPIs para Cliente",
+    "version": "1.0.0",
+    "category": "Data, Analytics e Insights",
+    "discipline": "Data, Analytics e Insights",
+    "agent_core": "DataAnalyst",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "measurement",
+    "input_type": "objetivos, fuentes de datos y KPIs",
+    "deliverable_type": "dashboard, framework o informe de insights",
+    "tags": [],
+    "objective": "Dise\u00f1ar la estructura completa de un dashboard ejecutivo con KPIs accionables, fuentes de datos y l\u00f3gica de visualizaci\u00f3n.",
+    "when_to_use": "Usa este prompt cuando necesites crear un dashboard para un cliente nuevo o reestructurar el reporting de un cliente existente.",
+    "input_required": [
+      "Tipo de negocio, objetivo principal, plataformas actuales, audiencia del reporte."
+    ],
+    "expected_output": [
+      "Especificaci\u00f3n completa del dashboard lista para implementar en Looker Studio o Power BI."
+    ],
+    "example_input": "\"E-commerce de ropa con Shopify, pauta en Meta y Google. Objetivo: aumentar ROAS de 2.5 a 4.0.\"",
+    "example_output": [
+      "KPIs jerarquizados,",
+      "fuentes de datos con campos,",
+      "layout con gr\u00e1ficos,",
+      "filtros clave,",
+      "benchmarks por m\u00e9trica."
+    ],
+    "path": "base/masters/prompts-operativos/07-Data-Analytics/DATA-001-Dashboard-KPIs.md"
+  },
+  {
+    "id": "DATA-002",
+    "name": "Informe de Insights Accionables",
+    "version": "1.0.0",
+    "category": "Data, Analytics e Insights",
+    "discipline": "Data, Analytics e Insights",
+    "agent_core": "InsightsStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "measurement",
+    "input_type": "objetivos, fuentes de datos y KPIs",
+    "deliverable_type": "dashboard, framework o informe de insights",
+    "tags": [],
+    "objective": "Generar un informe de insights de mercado con estructura Dato \u2192 Insight \u2192 Implicaci\u00f3n \u2192 Acci\u00f3n, basado en datos del consumidor y an\u00e1lisis competitivo.",
+    "when_to_use": "Usa este prompt cuando necesites fundamentar una estrategia con investigaci\u00f3n de mercado, entender mejor al p\u00fablico objetivo o identificar oportunidades competitivas.",
+    "input_required": [
+      "Marca/producto, p\u00fablico objetivo, mercado geogr\u00e1fico, datos existentes si los hay."
+    ],
+    "expected_output": [
+      "Informe ejecutivo listo para presentar a cliente o alimentar estrategia interna."
+    ],
+    "example_input": "\"App de educaci\u00f3n financiera para millennials ecuatorianos. No tenemos datos propios a\u00fan.\"",
+    "example_output": [
+      "contexto del mercado fintech ecuatoriano,",
+      "buyer persona millennial,",
+      "5 insights clave con estructura,",
+      "an\u00e1lisis de competidores,",
+      "recomendaciones priorizadas."
+    ],
+    "path": "base/masters/prompts-operativos/07-Data-Analytics/DATA-002-Informe-Insights.md"
+  },
+  {
+    "id": "DATA-003",
+    "name": "Plan de Medici\u00f3n (Measurement Framework)",
+    "version": "1.0.0",
+    "category": "Data, Analytics e Insights",
+    "discipline": "Data, Analytics e Insights",
+    "agent_core": "DataAnalyst",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "measurement",
+    "input_type": "objetivos, fuentes de datos y KPIs",
+    "deliverable_type": "dashboard, framework o informe de insights",
+    "tags": [],
+    "objective": "Crear un plan de medici\u00f3n completo que defina qu\u00e9 medir, c\u00f3mo medir y d\u00f3nde medir antes de lanzar cualquier campa\u00f1a o proyecto digital.",
+    "when_to_use": "Usa este prompt **antes** de lanzar campa\u00f1as, sitios web o apps. Sin plan de medici\u00f3n, no hay forma de evaluar resultados.",
+    "input_required": [
+      "Tipo de proyecto, objetivo de negocio, plataformas involucradas, stack tecnol\u00f3gico actual."
+    ],
+    "expected_output": [
+      "Documento t\u00e9cnico de medici\u00f3n listo para implementar por el equipo de desarrollo."
+    ],
+    "example_input": "\"Landing page para captaci\u00f3n de leads de curso online. Pauta en Meta y Google. Sitio en WordPress.\"",
+    "example_output": [
+      "preguntas de negocio,",
+      "KPIs con f\u00f3rmulas,",
+      "mapa de eventos GA4,",
+      "instrucciones GTM,",
+      "convenci\u00f3n UTM."
+    ],
+    "path": "base/masters/prompts-operativos/07-Data-Analytics/DATA-003-Plan-Medicion.md"
+  },
+  {
+    "id": "ADS-002",
+    "name": "Campa\u00f1a Meta Ads (Facebook/Instagram)",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
+    "agent_core": "PerformanceMarketer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "campaign-planning",
+    "input_type": "objetivo de campa\u00f1a, audiencia, oferta y presupuesto",
+    "deliverable_type": "estructura de campa\u00f1a o guion publicitario",
+    "tags": [],
+    "objective": "Desarrollar una estrategia integral de pauta para el ecosistema de Meta, abarcando la arquitectura de cuenta, segmentaci\u00f3n de audiencias, dise\u00f1o de activos creativos y protocolos de optimizaci\u00f3n de rendimiento.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/08-Media-Performance/ADS-002-Meta-Ads.md"
+  },
+  {
+    "id": "ADS-003",
+    "name": "Campa\u00f1a Google Ads (Search + Performance Max)",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
+    "agent_core": "PerformanceMarketer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "campaign-planning",
+    "input_type": "objetivo de campa\u00f1a, audiencia, oferta y presupuesto",
+    "deliverable_type": "estructura de campa\u00f1a o guion publicitario",
+    "tags": [],
+    "objective": "Estructurar campa\u00f1as de pauta en el ecosistema de Google Ads (B\u00fasqueda y Performance Max) integrando investigaci\u00f3n de palabras clave, arquitectura de grupos de anuncios, redacci\u00f3n persuasiva y estrategias de puja automatizadas.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/08-Media-Performance/ADS-003-Google-Ads.md"
+  },
+  {
+    "id": "MEDIA-001",
+    "name": "Plan de Medios Integral",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
+    "agent_core": "MediaPlanner",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "media-planning",
+    "input_type": "objetivo, presupuesto, audiencia y canales",
+    "deliverable_type": "plan de medios o estructura de performance",
+    "tags": [],
+    "objective": "Crear un plan de medios 360 con mix de canales (digital + tradicional), distribuci\u00f3n de presupuesto, flowchart temporal y estimados de alcance/frecuencia.",
+    "when_to_use": "Usa este prompt cuando un cliente necesite una campa\u00f1a multicanal y hay que definir d\u00f3nde, cu\u00e1ndo y cu\u00e1nto invertir en cada medio.",
+    "input_required": [
+      "Marca, presupuesto, duraci\u00f3n, mercado geogr\u00e1fico, objetivo principal, p\u00fablico objetivo."
+    ],
+    "expected_output": [
+      "Documento de plan de medios listo para presentar y aprobar."
+    ],
+    "example_input": "\"Marca de electrodom\u00e9sticos. $25,000 para campa\u00f1a de Black Friday (4 semanas). Quito y Guayaquil. Objetivo: tr\u00e1fico a tienda online.\"",
+    "example_output": [
+      "mix de canales con %,",
+      "flowchart de 4 semanas,",
+      "estimados de alcance,",
+      "KPIs por canal."
+    ],
+    "path": "base/masters/prompts-operativos/08-Media-Performance/MEDIA-001-Plan-Medios-Integral.md"
+  },
+  {
+    "id": "MEDIA-002",
+    "name": "Campa\u00f1a de Performance Marketing",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
+    "agent_core": "PerformanceMarketer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "media-planning",
+    "input_type": "objetivo, presupuesto, audiencia y canales",
+    "deliverable_type": "plan de medios o estructura de performance",
+    "tags": [],
+    "objective": "Dise\u00f1ar una arquitectura de pauta orientada a resultados medibles, integrando la estructura de cuenta, segmentaci\u00f3n avanzada de audiencias, estrategia creativa y planes de escalamiento rentable.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/08-Media-Performance/MEDIA-002-Campana-Performance.md"
+  },
+  {
+    "id": "SEO-001",
+    "name": "Auditor\u00eda SEO Completa",
+    "version": "1.0.0",
+    "category": "Media Planning y Performance",
+    "discipline": "Media, Performance y SEO",
+    "agent_core": "SEOSpecialist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "audit",
+    "input_type": "URL, mercado, competencia y keywords",
+    "deliverable_type": "auditoria SEO y roadmap",
+    "tags": [],
+    "objective": "Ejecutar una auditor\u00eda SEO estructural que abarque dimensiones t\u00e9cnicas, de contenido (on-page), de autoridad (off-page) y visibilidad geogr\u00e1fica (local), con una hoja de ruta priorizada para la optimizaci\u00f3n del posicionamiento org\u00e1nico.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/08-Media-Performance/SEO-001-Auditoria-SEO.md"
+  },
+  {
+    "id": "BIZ-001",
+    "name": "Diagn\u00f3stico de Madurez Digital",
+    "version": "1.0.0",
+    "category": "Consultoria de Negocio",
+    "discipline": "Consultor\u00eda de Negocio",
+    "agent_core": "BusinessConsultant",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "business-diagnosis",
+    "input_type": "contexto de negocio, operaci\u00f3n y objetivos",
+    "deliverable_type": "diagnostico o estrategia de negocio",
+    "tags": [],
+    "objective": "Evaluar cuantitativa y cualitativamente el estado actual de digitalizaci\u00f3n de una organizaci\u00f3n, generando una hoja de ruta (roadmap) de transformaci\u00f3n priorizada y vinculada a los servicios estrat\u00e9gicos de Live Developer.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/09-Consultoria-Negocio/BIZ-001-Diagnostico-Madurez.md"
+  },
+  {
+    "id": "BIZ-002",
+    "name": "Estrategia Go-to-Market",
+    "version": "1.0.0",
+    "category": "Consultoria de Negocio",
+    "discipline": "Consultor\u00eda de Negocio",
+    "agent_core": "BusinessConsultant",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "business-diagnosis",
+    "input_type": "contexto de negocio, operaci\u00f3n y objetivos",
+    "deliverable_type": "diagnostico o estrategia de negocio",
+    "tags": [],
+    "objective": "Dise\u00f1ar la arquitectura estrat\u00e9gica para el lanzamiento de nuevos productos o servicios, asegurando la alineaci\u00f3n entre la propuesta de valor, la segmentaci\u00f3n de mercado, el modelo de precios y el plan operativo de ejecuci\u00f3n.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/09-Consultoria-Negocio/BIZ-002-Estrategia-GoToMarket.md"
+  },
+  {
+    "id": "ECOM-001",
+    "name": "Estrategia de E-commerce",
+    "version": "1.0.0",
+    "category": "Commerce Avanzado",
+    "discipline": "Commerce y E-commerce",
+    "agent_core": "CommerceStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "commerce-strategy",
+    "input_type": "cat\u00e1logo, canal, operaci\u00f3n y metas comerciales",
+    "deliverable_type": "estrategia ecommerce o marketplace",
+    "tags": [],
+    "objective": "Dise\u00f1ar la arquitectura estrat\u00e9gica integral de una unidad de venta online, abarcando el modelo de negocio, stack tecnol\u00f3gico, estructura de cat\u00e1logo, flujos de conversi\u00f3n, log\u00edstica y retenci\u00f3n.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/10-Commerce/ECOM-001-Estrategia-Ecommerce.md"
+  },
+  {
+    "id": "ECOM-002",
+    "name": "Optimizaci\u00f3n de Marketplace",
+    "version": "1.0.0",
+    "category": "Commerce Avanzado",
+    "discipline": "Commerce y E-commerce",
+    "agent_core": "CommerceStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "commerce-strategy",
+    "input_type": "cat\u00e1logo, canal, operaci\u00f3n y metas comerciales",
+    "deliverable_type": "estrategia ecommerce o marketplace",
+    "tags": [],
+    "objective": "Maximizar la visibilidad, autoridad y volumen de ventas de una marca en ecosistemas de Marketplace (Mercado Libre, Amazon, Shopee) mediante la optimizaci\u00f3n t\u00e9cnica de listings, gesti\u00f3n de Retail Media y protocolos de reputaci\u00f3n.",
+    "when_to_use": "",
+    "input_required": [],
+    "expected_output": [],
+    "example_input": "",
+    "example_output": [],
+    "path": "base/masters/prompts-operativos/10-Commerce/ECOM-002-Optimizacion-Marketplace.md"
+  },
+  {
+    "id": "CRM-001",
+    "name": "Estrategia de Email Marketing",
+    "version": "1.0.0",
+    "category": "Customer Experience y CRM",
+    "discipline": "CX, CRM y Retenci\u00f3n",
+    "agent_core": "CRMStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "retention",
+    "input_type": "base de datos, lifecycle y objetivos de retencion",
+    "deliverable_type": "flujo CRM, programa de fidelizacion o roadmap de email",
+    "tags": [],
+    "objective": "Dise\u00f1ar una estrategia completa de email marketing con segmentaci\u00f3n, flows automatizados, calendario editorial y optimizaci\u00f3n de deliverability.",
+    "when_to_use": "Usa este prompt cuando un cliente tenga una base de contactos y necesite activarla o cuando quiera implementar email marketing desde cero.",
+    "input_required": [
+      "Empresa, n\u00famero de contactos, plataforma actual, objetivo principal, frecuencia de env\u00edo actual."
+    ],
+    "expected_output": [
+      "Plan de email marketing ejecutable con flows listos para configurar."
+    ],
+    "example_input": "\"E-commerce de ropa deportiva. 8,000 contactos en Mailchimp. Env\u00edan 1 email al mes sin segmentar. Quieren aumentar ventas por email.\"",
+    "example_output": [
+      "auditor\u00eda de base actual,",
+      "5 segmentos clave,",
+      "6 flows automatizados con emails,",
+      "calendario editorial mensual,",
+      "checklist de deliverability."
+    ],
+    "path": "base/masters/prompts-operativos/11-CX-CRM/CRM-001-Email-Marketing.md"
+  },
+  {
+    "id": "CRM-002",
+    "name": "Programa de Fidelizaci\u00f3n y Retenci\u00f3n",
+    "version": "1.0.0",
+    "category": "Customer Experience y CRM",
+    "discipline": "CX, CRM y Retenci\u00f3n",
+    "agent_core": "CRMStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "retention",
+    "input_type": "base de datos, lifecycle y objetivos de retencion",
+    "deliverable_type": "flujo CRM, programa de fidelizacion o roadmap de email",
+    "tags": [],
+    "objective": "Dise\u00f1ar un programa de lealtad/fidelizaci\u00f3n con mec\u00e1nica de recompensas, niveles, referidos y estrategia de retenci\u00f3n para aumentar el LTV del cliente.",
+    "when_to_use": "Usa este prompt cuando un cliente tenga una base de clientes activa y quiera aumentar recompra, reducir churn o crear un programa de lealtad formal.",
+    "input_required": [
+      "Empresa, industria, n\u00famero de clientes, ticket promedio, frecuencia de compra actual."
+    ],
+    "expected_output": [
+      "Dise\u00f1o completo del programa de fidelizaci\u00f3n listo para aprobar e implementar."
+    ],
+    "example_input": "\"Cafeter\u00eda con 3 sucursales en Quito. 2,000 clientes recurrentes. Ticket promedio $5.50. Frecuencia: 2 veces por semana.\"",
+    "example_output": [
+      "modelo de puntos por compra,",
+      "3 niveles con beneficios,",
+      "programa de referidos,",
+      "plan de comunicaci\u00f3n,",
+      "unit economics del programa."
+    ],
+    "path": "base/masters/prompts-operativos/11-CX-CRM/CRM-002-Programa-Fidelizacion.md"
+  },
+  {
+    "id": "CX-001",
+    "name": "Customer Journey Map",
+    "version": "1.0.0",
+    "category": "Customer Experience y CRM",
+    "discipline": "CX, CRM y Retenci\u00f3n",
+    "agent_core": "CXDesigner",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "experience-design",
+    "input_type": "journey actual, audiencias y fricciones",
+    "deliverable_type": "journey map o blueprint de experiencia",
+    "tags": [],
+    "objective": "Crear un mapa del journey del cliente completo con touchpoints, emociones, pain points y oportunidades de mejora por fase.",
+    "when_to_use": "Usa este prompt cuando necesites entender la experiencia completa del cliente con una marca, identificar fricciones y dise\u00f1ar mejoras de UX/servicio.",
+    "input_required": [
+      "Empresa/marca, tipo de cliente, objetivo del cliente, canales de contacto existentes."
+    ],
+    "expected_output": [
+      "Journey map narrativo con diagn\u00f3stico y plan de acci\u00f3n."
+    ],
+    "example_input": "\"App de banca digital para millennials ecuatorianos. El journey desde descarga hasta primera transacci\u00f3n.\"",
+    "example_output": [
+      "persona del millennial bancario,",
+      "journey de 7 fases,",
+      "emociones por touchpoint,",
+      "momentos de verdad,",
+      "7 mejoras priorizadas."
+    ],
+    "path": "base/masters/prompts-operativos/11-CX-CRM/CX-001-Journey-Map.md"
+  },
+  {
+    "id": "COPY-001",
+    "name": "Brand Voice System",
+    "version": "1.0.0",
+    "category": "Content Strategy y Copy",
+    "discipline": "Content Strategy y Copy",
+    "agent_core": "ContentStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "editorial-strategy",
+    "input_type": "posicionamiento, audiencia, canales y tono deseado",
+    "deliverable_type": "brand voice, messaging architecture o sistema editorial",
+    "tags": [],
+    "objective": "Dise\u00f1ar un sistema de tono de voz y lineamientos de estilo que permita a una marca comunicar de manera consistente en web, redes, email, PR y ventas.",
+    "when_to_use": "Usa este prompt cuando una marca suene inconsistente, gen\u00e9rica o demasiado dependiente del estilo de cada persona que redacta.",
+    "input_required": [
+      "Industria, atributos deseados, audiencia, canales y ejemplos de comunicaci\u00f3n actual."
+    ],
+    "expected_output": [
+      "Documento de brand voice con reglas claras y ejemplos aplicados."
+    ],
+    "example_input": "\"Firma boutique de consultor\u00eda financiera. Quieren sonar experta, clara y menos acartonada.\"",
+    "example_output": [
+      "principios de voz,",
+      "do/don't,",
+      "l\u00e9xico sugerido,",
+      "adaptaci\u00f3n por canal,",
+      "ejemplos antes/despu\u00e9s."
+    ],
+    "path": "base/masters/prompts-operativos/12-Content-Strategy-Copy/COPY-001-Brand-Voice-System.md"
+  },
+  {
+    "id": "COPY-002",
+    "name": "Arquitectura de Contenido Editorial",
+    "version": "1.0.0",
+    "category": "Content Strategy y Copy",
+    "discipline": "Content Strategy y Copy",
+    "agent_core": "ContentStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "editorial-strategy",
+    "input_type": "posicionamiento, audiencia, canales y tono deseado",
+    "deliverable_type": "brand voice, messaging architecture o sistema editorial",
+    "tags": [],
+    "objective": "Dise\u00f1ar la arquitectura editorial de una marca, con pilares de contenido, territorios tem\u00e1ticos, formatos y calendario base conectado a negocio.",
+    "when_to_use": "Usa este prompt cuando un cliente publique contenido sin sistema, sin relaci\u00f3n con objetivos comerciales o repitiendo temas sin criterio.",
+    "input_required": [
+      "Objetivo de negocio, audiencia, canales, oferta y contexto de marca."
+    ],
+    "expected_output": [
+      "Sistema editorial aplicable con pilares y calendario accionable."
+    ],
+    "example_input": "\"Software contable para pymes. Quieren educar, generar confianza y mover demos desde LinkedIn, blog y email.\"",
+    "example_output": [
+      "pilares editoriales,",
+      "mapa por funnel,",
+      "sistema de distribuci\u00f3n,",
+      "calendario de 30 d\u00edas,",
+      "KPIs por pilar."
+    ],
+    "path": "base/masters/prompts-operativos/12-Content-Strategy-Copy/COPY-002-Arquitectura-Contenido-Editorial.md"
+  },
+  {
+    "id": "COPY-003",
+    "name": "Transcreaci\u00f3n Biling\u00fce de Mensajes y Piezas",
+    "version": "1.0.0",
+    "category": "Content Strategy y Copy",
+    "discipline": "Content Strategy y Copy",
+    "agent_core": "ContentStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "editorial-strategy",
+    "input_type": "texto base, idioma origen, audiencia, canal y mercado destino",
+    "deliverable_type": "adaptaci\u00f3n biling\u00fce con equivalencia de tono, intenci\u00f3n y fuerza persuasiva",
+    "tags": [],
+    "objective": "Adaptar mensajes, claims y piezas entre espa\u00f1ol e ingl\u00e9s conservando intenci\u00f3n, tono, contexto cultural y capacidad persuasiva, sin caer en traducci\u00f3n literal.",
+    "when_to_use": "Usa este prompt cuando una marca ya tiene copy en un idioma, pero necesita una versi\u00f3n equivalente para otro mercado, otro canal o una audiencia distinta sin perder calidad editorial ni potencia comercial.",
+    "input_required": [
+      "Texto original, idioma origen, idioma destino, mercado, audiencia, canal y tono esperado."
+    ],
+    "expected_output": [
+      "Versi\u00f3n transcreada lista para publicar, con alternativas y notas de localizaci\u00f3n."
+    ],
+    "example_input": "\"Tenemos una landing en espa\u00f1ol para servicios legales y necesitamos su versi\u00f3n en ingl\u00e9s para founders latinos en EE. UU. sin que suene traducida.\"",
+    "example_output": [
+      "lectura del mensaje original,",
+      "versi\u00f3n transcreada en ingl\u00e9s,",
+      "variantes de headline y CTA,",
+      "notas de localizaci\u00f3n,",
+      "checklist de equivalencia."
+    ],
+    "path": "base/masters/prompts-operativos/12-Content-Strategy-Copy/COPY-003-Transcreacion-Bilingue.md"
+  },
+  {
+    "id": "COPY-004",
+    "name": "Copy Biling\u00fce para Web, Email y Ads",
+    "version": "1.0.0",
+    "category": "Content Strategy y Copy",
+    "discipline": "Content Strategy y Copy",
+    "agent_core": "ContentStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "editorial-strategy",
+    "input_type": "brief, oferta, audiencia, canal, idioma y objetivo de conversi\u00f3n",
+    "deliverable_type": "piezas de copy biling\u00fce adaptadas por canal y objetivo",
+    "tags": [],
+    "objective": "Redactar o adaptar copy biling\u00fce de alto nivel para web, email y anuncios, alineado a negocio, tono de marca, etapa del funnel y objetivo de conversi\u00f3n.",
+    "when_to_use": "Usa este prompt cuando una empresa necesite lanzar campa\u00f1as, p\u00e1ginas o secuencias en espa\u00f1ol e ingl\u00e9s manteniendo consistencia de mensaje y criterio editorial por canal.",
+    "input_required": [
+      "Brief, oferta, audiencia, mercado, idioma(s), canal, objeciones y CTA."
+    ],
+    "expected_output": [
+      "Copy biling\u00fce listo para publicar con variantes de testeo y criterio por canal."
+    ],
+    "example_input": "\"Necesitamos headline de landing, email de nurturing y anuncios Meta en espa\u00f1ol e ingl\u00e9s para una cl\u00ednica est\u00e9tica premium.\"",
+    "example_output": [
+      "\u00e1ngulo estrat\u00e9gico,",
+      "piezas por canal,",
+      "versi\u00f3n equivalente en ambos idiomas,",
+      "variantes para testeo,",
+      "checklist de conversi\u00f3n."
+    ],
+    "path": "base/masters/prompts-operativos/12-Content-Strategy-Copy/COPY-004-Copy-Bilingue-Web-Email-Ads.md"
+  },
+  {
+    "id": "COPY-005",
+    "name": "QA Editorial Biling\u00fce y Correcci\u00f3n de Estilo",
+    "version": "1.0.0",
+    "category": "Content Strategy y Copy",
+    "discipline": "Content Strategy y Copy",
+    "agent_core": "ContentStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "editorial-strategy",
+    "input_type": "pieza redactada, idioma, gu\u00eda de marca y criterio de publicaci\u00f3n",
+    "deliverable_type": "revisi\u00f3n editorial biling\u00fce con correcciones, observaciones y versi\u00f3n final depurada",
+    "tags": [],
+    "objective": "Auditar piezas en espa\u00f1ol, ingl\u00e9s o versi\u00f3n biling\u00fce para asegurar ortograf\u00eda impecable, gram\u00e1tica correcta, coherencia de tono, consistencia terminol\u00f3gica y calidad editorial antes de publicar.",
+    "when_to_use": "Usa este prompt cuando el texto ya est\u00e9 redactado, pero necesite una revisi\u00f3n seria de estilo y calidad para evitar errores, ambig\u00fcedades, incoherencias de tono o problemas de localizaci\u00f3n.",
+    "input_required": [
+      "Texto, idioma(s), canal, tono esperado, audiencia y gu\u00eda de marca si existe."
+    ],
+    "expected_output": [
+      "Auditor\u00eda editorial con versi\u00f3n corregida y observaciones accionables."
+    ],
+    "example_input": "\"Tenemos una secuencia de emails en espa\u00f1ol e ingl\u00e9s para SaaS B2B y queremos revisar tono, gram\u00e1tica y consistencia antes de enviarla.\"",
+    "example_output": [
+      "diagn\u00f3stico editorial,",
+      "errores detectados,",
+      "versi\u00f3n corregida,",
+      "observaciones biling\u00fces,",
+      "checklist final."
+    ],
+    "path": "base/masters/prompts-operativos/12-Content-Strategy-Copy/COPY-005-QA-Editorial-Bilingue.md"
+  },
+  {
+    "id": "INFL-001",
+    "name": "Estrategia de Campa\u00f1a con Creadores",
+    "version": "1.0.0",
+    "category": "Influencer Marketing",
+    "discipline": "Influencer Marketing",
+    "agent_core": "InfluencerStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "creator-strategy",
+    "input_type": "Objetivo de campa\u00f1a, audiencia, presupuesto y categor\u00eda",
+    "deliverable_type": "Estrategia de creadores, brief o plan de outreach",
+    "tags": [],
+    "objective": "Dise\u00f1ar una campa\u00f1a integral de influencer marketing que incluya selecci\u00f3n estrat\u00e9gica de creadores, narrativa de marca, formatos t\u00e1cticos, entregables y KPIs de negocio.",
+    "when_to_use": "Utiliza este prompt cuando una marca requiera activar creadores de contenido pero necesite definir el fit estrat\u00e9gico, los objetivos de comunicaci\u00f3n y la metodolog\u00eda de medici\u00f3n.",
+    "input_required": [],
+    "expected_output": [
+      "Documento estrat\u00e9gico de campa\u00f1a con criterios de selecci\u00f3n y marco de medici\u00f3n."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Perfil detallado del creador (ej: especialistas en ingredientes, rutinas reales).",
+      "Narrativa central (ej: 'La ciencia del alivio diario').",
+      "Mix de canales y formatos (ej: 10 Micro en TikTok para reviews, 5 en IG para educaci\u00f3n).",
+      "Matriz de KPIs y riesgos de seguridad de marca."
+    ],
+    "path": "base/masters/prompts-operativos/13-Influencer-Marketing/INFL-001-Estrategia-Campana-Creadores.md"
+  },
+  {
+    "id": "INFL-002",
+    "name": "Brief y Outreach para Creadores",
+    "version": "1.0.0",
+    "category": "Influencer Marketing",
+    "discipline": "Influencer Marketing",
+    "agent_core": "InfluencerStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "creator-strategy",
+    "input_type": "Objetivo de campa\u00f1a, detalles de marca y canales de contacto",
+    "deliverable_type": "Brief creativo y secuencia de comunicaci\u00f3n (outreach)",
+    "tags": [],
+    "objective": "Elaborar un brief t\u00e9cnico-creativo exhaustivo para creadores y dise\u00f1ar una secuencia de contacto (outreach) profesional que asegure una alta tasa de respuesta y alineaci\u00f3n de marca.",
+    "when_to_use": "Utiliza este prompt cuando la estrategia de campa\u00f1a ya est\u00e9 definida y sea necesario formalizar las instrucciones para los creadores y ejecutar el proceso de contacto inicial.",
+    "input_required": [],
+    "expected_output": [
+      "Brief profesional listo para env\u00edo y secuencia estructurada de mensajes de outreach."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Brief creativo estructurado.",
+      "Gu\u00eda de Do's & Don'ts.",
+      "Plantillas de outreach inicial y seguimiento.",
+      "Checklist t\u00e9cnico de producci\u00f3n.",
+      "Matriz de calificaci\u00f3n de perfiles."
+    ],
+    "path": "base/masters/prompts-operativos/13-Influencer-Marketing/INFL-002-Brief-Outreach-Creadores.md"
+  },
+  {
+    "id": "EXP-001",
+    "name": "Concepto y Experiencia de Evento",
+    "version": "1.0.0",
+    "category": "Experiential y Eventos",
+    "discipline": "Experiential y Eventos",
+    "agent_core": "ExperientialStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "experience-design",
+    "input_type": "Objetivo, audiencia, formato y restricciones del evento",
+    "deliverable_type": "Concepto creativo de evento o plan de dise\u00f1o de experiencia",
+    "tags": [],
+    "objective": "Dise\u00f1ar el concepto estrat\u00e9gico de un evento o activaci\u00f3n de marca, con un enfoque prioritario en la experiencia del asistente, el mensaje central y la creaci\u00f3n de momentos memorables.",
+    "when_to_use": "Utiliza este prompt cuando una marca requiera dise\u00f1ar un evento, activaci\u00f3n o experiencia inmersiva y necesite definir el concepto creativo, la narrativa y el journey emocional del asistente.",
+    "input_required": [],
+    "expected_output": [
+      "Documento conceptual con journey detallado y estructura operativa base."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Concepto creativo (ej: 'El Futuro de la Eficiencia').",
+      "Mapa del journey del asistente.",
+      "Escaleta de tiempos (Run of Show).",
+      "Definici\u00f3n de momentos 'Hero' (ej: la revelaci\u00f3n del producto).",
+      "Plan de contingencia ante fallos t\u00e9cnicos."
+    ],
+    "path": "base/masters/prompts-operativos/14-Experiential-Eventos/EXP-001-Concepto-Experiencia-Evento.md"
+  },
+  {
+    "id": "EXP-002",
+    "name": "Plan de Amplificaci\u00f3n de Evento",
+    "version": "1.0.0",
+    "category": "Experiential y Eventos",
+    "discipline": "Experiential y Eventos",
+    "agent_core": "ExperientialStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "experience-design",
+    "input_type": "Objetivo, audiencia, formato y activos disponibles del evento",
+    "deliverable_type": "Plan de amplificaci\u00f3n estrat\u00e9gica multicanal",
+    "tags": [],
+    "objective": "Dise\u00f1ar una estrategia de amplificaci\u00f3n integral antes, durante y despu\u00e9s de un evento para maximizar su visibilidad, generar contenidos de alto valor reutilizables y mantener el momentum de marca.",
+    "when_to_use": "Utiliza este prompt cuando el evento no deba limitarse a la experiencia presencial, sino que deba transformarse en un motor de contenido, relaciones p\u00fablicas y generaci\u00f3n de demanda.",
+    "input_required": [],
+    "expected_output": [
+      "Plan t\u00e1ctico de amplificaci\u00f3n desglosado por fases y lista de activos a producir."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Narrativa central de amplificaci\u00f3n.",
+      "Calendario t\u00e1ctico pre/durante/post evento.",
+      "Matriz de activos prioritarios por plataforma.",
+      "Plan de distribuci\u00f3n en canales seleccionados.",
+      "Cuadro de mando de KPIs."
+    ],
+    "path": "base/masters/prompts-operativos/14-Experiential-Eventos/EXP-002-Plan-Amplificacion-Evento.md"
+  },
+  {
+    "id": "HLTH-001",
+    "name": "Estrategia de Marketing Healthcare",
+    "version": "1.0.0",
+    "category": "Healthcare Marketing",
+    "discipline": "Healthcare Marketing",
+    "agent_core": "HealthcareMarketer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "healthcare-strategy",
+    "input_type": "Especialidad m\u00e9dica, perfil del paciente, servicios y restricciones legales",
+    "deliverable_type": "Plan estrat\u00e9gico de Healthcare Marketing o auditor\u00eda de posicionamiento",
+    "tags": [],
+    "objective": "Dise\u00f1ar una estrategia integral de marketing para organizaciones y profesionales de la salud que equilibre la captaci\u00f3n \u00e9tica de pacientes, la construcci\u00f3n de confianza, la claridad m\u00e9dica y el cumplimiento normativo.",
+    "when_to_use": "Utiliza este prompt cuando una cl\u00ednica, hospital, laboratorio o especialista m\u00e9dico requiera escalar su presencia digital sin comprometer la \u00e9tica profesional ni infringir regulaciones de salud (claims inseguros o publicidad agresiva).",
+    "input_required": [],
+    "expected_output": [
+      "Estrategia integral de healthcare marketing con dise\u00f1o de funnel y lineamientos de cumplimiento."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Segmentaci\u00f3n detallada de pacientes.",
+      "Dise\u00f1o de funnel \u00e9tico de conversi\u00f3n.",
+      "Recomendaci\u00f3n de canales (ej: Local SEO, Content Marketing educativo).",
+      "Gu\u00eda de se\u00f1ales de confianza y cumplimiento de claims."
+    ],
+    "path": "base/masters/prompts-operativos/15-Healthcare-Marketing/HLTH-001-Estrategia-Marketing-Healthcare.md"
+  },
+  {
+    "id": "HLTH-002",
+    "name": "Plan de Contenido y Educaci\u00f3n al Paciente",
+    "version": "1.0.0",
+    "category": "Healthcare Marketing",
+    "discipline": "Healthcare Marketing",
+    "agent_core": "HealthcareMarketer",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "healthcare-strategy",
+    "input_type": "Especialidad m\u00e9dica, perfil del paciente, procedimientos clave y canales",
+    "deliverable_type": "Plan de contenido educativo y calendario de comunicaci\u00f3n",
+    "tags": [],
+    "objective": "Dise\u00f1ar un plan de comunicaci\u00f3n educativa para pacientes que incremente la confianza, facilite la comprensi\u00f3n de tratamientos complejos y genere una demanda informada y responsable.",
+    "when_to_use": "Utiliza este prompt cuando una marca de salud necesite explicar procedimientos m\u00e9dicos, resolver objeciones frecuentes de pacientes y posicionarse como una autoridad confiable mediante contenido de valor.",
+    "input_required": [],
+    "expected_output": [
+      "Plan de contenido estructurado con calendario editorial y gu\u00edas de cumplimiento."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Matriz de dudas y mitos resueltos.",
+      "Definici\u00f3n de pilares educativos (ej: 'Ciencia de la Piel', 'Mitos del Cuidado Diario').",
+      "Calendario base de 30 d\u00edas con formatos espec\u00edficos.",
+      "Gu\u00eda de 'Do's & Don'ts' en claims m\u00e9dicos."
+    ],
+    "path": "base/masters/prompts-operativos/15-Healthcare-Marketing/HLTH-002-Plan-Contenido-Educacion-Paciente.md"
+  },
+  {
+    "id": "ESG-001",
+    "name": "Estrategia de Comunicaci\u00f3n ESG",
+    "version": "1.0.0",
+    "category": "Sostenibilidad y ESG",
+    "discipline": "Sostenibilidad y ESG",
+    "agent_core": "ESGStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "esg-communications",
+    "input_type": "Iniciativas ESG, evidencias de impacto, mapa de stakeholders y objetivos",
+    "deliverable_type": "Estrategia integral de comunicaci\u00f3n ESG o narrativa corporativa",
+    "tags": [],
+    "objective": "Dise\u00f1ar una estrategia de comunicaci\u00f3n ESG (Ambiental, Social y de Gobernanza) que transforme las iniciativas y evidencias corporativas en mensajes cre\u00edbles, transparentes y de alto valor para diversos grupos de inter\u00e9s (stakeholders).",
+    "when_to_use": "Utiliza este prompt cuando una empresa ya cuente con acciones o metas de sostenibilidad y requiera comunicarlas de forma efectiva, evitando caer en un tono oportunista o en riesgos de comunicaci\u00f3n vaga.",
+    "input_required": [],
+    "expected_output": [
+      "Estrategia integral de comunicaci\u00f3n ESG con narrativa corporativa y matriz de control de riesgos."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Narrativa ESG central.",
+      "Mensajes segmentados por stakeholder.",
+      "Gu\u00eda de claims defendibles con datos.",
+      "Roadmap estrat\u00e9gico de comunicaci\u00f3n.",
+      "An\u00e1lisis preventivo de greenwashing."
+    ],
+    "path": "base/masters/prompts-operativos/16-Sostenibilidad-ESG/ESG-001-Estrategia-Comunicacion-ESG.md"
+  },
+  {
+    "id": "ESG-002",
+    "name": "Mensajer\u00eda para Reporte de Sostenibilidad",
+    "version": "1.0.0",
+    "category": "Sostenibilidad y ESG",
+    "discipline": "Sostenibilidad y ESG",
+    "agent_core": "ESGStrategist",
+    "source_of_truth": [],
+    "related_services": [],
+    "stage": "esg-communications",
+    "input_type": "Temas materiales, datos de impacto, audiencia del reporte y prop\u00f3sito",
+    "deliverable_type": "Marco narrativo y estructura de contenidos para reporte ESG",
+    "tags": [],
+    "objective": "Estructurar la narrativa estrat\u00e9gica y los mensajes clave de un reporte de sostenibilidad, memoria anual o documento ejecutivo de impacto corporativo.",
+    "when_to_use": "Utiliza este prompt cuando la organizaci\u00f3n necesite organizar sus iniciativas, m\u00e9tricas de desempe\u00f1o y compromisos futuros bajo una narrativa coherente y persuasiva para sus grupos de inter\u00e9s.",
+    "input_required": [],
+    "expected_output": [
+      "Marco narrativo integral y estructura de contenidos para el reporte o resumen ejecutivo ESG."
+    ],
+    "example_input": "",
+    "example_output": [
+      "Storyline ejecutivo del reporte.",
+      "Mensajer\u00eda detallada por pilar (E, S, G).",
+      "\u00cdndice propuesto de contenidos.",
+      "Resumen One-Pager para C-Level.",
+      "Gu\u00eda de mitigaci\u00f3n de riesgos de lenguaje."
+    ],
+    "path": "base/masters/prompts-operativos/16-Sostenibilidad-ESG/ESG-002-Mensajeria-Reporte-Sostenibilidad.md"
   }
 ]

@@ -690,5 +690,650 @@
       "riesgos"
     ],
     "owner_area": "IA"
+  },
+  {
+    "service_code": "PR-001",
+    "service_name": "Comunicado de Prensa",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "pieza",
+    "scope_base": "Redaccion y distribucion de comunicados",
+    "not_included": "PR tactico extendido, eventos en vivo",
+    "inputs": [
+      "brief",
+      "quotes",
+      "objetivo",
+      "medios target"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "PR-002",
+    "service_name": "Plan de Comunicacion",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "proyecto",
+    "scope_base": "Estrategia de comunicacion 360",
+    "not_included": "Ejecucion de pauta, produccion AV",
+    "inputs": [
+      "objetivo",
+      "audiencia",
+      "presupuesto",
+      "timing"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "PR-003",
+    "service_name": "Media Training",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "sesion",
+    "scope_base": "Entrenamiento de voceros (teorico/practico)",
+    "not_included": "Produccion AV compleja",
+    "inputs": [
+      "voceros",
+      "mensajes clave",
+      "Q&A base"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "PR-004",
+    "service_name": "Plan de Crisis",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "proyecto",
+    "scope_base": "Protocolo de crisis y holding statements",
+    "not_included": "Asesoria legal, voceria directa",
+    "inputs": [
+      "riesgos",
+      "equipo interno",
+      "manuales"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "PR-005",
+    "service_name": "Monitoreo de Medios",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "mes",
+    "scope_base": "Social listening y clipping mensual",
+    "not_included": "Respuesta a usuarios (CM)",
+    "inputs": [
+      "keywords",
+      "competidores",
+      "topics"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "PR-006",
+    "service_name": "Comunicacion Interna",
+    "category": "Relaciones Publicas y Comunicacion",
+    "unit": "proyecto",
+    "scope_base": "Campanhas para colaboradores y boletines",
+    "not_included": "Produccion de eventos presenciales",
+    "inputs": [
+      "cultura",
+      "objetivos",
+      "canales internos"
+    ],
+    "owner_area": "Comunicacion"
+  },
+  {
+    "service_code": "DAT-001",
+    "service_name": "Dashboard de KPIs",
+    "category": "Data, Analytics e Insights",
+    "unit": "proyecto",
+    "scope_base": "Dashboard ejecutivo (Looker/Power BI)",
+    "not_included": "Data cleaning masivo, ingenieria de datos",
+    "inputs": [
+      "KPIs",
+      "fuentes",
+      "accesos",
+      "publico"
+    ],
+    "owner_area": "Data"
+  },
+  {
+    "service_code": "DAT-002",
+    "service_name": "Plan de Medicion",
+    "category": "Data, Analytics e Insights",
+    "unit": "proyecto",
+    "scope_base": "Framework de medicion y eventos",
+    "not_included": "Implementacion dev compleja",
+    "inputs": [
+      "objetivos de negocio",
+      "embudo actual"
+    ],
+    "owner_area": "Data"
+  },
+  {
+    "service_code": "DAT-003",
+    "service_name": "Auditoria de Datos",
+    "category": "Data, Analytics e Insights",
+    "unit": "diagnostico",
+    "scope_base": "Evaluacion de tags, conversiones y calidad",
+    "not_included": "Correccion automatica de codigo legacy",
+    "inputs": [
+      "accesos GA4/GTM/Pixel",
+      "documentacion"
+    ],
+    "owner_area": "Data"
+  },
+  {
+    "service_code": "DAT-004",
+    "service_name": "Informe de Insights",
+    "category": "Data, Analytics e Insights",
+    "unit": "informe",
+    "scope_base": "Investigacion y analisis cuali/cuanti",
+    "not_included": "Compra de paneles costosos",
+    "inputs": [
+      "objetivo del estudio",
+      "publico target"
+    ],
+    "owner_area": "Data"
+  },
+  {
+    "service_code": "DAT-005",
+    "service_name": "Configuracion GA4 + GTM",
+    "category": "Data, Analytics e Insights",
+    "unit": "proyecto",
+    "scope_base": "Setup de eventos y conversiones base",
+    "not_included": "eCommerce tracking complejo",
+    "inputs": [
+      "accesos web",
+      "lista de eventos"
+    ],
+    "owner_area": "Data"
+  },
+  {
+    "service_code": "MED-001",
+    "service_name": "Plan de Medios Integral",
+    "category": "Media Planning y Performance",
+    "unit": "proyecto",
+    "scope_base": "Mix de medios, presupuesto y flowchart",
+    "not_included": "Ejecucion (compra real)",
+    "inputs": [
+      "presupuesto",
+      "objetivo",
+      "target",
+      "timing"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-002",
+    "service_name": "Campana Meta Ads",
+    "category": "Media Planning y Performance",
+    "unit": "mes",
+    "scope_base": "Gestion de campana Facebook/Instagram",
+    "not_included": "Produccion de creativos",
+    "inputs": [
+      "presupuesto",
+      "objetivo",
+      "creativos",
+      "accesos"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-003",
+    "service_name": "Campana Google Ads",
+    "category": "Media Planning y Performance",
+    "unit": "mes",
+    "scope_base": "Gestion de Search, Display o PMax",
+    "not_included": "Landing pages, creativos HTML5",
+    "inputs": [
+      "presupuesto",
+      "keywords target",
+      "accesos"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-004",
+    "service_name": "Campana TikTok Ads",
+    "category": "Media Planning y Performance",
+    "unit": "mes",
+    "scope_base": "Gestion de TikTok Ads",
+    "not_included": "Creacion de UGC (User Generated Content)",
+    "inputs": [
+      "presupuesto",
+      "videos verticales"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-005",
+    "service_name": "Auditoria SEO",
+    "category": "Media Planning y Performance",
+    "unit": "diagnostico",
+    "scope_base": "Auditoria tecnica, on-page y off-page",
+    "not_included": "Implementacion de los fixes tecnicos",
+    "inputs": [
+      "accesos Search Console",
+      "CMS"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-006",
+    "service_name": "SEO Mensual",
+    "category": "Media Planning y Performance",
+    "unit": "mes",
+    "scope_base": "Optimizacion continua y link building",
+    "not_included": "Redaccion masiva de blogs (copywriting)",
+    "inputs": [
+      "palabras clave objetivo",
+      "accesos CMS"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "MED-007",
+    "service_name": "Local SEO",
+    "category": "Media Planning y Performance",
+    "unit": "proyecto",
+    "scope_base": "Optimizacion de Google Business Profile",
+    "not_included": "Resenas falsas, fotografia local",
+    "inputs": [
+      "ubicacion",
+      "horario",
+      "fotos reales"
+    ],
+    "owner_area": "Media"
+  },
+  {
+    "service_code": "BIZ-001",
+    "service_name": "Diagnostico de Madurez Digital",
+    "category": "Consultoria de Negocio",
+    "unit": "diagnostico",
+    "scope_base": "Evaluacion 6 dimensiones y roadmap",
+    "not_included": "Ejecucion del roadmap",
+    "inputs": [
+      "data basica de la empresa",
+      "entrevistas"
+    ],
+    "owner_area": "Consultoria"
+  },
+  {
+    "service_code": "BIZ-002",
+    "service_name": "Estrategia Go-to-Market",
+    "category": "Consultoria de Negocio",
+    "unit": "proyecto",
+    "scope_base": "Estrategia de lanzamiento 90 dias",
+    "not_included": "Ejecucion de la pauta/canales",
+    "inputs": [
+      "propuesta de valor",
+      "producto",
+      "mercado"
+    ],
+    "owner_area": "Consultoria"
+  },
+  {
+    "service_code": "BIZ-003",
+    "service_name": "Business Model Canvas",
+    "category": "Consultoria de Negocio",
+    "unit": "taller",
+    "scope_base": "Taller y definicion del modelo de negocio",
+    "not_included": "Plan de negocios financiero detallado",
+    "inputs": [
+      "informacion financiera basica"
+    ],
+    "owner_area": "Consultoria"
+  },
+  {
+    "service_code": "BIZ-004",
+    "service_name": "Taller de Design Thinking",
+    "category": "Consultoria de Negocio",
+    "unit": "taller",
+    "scope_base": "Facilitacion de sesion de ideacion",
+    "not_included": "Desarrollo del prototipo funcional",
+    "inputs": [
+      "reto a resolver",
+      "equipo participante"
+    ],
+    "owner_area": "Consultoria"
+  },
+  {
+    "service_code": "ECO-001",
+    "service_name": "Estrategia E-commerce",
+    "category": "Commerce Avanzado",
+    "unit": "proyecto",
+    "scope_base": "Arquitectura y estrategia de tienda",
+    "not_included": "Desarrollo de la tienda (Shopify/Web)",
+    "inputs": [
+      "catalogo",
+      "pricing",
+      "logistica actual"
+    ],
+    "owner_area": "Commerce"
+  },
+  {
+    "service_code": "ECO-002",
+    "service_name": "Optimizacion de Marketplace",
+    "category": "Commerce Avanzado",
+    "unit": "proyecto",
+    "scope_base": "Setup/optimizacion en MELI/Amazon",
+    "not_included": "Atencion al cliente directa",
+    "inputs": [
+      "catalogo base",
+      "fotos",
+      "precios"
+    ],
+    "owner_area": "Commerce"
+  },
+  {
+    "service_code": "ECO-003",
+    "service_name": "Social Commerce",
+    "category": "Commerce Avanzado",
+    "unit": "proyecto",
+    "scope_base": "Setup Instagram/TikTok Shops",
+    "not_included": "Gestion diaria del catalogo (sync)",
+    "inputs": [
+      "catalogo de FB",
+      "cuenta de IG/TikTok"
+    ],
+    "owner_area": "Commerce"
+  },
+  {
+    "service_code": "ECO-004",
+    "service_name": "CRO (Conversion Rate)",
+    "category": "Commerce Avanzado",
+    "unit": "diagnostico",
+    "scope_base": "Auditoria de checkout y navegacion",
+    "not_included": "Redeseno total de la web",
+    "inputs": [
+      "acceso Analytics",
+      "heatmaps"
+    ],
+    "owner_area": "Commerce"
+  },
+  {
+    "service_code": "CX-001",
+    "service_name": "Customer Journey Map",
+    "category": "Customer Experience y CRM",
+    "unit": "proyecto",
+    "scope_base": "Mapeo de experiencia y pain points",
+    "not_included": "Solucion a los pain points detectados",
+    "inputs": [
+      "entrevistas a clientes",
+      "data de quejas"
+    ],
+    "owner_area": "CX"
+  },
+  {
+    "service_code": "CX-002",
+    "service_name": "Implementacion CRM",
+    "category": "Customer Experience y CRM",
+    "unit": "proyecto",
+    "scope_base": "Setup inicial (HubSpot/Brevo), pipelines",
+    "not_included": "Licencias del CRM, integracion ERP",
+    "inputs": [
+      "base de datos limpia",
+      "proceso de ventas"
+    ],
+    "owner_area": "CX"
+  },
+  {
+    "service_code": "CX-003",
+    "service_name": "Email Marketing",
+    "category": "Customer Experience y CRM",
+    "unit": "mes",
+    "scope_base": "Gestion de newsletters y flows",
+    "not_included": "Redaccion de +10 emails mensuales",
+    "inputs": [
+      "base de datos",
+      "linea grafica",
+      "promos"
+    ],
+    "owner_area": "CX"
+  },
+  {
+    "service_code": "CX-004",
+    "service_name": "Programa de Fidelizacion",
+    "category": "Customer Experience y CRM",
+    "unit": "proyecto",
+    "scope_base": "Mecanica, niveles y unidad economica",
+    "not_included": "Software de fidelizacion complejo",
+    "inputs": [
+      "ticket promedio",
+      "frecuencia de compra"
+    ],
+    "owner_area": "CX"
+  },
+  {
+    "service_code": "CX-005",
+    "service_name": "Auditoria CX",
+    "category": "Customer Experience y CRM",
+    "unit": "diagnostico",
+    "scope_base": "Medicion de NPS, CSAT, CES",
+    "not_included": "Encuestas telefonicas masivas",
+    "inputs": [
+      "base de clientes",
+      "software de encuestas"
+    ],
+    "owner_area": "CX"
+  },
+  {
+    "service_code": "CNT-001",
+    "service_name": "Estrategia de Contenidos",
+    "category": "Content Strategy y Copy",
+    "unit": "proyecto",
+    "scope_base": "Sistema editorial con pilares, territorios y calendario base",
+    "not_included": "Produccion completa de piezas salvo acuerdo",
+    "inputs": [
+      "objetivo de negocio",
+      "audiencia",
+      "canales",
+      "oferta"
+    ],
+    "owner_area": "Contenido"
+  },
+  {
+    "service_code": "CNT-002",
+    "service_name": "Brand Voice System",
+    "category": "Content Strategy y Copy",
+    "unit": "proyecto",
+    "scope_base": "Tono de voz, do/don't, lexicon y ejemplos por canal",
+    "not_included": "Rebranding visual o reposicionamiento completo salvo acuerdo",
+    "inputs": [
+      "atributos de marca",
+      "audiencia",
+      "ejemplos actuales"
+    ],
+    "owner_area": "Contenido"
+  },
+  {
+    "service_code": "CNT-003",
+    "service_name": "Arquitectura de Mensajes",
+    "category": "Content Strategy y Copy",
+    "unit": "proyecto",
+    "scope_base": "Jerarquia de mensajes, claims y proof points",
+    "not_included": "Campana creativa completa o manual visual",
+    "inputs": [
+      "propuesta de valor",
+      "diferenciadores",
+      "oferta",
+      "audiencia"
+    ],
+    "owner_area": "Estrategia/Contenido"
+  },
+  {
+    "service_code": "IMK-001",
+    "service_name": "Estrategia de Influencer Marketing",
+    "category": "Influencer Marketing",
+    "unit": "proyecto",
+    "scope_base": "Estrategia de creators, criterios de seleccion y KPIs",
+    "not_included": "Negociacion contractual compleja salvo acuerdo",
+    "inputs": [
+      "objetivo",
+      "audiencia",
+      "presupuesto",
+      "categoria"
+    ],
+    "owner_area": "Influencer"
+  },
+  {
+    "service_code": "IMK-002",
+    "service_name": "Gestion de Campana con Creadores",
+    "category": "Influencer Marketing",
+    "unit": "campana",
+    "scope_base": "Coordinacion de briefs, entregables y seguimiento",
+    "not_included": "Pago a talentos y pauta adicional salvo acuerdo",
+    "inputs": [
+      "shortlist",
+      "calendario",
+      "entregables",
+      "budget"
+    ],
+    "owner_area": "Influencer"
+  },
+  {
+    "service_code": "IMK-003",
+    "service_name": "Creator Sourcing y Outreach",
+    "category": "Influencer Marketing",
+    "unit": "lote/proyecto",
+    "scope_base": "Busqueda, shortlist y contacto inicial con creadores",
+    "not_included": "Cierre legal o administracion completa de contratos",
+    "inputs": [
+      "categoria",
+      "audiencia",
+      "territorio",
+      "tono de marca"
+    ],
+    "owner_area": "Influencer"
+  },
+  {
+    "service_code": "EXP-001",
+    "service_name": "Concepto de Evento o Activacion",
+    "category": "Experiential y Eventos",
+    "unit": "proyecto",
+    "scope_base": "Concepto estrategico de evento o activacion",
+    "not_included": "Produccion tecnica o logistica final salvo acuerdo",
+    "inputs": [
+      "objetivo",
+      "audiencia",
+      "formato",
+      "presupuesto"
+    ],
+    "owner_area": "Experiential"
+  },
+  {
+    "service_code": "EXP-002",
+    "service_name": "Diseno de Experiencia y Run of Show",
+    "category": "Experiential y Eventos",
+    "unit": "proyecto",
+    "scope_base": "Journey del asistente, agenda y momentos clave",
+    "not_included": "Produccion fisica del evento salvo acuerdo",
+    "inputs": [
+      "concepto",
+      "venue",
+      "agenda base",
+      "stakeholders"
+    ],
+    "owner_area": "Experiential"
+  },
+  {
+    "service_code": "EXP-003",
+    "service_name": "Amplificacion de Evento",
+    "category": "Experiential y Eventos",
+    "unit": "proyecto",
+    "scope_base": "Plan de contenido, PR y follow-up del evento",
+    "not_included": "Compra de medios y cobertura ilimitada salvo acuerdo",
+    "inputs": [
+      "objetivo",
+      "agenda",
+      "canales",
+      "activos disponibles"
+    ],
+    "owner_area": "Experiential/Comunicacion"
+  },
+  {
+    "service_code": "HLT-001",
+    "service_name": "Estrategia Healthcare Marketing",
+    "category": "Healthcare Marketing",
+    "unit": "proyecto",
+    "scope_base": "Estrategia de captacion etica y posicionamiento",
+    "not_included": "Asesoria legal/regulatoria especializada",
+    "inputs": [
+      "especialidad",
+      "paciente objetivo",
+      "servicios prioritarios"
+    ],
+    "owner_area": "Healthcare"
+  },
+  {
+    "service_code": "HLT-002",
+    "service_name": "Embudo de Captacion de Pacientes",
+    "category": "Healthcare Marketing",
+    "unit": "proyecto",
+    "scope_base": "Funnel por especialidad con puntos de confianza y conversion",
+    "not_included": "Implementacion tecnologica completa salvo acuerdo",
+    "inputs": [
+      "especialidad",
+      "canales",
+      "objeciones",
+      "conversion actual"
+    ],
+    "owner_area": "Healthcare"
+  },
+  {
+    "service_code": "HLT-003",
+    "service_name": "Contenido Educativo para Pacientes",
+    "category": "Healthcare Marketing",
+    "unit": "proyecto/mes",
+    "scope_base": "Sistema de contenido educativo para pacientes",
+    "not_included": "Validacion clinica profunda por terceros salvo acuerdo",
+    "inputs": [
+      "dudas frecuentes",
+      "especialidad",
+      "tono",
+      "canales"
+    ],
+    "owner_area": "Healthcare/Contenido"
+  },
+  {
+    "service_code": "ESG-001",
+    "service_name": "Estrategia de Comunicacion ESG",
+    "category": "Sostenibilidad y ESG",
+    "unit": "proyecto",
+    "scope_base": "Narrativa ESG con stakeholders y claims defendibles",
+    "not_included": "Auditoria tecnica de sostenibilidad o certificacion",
+    "inputs": [
+      "iniciativas",
+      "evidencia",
+      "stakeholders",
+      "objetivos"
+    ],
+    "owner_area": "ESG"
+  },
+  {
+    "service_code": "ESG-002",
+    "service_name": "Reporte de Sostenibilidad Narrativo",
+    "category": "Sostenibilidad y ESG",
+    "unit": "proyecto",
+    "scope_base": "Estructura y mensajeria para reporte o resumen ESG",
+    "not_included": "Recoleccion completa de data o assurance externa",
+    "inputs": [
+      "materialidad",
+      "datos base",
+      "stakeholders",
+      "hitos"
+    ],
+    "owner_area": "ESG"
+  },
+  {
+    "service_code": "ESG-003",
+    "service_name": "Mensajeria para Stakeholders ESG",
+    "category": "Sostenibilidad y ESG",
+    "unit": "proyecto",
+    "scope_base": "Adaptacion de mensajes ESG por audiencia",
+    "not_included": "Reputacion reactiva o crisis compleja salvo acuerdo",
+    "inputs": [
+      "audiencias",
+      "claims",
+      "evidencia",
+      "canal"
+    ],
+    "owner_area": "ESG/Comunicacion"
   }
 ]

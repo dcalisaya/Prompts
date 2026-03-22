@@ -2,9 +2,19 @@
 id: FUN-001
 name: Generador de Arquitectura de Funnel
 version: 1.0.0
-category: Estrategia y Funnels
+category: Marketing Digital y Contenidos
 agent_core: EstrategaDigital
-tags: [funnel, arquitectura, conversion, lead-magnet]
+tags:
+- funnel
+- arquitectura
+- conversion
+- lead-magnet
+discipline: Estrategia Digital
+related_services:
+- MK-002
+stage: strategy
+input_type: objetivo de negocio, oferta y audiencia
+deliverable_type: arquitectura de funnel
 ---
 
 # Prompt: Generador de Arquitectura de Funnel

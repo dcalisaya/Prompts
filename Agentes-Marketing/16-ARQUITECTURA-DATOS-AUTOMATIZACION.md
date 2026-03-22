@@ -1,1 +1,0 @@
-../base/masters/company/16-ARQUITECTURA-DATOS-AUTOMATIZACION.md

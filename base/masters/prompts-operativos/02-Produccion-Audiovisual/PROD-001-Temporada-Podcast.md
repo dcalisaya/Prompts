@@ -4,7 +4,17 @@ name: Estructurador de Temporada de Podcast
 version: 1.0.0
 category: Producción Audiovisual
 agent_core: DirectorAudiovisual
-tags: [podcast, storytelling, planeacion, contenido-audiovisual]
+tags:
+- podcast
+- storytelling
+- planeacion
+- contenido-audiovisual
+discipline: Producción Audiovisual
+related_services:
+- AV-013
+stage: pre-production
+input_type: brief creativo, objetivo y formato
+deliverable_type: plan de contenido o temporada
 ---
 
 # Prompt: Estructurador de Temporada de Podcast

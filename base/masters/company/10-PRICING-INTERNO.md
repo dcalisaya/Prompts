@@ -83,6 +83,52 @@ Este documento define la estructura para pricing interno y precio de venta. Pued
 | `DEV-010` | Soporte Tecnico | variable | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | no aplica | no aplica | si | pendiente |
 | `IA-001` | Chatbot Informativo | mixto | PENDIENTE | 50-80 | PENDIENTE | PENDIENTE | 20-30 | PENDIENTE | no aplica | si | pendiente |
 | `IA-002` | Automatizacion con IA | mixto | PENDIENTE | 55-85 | PENDIENTE | PENDIENTE | 25-35 | PENDIENTE | no aplica | si | pendiente |
+| `PR-001` | Comunicado de Prensa | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | no | pendiente |
+| `PR-002` | Plan de Comunicacion | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `PR-003` | Media Training | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `PR-004` | Plan de Crisis | fijo | PENDIENTE | 55-80 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `PR-005` | Monitoreo de Medios | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `PR-006` | Comunicacion Interna | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `DAT-001` | Dashboard de KPIs | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `DAT-002` | Plan de Medicion | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `DAT-003` | Auditoria de Datos | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `DAT-004` | Informe de Insights | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `DAT-005` | Configuracion GA4 + GTM | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `MED-001` | Plan de Medios Integral | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `MED-002` | Campana Meta Ads | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `MED-003` | Campana Google Ads | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `MED-004` | Campana TikTok Ads | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `MED-005` | Auditoria SEO | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `MED-006` | SEO Mensual | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `MED-007` | Local SEO | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `BIZ-001` | Diagnostico de Madurez Digital | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `BIZ-002` | Estrategia Go-to-Market | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `BIZ-003` | Business Model Canvas | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | no | pendiente |
+| `BIZ-004` | Taller de Design Thinking | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | no | pendiente |
+| `ECO-001` | Estrategia E-commerce | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ECO-002` | Optimizacion de Marketplace | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ECO-003` | Social Commerce | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ECO-004` | CRO (Conversion Rate) | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CX-001` | Customer Journey Map | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CX-002` | Implementacion CRM | mixto | PENDIENTE | 50-80 | PENDIENTE | PENDIENTE | 20-30 | PENDIENTE | no aplica | si | pendiente |
+| `CX-003` | Email Marketing | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | no aplica | PENDIENTE | no aplica | si | pendiente |
+| `CX-004` | Programa de Fidelizacion | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CX-005` | Auditoria CX | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CNT-001` | Estrategia de Contenidos | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CNT-002` | Brand Voice System | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `CNT-003` | Arquitectura de Mensajes | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `IMK-001` | Estrategia de Influencer Marketing | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `IMK-002` | Gestion de Campana con Creadores | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `IMK-003` | Creator Sourcing y Outreach | fijo | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | no | pendiente |
+| `EXP-001` | Concepto de Evento o Activacion | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | segun ciudad o venue | si | pendiente |
+| `EXP-002` | Diseno de Experiencia y Run of Show | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | segun ciudad o venue | si | pendiente |
+| `EXP-003` | Amplificacion de Evento | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | segun cobertura y traslado | si | pendiente |
+| `HLT-001` | Estrategia Healthcare Marketing | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `HLT-002` | Embudo de Captacion de Pacientes | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `HLT-003` | Contenido Educativo para Pacientes | mixto | PENDIENTE | 45-70 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ESG-001` | Estrategia de Comunicacion ESG | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ESG-002` | Reporte de Sostenibilidad Narrativo | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
+| `ESG-003` | Mensajeria para Stakeholders ESG | fijo | PENDIENTE | 50-75 | PENDIENTE | PENDIENTE | 20 | PENDIENTE | no aplica | si | pendiente |
 
 ## Reglas de descuento
 

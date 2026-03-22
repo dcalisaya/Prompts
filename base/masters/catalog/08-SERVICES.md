@@ -1,89 +1,190 @@
-# CATALOGO DE SERVICIOS LIVE DEVELOPER (v4.0)
+# CATÁLOGO DE SERVICIOS LIVE DEVELOPER (v4.0)
 
-Este catalogo documenta los servicios oficiales de **Live Developer** y funciona como fuente de verdad para atencion comercial y cotizacion.
+Este catálogo documenta los servicios oficiales de **Live Developer** y constituye la fuente de verdad para la atención comercial y procesos de cotización.
 
 ---
 
-## 1. Produccion Audiovisual
+## 1. Producción Audiovisual
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Grabacion en Quito** | Grabacion de video profesional en Quito. Incluye equipos profesionales. |
-| **Grabacion en Sierra** | Grabacion de video fuera de Quito en region Sierra. Incluye viaticos y transporte. |
-| **Grabacion en Costa** | Grabacion de video en provincias de la Costa. Incluye viaticos y transporte. |
-| **Edicion de Video** | Servicio de edicion profesional de material audiovisual existente. |
-| **Video Corporativo** | Produccion completa de video corporativo (preproduccion, grabacion y postproduccion). |
-| **Video Animado 2D** | Animacion 2D para videos explicativos y motion graphics. |
-| **Video Formato Vertical** | Edicion y adaptacion para Reels, TikTok y Stories (9:16). |
-| **Subtitulacion** | Subtitulacion en espanol, ingles u otros idiomas. |
-| **Traduccion de Video** | Traduccion de guiones y contenido audiovisual. |
-| **Produccion Radial** | Cuna radial profesional con voces, musica y efectos. |
-| **Locucion Espanol** | Locucion profesional en espanol. |
-| **Locucion Ingles** | Locucion profesional en ingles con hablante nativo. |
-| **Podcast (A/V)** | Produccion completa de episodio de podcast en audio y video. |
-| **Sesion Fotografica** | Sesion de 4 horas. Incluye camara, iluminacion y retoque. |
-| **Cobertura Evento** | Cobertura fotografica de eventos corporativos o sociales. |
-| **Fotografia Producto** | Fotografia profesional para catalogo o e-commerce. |
+| **Grabación en Quito** | Jornada de grabación profesional en Quito. Incluye equipamiento técnico de alto nivel. |
+| **Grabación en Sierra** | Grabación fuera de Quito en la región Sierra. Incluye viáticos y logística de transporte. |
+| **Grabación en Costa** | Grabación en provincias de la región Costa. Incluye viáticos y logística de transporte. |
+| **Edición de Video** | Montaje y postproducción profesional de material audiovisual existente. |
+| **Video Corporativo** | Producción integral: preproducción, rodaje y postproducción de piezas corporativas. |
+| **Video Animado 2D** | Animación digital para videos explicativos, infografías animadas y motion graphics. |
+| **Video Formato Vertical** | Creación y adaptación de contenido optimizado para Reels, TikTok y Stories (9:16). |
+| **Subtitulación** | Generación y sincronización de subtítulos en español, inglés u otros idiomas requeridos. |
+| **Traducción de Video** | Adaptación lingüística de guiones y contenidos audiovisuales. |
+| **Producción Radial** | Creación de cuñas radiales profesionales con locución, diseño sonoro y efectos. |
+| **Locución Español** | Servicio de locución profesional con talentos de voz en español. |
+| **Locución Inglés** | Locución profesional en inglés con hablantes nativos. |
+| **Podcast (A/V)** | Producción completa de episodios de podcast en formatos de audio y video. |
+| **Sesión Fotográfica** | Jornada de 4 horas de fotografía profesional. Incluye iluminación y retoque digital. |
+| **Cobertura de Eventos** | Registro fotográfico profesional para eventos corporativos o sociales. |
+| **Fotografía de Producto** | Fotografía profesional optimizada para catálogos digitales o e-commerce. |
 
 ## 2. Marketing Digital y Contenidos
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Analisis de Redes** | Evaluacion de redes actuales con recomendaciones accionables. |
-| **Estrategia Digital** | Desarrollo de estrategia de marketing digital y plan de contenidos. |
-| **Community Manager** | Gestion mensual de redes: contenido, publicaciones y respuestas. |
-| **Pauta Digital** | Gestion de campanas publicitarias en redes y Google. |
+| **Análisis de Redes** | Auditoría de canales digitales con recomendaciones estratégicas accionables. |
+| **Estrategia Digital** | Diseño de planes de marketing digital y hojas de ruta de contenidos. |
+| **Community Manager** | Gestión mensual de redes sociales: creación de contenido, publicación y moderación. |
+| **Pauta Digital** | Administración estratégica de campañas publicitarias en Meta, Google y otras redes. |
 
-## 3. Diseno y Branding
+## 3. Diseño y Branding
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Diseno de Identidad** | Logo, paleta de color, tipografia y manual de marca. |
-| **Diseno Presentacion** | Presentacion corporativa en PPT o Google Slides. |
-| **Diseno Impreso** | Flyers, brochures, tarjetas y material promocional. |
-| **Infografia** | Diseno de infografias para presentaciones o redes. |
-| **Roll Up** | Impresion de roll up 85x200 cm con estructura. |
-| **Banner** | Impresion de banner en lona (precio por m2). |
-| **Flyer (Impresion)** | Impresion de flyers en papel couche laminado. |
-| **Tarjetas (Impresion)** | Impresion de tarjetas 9x5 cm, couche 300 gr. |
+| **Diseño de Identidad** | Desarrollo de marca: logotipo, paleta cromática, tipografía y manual de identidad. |
+| **Diseño de Presentación** | Creación de presentaciones corporativas impactantes en PPT o Google Slides. |
+| **Diseño Impreso** | Diseño de piezas editoriales: flyers, brochures, tarjetas y material promocional. |
+| **Infografía** | Diseño de infografías conceptuales para presentaciones o canales digitales. |
+| **Roll Up** | Diseño e impresión de roll up (85x200 cm) con estructura incluida. |
+| **Banner** | Diseño e impresión de banners en lona de alta resistencia (precio por m2). |
+| **Flyer (Impresión)** | Impresión de flyers en papel couché de alta calidad con laminado. |
+| **Tarjetas (Impresión)** | Impresión de tarjetas de presentación (9x5 cm) en couché de 300 gr. |
 
 ## 4. Infraestructura y Web
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Dominio .com/.org** | Registro anual de dominio internacional. |
-| **Dominio .ec** | Registro de dominio Ecuador (por 2 anos). |
-| **Hosting Economico** | Hosting compartido anual (10 GB, SSL, cPanel). |
-| **Hosting Premium** | Hosting premium anual (40 GB, backups diarios). |
-| **Servidor VPS** | Servidor virtual (4 vCPU, 8 GB RAM, 400 GB SSD). |
-| **Certificado SSL** | Certificado SSL anual con instalacion. |
-| **SSL Wildcard** | SSL para multiples subdominios. |
-| **Email Corporativo** | Configuracion de correo por usuario. |
+| **Dominio .com/.org** | Gestión y registro anual de dominios internacionales. |
+| **Dominio .ec** | Registro y administración de dominios territoriales (.ec) por periodos bianuales. |
+| **Hosting Económico** | Alojamiento compartido anual (10 GB de almacenamiento, SSL y cPanel). |
+| **Hosting Premium** | Alojamiento de alto rendimiento con 40 GB y respaldos diarios automatizados. |
+| **Servidor VPS** | Provisión de servidor virtual privado (4 vCPU, 8 GB RAM, 400 GB SSD). |
+| **Certificado SSL** | Emisión e instalación de certificado de seguridad SSL con validez anual. |
+| **SSL Wildcard** | Certificado SSL avanzado para la protección de múltiples subdominios. |
+| **Email Corporativo** | Configuración de cuentas de correo institucional personalizadas. |
 
 ## 5. Desarrollo de Software y Apps
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Landing Page** | Desarrollo en WordPress (responsive, formulario y analitica). |
-| **Web Corporativa** | Sitio completo con CMS, SEO y capacitacion. |
-| **E-commerce** | Tienda online con carrito, pagos y gestion. |
-| **App Movil** | Desarrollo iOS/Android (Flutter o React Native). |
-| **Sistema de Gestion** | Desarrollo de software empresarial a medida. |
-| **CRM Personalizado** | CRM para gestion de clientes y ventas. |
-| **Aplicacion Web Custom** | Desarrollo de web app a medida por horas. |
-| **Integracion API** | Integracion con terceros y desarrollo de endpoints. |
-| **Mantenimiento Web** | Actualizaciones, backups y soporte mensual. |
-| **Soporte Tecnico** | Horas de soporte y desarrollo adicional. |
+| **Landing Page** | Desarrollo optimizado en WordPress (responsive, formularios de captura y analítica). |
+| **Web Corporativa** | Sitio web institucional autogestionable con optimización SEO inicial y capacitación. |
+| **E-commerce** | Plataforma de venta online con gestión de inventario, pasarela de pagos y envíos. |
+| **App Móvil** | Desarrollo nativo o híbrido para iOS/Android (Flutter o React Native). |
+| **Sistema de Gestión** | Ingeniería de software a medida para procesos empresariales específicos. |
+| **CRM Personalizado** | Implementación y adaptación de CRM para gestión comercial y de clientes. |
+| **Aplicación Web Custom** | Desarrollo de aplicaciones web personalizadas bajo demanda técnica. |
+| **Integración de API** | Conexión con servicios de terceros y desarrollo de endpoints escalables. |
+| **Mantenimiento Web** | Soporte mensual preventivo: actualizaciones de seguridad y backups. |
+| **Soporte Técnico** | Bolsas de horas para asistencia técnica y desarrollo evolutivo. |
 
-## 6. Soluciones IA y Automatizacion
+## 6. Soluciones IA y Automatización
 
-| Servicio | Descripcion |
+| Servicio | Descripción |
 | :--- | :--- |
-| **Chatbot Informativo** | Implementacion para sitio web o WhatsApp. |
-| **Automatizacion con IA** | Soluciones de IA para optimizacion de procesos. |
+| **Chatbot Informativo** | Implementación de asistentes inteligentes para sitios web o WhatsApp. |
+| **Automatización con IA** | Diseño de flujos de trabajo inteligentes para la optimización de procesos operativos. |
+
+## 7. Relaciones Públicas y Comunicación
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Comunicado de Prensa** | Redacción estratégica y distribución de comunicados con rigor periodístico. |
+| **Plan de Comunicación** | Estrategia integral 360 con mensajes clave, selección de canales y cronograma. |
+| **Media Training** | Entrenamiento especializado de voceros para entrevistas en medios masivos y digitales. |
+| **Plan de Crisis** | Protocolos de respuesta inmediata, manual de escenarios y gestión de reputación. |
+| **Monitoreo de Medios** | Análisis de presencia de marca (clipping), social listening y análisis de sentimiento. |
+| **Comunicación Interna** | Estrategias de endomarketing para cultura corporativa y boletines institucionales. |
+
+## 8. Data, Analytics e Insights
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Dashboard de KPIs** | Implementación de tableros ejecutivos en Looker Studio o Power BI. |
+| **Plan de Medición** | Diseño de frameworks de seguimiento: GTM, píxeles de conversión y UTMs. |
+| **Auditoría de Datos** | Evaluación de integridad de datos, calidad de fuentes y brechas de medición. |
+| **Informe de Insights** | Investigación de mercado con hallazgos accionables y análisis competitivo. |
+| **Configuración GA4 + GTM** | Setup profesional de Google Analytics 4 y gestión avanzada de etiquetas. |
+
+## 9. Media Planning y Performance
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Plan de Medios Integral** | Planificación publicitaria 360 con mix de canales, presupuestos y flowchart. |
+| **Campaña Meta Ads** | Gestión profesional de publicidad en Facebook e Instagram enfocada en resultados. |
+| **Campaña Google Ads** | Administración de campañas en Search, Display, Shopping y Performance Max. |
+| **Campaña TikTok Ads** | Estrategias de performance en TikTok con foco en segmentación y tendencias. |
+| **Auditoría SEO** | Diagnóstico técnico integral (on-page/off-page) con hoja de ruta priorizada. |
+| **SEO Mensual** | Optimización continua de visibilidad orgánica y posicionamiento en buscadores. |
+| **Local SEO** | Mejora de visibilidad local y optimización de perfiles en Google Business. |
+
+## 10. Consultoría de Negocio
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Diagnóstico de Madurez Digital** | Evaluación de digitalización empresarial con scorecard detallado y roadmap. |
+| **Estrategia Go-to-Market** | Plan de lanzamiento integral: segmentación, pricing y plan de acción de 90 días. |
+| **Business Model Canvas** | Taller estratégico para el modelado y validación de modelos de negocio. |
+| **Taller de Design Thinking** | Sesiones facilitadas para la ideación, prototipado y resolución de problemas. |
+
+## 11. Commerce Avanzado
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Estrategia E-commerce** | Consultoría integral: plataforma, catálogo, conversión y logística. |
+| **Optimización de Marketplace** | Mejora de presencia comercial en MercadoLibre, Amazon o Shopee. |
+| **Social Commerce** | Estrategia de venta directa desde canales sociales (Instagram y TikTok Shops). |
+| **CRO (Conversion Rate)** | Auditoría y optimización de tasas de conversión en tiendas online y landings. |
+
+## 12. Customer Experience y CRM
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Customer Journey Map** | Mapeo integral de la experiencia del cliente para optimizar puntos de contacto. |
+| **Implementación CRM** | Configuración avanzada de plataformas CRM (HubSpot, Salesforce, Brevo) y flujos. |
+| **Email Marketing** | Gestión de campañas: segmentación, flujos automatizados y calendario editorial. |
+| **Programa de Fidelización** | Diseño estratégico de sistemas de lealtad (puntos, niveles y referidos). |
+| **Auditoría CX** | Medición de calidad de servicio mediante métricas NPS, CSAT y CES. |
+
+## 13. Content Strategy y Copy
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Estrategia de Contenidos** | Diseño de ecosistema editorial: pilares narrativos, territorios y calendarios. |
+| **Brand Voice System** | Definición de identidad verbal: tono, lenguaje y guías de uso por canal. |
+| **Arquitectura de Mensajes** | Jerarquización de propuestas de valor, claims publicitarios y narrativa central. |
+
+## 14. Influencer Marketing
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Estrategia de Influencers** | Diseño de campañas con creadores: criterios de selección, alcance y KPIs. |
+| **Gestión con Creadores** | Coordinación operativa de colaboraciones, briefs y control de entregables. |
+| **Creator Sourcing** | Investigación y contacto estratégico con talentos afines a la marca. |
+
+## 15. Experiential y Eventos
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Concepto de Evento** | Diseño creativo y estratégico de eventos, activaciones y experiencias de marca. |
+| **Run of Show y Experiencia** | Planificación del viaje del asistente, agenda técnica y momentos clave del evento. |
+| **Amplificación de Evento** | Estrategia de contenidos y relaciones públicas para maximizar el impacto post-evento. |
+
+## 16. Healthcare Marketing
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Estrategia Healthcare** | Marketing ético y posicionamiento especializado para el sector salud. |
+| **Embudo para Pacientes** | Diseño de funnels por especialidad enfocados en confianza y conversión. |
+| **Contenido Educativo** | Desarrollo de contenidos médicos comprensibles y alineados a regulaciones. |
+
+## 17. Sostenibilidad y ESG
+
+| Servicio | Descripción |
+| :--- | :--- |
+| **Estrategia Comunicativa ESG** | Narrativa institucional de impacto social, ambiental y de gobernanza. |
+| **Reporte de Sostenibilidad** | Estructuración y redacción de memorias e informes narrativos de impacto. |
+| **Mensajería Stakeholders** | Adaptación de mensajes ESG para inversores, clientes, talento y comunidad. |
 
 ---
 
 > [!NOTE]
-> Todos los presupuestos se entregan mediante cotizacion formal personalizada.
-> Ningun precio publicado en respuestas automaticas es valido sin aprobacion comercial.
+> Todos los presupuestos se formalizan mediante cotización personalizada.
+> Los precios mencionados en respuestas automáticas no son vinculantes sin validación comercial.

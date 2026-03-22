@@ -1,1 +1,0 @@
-../base/masters/company/12-BRIEFS-POR-SERVICIO.md

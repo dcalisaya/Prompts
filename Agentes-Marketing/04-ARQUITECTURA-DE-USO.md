@@ -1,1 +1,0 @@
-../base/masters/company/04-ARQUITECTURA-DE-USO.md

@@ -4,7 +4,17 @@ name: Generador de Guiones Hook-Retención-CTA
 version: 1.0.0
 category: Producción Audiovisual
 agent_core: DirectorAudiovisual
-tags: [guion, copywriting, video-corto, retencion]
+tags:
+- guion
+- copywriting
+- video-corto
+- retencion
+discipline: Producción Audiovisual
+related_services:
+- AV-011
+stage: content-production
+input_type: tema, audiencia, objetivo y formato
+deliverable_type: guion o pieza de copy
 ---
 
 # Prompt: Generador de Guiones Hook-Retención-CTA
