@@ -3,7 +3,7 @@ import { useParams, Link, useLocation } from 'react-router-dom';
 import { getPrompts, getAgents, getServices, getManuals } from '../../services/dataService';
 import { getFlowById } from '../../services/flowService';
 import { createEmptyBrief, validateBrief } from '../../services/briefService';
-import { prepareExecution, executeMock } from '../../services/executionService';
+import { prepareExecution, executePrompt } from '../../services/executionService';
 import { getSession, saveSession, createFromFlow } from '../../services/sessionService';
 import { getStatusConfig, getNextStatuses } from '../../services/statusService';
 import type { Prompt, Brief, Agent, Service, Manual, Execution, Flow, Session, SessionStatus } from '../../services/types';
@@ -228,13 +228,13 @@ const FlowDetail: React.FC = () => {
     if (execution) {
       setProcessing(true);
       try {
-        const completedExecution = await executeMock(execution);
+        const completedExecution = await executePrompt(execution);
         setExecution(completedExecution);
         setExecutionError(null);
         setStepInternal('output');
         window.scrollTo(0, 0);
-      } catch {
-        setExecutionError('No se pudo completar la ejecución de este paso. Revisa el contexto y vuelve a intentarlo.');
+      } catch (err: any) {
+        setExecutionError(err.message || 'No se pudo completar la ejecución de este paso. Revisa el contexto y vuelve a intentarlo.');
       } finally {
         setProcessing(false);
       }
@@ -414,7 +414,7 @@ const FlowDetail: React.FC = () => {
                 </button>
               ) : (
                 <div className="flow-completion-msg">
-                  <h3>Flujo Finalizado</h3>
+                  <h3>✅ Flujo Finalizado</h3>
                   <p>Has completado todos los pasos de este proceso operativo.</p>
                   <div className="flow-completion-summary">
                     {completedFlowExecutions.map((item, index) => (

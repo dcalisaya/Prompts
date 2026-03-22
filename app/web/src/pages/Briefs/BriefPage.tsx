@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { getPrompts, getAgents, getServices, getManuals, getSearchIndex } from '../../services/dataService';
 import { createEmptyBrief, validateBrief } from '../../services/briefService';
-import { prepareExecution, executeMock } from '../../services/executionService';
+import { prepareExecution, executePrompt } from '../../services/executionService';
 import { getSession, saveSession, createFromPrompt } from '../../services/sessionService';
 import { getStatusConfig, getNextStatuses } from '../../services/statusService';
 import { getRecommendationsByResource } from '../../services/recommendationService';
@@ -192,13 +192,13 @@ const BriefPage: React.FC = () => {
     if (execution) {
       setProcessing(true);
       try {
-        const completedExecution = await executeMock(execution);
+        const completedExecution = await executePrompt(execution);
         setExecution(completedExecution);
         setExecutionError(null);
         setStep('output');
         window.scrollTo(0, 0);
-      } catch {
-        setExecutionError('No se pudo completar la ejecución del prompt. Revisa el brief y vuelve a intentarlo.');
+      } catch (err: any) {
+        setExecutionError(err.message || 'No se pudo completar la ejecución del prompt. Revisa el brief y vuelve a intentarlo.');
       } finally {
         setProcessing(false);
       }
@@ -334,8 +334,7 @@ const BriefPage: React.FC = () => {
         {step === 'output' && execution && (
           <OutputView 
             execution={execution} 
-            onRestart={handleBackToEdit}
-            sessionId={session?.id}
+            onRestart={handleBackToEdit} 
           />
         )}
 

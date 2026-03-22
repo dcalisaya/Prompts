@@ -159,6 +159,19 @@ export interface ExecutionResponse {
   };
 }
 
+export type RuntimeErrorCode =
+  | 'network_error'
+  | 'provider_error'
+  | 'timeout_error'
+  | 'empty_response'
+  | 'normalization_error';
+
+export interface ExecutionDiagnostics {
+  warnings: string[];
+  parsingMode: 'json' | 'markdown' | 'fallback';
+  latencyMs?: number;
+}
+
 export interface ExecutionContext {
   promptId: string;
   promptName: string;

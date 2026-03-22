@@ -1,4 +1,5 @@
 import type { Brief, Prompt, Agent, Service, Manual, Execution, ExecutionContext, ExecutionResult } from './types';
+import { callAIRuntime, RuntimeExecutionError } from './runtimeService';
 
 const getExecutionManuals = (prompt: Prompt, allManuals: Manual[]): Manual[] => {
   const explicit = allManuals.filter((manual) => prompt.source_of_truth.includes(manual.path));
@@ -14,7 +15,6 @@ const getExecutionManuals = (prompt: Prompt, allManuals: Manual[]): Manual[] => 
 
   return allManuals.filter((manual) => manual.discipline === prompt.discipline).slice(0, 3);
 };
-import { callAIRuntime } from './runtimeService';
 
 const getRenderType = (deliverableType: string): 'text' | 'checklist' | 'plan' | 'scheme' | 'summary' => {
   const dt = deliverableType.toLowerCase();
@@ -101,6 +101,8 @@ export const validateExecution = (execution: Execution): { isValid: boolean; war
  * Tries real runtime first, falls back to mock if explicitly requested or in certain dev conditions.
  */
 export const executePrompt = async (execution: Execution, useMock = false): Promise<Execution> => {
+  const allowMockFallback = import.meta.env.DEV || import.meta.env.VITE_AI_RUNTIME_FALLBACK_TO_MOCK === 'true';
+
   if (useMock) {
     return executeMock(execution);
   }
@@ -113,6 +115,11 @@ export const executePrompt = async (execution: Execution, useMock = false): Prom
       result
     };
   } catch (error) {
+    if (allowMockFallback && error instanceof RuntimeExecutionError && error.retryable) {
+      console.warn('Real runtime failed; using mock fallback.', error);
+      return executeMock(execution);
+    }
+
     console.error('Real runtime failed, throwing error to UI.', error);
     throw error;
   }
