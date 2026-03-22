@@ -1,0 +1,17 @@
+discipline: "Consultoría de Negocio"
+slug: "consultoria-negocio"
+nomenclature_folder: "09-Consultoria-Negocio"
+canonical_id_prefix: "MAN-BIZ"
+service_codes: ["BIZ-001", "BIZ-002", "BIZ-003", "BIZ-004"]
+manuals: []
+pending:
+  - "Manual de frameworks de diagnóstico (prioridad alta)"
+  - "Guía de madurez digital (prioridad alta)"
+  - "Playbook de go-to-market (prioridad media)"
+  - "Manual de estructuración de propuestas (pendiente)"
+related_agents:
+  - "BusinessConsultant"
+related_prompts:
+  - "BIZ-001"
+  - "BIZ-002"
+notes: "1 agente, 2 prompts operativos. Necesita manual de frameworks de diagnóstico."

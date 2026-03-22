@@ -1,0 +1,33 @@
+discipline: "PR y Comunicación"
+slug: "pr-comunicacion"
+nomenclature_folder: "06-PR-Comunicacion"
+canonical_id_prefix: "MAN-PR"
+service_codes: ["PR-001", "PR-002", "PR-003", "PR-004", "PR-005", "PR-006"]
+manuals:
+  - id: "MAN-PR-001"
+    file: "guia_maestra_planes_crisis.md"
+    name: "Guía Maestra de Planes de Crisis Comunicacional"
+    type: "guia-maestra"
+    created: true
+  - id: "MAN-PR-002"
+    file: "estandar_comunicados_prensa.md"
+    name: "Estándar de Comunicados de Prensa"
+    type: "estandar"
+    created: true
+  - id: "MAN-PR-003"
+    file: "playbook_media_training.md"
+    name: "Playbook de Media Training"
+    type: "playbook"
+    created: true
+pending:
+  - "Manual de tono de voz y comunicación institucional (pendiente)"
+  - "Playbook de relacionamiento con medios (pendiente)"
+  - "Manual de comunicación interna (pendiente)"
+related_agents:
+  - "PRStrategist"
+  - "CrisisManager"
+related_prompts:
+  - "PR-001"
+  - "PR-002"
+  - "PR-003"
+notes: "3 manuales creados: guía maestra de crisis, estándar de comunicados y playbook de media training. Cubre los servicios PR-001 a PR-006 y los 3 prompts de la disciplina."

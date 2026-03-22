@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getDisciplines, getPrompts, getAgents } from '../../services/dataService';
+import { getDisciplines, getPrompts, getAgents, getSearchIndex } from '../../services/dataService';
+import { getDefaultRecommendations } from '../../services/recommendationService';
+import type { Recommendation } from '../../services/types';
+import RecommendationList from '../../components/Recommendation/RecommendationList';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -11,13 +14,15 @@ const Home: React.FC = () => {
     loading: true,
     error: false
   });
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
 
   useEffect(() => {
     Promise.all([
       getPrompts(),
       getAgents(),
-      getDisciplines()
-    ]).then(([prompts, agents, disciplines]) => {
+      getDisciplines(),
+      getSearchIndex()
+    ]).then(([prompts, agents, disciplines, index]) => {
       setStats({
         prompts: prompts.length,
         agents: agents.length,
@@ -25,6 +30,7 @@ const Home: React.FC = () => {
         loading: false,
         error: false
       });
+      setRecommendations(getDefaultRecommendations(index));
     }).catch(err => {
       console.error("Error cargando métricas de Home:", err);
       setStats(prev => ({
@@ -66,7 +72,22 @@ const Home: React.FC = () => {
           <h3>Búsqueda Directa</h3>
           <p>Busca prompts, agentes o servicios por nombre o etiqueta.</p>
         </Link>
+
+        <Link to="/sesiones" className="entrance-card highlight">
+          <div className="icon">📁</div>
+          <h3>Mis Sesiones</h3>
+          <p>Continúa el trabajo que guardaste anteriormente.</p>
+        </Link>
       </section>
+
+      {recommendations.length > 0 && (
+        <section className="home-recommendations">
+          <RecommendationList 
+            recommendations={recommendations} 
+            title="Recursos recomendados para comenzar" 
+          />
+        </section>
+      )}
 
       <section className="quick-stats">
         <h2>Biblioteca de Recursos</h2>

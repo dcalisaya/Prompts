@@ -1,0 +1,16 @@
+discipline: "Healthcare Marketing"
+slug: "healthcare-marketing"
+nomenclature_folder: "15-Healthcare-Marketing"
+canonical_id_prefix: "MAN-HLTH"
+service_codes: ["HLT-001", "HLT-002", "HLT-003"]
+manuals: []
+pending:
+  - "Manual de marketing ético en salud (prioridad media)"
+  - "Guía de regulación y compliance (prioridad media)"
+  - "Playbook de contenido educativo para pacientes (pendiente)"
+related_agents:
+  - "HealthcareMarketer"
+related_prompts:
+  - "HLTH-001"
+  - "HLTH-002"
+notes: "1 agente, 2 prompts operativos. Disciplina en fase inicial con consideraciones regulatorias."

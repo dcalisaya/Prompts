@@ -69,7 +69,11 @@ export const getServices = async (): Promise<Service[]> => {
   ]);
 
   return serviceMatrix.map(matrixItem => {
-    const baseItem = servicesBase.find(s => s.service_name === matrixItem.service_name);
+    const baseItem = servicesBase.find(
+      (s) =>
+        s.service_code === matrixItem.service_code ||
+        s.service_name === matrixItem.service_name,
+    );
     const relatedPrompts = prompts
       .filter(p => p.related_services.includes(matrixItem.service_code))
       .map(p => p.id);
@@ -77,16 +81,25 @@ export const getServices = async (): Promise<Service[]> => {
     return {
       ...matrixItem,
       description: baseItem?.description || matrixItem.scope_base,
+      summary: baseItem?.summary || baseItem?.description || matrixItem.scope_base,
+      for_who: baseItem?.for_who || '',
+      scope_base_catalog: baseItem?.scope_base_catalog || '',
+      not_included_catalog: baseItem?.not_included_catalog || '',
+      value_cases: baseItem?.value_cases || '',
       related_prompts: relatedPrompts
     };
   });
 };
 
 export const getManuals = async (): Promise<Manual[]> => {
-  const [manuals, prompts] = await Promise.all([
-    fetchData<Manual[]>('/data/manuals.json'),
+  const [manualPayload, prompts] = await Promise.all([
+    fetchData<{ manuals: Manual[] }>('/data/manuales_maestros.json'),
     getPrompts(),
   ]);
+
+  const manuals = Array.isArray(manualPayload)
+    ? (manualPayload as unknown as Manual[])
+    : (manualPayload.manuals ?? []);
 
   const promptIdsByManualPath = new Map<string, string[]>();
   prompts.forEach((prompt) => {
@@ -97,10 +110,19 @@ export const getManuals = async (): Promise<Manual[]> => {
     });
   });
 
-  return manuals.map((manual) => ({
-    ...manual,
-    related_prompts: promptIdsByManualPath.get(manual.path) ?? manual.related_prompts ?? [],
-  }));
+  return manuals.map((manual) => {
+    const explicitPrompts = manual.related_prompts ?? [];
+    const promptsByPath = promptIdsByManualPath.get(manual.path) ?? [];
+    const mergedPrompts = Array.from(new Set([...explicitPrompts, ...promptsByPath]));
+
+    return {
+      ...manual,
+      related_services: manual.related_services ?? [],
+      related_agents: manual.related_agents ?? [],
+      related_prompts: mergedPrompts,
+      tags: manual.tags ?? [],
+    };
+  });
 };
 
 // --- Aggregators ---
@@ -223,18 +245,30 @@ export const getSearchIndex = async (): Promise<SearchIndexEntry[]> => {
     type: 'manual',
     title: manual.name,
     route: `/manuales/${manual.id}`,
-    description: `Manual de referencia para ${manual.discipline}.`,
+    description: manual.scope_base || `Manual de referencia para ${manual.discipline}.`,
     discipline: manual.discipline,
     family: manual.family,
+    category: manual.category,
     code: manual.id,
-    tags: manual.related_prompts,
-    metadata: [manual.discipline, manual.family],
+    tags: [...(manual.tags ?? []), ...manual.related_prompts].slice(0, 20),
+    metadata: [
+      manual.discipline,
+      manual.family,
+      manual.type ?? '',
+      manual.category ?? '',
+      ...(manual.related_services ?? []),
+    ].filter(Boolean),
     keywords: toKeywordList(
       manual.id,
       manual.name,
       manual.discipline,
+      manual.category,
       manual.family,
+      manual.type,
       manual.path,
+      manual.tags,
+      manual.related_services,
+      manual.related_agents,
       manual.related_prompts,
     ),
   }));

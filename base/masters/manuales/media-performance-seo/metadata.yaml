@@ -1,0 +1,32 @@
+discipline: "Media, Performance y SEO"
+slug: "media-performance-seo"
+nomenclature_folder: "08-Media-Performance"
+canonical_id_prefix: "MAN-MED"
+service_codes: ["MED-001", "MED-002", "MED-003", "MED-004", "MED-005", "MED-006", "MED-007"]
+manuals:
+  - id: "MAN-MED-001"
+    file: "guia_maestra_media_performance_seo.md"
+    name: "Guía Maestra de Media, Performance y SEO"
+    type: "guia-maestra"
+    created: true
+  - id: "MAN-MED-002"
+    file: "playbook_campanas_plataforma.md"
+    name: "Playbook de Campañas por Plataforma"
+    type: "playbook"
+    created: true
+pending:
+  - "Manual de briefing y creatividad para pauta (pendiente)"
+  - "Guía de auditoría SEO detallada (contenido ya cubierto en MAN-MED-001)"
+related_agents:
+  - "MediaPlanner"
+  - "PerformanceMarketer"
+  - "SEOSpecialist"
+  - "TraffickerEspecialista"
+related_prompts:
+  - "MEDIA-001"
+  - "MEDIA-002"
+  - "SEO-001"
+  - "ADS-001"
+  - "ADS-002"
+  - "ADS-003"
+notes: "Disciplina con 4 agentes especializados. 2 manuales creados: guía maestra de fundamentos y playbook de campañas. Cubre los 7 servicios MED y los 6 prompts operativos de la disciplina."

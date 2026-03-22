@@ -1,0 +1,14 @@
+discipline: "Infraestructura y Web"
+slug: "infraestructura-web"
+nomenclature_folder: null
+canonical_id_prefix: "MAN-INF"
+service_codes: ["INF-001", "INF-002", "INF-003", "INF-004", "INF-005", "INF-006", "INF-007", "INF-008"]
+manuals: []
+pending:
+  - "Manual de configuración de hosting y dominio (prioridad alta)"
+  - "Guía de buenas prácticas de infraestructura (prioridad alta)"
+  - "Playbook de DNS y seguridad web (pendiente)"
+  - "Manual de gestión de certificados y CDN (pendiente)"
+related_agents: []
+related_prompts: []
+notes: "8 servicios sin ningún activo. Disciplina completamente huérfana."

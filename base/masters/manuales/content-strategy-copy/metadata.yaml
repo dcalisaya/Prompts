@@ -1,0 +1,21 @@
+discipline: "Content Strategy y Copy"
+slug: "content-strategy-copy"
+nomenclature_folder: "12-Content-Strategy-Copy"
+canonical_id_prefix: "MAN-CNT"
+service_codes: ["CNT-001", "CNT-002", "CNT-003"]
+manuals: []
+pending:
+  - "Manual de sistema de voz de marca (prioridad alta)"
+  - "Guía de arquitectura editorial (prioridad alta)"
+  - "Playbook de content calendar (prioridad media)"
+  - "Manual de copy para conversión (pendiente)"
+related_agents:
+  - "ContentStrategist"
+  - "GuionistaCinematografico"
+related_prompts:
+  - "COPY-001"
+  - "COPY-002"
+  - "COPY-003"
+  - "COPY-004"
+  - "COPY-005"
+notes: "5 prompts operativos pero ningún manual. Necesita guía fundacional de sistema de voz de marca."

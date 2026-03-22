@@ -17,6 +17,9 @@ import ManualDetail from './pages/Manuals/ManualDetail';
 import BriefPage from './pages/Briefs/BriefPage';
 import FlowList from './pages/Flows/FlowList';
 import FlowDetail from './pages/Flows/FlowDetail';
+import SessionList from './pages/Sessions/SessionList';
+import SessionDetail from './pages/Sessions/SessionDetail';
+import SessionReview from './pages/Sessions/SessionReview';
 import SearchPage from './pages/Search/SearchPage';
 
 const App: React.FC = () => {
@@ -25,6 +28,10 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          
+          <Route path="sesiones" element={<SessionList />} />
+          <Route path="sesiones/:id" element={<SessionDetail />} />
+          <Route path="sesiones/:id/revision" element={<SessionReview />} />
           
           <Route path="roles" element={<RoleList />} />
           <Route path="roles/:slug" element={<RoleDetail />} />

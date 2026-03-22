@@ -1,472 +1,1036 @@
 [
   {
+    "service_code": "AV-001",
     "service_name": "Grabaci\u00f3n en Quito",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Jornada de grabaci\u00f3n profesional en Quito. Incluye equipamiento t\u00e9cnico de alto nivel."
+    "description": "Jornada de producci\u00f3n audiovisual on-site dentro del Distrito Metropolitano de Quito.",
+    "summary": "Jornada de producci\u00f3n audiovisual on-site dentro del Distrito Metropolitano de Quito.",
+    "for_who": "Clientes que requieren registro en video de eventos, entrevistas o instalaciones en la capital.",
+    "scope_base_catalog": "1 jornada de rodaje (hasta 8h), equipo t\u00e9cnico (c\u00e1mara, iluminaci\u00f3n, audio) y entrega de material en bruto.",
+    "not_included_catalog": "No incluye edici\u00f3n, locaciones pagadas especiales ni talento a cuadro (actores).",
+    "value_cases": "Captura profesional con alto est\u00e1ndar t\u00e9cnico, ideal para generar recursos visuales corporativos propios."
   },
   {
+    "service_code": "AV-002",
     "service_name": "Grabaci\u00f3n en Sierra",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Grabaci\u00f3n fuera de Quito en la regi\u00f3n Sierra. Incluye vi\u00e1ticos y log\u00edstica de transporte."
+    "description": "Producci\u00f3n audiovisual on-site en provincias de la regi\u00f3n Andina ecuatoriana (fuera de Quito).",
+    "summary": "Producci\u00f3n audiovisual on-site en provincias de la regi\u00f3n Andina ecuatoriana (fuera de Quito).",
+    "for_who": "Empresas con operaciones descentralizadas, f\u00e1bricas o activaciones en la Sierra.",
+    "scope_base_catalog": "Jornada de rodaje, equipo t\u00e9cnico, log\u00edstica de transporte terrestre local y material en bruto.",
+    "not_included_catalog": "Vi\u00e1ticos completos u hospedaje para jornadas m\u00faltiples requieren cotizaci\u00f3n extra. No incluye edici\u00f3n.",
+    "value_cases": "Extensi\u00f3n de la calidad operativa a nivel regional sin perder el control centralizado."
   },
   {
+    "service_code": "AV-003",
     "service_name": "Grabaci\u00f3n en Costa",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Grabaci\u00f3n en provincias de la regi\u00f3n Costa. Incluye vi\u00e1ticos y log\u00edstica de transporte."
+    "description": "Producci\u00f3n audiovisual en provincias de la regi\u00f3n Litoral u Oriente ecuatoriano.",
+    "summary": "Producci\u00f3n audiovisual en provincias de la regi\u00f3n Litoral u Oriente ecuatoriano.",
+    "for_who": "Clientes con necesidades comerciales en Guayaquil, Manta u otras ciudades distantes.",
+    "scope_base_catalog": "Jornada operativa in situ, equipo t\u00e9cnico especializado y entrega del material base.",
+    "not_included_catalog": "Boleter\u00eda de vuelo, transporte log\u00edstico especial o fletes de equipo no est\u00e1n contemplados en la tarifa base.",
+    "value_cases": "Respuesta t\u00e9cnica segura para eventos de alto impacto fuera de la capital matriz."
   },
   {
+    "service_code": "AV-004",
     "service_name": "Edici\u00f3n de Video",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Montaje y postproducci\u00f3n profesional de material audiovisual existente."
+    "description": "Montaje, postproducci\u00f3n y correcci\u00f3n colorim\u00e9trica de videos corporativos o comerciales.",
+    "summary": "Montaje, postproducci\u00f3n y correcci\u00f3n colorim\u00e9trica de videos corporativos o comerciales.",
+    "for_who": "Cuentas con material crudo existente que precisan ensamblar y pulir una narrativa visual.",
+    "scope_base_catalog": "Edici\u00f3n de clips, sincronizaci\u00f3n, gr\u00e1ficos b\u00e1sicos incrustados, correcci\u00f3n color y musicalizaci\u00f3n de banco libre.",
+    "not_included_catalog": "No es un servicio de rodaje. La animaci\u00f3n 3D de alta complejidad no est\u00e1 incluida.",
+    "value_cases": "Otorga cohesi\u00f3n narrativa y est\u00e9tica para publicar campa\u00f1as atractivas de manera \u00e1gil."
   },
   {
+    "service_code": "AV-005",
     "service_name": "Video Corporativo",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Producci\u00f3n integral: preproducci\u00f3n, rodaje y postproducci\u00f3n de piezas corporativas."
+    "description": "Producci\u00f3n integral de una pieza audiovisual institucional para presentar la empresa, su propuesta de valor o sus capacidades.",
+    "summary": "Producci\u00f3n integral de una pieza audiovisual institucional para presentar la empresa, su propuesta de valor o sus capacidades.",
+    "for_who": "Empresas en expansi\u00f3n, procesos comerciales complejos, rondas de inversi\u00f3n o contextos institucionales donde se necesita una presentaci\u00f3n s\u00f3lida.",
+    "scope_base_catalog": "Preproducci\u00f3n, guion base, planificaci\u00f3n de rodaje, grabaci\u00f3n, edici\u00f3n, correcci\u00f3n de color, locuci\u00f3n seg\u00fan alcance y master final.",
+    "not_included_catalog": "No incluye piezas derivadas ilimitadas para redes, campa\u00f1as completas de pauta ni rodajes altamente especializados fuera del alcance acordado.",
+    "value_cases": "Ayuda a presentar la empresa con m\u00e1s claridad y solidez en ventas, licitaciones, ferias, presentaciones y comunicaci\u00f3n institucional."
   },
   {
+    "service_code": "AV-006",
     "service_name": "Video Animado 2D",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Animaci\u00f3n digital para videos explicativos, infograf\u00edas animadas y motion graphics."
+    "description": "Producci\u00f3n \u00edntegra de piezas de video explicativo digital mediante t\u00e9cnica de gr\u00e1ficos en movimiento (Motion Graphics).",
+    "summary": "Producci\u00f3n \u00edntegra de piezas de video explicativo digital mediante t\u00e9cnica de gr\u00e1ficos en movimiento (Motion Graphics).",
+    "for_who": "Firmas tecnol\u00f3gicas, plataformas SaaS o institucionales explicando flujos de compra complejos.",
+    "scope_base_catalog": "Guion literario, storyboard ilustrado, animaci\u00f3n est\u00e1ndar (hasta 90 segundos), locuci\u00f3n y ensamble.",
+    "not_included_catalog": "Modelado de geometr\u00eda 3D, rigging de personalizaci\u00f3n extrema frame a frame (Cut-Out denso).",
+    "value_cases": "Simplifica lo dif\u00edcil. Retiene la atenci\u00f3n sobre tutoriales que de otra forma ser\u00edan densos textos t\u00e9cnicos."
   },
   {
+    "service_code": "AV-007",
     "service_name": "Video Formato Vertical",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Creaci\u00f3n y adaptaci\u00f3n de contenido optimizado para Reels, TikTok y Stories (9:16)."
+    "description": "Producci\u00f3n o adaptaci\u00f3n de piezas en formato 9:16 para canales m\u00f3viles y consumo social.",
+    "summary": "Producci\u00f3n o adaptaci\u00f3n de piezas en formato 9:16 para canales m\u00f3viles y consumo social.",
+    "for_who": "Marcas que publican en Reels, TikTok, Shorts u otros formatos donde el video vertical es el est\u00e1ndar principal.",
+    "scope_base_catalog": "Edici\u00f3n orientada a formato vertical, ajustes de ritmo, subt\u00edtulos y optimizaci\u00f3n visual para publicaci\u00f3n social.",
+    "not_included_catalog": "No sustituye piezas maestras de formato horizontal ni campa\u00f1as completas de contenido sin alcance definido.",
+    "value_cases": "Mejora desempe\u00f1o y legibilidad en canales donde el consumo principal ocurre en pantalla vertical."
   },
   {
+    "service_code": "AV-008",
     "service_name": "Subtitulaci\u00f3n",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Generaci\u00f3n y sincronizaci\u00f3n de subt\u00edtulos en espa\u00f1ol, ingl\u00e9s u otros idiomas requeridos."
+    "description": "Transcripci\u00f3n idiom\u00e1tica, integraci\u00f3n de tiempos y adici\u00f3n de textos de lectura en pantalla.",
+    "summary": "Transcripci\u00f3n idiom\u00e1tica, integraci\u00f3n de tiempos y adici\u00f3n de textos de lectura en pantalla.",
+    "for_who": "Piezas comerciales enfocadas a visualizaci\u00f3n silenciosa B2C masiva.",
+    "scope_base_catalog": "Limpieza de di\u00e1logo base, asignaci\u00f3n de c\u00f3digo de tiempo (timecode) y entrega de video con subt\u00edtulos fijos (Open Captions).",
+    "not_included_catalog": "No es un servicio de traducci\u00f3n internacional nativo de guiones enteros.",
+    "value_cases": "Retiene hasta al 80% de los usuarios adicionales en feed social que no tienen activo el sonido del m\u00f3vil."
   },
   {
+    "service_code": "AV-009",
     "service_name": "Traducci\u00f3n de Video",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Adaptaci\u00f3n ling\u00fc\u00edstica de guiones y contenidos audiovisuales."
+    "description": "Modificaci\u00f3n adaptativa de textos o guiones audiovisuales hacia un idioma for\u00e1neo.",
+    "summary": "Modificaci\u00f3n adaptativa de textos o guiones audiovisuales hacia un idioma for\u00e1neo.",
+    "for_who": "Firmas corporativas exportadoras o marcas posicion\u00e1ndose fuera del mercado ecuatoriano (Ej. Estados Unidos).",
+    "scope_base_catalog": "Traducci\u00f3n idiom\u00e1tica context-aware conservando tono de venta y la misma longitud para el tiempo del clip original.",
+    "not_included_catalog": "Las voces dobladas extranjeras son requerimientos separados bajo el c\u00f3digo de locuci\u00f3n espec\u00edfico.",
+    "value_cases": "Previene traducciones literales desastrosas que merman la credibilidad frente al receptor internacional."
   },
   {
+    "service_code": "AV-010",
     "service_name": "Producci\u00f3n Radial",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Creaci\u00f3n de cu\u00f1as radiales profesionales con locuci\u00f3n, dise\u00f1o sonoro y efectos."
+    "description": "Ensamblaje sonoro y creativo de avisos (spots) exclusivos de audio publicitario tradicional.",
+    "summary": "Ensamblaje sonoro y creativo de avisos (spots) exclusivos de audio publicitario tradicional.",
+    "for_who": "Campa\u00f1as de alcance en radios, supermercados (perifoneo) o anuncios pre-roll en Spotify.",
+    "scope_base_catalog": "Redacci\u00f3n del spot (15/30s), mezcla de canales, dise\u00f1o inmersivo o foley (efectos) y entrega final WAV.",
+    "not_included_catalog": "La renta o contrataci\u00f3n del int\u00e9rprete de voz exacto es una partida distinta que suma costo neto sobre la pieza t\u00e9cnica.",
+    "value_cases": "Formato base e irremplazable de alto punch perceptual para mercados t\u00e1cticos o tr\u00e1fico peatonal masivo."
   },
   {
+    "service_code": "AV-011",
     "service_name": "Locuci\u00f3n Espa\u00f1ol",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Servicio de locuci\u00f3n profesional con talentos de voz en espa\u00f1ol."
+    "description": "Grabaci\u00f3n de locuciones profesionales en espa\u00f1ol para piezas audiovisuales, institucionales o comerciales.",
+    "summary": "Grabaci\u00f3n de locuciones profesionales en espa\u00f1ol para piezas audiovisuales, institucionales o comerciales.",
+    "for_who": "Marcas, productoras y empresas que necesitan una voz profesional para videos, cu\u00f1as, telefon\u00eda o materiales explicativos.",
+    "scope_base_catalog": "Selecci\u00f3n de perfil vocal, sesi\u00f3n de grabaci\u00f3n, limpieza b\u00e1sica y entrega masterizada seg\u00fan el formato acordado.",
+    "not_included_catalog": "Derechos ampliados de difusi\u00f3n masiva, talentos espec\u00edficos o usos regionales extendidos se cotizan por separado.",
+    "value_cases": "Refuerza claridad, tono y percepci\u00f3n profesional en piezas donde la voz forma parte central de la experiencia."
   },
   {
+    "service_code": "AV-012",
     "service_name": "Locuci\u00f3n Ingl\u00e9s",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Locuci\u00f3n profesional en ingl\u00e9s con hablantes nativos."
+    "description": "Grabaci\u00f3n de locuciones profesionales en ingl\u00e9s para piezas comerciales, institucionales o de alcance internacional.",
+    "summary": "Grabaci\u00f3n de locuciones profesionales en ingl\u00e9s para piezas comerciales, institucionales o de alcance internacional.",
+    "for_who": "Empresas, destinos tur\u00edsticos, productos exportables o plataformas que necesitan presentar su mensaje en ingl\u00e9s con buena ejecuci\u00f3n vocal.",
+    "scope_base_catalog": "Selecci\u00f3n de perfil vocal, grabaci\u00f3n, limpieza b\u00e1sica y entrega final seg\u00fan el uso acordado.",
+    "not_included_catalog": "No incluye reescritura total del guion, revisi\u00f3n ling\u00fc\u00edstica profunda de textos ajenos ni derechos ampliados no contemplados.",
+    "value_cases": "Mejora credibilidad y comprensi\u00f3n en materiales destinados a audiencias internacionales o biling\u00fces."
   },
   {
+    "service_code": "AV-013",
     "service_name": "Podcast (A/V)",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Producci\u00f3n completa de episodios de podcast en formatos de audio y video."
+    "description": "Producci\u00f3n audiovisual de episodios tipo podcast o conversaci\u00f3n multic\u00e1mara para contenido de autoridad y marca.",
+    "summary": "Producci\u00f3n audiovisual de episodios tipo podcast o conversaci\u00f3n multic\u00e1mara para contenido de autoridad y marca.",
+    "for_who": "Voceros, l\u00edderes, consultoras y marcas que necesitan construir presencia experta a trav\u00e9s de contenido conversacional.",
+    "scope_base_catalog": "Set base, grabaci\u00f3n multic\u00e1mara, captura de audio multipista, edici\u00f3n principal y entrega del episodio final.",
+    "not_included_catalog": "No incluye investigaci\u00f3n editorial profunda, gesti\u00f3n de invitados, guiones extensos ni sets especiales fuera del alcance acordado.",
+    "value_cases": "Permite construir un activo de contenido reutilizable para posicionamiento, reputaci\u00f3n y piezas derivadas por canal."
   },
   {
+    "service_code": "AV-014",
     "service_name": "Sesi\u00f3n Fotogr\u00e1fica",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Jornada de 4 horas de fotograf\u00eda profesional. Incluye iluminaci\u00f3n y retoque digital."
+    "description": "Realizaci\u00f3n de im\u00e1genes corporativas limpias focalizadas en recursos humanos o ambientes institucionales controlados.",
+    "summary": "Realizaci\u00f3n de im\u00e1genes corporativas limpias focalizadas en recursos humanos o ambientes institucionales controlados.",
+    "for_who": "Reportes de sostenibilidad con caras reales de empleados o perfiles de LinkedIn directivos homogeneizados.",
+    "scope_base_catalog": "Media jornada operativa t\u00e9cnica con rebotes lum\u00ednicos, fot\u00f3grafo profesional y lote entrega primaria de JPGs calibrados en luz natural.",
+    "not_included_catalog": "Retoques agresivos editoriales beauty-shots corporales o superposiciones de cielos irreales.",
+    "value_cases": "Distancia infinitamente a la marca de su competidor gen\u00e9rico que utiliza im\u00e1genes falsas de repositorios web (Stockphotos)."
   },
   {
-    "service_name": "Cobertura de Eventos",
+    "service_code": "AV-015",
+    "service_name": "Cobertura Evento",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Registro fotogr\u00e1fico profesional para eventos corporativos o sociales."
+    "description": "Cobertura fotogr\u00e1fica documental de eventos, activaciones, inauguraciones o hitos institucionales.",
+    "summary": "Cobertura fotogr\u00e1fica documental de eventos, activaciones, inauguraciones o hitos institucionales.",
+    "for_who": "Empresas, marcas y organizaciones que necesitan registrar un evento con criterio profesional para comunicaci\u00f3n posterior.",
+    "scope_base_catalog": "Cobertura durante el tiempo acordado, selecci\u00f3n base de fotograf\u00edas editadas y entrega del material seg\u00fan alcance.",
+    "not_included_catalog": "No incluye video highlights, retoque avanzado ilimitado ni cobertura extendida fuera de la jornada contratada.",
+    "value_cases": "Genera activos visuales \u00fatiles para prensa, redes, memoria institucional y seguimiento comercial posterior al evento."
   },
   {
-    "service_name": "Fotograf\u00eda de Producto",
+    "service_code": "AV-016",
+    "service_name": "Fotograf\u00eda Producto",
     "category": "1. Producci\u00f3n Audiovisual",
-    "description": "Fotograf\u00eda profesional optimizada para cat\u00e1logos digitales o e-commerce."
+    "description": "Producci\u00f3n fotogr\u00e1fica de producto para cat\u00e1logos, fichas comerciales, e-commerce o materiales promocionales.",
+    "summary": "Producci\u00f3n fotogr\u00e1fica de producto para cat\u00e1logos, fichas comerciales, e-commerce o materiales promocionales.",
+    "for_who": "Marcas, importadores, retail, restaurantes y negocios que necesitan mostrar productos con consistencia visual y criterio comercial.",
+    "scope_base_catalog": "Set base, iluminaci\u00f3n controlada, fotograf\u00eda de producto y entrega de archivos optimizados seg\u00fan el uso definido.",
+    "not_included_catalog": "No incluye styling complejo, producci\u00f3n publicitaria con modelos ni composiciones avanzadas fuera del alcance pactado.",
+    "value_cases": "Mejora presentaci\u00f3n, consistencia visual y confianza en cat\u00e1logos, men\u00fas, marketplaces y tiendas online."
   },
   {
+    "service_code": "MK-001",
     "service_name": "An\u00e1lisis de Redes",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Auditor\u00eda de canales digitales con recomendaciones estrat\u00e9gicas accionables."
+    "description": "Auditor\u00eda cl\u00ednica del rendimiento reciente, est\u00e9tica y comunidad de los canales digitales de una marca.",
+    "summary": "Auditor\u00eda cl\u00ednica del rendimiento reciente, est\u00e9tica y comunidad de los canales digitales de una marca.",
+    "for_who": "Clientes que sienten estancamiento org\u00e1nico o eval\u00faan cambiar su estrategia de social media.",
+    "scope_base_catalog": "Revisi\u00f3n de canales propios, an\u00e1lisis de hasta 3 competidores y reporte de diagn\u00f3stico con \"quick wins\".",
+    "not_included_catalog": "No es el desarrollo de la estrategia futura; es un an\u00e1lisis forense del estado actual.",
+    "value_cases": "Brinda visibilidad t\u00e9cnica e imparcial sobre qu\u00e9 t\u00e1cticas fallan antes de comprometer m\u00e1s presupuesto."
   },
   {
+    "service_code": "MK-002",
     "service_name": "Estrategia Digital",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Dise\u00f1o de planes de marketing digital y hojas de ruta de contenidos."
+    "description": "Documento rector (Playbook) que dise\u00f1a embudos de marketing, distribuci\u00f3n de canales y pilares de mensaje.",
+    "summary": "Documento rector (Playbook) que dise\u00f1a embudos de marketing, distribuci\u00f3n de canales y pilares de mensaje.",
+    "for_who": "Empresas que invierten digitalmente pero sin conectar ventas, contenidos y pauta en una directriz unificada.",
+    "scope_base_catalog": "Definici\u00f3n de audiencias (Buyer Personas), mapa de canales sugerido y cronograma t\u00e1ctico trimestral o anual.",
+    "not_included_catalog": "Es un servicio estrat\u00e9gico y consultivo; excluye la ejecuci\u00f3n operativa y el dise\u00f1o gr\u00e1fico posterior de las piezas.",
+    "value_cases": "Evita la fuga de fondos en acciones aisladas, dando sentido org\u00e1nico e inalterable a la presencia digital."
   },
   {
+    "service_code": "MK-003",
     "service_name": "Community Manager",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Gesti\u00f3n mensual de redes sociales: creaci\u00f3n de contenido, publicaci\u00f3n y moderaci\u00f3n."
+    "description": "Gesti\u00f3n operativa de perfiles sociales para sostener presencia, respuesta y consistencia de marca.",
+    "summary": "Gesti\u00f3n operativa de perfiles sociales para sostener presencia, respuesta y consistencia de marca.",
+    "for_who": "Negocios que precisan mantener vigencia, educar a su comunidad y responder activamente en redes de forma profesional.",
+    "scope_base_catalog": "Parrilla mensual de contenidos, redacci\u00f3n (copy), publicaci\u00f3n programada y moderaci\u00f3n nivel 1 (Inbox/Comentarios corporativos).",
+    "not_included_catalog": "No incluye cierre de ventas complejas, soporte operativo profundo ni procesos log\u00edsticos del cliente.",
+    "value_cases": "Mantiene continuidad de marca, mejora tiempos de respuesta y evita que la comunidad quede sin atenci\u00f3n."
   },
   {
+    "service_code": "MK-004",
     "service_name": "Pauta Digital",
     "category": "2. Marketing Digital y Contenidos",
-    "description": "Administraci\u00f3n estrat\u00e9gica de campa\u00f1as publicitarias en Meta, Google y otras redes."
+    "description": "Gesti\u00f3n t\u00e9cnica de campa\u00f1as pagadas para generaci\u00f3n de tr\u00e1fico, leads o conversiones.",
+    "summary": "Gesti\u00f3n t\u00e9cnica de campa\u00f1as pagadas para generaci\u00f3n de tr\u00e1fico, leads o conversiones.",
+    "for_who": "Marcas que necesitan acelerar resultados digitales con inversi\u00f3n controlada en plataformas publicitarias.",
+    "scope_base_catalog": "Configuraci\u00f3n de campa\u00f1as, segmentaci\u00f3n, seguimiento de desempe\u00f1o y reporte de indicadores base.",
+    "not_included_catalog": "No incluye producci\u00f3n creativa ni el presupuesto publicitario invertido en la plataforma.",
+    "value_cases": "Ayuda a captar demanda de forma m\u00e1s predecible y a optimizar inversi\u00f3n seg\u00fan objetivos comerciales."
   },
   {
+    "service_code": "BR-001",
     "service_name": "Dise\u00f1o de Identidad",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Desarrollo de marca: logotipo, paleta crom\u00e1tica, tipograf\u00eda y manual de identidad."
+    "description": "Desarrollo de la identidad visual base de una marca para asegurar consistencia y reconocimiento.",
+    "summary": "Desarrollo de la identidad visual base de una marca para asegurar consistencia y reconocimiento.",
+    "for_who": "Startups lanzando un producto m\u00ednimo viable o empresas que requieren un reposicionamiento formal de imagen total.",
+    "scope_base_catalog": "Dise\u00f1o de imagotipo/logotipo, paleta crom\u00e1tica, elecci\u00f3n de fuentes tipogr\u00e1ficas corporativas y entrega de Brandbook digital base.",
+    "not_included_catalog": "Desarrollo extensivo masivo de empaques industriales o renders en 3D volum\u00e9tricos f\u00edsicos.",
+    "value_cases": "Aporta coherencia visual, profesionaliza la percepci\u00f3n de marca y ordena futuras aplicaciones comerciales."
   },
   {
+    "service_code": "BR-002",
     "service_name": "Dise\u00f1o de Presentaci\u00f3n",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Creaci\u00f3n de presentaciones corporativas impactantes en PPT o Google Slides."
+    "description": "Dise\u00f1o y maquetaci\u00f3n de presentaciones ejecutivas para ventas, direcci\u00f3n o levantamiento de capital.",
+    "summary": "Dise\u00f1o y maquetaci\u00f3n de presentaciones ejecutivas para ventas, direcci\u00f3n o levantamiento de capital.",
+    "for_who": "C-Levels, agentes comerciales o startups buscando prospectar financiamiento, donde cada slide cuenta.",
+    "scope_base_catalog": "Formateo base visual, creaci\u00f3n de portadas unificadas, aplicaci\u00f3n del logo del cliente e iconos flat; se provee en PPTx o PDF final.",
+    "not_included_catalog": "No incluye reestructuraci\u00f3n profunda de contenido, modelado financiero ni redacci\u00f3n extensa fuera del alcance acordado.",
+    "value_cases": "Mejora claridad, lectura y capacidad de persuasi\u00f3n en reuniones comerciales, institucionales o con inversionistas."
   },
   {
+    "service_code": "BR-003",
     "service_name": "Dise\u00f1o Impreso",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Dise\u00f1o de piezas editoriales: flyers, brochures, tarjetas y material promocional."
+    "description": "Dise\u00f1o y preparaci\u00f3n para impresi\u00f3n de materiales gr\u00e1ficos f\u00edsicos con criterio t\u00e9cnico de preprensa.",
+    "summary": "Dise\u00f1o y preparaci\u00f3n para impresi\u00f3n de materiales gr\u00e1ficos f\u00edsicos con criterio t\u00e9cnico de preprensa.",
+    "for_who": "Men\u00fas, cat\u00e1logos f\u00edsicos semestrales, empaques corporativos o merchandising tradicional a regalarse en campa\u00f1as BTL.",
+    "scope_base_catalog": "Diagramaci\u00f3n t\u00e9cnica enfocada al sustrato; correcci\u00f3n de bleeds (m\u00e1rgenes de sangr\u00eda de corte) y entrega empaquetada lista (Press-Ready).",
+    "not_included_catalog": "No incluye grandes tirajes, costos industriales de impresi\u00f3n ni decisiones de producci\u00f3n fuera del alcance contratado.",
+    "value_cases": "Reduce errores de salida a imprenta y mejora consistencia visual en piezas f\u00edsicas de marca."
   },
   {
+    "service_code": "BR-004",
     "service_name": "Infograf\u00eda",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Dise\u00f1o de infograf\u00edas conceptuales para presentaciones o canales digitales."
+    "description": "Dise\u00f1o de infograf\u00edas para explicar informaci\u00f3n compleja de forma visual, sint\u00e9tica y m\u00e1s f\u00e1cil de entender.",
+    "summary": "Dise\u00f1o de infograf\u00edas para explicar informaci\u00f3n compleja de forma visual, sint\u00e9tica y m\u00e1s f\u00e1cil de entender.",
+    "for_who": "Empresas, reportes, manuales y materiales educativos que necesitan traducir datos o procesos a una pieza visual clara.",
+    "scope_base_catalog": "Estructura visual, iconograf\u00eda base, jerarqu\u00eda de informaci\u00f3n y arte final seg\u00fan formato acordado.",
+    "not_included_catalog": "No incluye investigaci\u00f3n de fondo extensa ni levantamiento de informaci\u00f3n que no haya sido provista por el cliente.",
+    "value_cases": "Facilita comprensi\u00f3n, mejora lectura y aumenta utilidad de informaci\u00f3n t\u00e9cnica, comercial o institucional."
   },
   {
+    "service_code": "BR-005",
     "service_name": "Roll Up",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Dise\u00f1o e impresi\u00f3n de roll up (85x200 cm) con estructura incluida."
+    "description": "Dise\u00f1o y producci\u00f3n de roll up corporativo para presencia en ferias, recepciones o activaciones presenciales.",
+    "summary": "Dise\u00f1o y producci\u00f3n de roll up corporativo para presencia en ferias, recepciones o activaciones presenciales.",
+    "for_who": "Marcas que necesitan una pieza vertical portable para eventos, puntos de atenci\u00f3n o espacios promocionales.",
+    "scope_base_catalog": "Dise\u00f1o de una pieza, impresi\u00f3n en formato est\u00e1ndar y estructura retr\u00e1ctil base.",
+    "not_included_catalog": "No incluye transporte fuera de la ciudad, montaje especial ni redise\u00f1os adicionales no contemplados.",
+    "value_cases": "Resuelve una necesidad de visibilidad inmediata en espacios presenciales sin requerir producci\u00f3n compleja."
   },
   {
+    "service_code": "BR-006",
     "service_name": "Banner",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Dise\u00f1o e impresi\u00f3n de banners en lona de alta resistencia (precio por m2)."
+    "description": "Dise\u00f1o y producci\u00f3n de banner en gran formato para comunicaci\u00f3n exterior o interior.",
+    "summary": "Dise\u00f1o y producci\u00f3n de banner en gran formato para comunicaci\u00f3n exterior o interior.",
+    "for_who": "Negocios, constructoras, hoteles o puntos comerciales que requieren visibilidad r\u00e1pida en fachadas, stands o campa\u00f1as locales.",
+    "scope_base_catalog": "Dise\u00f1o base, preparaci\u00f3n para impresi\u00f3n e impresi\u00f3n por metro cuadrado con terminados est\u00e1ndar.",
+    "not_included_catalog": "No incluye instalaci\u00f3n en altura, estructuras especiales ni permisos municipales.",
+    "value_cases": "Permite resolver se\u00f1alizaci\u00f3n comercial y presencia promocional con una pieza visible y de r\u00e1pida implementaci\u00f3n."
   },
   {
+    "service_code": "BR-007",
     "service_name": "Flyer (Impresi\u00f3n)",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Impresi\u00f3n de flyers en papel couch\u00e9 de alta calidad con laminado."
+    "description": "Dise\u00f1o e impresi\u00f3n de flyers para campa\u00f1as promocionales, aperturas o acciones de difusi\u00f3n local.",
+    "summary": "Dise\u00f1o e impresi\u00f3n de flyers para campa\u00f1as promocionales, aperturas o acciones de difusi\u00f3n local.",
+    "for_who": "Comercios, retail, restaurantes o marcas que necesitan distribuci\u00f3n f\u00edsica de material promocional.",
+    "scope_base_catalog": "Formato est\u00e1ndar, tiraje base y preparaci\u00f3n de arte final para impresi\u00f3n.",
+    "not_included_catalog": "No incluye distribuci\u00f3n en calle, activaci\u00f3n BTL ni redacci\u00f3n extensa fuera del contenido base acordado.",
+    "value_cases": "Es una pieza \u00fatil para promociones de alcance local, lanzamientos y campa\u00f1as t\u00e1cticas de respuesta r\u00e1pida."
   },
   {
+    "service_code": "BR-008",
     "service_name": "Tarjetas (Impresi\u00f3n)",
     "category": "3. Dise\u00f1o y Branding",
-    "description": "Impresi\u00f3n de tarjetas de presentaci\u00f3n (9x5 cm) en couch\u00e9 de 300 gr."
+    "description": "Dise\u00f1o e impresi\u00f3n de tarjetas corporativas para contacto comercial e institucional.",
+    "summary": "Dise\u00f1o e impresi\u00f3n de tarjetas corporativas para contacto comercial e institucional.",
+    "for_who": "Ejecutivos, equipos comerciales y voceros que necesitan material de presentaci\u00f3n profesional en reuniones o eventos.",
+    "scope_base_catalog": "Dise\u00f1o base, impresi\u00f3n tiro y retiro en cartulina est\u00e1ndar y entrega por lote.",
+    "not_included_catalog": "No incluye acabados premium especiales como hot stamping, relieve o troqueles personalizados.",
+    "value_cases": "Refuerza presencia profesional y facilita el intercambio de contacto en contextos comerciales y corporativos."
   },
   {
+    "service_code": "INF-001",
     "service_name": "Dominio .com/.org",
     "category": "4. Infraestructura y Web",
-    "description": "Gesti\u00f3n y registro anual de dominios internacionales."
+    "description": "Registro anual administrativo del nombre (URL) institucional de la marca en internet.",
+    "summary": "Registro anual administrativo del nombre (URL) institucional de la marca en internet.",
+    "for_who": "Aquellos que inician un proyecto digital y requieren proteger su nombre (Naming).",
+    "scope_base_catalog": "Inscripci\u00f3n ICANN por 12 meses y acceso al DNS para direccionar hacia un servidor.",
+    "not_included_catalog": "Es solo la placa del terreno, no incluye el espacio de almacenamiento (Hosting) ni la p\u00e1gina web.",
+    "value_cases": "Otorga propiedad legal global sobre el nombre de la empresa en el entorno digital."
   },
   {
+    "service_code": "INF-002",
     "service_name": "Dominio .ec",
     "category": "4. Infraestructura y Web",
-    "description": "Registro y administraci\u00f3n de dominios territoriales (.ec) por periodos bianuales."
+    "description": "Registro oficial de propiedad web regulado por la red geogr\u00e1fica ecuatoriana (NIC.ec).",
+    "summary": "Registro oficial de propiedad web regulado por la red geogr\u00e1fica ecuatoriana (NIC.ec).",
+    "for_who": "Corporaciones que buscan posicionamiento local o instituciones que requieren reafirmar su base territorial.",
+    "scope_base_catalog": "Gesti\u00f3n directa del registro, com\u00fanmente en contratos bianuales seg\u00fan normativa del NIC.",
+    "not_included_catalog": "Tr\u00e1mites de disputa de marca ante organismos gubernamentales si el dominio est\u00e1 ocupado.",
+    "value_cases": "Mejora el posicionamiento SEO geolocalizado en b\u00fasquedas realizadas dentro del Ecuador."
   },
   {
+    "service_code": "INF-003",
     "service_name": "Hosting Econ\u00f3mico",
     "category": "4. Infraestructura y Web",
-    "description": "Alojamiento compartido anual (10 GB de almacenamiento, SSL y cPanel)."
+    "description": "Plan de alojamiento web (server) en infraestructura compartida de recursos iniciales.",
+    "summary": "Plan de alojamiento web (server) en infraestructura compartida de recursos iniciales.",
+    "for_who": "Profesionales independientes o p\u00e1ginas informativas con poco tr\u00e1fico mensual.",
+    "scope_base_catalog": "Espacio en disco SSD (ej. 10GB), transferencia limitada, soporte a PHP est\u00e1ndar e interfaz de control (CPanel).",
+    "not_included_catalog": "Si recibe un pico fuerte de tr\u00e1fico simult\u00e1neo producto de una pauta publicitaria, el servidor colapsar\u00e1.",
+    "value_cases": "Opci\u00f3n econ\u00f3mica y suficiente para presencias institucionales est\u00e1ticas y correos b\u00e1sicos."
   },
   {
+    "service_code": "INF-004",
     "service_name": "Hosting Premium",
     "category": "4. Infraestructura y Web",
-    "description": "Alojamiento de alto rendimiento con 40 GB y respaldos diarios automatizados."
+    "description": "Alojamiento en servidor de recursos elevados con discos NVMe, pensado para tr\u00e1fico comercial.",
+    "summary": "Alojamiento en servidor de recursos elevados con discos NVMe, pensado para tr\u00e1fico comercial.",
+    "for_who": "Tiendas virtuales incipientes (WooCommerce), academias online y corporativos con requerimientos r\u00e1pidos.",
+    "scope_base_catalog": "Mayor cuota de almacenamiento, ancho de banda amplio, respaldos autom\u00e1ticos (Backups) y filtro antispam avanzado.",
+    "not_included_catalog": "No es un nodo independiente de uso exclusivo (privado).",
+    "value_cases": "Evita ca\u00eddas inoportunas que frustran ventas activas y ahuyentan prospectos generados por publicidad."
   },
   {
+    "service_code": "INF-005",
     "service_name": "Servidor VPS",
     "category": "4. Infraestructura y Web",
-    "description": "Provisi\u00f3n de servidor virtual privado (4 vCPU, 8 GB RAM, 400 GB SSD)."
+    "description": "Infraestructura de red virtualizada, donde el cliente tiene exclusividad sobre un segmento de CPU y RAM.",
+    "summary": "Infraestructura de red virtualizada, donde el cliente tiene exclusividad sobre un segmento de CPU y RAM.",
+    "for_who": "Apps de alto consumo de datos, diarios digitales o plataformas de e-commerce transaccionales robustas.",
+    "scope_base_catalog": "M\u00e1quina alocada (ej. 4 Cores / 8GB RAM), IP dedicada y ancho de banda garantizado.",
+    "not_included_catalog": "Los VPS Unmanaged (no gestionados) no incluyen parcheo de seguridad del sistema operativo a nuestro cargo.",
+    "value_cases": "Ofrece mayor control, estabilidad y aislamiento que un hosting compartido para proyectos con m\u00e1s exigencia t\u00e9cnica."
   },
   {
+    "service_code": "INF-006",
     "service_name": "Certificado SSL",
     "category": "4. Infraestructura y Web",
-    "description": "Emisi\u00f3n e instalaci\u00f3n de certificado de seguridad SSL con validez anual."
+    "description": "Adquisici\u00f3n, instalaci\u00f3n y renovaci\u00f3n anual del protocolo de seguridad que encripta la p\u00e1gina (Candado HTTPS).",
+    "summary": "Adquisici\u00f3n, instalaci\u00f3n y renovaci\u00f3n anual del protocolo de seguridad que encripta la p\u00e1gina (Candado HTTPS).",
+    "for_who": "Cualquier sitio que contenga un formulario o reciba pagos.",
+    "scope_base_catalog": "Emisi\u00f3n nivel DV (Domain Validated), instalaci\u00f3n en servidor y configuraci\u00f3n de redirecci\u00f3n autom\u00e1tica 301.",
+    "not_included_catalog": "No abarca certificados de tipo bancario OV/EV (Extended Validation) que exigen auditor\u00eda notariada de la empresa.",
+    "value_cases": "Elimina el cartel \"Sitio no seguro\" en navegadores. Un sitio sin SSL simplemente no vende porque ahuyenta al usuario."
   },
   {
+    "service_code": "INF-007",
     "service_name": "SSL Wildcard",
     "category": "4. Infraestructura y Web",
-    "description": "Certificado SSL avanzado para la protecci\u00f3n de m\u00faltiples subdominios."
+    "description": "Certificado de seguridad maestro para validar dominios y un n\u00famero ilimitado de subdominios.",
+    "summary": "Certificado de seguridad maestro para validar dominios y un n\u00famero ilimitado de subdominios.",
+    "for_who": "Ecosistemas de software complejos (ej. tienda.nuestraweb.com, aula.nuestraweb.com).",
+    "scope_base_catalog": "Cobertura extendida bajo el esquema de asterisco (*.dominio.com) garantizando todos los ramales.",
+    "not_included_catalog": "Solo v\u00e1lido para extensiones del dominio principal; no incluye otros nombres registrados por la empresa.",
+    "value_cases": "Rentabilidad financiera superior y reducci\u00f3n a cero de la fricci\u00f3n administrativa al vencer un solo certificado unificado anual."
   },
   {
+    "service_code": "INF-008",
     "service_name": "Email Corporativo",
     "category": "4. Infraestructura y Web",
-    "description": "Configuraci\u00f3n de cuentas de correo institucional personalizadas."
+    "description": "Habilitaci\u00f3n de plataforma de correo con extensi\u00f3n propia institucional (nombre@miempresa.com).",
+    "summary": "Habilitaci\u00f3n de plataforma de correo con extensi\u00f3n propia institucional (nombre@miempresa.com).",
+    "for_who": "Equipos de ventas, presidencia y operaci\u00f3n comercial que deben erradicar buzones gen\u00e9ricos (@gmail).",
+    "scope_base_catalog": "Creaci\u00f3n de casillas, enlazamiento de registros MX y configuraci\u00f3n primaria de clientes de ofim\u00e1tica.",
+    "not_included_catalog": "La transferencia integral de gigabytes \"hist\u00f3ricos\" desde el buz\u00f3n viejo del cliente es un cargo extra operativo de IT.",
+    "value_cases": "Aporta credibilidad irrefutable ante el Estado, proveedores y clientes en transacciones corporativas directas."
   },
   {
+    "service_code": "DEV-001",
     "service_name": "Landing Page",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo optimizado en WordPress (responsive, formularios de captura y anal\u00edtica)."
+    "description": "P\u00e1gina de conversi\u00f3n dise\u00f1ada para captar leads, ventas o registros a partir de una oferta espec\u00edfica.",
+    "summary": "P\u00e1gina de conversi\u00f3n dise\u00f1ada para captar leads, ventas o registros a partir de una oferta espec\u00edfica.",
+    "for_who": "Campa\u00f1as de pauta (Ads) para vender un curso espec\u00edfico, un departamento en construcci\u00f3n o recabar bases de datos.",
+    "scope_base_catalog": "Maquetaci\u00f3n de 1 p\u00e1gina de desplazamiento continuo, dise\u00f1o UX orientado a conversi\u00f3n, formulario, e inserci\u00f3n de p\u00edxeles.",
+    "not_included_catalog": "M\u00faltiples secciones conectadas internamente (Blog, Nosotros, Cat\u00e1logo). Ese alcance corresponde a Web Corporativa.",
+    "value_cases": "Concentrar el mensaje y la conversi\u00f3n en una sola p\u00e1gina ayuda a mejorar el rendimiento de campa\u00f1as y lanzamientos."
   },
   {
+    "service_code": "DEV-002",
     "service_name": "Web Corporativa",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Sitio web institucional autogestionable con optimizaci\u00f3n SEO inicial y capacitaci\u00f3n."
+    "description": "Sitio web institucional para presentar la empresa, sus servicios, contenidos y canales de contacto.",
+    "summary": "Sitio web institucional para presentar la empresa, sus servicios, contenidos y canales de contacto.",
+    "for_who": "Consultoras, pymes institucionales y firmas grandes requiriendo exponer un pasaporte digital consolidado estructurado.",
+    "scope_base_catalog": "Dise\u00f1o de hasta 5 p\u00e1ginas internas n\u00facleo, secci\u00f3n noticias/blog autoadministrable, optimizaci\u00f3n de velocidad de carga y configuraci\u00f3n de seguridad t\u00e9cnica base.",
+    "not_included_catalog": "Funciones complejas transaccionales a medida con botones de compra y tarjetas atadas.",
+    "value_cases": "Centraliza presencia digital, mejora confianza comercial y sirve como base para posicionamiento, contenido y captaci\u00f3n."
   },
   {
+    "service_code": "DEV-003",
     "service_name": "E-commerce",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Plataforma de venta online con gesti\u00f3n de inventario, pasarela de pagos y env\u00edos."
+    "description": "Desarrollo de una tienda online con cat\u00e1logo, carrito y proceso de compra digital.",
+    "summary": "Desarrollo de una tienda online con cat\u00e1logo, carrito y proceso de compra digital.",
+    "for_who": "Retail, importadores y marcas que necesitan vender de forma directa desde su propio canal digital.",
+    "scope_base_catalog": "Configuraci\u00f3n de cat\u00e1logo, pasarela de pago, estructura de checkout y carga inicial de productos seg\u00fan alcance.",
+    "not_included_catalog": "No incluye carga masiva ilimitada de inventario, operaci\u00f3n log\u00edstica continua ni administraci\u00f3n comercial permanente del canal.",
+    "value_cases": "Permite vender desde un canal propio, con mejor control sobre experiencia de compra, datos y m\u00e1rgenes."
   },
   {
+    "service_code": "DEV-004",
     "service_name": "App M\u00f3vil",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo nativo o h\u00edbrido para iOS/Android (Flutter o React Native)."
+    "description": "Desarrollo de aplicaciones m\u00f3viles para Android y iOS seg\u00fan el alcance funcional definido.",
+    "summary": "Desarrollo de aplicaciones m\u00f3viles para Android y iOS seg\u00fan el alcance funcional definido.",
+    "for_who": "Programas recurrentes que un perfil usar\u00e1 a diario o interacciones operativas atadas a hardware m\u00f3vil.",
+    "scope_base_catalog": "UI Visual de pantallas nativas, consumo de APIs propias documentadas del cliente, armado emulador QA para aprobaci\u00f3n y subida a tiendas.",
+    "not_included_catalog": "La codificaci\u00f3n pesada del Sistema Matriz (El Backend API que despacha los datos a mostrar) suele ser un entregable distinto.",
+    "value_cases": "Facilita experiencias de uso recurrente, interacci\u00f3n m\u00f3vil directa y servicios que requieren presencia en el dispositivo del usuario."
   },
   {
+    "service_code": "DEV-005",
     "service_name": "Sistema de Gesti\u00f3n",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Ingenier\u00eda de software a medida para procesos empresariales espec\u00edficos."
+    "description": "Desarrollo de sistemas de gesti\u00f3n para ordenar procesos internos, usuarios, permisos y operaciones clave del negocio.",
+    "summary": "Desarrollo de sistemas de gesti\u00f3n para ordenar procesos internos, usuarios, permisos y operaciones clave del negocio.",
+    "for_who": "Empresas que requieren rastrear gu\u00edas, inventarios o flujos de equipo que un SaaS empaquetado no suple.",
+    "scope_base_catalog": "Mapeo documental t\u00e9cnico previo, dise\u00f1o de arquitectura de base de datos y construcci\u00f3n de back ends multi-usuario bajo permisos y roles (RBAC).",
+    "not_included_catalog": "\"Sprints\" no aprobados post etapa descubrimiento o alteraciones arquitect\u00f3nicas en etapa de cierre de c\u00f3digo.",
+    "value_cases": "Reemplaza procesos manuales dispersos por una operaci\u00f3n m\u00e1s trazable, ordenada y escalable."
   },
   {
+    "service_code": "DEV-006",
     "service_name": "CRM Personalizado",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Implementaci\u00f3n y adaptaci\u00f3n de CRM para gesti\u00f3n comercial y de clientes."
+    "description": "Configuraci\u00f3n o desarrollo de un CRM ajustado al proceso comercial del cliente.",
+    "summary": "Configuraci\u00f3n o desarrollo de un CRM ajustado al proceso comercial del cliente.",
+    "for_who": "Equipos comerciales que necesitan visibilidad real de leads, oportunidades, seguimiento y cierres.",
+    "scope_base_catalog": "Roles configuradores, vistas Pipeline/Kanban estructuradas y control de eventos de oportunidad conectados a prospectos externos.",
+    "not_included_catalog": "La automatizaci\u00f3n externa (ej. Mailchimp env\u00edos programados) son desarrollos conectivos paralelos no inmanentes al CRM propio base.",
+    "value_cases": "Mejora control del pipeline, reduce fugas comerciales y ordena seguimiento de oportunidades."
   },
   {
+    "service_code": "DEV-007",
     "service_name": "Aplicaci\u00f3n Web Custom",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Desarrollo de aplicaciones web personalizadas bajo demanda t\u00e9cnica."
+    "description": "Desarrollo de aplicaciones web a medida para resolver procesos, productos o servicios digitales espec\u00edficos.",
+    "summary": "Desarrollo de aplicaciones web a medida para resolver procesos, productos o servicios digitales espec\u00edficos.",
+    "for_who": "Empresas o startups que necesitan una herramienta web propia m\u00e1s all\u00e1 de un sitio institucional est\u00e1ndar.",
+    "scope_base_catalog": "Definici\u00f3n funcional, interfaces, desarrollo frontend/backend seg\u00fan alcance y pruebas base.",
+    "not_included_catalog": "No incluye aplicaciones m\u00f3viles nativas ni expansiones fuera del alcance funcional aprobado.",
+    "value_cases": "Permite construir productos digitales propios o resolver procesos espec\u00edficos con una soluci\u00f3n web dise\u00f1ada para el negocio."
   },
   {
-    "service_name": "Integraci\u00f3n de API",
+    "service_code": "DEV-008",
+    "service_name": "Integraci\u00f3n API",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Conexi\u00f3n con servicios de terceros y desarrollo de endpoints escalables."
+    "description": "Integraci\u00f3n t\u00e9cnica entre sistemas mediante APIs, webhooks o conectores definidos por el alcance.",
+    "summary": "Integraci\u00f3n t\u00e9cnica entre sistemas mediante APIs, webhooks o conectores definidos por el alcance.",
+    "for_who": "Empresas que necesitan conectar su web, CRM, ERP o plataformas externas para evitar tareas manuales repetitivas.",
+    "scope_base_catalog": "Revisi\u00f3n de documentaci\u00f3n t\u00e9cnica, configuraci\u00f3n de endpoints o webhooks y validaci\u00f3n del flujo de datos acordado.",
+    "not_included_catalog": "No incluye licencias de terceros, soporte extendido indefinido ni responsabilidad sobre ca\u00eddas del sistema externo integrado.",
+    "value_cases": "Reduce errores operativos, mejora continuidad entre plataformas y acelera procesos que hoy dependen de carga manual."
   },
   {
+    "service_code": "DEV-009",
     "service_name": "Mantenimiento Web",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Soporte mensual preventivo: actualizaciones de seguridad y backups."
+    "description": "Servicio recurrente de soporte preventivo para sitios web, CMS y plataformas ya publicadas.",
+    "summary": "Servicio recurrente de soporte preventivo para sitios web, CMS y plataformas ya publicadas.",
+    "for_who": "Empresas que necesitan mantener su sitio actualizado, estable y con bajo riesgo t\u00e9cnico.",
+    "scope_base_catalog": "Actualizaciones programadas, respaldos, monitoreo base y soporte t\u00e9cnico preventivo seg\u00fan alcance mensual.",
+    "not_included_catalog": "No incluye redise\u00f1o completo, desarrollo evolutivo grande ni reconstrucci\u00f3n de funcionalidades fuera del mantenimiento acordado.",
+    "value_cases": "Reduce riesgo de ca\u00edda, vulnerabilidades y problemas de compatibilidad en activos digitales ya operativos."
   },
   {
+    "service_code": "DEV-010",
     "service_name": "Soporte T\u00e9cnico",
     "category": "5. Desarrollo de Software y Apps",
-    "description": "Bolsas de horas para asistencia t\u00e9cnica y desarrollo evolutivo."
+    "description": "Soporte t\u00e9cnico bajo requerimiento para resolver incidencias, fallas operativas o configuraciones puntuales.",
+    "summary": "Soporte t\u00e9cnico bajo requerimiento para resolver incidencias, fallas operativas o configuraciones puntuales.",
+    "for_who": "Empresas que necesitan una mesa de ayuda t\u00e9cnica para activos digitales, correos, hosting o sitios ya implementados.",
+    "scope_base_catalog": "Atenci\u00f3n de incidencias, diagn\u00f3stico t\u00e9cnico, resoluci\u00f3n dentro del alcance contratado y seguimiento b\u00e1sico por ticket o bolsa de horas.",
+    "not_included_catalog": "No incluye reconstrucci\u00f3n total de sistemas heredados ni desarrollo completo de nuevas funcionalidades sin evaluaci\u00f3n previa.",
+    "value_cases": "Da respuesta r\u00e1pida a incidentes operativos y reduce el impacto comercial de errores t\u00e9cnicos no planificados."
   },
   {
+    "service_code": "IA-001",
     "service_name": "Chatbot Informativo",
     "category": "6. Soluciones IA y Automatizaci\u00f3n",
-    "description": "Implementaci\u00f3n de asistentes inteligentes para sitios web o WhatsApp."
+    "description": "Implementaci\u00f3n de agentes conversacionales inteligentes (NLP) para atenci\u00f3n primaria en canales web o WhatsApp.",
+    "summary": "Implementaci\u00f3n de agentes conversacionales inteligentes (NLP) para atenci\u00f3n primaria en canales web o WhatsApp.",
+    "for_who": "Negocios con alto volumen de consultas repetitivas (horarios, precios, FAQs) que saturan a su equipo humano.",
+    "scope_base_catalog": "Entrenamiento de intenciones b\u00e1sicas, dise\u00f1o del \u00e1rbol de respuestas y conexi\u00f3n t\u00e9cnica al canal de mensajer\u00eda (API).",
+    "not_included_catalog": "No es una inteligencia artificial de toma de decisiones financieras o cierre contable; act\u00faa como filtro de primer nivel (Triage).",
+    "value_cases": "Libera hasta el 70% del tiempo operativo del equipo de ventas, permiti\u00e9ndoles enfocarse \u00fanicamente en leads ya filtrados y listos para comprar."
   },
   {
+    "service_code": "IA-002",
     "service_name": "Automatizaci\u00f3n con IA",
     "category": "6. Soluciones IA y Automatizaci\u00f3n",
-    "description": "Dise\u00f1o de flujos de trabajo inteligentes para la optimizaci\u00f3n de procesos operativos."
+    "description": "Orquestaci\u00f3n de flujos de trabajo en segundo plano para conectar plataformas y procesar datos sin intervenci\u00f3n humana.",
+    "summary": "Orquestaci\u00f3n de flujos de trabajo en segundo plano para conectar plataformas y procesar datos sin intervenci\u00f3n humana.",
+    "for_who": "\u00c1reas administrativas o E-commerces que transcriben datos manualmente entre CRMs, correos y hojas de c\u00e1lculo.",
+    "scope_base_catalog": "An\u00e1lisis del proceso manual actual, configuraci\u00f3n de la automatizaci\u00f3n (ej. Make/Zapier) y validaci\u00f3n del paso de datos (Webhooks).",
+    "not_included_catalog": "Decisiones legales corporativas de riesgo o interpretaciones que demanden criterio humano insustituible.",
+    "value_cases": "Reduce carga manual, errores repetitivos y tiempos operativos en procesos basados en reglas y transferencia de datos."
   },
   {
+    "service_code": "PR-001",
     "service_name": "Comunicado de Prensa",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "Redacci\u00f3n estrat\u00e9gica y distribuci\u00f3n de comunicados con rigor period\u00edstico."
+    "description": "Redacci\u00f3n period\u00edstica estructurada y distribuci\u00f3n orientada a conseguir publicaci\u00f3n org\u00e1nica (Free press).",
+    "summary": "Redacci\u00f3n period\u00edstica estructurada y distribuci\u00f3n orientada a conseguir publicaci\u00f3n org\u00e1nica (Free press).",
+    "for_who": "Empresas que lanzan productos innovadores, abren sucursales o alcanzan hitos financieros de inter\u00e9s p\u00fablico.",
+    "scope_base_catalog": "Redacci\u00f3n bajo est\u00e1ndar period\u00edstico (Pir\u00e1mide invertida), revisi\u00f3n de vocer\u00eda y env\u00edo a base de datos de periodistas segmentada.",
+    "not_included_catalog": "Ning\u00fan esfuerzo de Relaciones P\u00fablicas org\u00e1nico puede garantizar ni obligar a un medio impreso o digital a publicar el contenido.",
+    "value_cases": "Aporta el peso irrefutable de la validaci\u00f3n de terceros. Una menci\u00f3n editorial vale perceptualmente diez veces m\u00e1s que un anuncio pagado."
   },
   {
+    "service_code": "PR-002",
     "service_name": "Plan de Comunicaci\u00f3n",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "Estrategia integral 360 con mensajes clave, selecci\u00f3n de canales y cronograma."
+    "description": "Desarrollo de la hoja de ruta corporativa para alinear mensajes institucionales hacia audiencias internas y externas.",
+    "summary": "Desarrollo de la hoja de ruta corporativa para alinear mensajes institucionales hacia audiencias internas y externas.",
+    "for_who": "Entidades en transformaci\u00f3n cultural, fusiones empresariales o corporaciones que comunican de manera desordenada.",
+    "scope_base_catalog": "Matriz de stakeholders, ejes narrativos principales, selecci\u00f3n de canales id\u00f3neos y cronograma de despliegue sugerido.",
+    "not_included_catalog": "No abarca la producci\u00f3n f\u00edsica de los entregables (ej. grabar corporativos cruzados) derivados del plan.",
+    "value_cases": "Unifica el discurso directivo. Evita que diferentes voceros de la misma entidad emitan versiones contradictorias al mercado."
   },
   {
+    "service_code": "PR-003",
     "service_name": "Media Training",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "Entrenamiento especializado de voceros para entrevistas en medios masivos y digitales."
+    "description": "Entrenamiento intensivo y simulado (Role-play) para voceros que enfrentar\u00e1n entrevistas en prensa, radio o TV.",
+    "summary": "Entrenamiento intensivo y simulado (Role-play) para voceros que enfrentar\u00e1n entrevistas en prensa, radio o TV.",
+    "for_who": "Ejecutivos, gerentes o figuras p\u00fablicas que act\u00faan como la cara oficial de la instituci\u00f3n.",
+    "scope_base_catalog": "Teor\u00eda sobre din\u00e1micas period\u00edsticas, creaci\u00f3n de matriz de mensajes (Q&A) y simulaci\u00f3n grabada con feedback cr\u00edtico.",
+    "not_included_catalog": "No es un servicio continuo de acompa\u00f1amiento f\u00edsico a cada gira o aparici\u00f3n p\u00fablica del a\u00f1o.",
+    "value_cases": "Prepara al vocero para redireccionar preguntas hostiles hacia sus mensajes clave, mitigando el riesgo inmenso de una declaraci\u00f3n desafortunada en vivo."
   },
   {
+    "service_code": "PR-004",
     "service_name": "Plan de Crisis",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "Protocolos de respuesta inmediata, manual de escenarios y gesti\u00f3n de reputaci\u00f3n."
+    "description": "Dise\u00f1o de protocolos preventivos de respuesta r\u00e1pida ante escenarios de vulnerabilidad reputacional.",
+    "summary": "Dise\u00f1o de protocolos preventivos de respuesta r\u00e1pida ante escenarios de vulnerabilidad reputacional.",
+    "for_who": "Industrias con alto riesgo operativo (salud, banca, extractivas) o figuras con alta exposici\u00f3n p\u00fablica.",
+    "scope_base_catalog": "Mapeo de riesgos probables, \u00e1rbol de decisiones r\u00e1pido, conformaci\u00f3n de comit\u00e9 y redacci\u00f3n de comunicados de contingencia (Holding statements).",
+    "not_included_catalog": "La ejecuci\u00f3n reactiva en tiempo real para \"apagar incendios\" de una emergencia no prevista se cotiza como operaci\u00f3n de contingencia (Hourly fee).",
+    "value_cases": "La preparaci\u00f3n es el \u00fanico escudo efectivo. Reduce el tiempo de par\u00e1lisis corporativa inicial de horas a minutos, limitando el da\u00f1o."
   },
   {
+    "service_code": "PR-005",
     "service_name": "Monitoreo de Medios",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "An\u00e1lisis de presencia de marca (clipping), social listening y an\u00e1lisis de sentimiento."
+    "description": "Rastreo t\u00e9cnico (Clipping) y an\u00e1lisis del sentimiento cualitativo de las menciones de la marca en prensa y plataformas digitales.",
+    "summary": "Rastreo t\u00e9cnico (Clipping) y an\u00e1lisis del sentimiento cualitativo de las menciones de la marca en prensa y plataformas digitales.",
+    "for_who": "Marcas que ejecutan campa\u00f1as BTL masivas o entidades susceptibles a tendencias de opini\u00f3n p\u00fablica.",
+    "scope_base_catalog": "Configuraci\u00f3n de alertas de palabras clave (Keywords), recopilaci\u00f3n de impactos en medios principales y reporte consolidado mensual.",
+    "not_included_catalog": "Auditor\u00edas retroactivas manuales forenses de crisis ocurridas hace m\u00e1s de un semestre atr\u00e1s.",
+    "value_cases": "Transforma la percepci\u00f3n subjetiva en data cuantificable para comprobar emp\u00edricamente si la inversi\u00f3n en PR fue exitosa."
   },
   {
+    "service_code": "PR-006",
     "service_name": "Comunicaci\u00f3n Interna",
     "category": "7. Relaciones P\u00fablicas y Comunicaci\u00f3n",
-    "description": "Estrategias de endomarketing para cultura corporativa y boletines institucionales."
+    "description": "Estrategias de comunicaci\u00f3n (Endomarketing) dirigidas exclusivamente al personal y retenci\u00f3n de talento de la empresa.",
+    "summary": "Estrategias de comunicaci\u00f3n (Endomarketing) dirigidas exclusivamente al personal y retenci\u00f3n de talento de la empresa.",
+    "for_who": "Organigramas de m\u00e1s de 50 personas que sufren de silos de informaci\u00f3n, baja moral o desalineamiento corporativo.",
+    "scope_base_catalog": "Diagn\u00f3stico de flujos de comunicaci\u00f3n actuales y dise\u00f1o de arquitectura de canales oficiales (intranets, boletines, town-halls).",
+    "not_included_catalog": "No suple responsabilidades estrictamente legales y contractuales competencia del departamento de Recursos Humanos.",
+    "value_cases": "Elimina el desgaste provocado por el \"radio pasillo\" logrando que el equipo se entere de las directrices por fuentes oficiales primero."
   },
   {
+    "service_code": "DAT-001",
     "service_name": "Dashboard de KPIs",
     "category": "8. Data, Analytics e Insights",
-    "description": "Implementaci\u00f3n de tableros ejecutivos en Looker Studio o Power BI."
+    "description": "Dise\u00f1o y conexi\u00f3n t\u00e9cnica de tableros de control de datos automatizados (Looker Studio / PowerBI).",
+    "summary": "Dise\u00f1o y conexi\u00f3n t\u00e9cnica de tableros de control de datos automatizados (Looker Studio / PowerBI).",
+    "for_who": "Directivos que dependen de exportar y cruzar datos en Excel manualmente cada fin de mes para saber si el negocio es rentable.",
+    "scope_base_catalog": "Conexi\u00f3n de API a plataformas (Meta, Google Ads, GA4), limpieza l\u00f3gica de la base y maquetaci\u00f3n visual UI del tablero.",
+    "not_included_catalog": "Extracci\u00f3n de bases de datos de hardware legacy o servidores locales sin protocolos de salida a la nube.",
+    "value_cases": "Visibilidad financiera y comercial en tiempo real. Decisiones sustentadas con evidencia y no con instinto."
   },
   {
+    "service_code": "DAT-002",
     "service_name": "Plan de Medici\u00f3n",
     "category": "8. Data, Analytics e Insights",
-    "description": "Dise\u00f1o de frameworks de seguimiento: GTM, p\u00edxeles de conversi\u00f3n y UTMs."
+    "description": "Arquitectura t\u00e9cnica focalizada en instalar los puntos de rastreo de conversi\u00f3n (Eventos) en ecosistemas digitales.",
+    "summary": "Arquitectura t\u00e9cnica focalizada en instalar los puntos de rastreo de conversi\u00f3n (Eventos) en ecosistemas digitales.",
+    "for_who": "Tiendas online que invierten en publicidad pero no saben exactamente qu\u00e9 clics terminan en compra.",
+    "scope_base_catalog": "Implementaci\u00f3n de Google Tag Manager (GTM), configuraci\u00f3n del embudo (A\u00f1adir al carrito, Compra) y auditor\u00eda de env\u00edo de Tags.",
+    "not_included_catalog": "Revisi\u00f3n de factores est\u00e9ticos o re-dise\u00f1o del propio carrito de compras; esta \u00e1rea es puramente t\u00e9cnica (C\u00f3digo oculto).",
+    "value_cases": "Sin un plan de medici\u00f3n, la publicidad est\u00e1 ciega. Obligatorio para entrenar correctamente a un algoritmo publicitario (Performance)."
   },
   {
+    "service_code": "DAT-003",
     "service_name": "Auditor\u00eda de Datos",
     "category": "8. Data, Analytics e Insights",
-    "description": "Evaluaci\u00f3n de integridad de datos, calidad de fuentes y brechas de medici\u00f3n."
+    "description": "Diagn\u00f3stico forense sobre la calidad, estructura de recolecci\u00f3n y factibilidad de los reportes anal\u00edticos vigentes.",
+    "summary": "Diagn\u00f3stico forense sobre la calidad, estructura de recolecci\u00f3n y factibilidad de los reportes anal\u00edticos vigentes.",
+    "for_who": "Empresas que sospechan que su GA4 cuenta conversiones dobles, registra tr\u00e1fico bot excesivo o pierde atribuci\u00f3n.",
+    "scope_base_catalog": "An\u00e1lisis de integridad del contenedor, revisi\u00f3n de cruce contra facturaci\u00f3n real y entrega de reporte de hallazgos priorizado.",
+    "not_included_catalog": "La reparaci\u00f3n t\u00e9cnica integral \"manos a la obra\" de los errores hallados corresponde a un proyecto derivado post-diagn\u00f3stico.",
+    "value_cases": "Restaura la confianza del C-Level en la data digital, previniendo decisiones comerciales apoyadas sobre cifras corruptas."
   },
   {
+    "service_code": "DAT-004",
     "service_name": "Informe de Insights",
     "category": "8. Data, Analytics e Insights",
-    "description": "Investigaci\u00f3n de mercado con hallazgos accionables y an\u00e1lisis competitivo."
+    "description": "Estudio de investigaci\u00f3n de mercado digital que procesa tendencias y volumen en conclusiones directas ejecutables.",
+    "summary": "Estudio de investigaci\u00f3n de mercado digital que procesa tendencias y volumen en conclusiones directas ejecutables.",
+    "for_who": "Liderazgos explorando la viabilidad de nuevos servicios, analizando competencia regional o buscando pivoteos de producto.",
+    "scope_base_catalog": "An\u00e1lisis de intencionalidad de b\u00fasqueda regional (Search Volume), evaluaci\u00f3n referencial de share-of-voice y deck de presentaci\u00f3n.",
+    "not_included_catalog": "Focus groups f\u00edsicos presenciales o compra sindicada de estudios de mercado de base encuestadora tradicional masiva (Ej. Nielsen).",
+    "value_cases": "Validaciones r\u00e1pidas del apetito del mercado previo a realizar grandes inversiones de manufactura o despliegue comercial."
   },
   {
+    "service_code": "DAT-005",
     "service_name": "Configuraci\u00f3n GA4 + GTM",
     "category": "8. Data, Analytics e Insights",
-    "description": "Setup profesional de Google Analytics 4 y gesti\u00f3n avanzada de etiquetas."
+    "description": "Instalaci\u00f3n primaria estandarizada del ecosistema moderno de anal\u00edtica de Google en activos digitales.",
+    "summary": "Instalaci\u00f3n primaria estandarizada del ecosistema moderno de anal\u00edtica de Google en activos digitales.",
+    "for_who": "Sitios web nuevos o negocios que jam\u00e1s migraron correctamente desde el antiguo Universal Analytics.",
+    "scope_base_catalog": "Creaci\u00f3n de propiedades, despliegue del contenedor GTM, seteo de eventos base predeterminados y vinculaci\u00f3n a Google Ads local.",
+    "not_included_catalog": "No incluye implementaciones server-side avanzadas, data lakes ni arquitecturas anal\u00edticas complejas fuera del alcance base.",
+    "value_cases": "Establece una base de medici\u00f3n confiable para entender origen de tr\u00e1fico, eventos clave y desempe\u00f1o de campa\u00f1as."
   },
   {
+    "service_code": "MED-001",
     "service_name": "Plan de Medios Integral",
     "category": "9. Media Planning y Performance",
-    "description": "Planificaci\u00f3n publicitaria 360 con mix de canales, presupuestos y flowchart."
+    "description": "Planificaci\u00f3n estrat\u00e9gica de inversi\u00f3n en medios para distribuir presupuesto entre canales de forma coherente.",
+    "summary": "Planificaci\u00f3n estrat\u00e9gica de inversi\u00f3n en medios para distribuir presupuesto entre canales de forma coherente.",
+    "for_who": "Empresas con inversi\u00f3n publicitaria relevante que necesitan decidir mejor d\u00f3nde y c\u00f3mo asignar presupuesto.",
+    "scope_base_catalog": "An\u00e1lisis de objetivos, mix de canales, criterios de distribuci\u00f3n de inversi\u00f3n y lineamientos de ejecuci\u00f3n.",
+    "not_included_catalog": "No incluye producci\u00f3n creativa ni operaci\u00f3n diaria continua de campa\u00f1as salvo acuerdo adicional.",
+    "value_cases": "Mejora la calidad de decisi\u00f3n sobre inversi\u00f3n y reduce dispersi\u00f3n o sobredependencia de un solo canal."
   },
   {
+    "service_code": "MED-002",
     "service_name": "Campa\u00f1a Meta Ads",
     "category": "9. Media Planning y Performance",
-    "description": "Gesti\u00f3n profesional de publicidad en Facebook e Instagram enfocada en resultados."
+    "description": "Gesti\u00f3n de campa\u00f1as pagadas en Meta para generar alcance, tr\u00e1fico, leads o ventas.",
+    "summary": "Gesti\u00f3n de campa\u00f1as pagadas en Meta para generar alcance, tr\u00e1fico, leads o ventas.",
+    "for_who": "E-commerce, retail, startups y marcas que dependen de demanda visual y segmentaci\u00f3n social.",
+    "scope_base_catalog": "Set up de Business Manager, arquitectura de campa\u00f1as (CBO/ABO), pruebas A/B iterativas y reporte mensual anal\u00edtico.",
+    "not_included_catalog": "Costo de la facturaci\u00f3n en tarjeta hacia Meta (Credit spend) y la producci\u00f3n fotogr\u00e1fica/dram\u00e1tica de los anuncios publicitarios.",
+    "value_cases": "Permite activar demanda de forma escalable en entornos donde la propuesta visual y la segmentaci\u00f3n pesan mucho."
   },
   {
+    "service_code": "MED-003",
     "service_name": "Campa\u00f1a Google Ads",
     "category": "9. Media Planning y Performance",
-    "description": "Administraci\u00f3n de campa\u00f1as en Search, Display, Shopping y Performance Max."
+    "description": "Gesti\u00f3n de campa\u00f1as en Google Ads para capturar demanda activa en b\u00fasqueda, display o formatos automatizados.",
+    "summary": "Gesti\u00f3n de campa\u00f1as en Google Ads para capturar demanda activa en b\u00fasqueda, display o formatos automatizados.",
+    "for_who": "Servicios, industrias y comercios que necesitan aparecer cuando el usuario ya est\u00e1 buscando una soluci\u00f3n.",
+    "scope_base_catalog": "Investigaci\u00f3n intensiva de palabras clave (Keyword research), exclusi\u00f3n de t\u00e9rminos negativos, redacci\u00f3n de anuncios y ajustes de puja (bidding).",
+    "not_included_catalog": "Mantenimiento org\u00e1nico SEO de la p\u00e1gina web del cliente, y el costo del cr\u00e9dito pagado a Google LLC.",
+    "value_cases": "Ayuda a capturar intenci\u00f3n de compra o consulta en momentos de alta demanda y necesidad expl\u00edcita."
   },
   {
+    "service_code": "MED-004",
     "service_name": "Campa\u00f1a TikTok Ads",
     "category": "9. Media Planning y Performance",
-    "description": "Estrategias de performance en TikTok con foco en segmentaci\u00f3n y tendencias."
+    "description": "Gesti\u00f3n de campa\u00f1as pagadas en TikTok para marcas que compiten en formatos de video vertical y descubrimiento r\u00e1pido.",
+    "summary": "Gesti\u00f3n de campa\u00f1as pagadas en TikTok para marcas que compiten en formatos de video vertical y descubrimiento r\u00e1pido.",
+    "for_who": "Marcas de consumo, e-commerce y empresas dirigidas a audiencias que consumen contenido m\u00f3vil de ritmo alto.",
+    "scope_base_catalog": "Configuraci\u00f3n en TikTok Business Center, montaje de pautas Spark Ads, vinculaci\u00f3n de p\u00edxeles y trackeo param\u00e9trico.",
+    "not_included_catalog": "TikTok castiga la repetici\u00f3n; requerimos flujo constante de nuevos videos. La producci\u00f3n de esos 4-10 videos mensuales no est\u00e1 incluida en el setup de pauta.",
+    "value_cases": "Puede abrir alcance y eficiencia en audiencias donde TikTok todav\u00eda ofrece oportunidad competitiva frente a otros canales."
   },
   {
+    "service_code": "MED-005",
     "service_name": "Auditor\u00eda SEO",
     "category": "9. Media Planning y Performance",
-    "description": "Diagn\u00f3stico t\u00e9cnico integral (on-page/off-page) con hoja de ruta priorizada."
+    "description": "Diagn\u00f3stico t\u00e9cnico profundo (On-page y Off-page) del c\u00f3digo y contenido de una web para identificar trabas de indexaci\u00f3n org\u00e1nica.",
+    "summary": "Diagn\u00f3stico t\u00e9cnico profundo (On-page y Off-page) del c\u00f3digo y contenido de una web para identificar trabas de indexaci\u00f3n org\u00e1nica.",
+    "for_who": "Portales web consolidados con antig\u00fcedad (+6 meses) que no logran despegar en tr\u00e1fico gratuito a pesar de tener buen contenido.",
+    "scope_base_catalog": "Rastreo por ara\u00f1as de enlaces rotos, an\u00e1lisis de Core Web Vitals, estudio de backlinks t\u00f3xicos y hoja de ruta con correcciones obligatorias.",
+    "not_included_catalog": "Ejecutar la re-programaci\u00f3n y los arreglos t\u00e9cnicos detectados si estos asumen un redise\u00f1o completo de CMS.",
+    "value_cases": "Act\u00faa como resonancia magn\u00e9tica sobre la web. No se puede optimizar el SEO inyectando art\u00edculos si las \"tuber\u00edas\" t\u00e9cnicas del sitio est\u00e1n rotas."
   },
   {
+    "service_code": "MED-006",
     "service_name": "SEO Mensual",
     "category": "9. Media Planning y Performance",
-    "description": "Optimizaci\u00f3n continua de visibilidad org\u00e1nica y posicionamiento en buscadores."
+    "description": "Ejecuci\u00f3n de plan de retenci\u00f3n y mejora t\u00e9cnica continua para sostener e incrementar pelda\u00f1os en los motores de b\u00fasqueda general.",
+    "summary": "Ejecuci\u00f3n de plan de retenci\u00f3n y mejora t\u00e9cnica continua para sostener e incrementar pelda\u00f1os en los motores de b\u00fasqueda general.",
+    "for_who": "Portales de alto tr\u00e1fico comercial que operan en oc\u00e9anos rojos competitivos (Seguros, Cl\u00ednicas, Retailers).",
+    "scope_base_catalog": "Aplicaci\u00f3n progresiva de optimizaciones H1/H2 mensuales, enlazado interno peri\u00f3dico (Interlinking) y curadur\u00eda de art\u00edculos existentes.",
+    "not_included_catalog": "Ning\u00fan servicio SEO corporativo leg\u00edtimo asegura \"Llegar a posici\u00f3n #1 ma\u00f1ana\". Es un trabajo progresivo de 3 a 6 meses.",
+    "value_cases": "Fortalece posicionamiento org\u00e1nico en el tiempo y reduce dependencia exclusiva de inversi\u00f3n publicitaria pagada."
   },
   {
+    "service_code": "MED-007",
     "service_name": "Local SEO",
     "category": "9. Media Planning y Performance",
-    "description": "Mejora de visibilidad local y optimizaci\u00f3n de perfiles en Google Business."
+    "description": "Posicionamiento estructurado enfocado estrictamente en mapas, directorios locales corporativos y resultados \"Cerca de m\u00ed\" base org\u00e1nica territorial.",
+    "summary": "Posicionamiento estructurado enfocado estrictamente en mapas, directorios locales corporativos y resultados \"Cerca de m\u00ed\" base org\u00e1nica territorial.",
+    "for_who": "Cl\u00ednicas dentales ambulatorias, florer\u00edas, servicios de emergencia f\u00edsica, talleres navales o comercio minorista a la calle.",
+    "scope_base_catalog": "Centralizaci\u00f3n t\u00e9cnica del Google My Business (GMB), estandarizaci\u00f3n de metadatos (NAP), gesti\u00f3n de atributos y homologaci\u00f3n de rese\u00f1as.",
+    "not_included_catalog": "Inyecci\u00f3n de comentarios fraudulentos o rese\u00f1as algor\u00edtmicas compradas, ambas penalizadas a nivel corporativo.",
+    "value_cases": "Mejora visibilidad para b\u00fasquedas cercanas y ayuda a captar demanda local con mayor precisi\u00f3n."
   },
   {
+    "service_code": "BIZ-001",
     "service_name": "Diagn\u00f3stico de Madurez Digital",
     "category": "10. Consultor\u00eda de Negocio",
-    "description": "Evaluaci\u00f3n de digitalizaci\u00f3n empresarial con scorecard detallado y roadmap."
+    "description": "Evaluaci\u00f3n ejecutiva del nivel de adopci\u00f3n digital, procesos, herramientas y capacidades del negocio.",
+    "summary": "Evaluaci\u00f3n ejecutiva del nivel de adopci\u00f3n digital, procesos, herramientas y capacidades del negocio.",
+    "for_who": "Directorios, gerencias y empresas que necesitan entender su punto de partida antes de invertir en transformaci\u00f3n digital.",
+    "scope_base_catalog": "Entrevistas, revisi\u00f3n de procesos, diagn\u00f3stico estructurado y hoja de ruta priorizada de mejora.",
+    "not_included_catalog": "No incluye implementaci\u00f3n inmediata de todas las recomendaciones ni compra de herramientas sugeridas.",
+    "value_cases": "Permite priorizar mejor inversiones y ordenar decisiones tecnol\u00f3gicas con criterio de impacto."
   },
   {
+    "service_code": "BIZ-002",
     "service_name": "Estrategia Go-to-Market",
     "category": "10. Consultor\u00eda de Negocio",
-    "description": "Plan de lanzamiento integral: segmentaci\u00f3n, pricing y plan de acci\u00f3n de 90 d\u00edas."
+    "description": "Dise\u00f1o de la estrategia de salida al mercado para un producto, servicio o nueva unidad de negocio.",
+    "summary": "Dise\u00f1o de la estrategia de salida al mercado para un producto, servicio o nueva unidad de negocio.",
+    "for_who": "Empresas en lanzamiento, expansi\u00f3n, diversificaci\u00f3n o entrada a un nuevo segmento o territorio.",
+    "scope_base_catalog": "An\u00e1lisis de mercado, audiencia objetivo, propuesta comercial, pricing base y ruta inicial de lanzamiento.",
+    "not_included_catalog": "No incluye desarrollo del producto ni ejecuci\u00f3n completa de todos los activos comerciales derivados.",
+    "value_cases": "Reduce improvisaci\u00f3n comercial y ayuda a lanzar con una l\u00f3gica m\u00e1s clara de mercado, audiencia y oferta."
   },
   {
+    "service_code": "BIZ-003",
     "service_name": "Business Model Canvas",
     "category": "10. Consultor\u00eda de Negocio",
-    "description": "Taller estrat\u00e9gico para el modelado y validaci\u00f3n de modelos de negocio."
+    "description": "Taller estructurado para ordenar el modelo de negocio en una sola vista estrat\u00e9gica.",
+    "summary": "Taller estructurado para ordenar el modelo de negocio en una sola vista estrat\u00e9gica.",
+    "for_who": "Emprendedores y empresas que necesitan clarificar propuesta de valor, segmentos, ingresos y estructura operativa.",
+    "scope_base_catalog": "Sesi\u00f3n facilitada, construcci\u00f3n del canvas y documento final con hallazgos y acuerdos base.",
+    "not_included_catalog": "No incluye modelado financiero profundo, valuaci\u00f3n ni estudios econ\u00f3micos de largo alcance.",
+    "value_cases": "Ayuda a alinear equipos y a simplificar decisiones cuando el negocio todav\u00eda est\u00e1 difuso o disperso."
   },
   {
+    "service_code": "BIZ-004",
     "service_name": "Taller de Design Thinking",
     "category": "10. Consultor\u00eda de Negocio",
-    "description": "Sesiones facilitadas para la ideaci\u00f3n, prototipado y resoluci\u00f3n de problemas."
+    "description": "Taller facilitado para explorar problemas, usuarios y posibles soluciones con enfoque centrado en experiencia.",
+    "summary": "Taller facilitado para explorar problemas, usuarios y posibles soluciones con enfoque centrado en experiencia.",
+    "for_who": "Equipos que necesitan ordenar ideas, detectar fricciones y priorizar soluciones antes de dise\u00f1ar o desarrollar.",
+    "scope_base_catalog": "Din\u00e1micas guiadas, mapas de empat\u00eda, ideaci\u00f3n y s\u00edntesis de hallazgos con pr\u00f3ximos pasos sugeridos.",
+    "not_included_catalog": "No incluye desarrollo posterior de la soluci\u00f3n ni ejecuci\u00f3n t\u00e9cnica de todos los conceptos generados en taller.",
+    "value_cases": "Acelera definici\u00f3n de problemas y mejora alineaci\u00f3n entre negocio, experiencia y producto antes de invertir en ejecuci\u00f3n."
   },
   {
+    "service_code": "ECO-001",
     "service_name": "Estrategia E-commerce",
     "category": "11. Commerce Avanzado",
-    "description": "Consultor\u00eda integral: plataforma, cat\u00e1logo, conversi\u00f3n y log\u00edstica."
+    "description": "Dise\u00f1o estrat\u00e9gico del canal de venta digital antes de construir o escalar una operaci\u00f3n de comercio electr\u00f3nico.",
+    "summary": "Dise\u00f1o estrat\u00e9gico del canal de venta digital antes de construir o escalar una operaci\u00f3n de comercio electr\u00f3nico.",
+    "for_who": "Empresas que venden por WhatsApp, cat\u00e1logo manual o canales dispersos y necesitan ordenar su operaci\u00f3n digital.",
+    "scope_base_catalog": "Recomendaci\u00f3n de plataforma, definici\u00f3n de flujo comercial, lineamientos log\u00edsticos y criterios base para operaci\u00f3n e-commerce.",
+    "not_included_catalog": "No incluye desarrollo de la tienda, carga completa del cat\u00e1logo ni ejecuci\u00f3n publicitaria posterior.",
+    "value_cases": "Ayuda a tomar mejores decisiones antes de invertir en una tienda o canal digital mal planteado."
   },
   {
+    "service_code": "ECO-002",
     "service_name": "Optimizaci\u00f3n de Marketplace",
     "category": "11. Commerce Avanzado",
-    "description": "Mejora de presencia comercial en MercadoLibre, Amazon o Shopee."
+    "description": "Optimizaci\u00f3n comercial y operativa de listados en marketplaces como Mercado Libre o Amazon.",
+    "summary": "Optimizaci\u00f3n comercial y operativa de listados en marketplaces como Mercado Libre o Amazon.",
+    "for_who": "Marcas e importadores que venden en marketplaces pero no logran buena visibilidad, conversi\u00f3n o desempe\u00f1o de sus publicaciones.",
+    "scope_base_catalog": "Revisi\u00f3n de listados, optimizaci\u00f3n de t\u00edtulos y fichas, criterios de posicionamiento y recomendaciones de mejora comercial.",
+    "not_included_catalog": "No incluye operaci\u00f3n diaria de log\u00edstica, atenci\u00f3n al cliente ni gesti\u00f3n completa del canal sin acuerdo espec\u00edfico.",
+    "value_cases": "Mejora competitividad en marketplaces sin depender \u00fanicamente de bajar precio o aumentar inversi\u00f3n."
   },
   {
+    "service_code": "ECO-003",
     "service_name": "Social Commerce",
     "category": "11. Commerce Avanzado",
-    "description": "Estrategia de venta directa desde canales sociales (Instagram y TikTok Shops)."
+    "description": "Configuraci\u00f3n del canal de venta dentro de plataformas sociales para reducir fricci\u00f3n de compra.",
+    "summary": "Configuraci\u00f3n del canal de venta dentro de plataformas sociales para reducir fricci\u00f3n de compra.",
+    "for_who": "Tiendas de retail y moda donde forzar al usuario a salir de la red social hacia una web externa reduce dr\u00e1sticamente la conversi\u00f3n.",
+    "scope_base_catalog": "Catalogaci\u00f3n en Commerce Manager, vinculaci\u00f3n de inventario y etiquetado nativo de productos en publicaciones (Product Tags).",
+    "not_included_catalog": "La inversi\u00f3n en pauta publicitaria para promocionar los cat\u00e1logos y la gesti\u00f3n log\u00edstica f\u00edsica de env\u00edos.",
+    "value_cases": "Facilita compras m\u00e1s r\u00e1pidas dentro del entorno social y mejora continuidad entre contenido, descubrimiento y conversi\u00f3n."
   },
   {
+    "service_code": "ECO-004",
     "service_name": "CRO (Conversion Rate)",
     "category": "11. Commerce Avanzado",
-    "description": "Auditor\u00eda y optimizaci\u00f3n de tasas de conversi\u00f3n en tiendas online y landings."
+    "description": "Optimizaci\u00f3n de conversi\u00f3n para mejorar el porcentaje de usuarios que completan una compra o acci\u00f3n clave.",
+    "summary": "Optimizaci\u00f3n de conversi\u00f3n para mejorar el porcentaje de usuarios que completan una compra o acci\u00f3n clave.",
+    "for_who": "E-commerce y sitios con tr\u00e1fico relevante que detectan baja conversi\u00f3n en pasos cr\u00edticos del funnel.",
+    "scope_base_catalog": "An\u00e1lisis de comportamiento, mapas de calor, revisi\u00f3n de fricciones y propuestas de mejora priorizadas.",
+    "not_included_catalog": "No incluye reprogramaci\u00f3n profunda de plataforma ni redise\u00f1o total del sitio sin alcance adicional.",
+    "value_cases": "Ayuda a vender m\u00e1s con el tr\u00e1fico existente al reducir fricciones en navegaci\u00f3n, ficha, carrito o checkout."
   },
   {
+    "service_code": "CX-001",
     "service_name": "Customer Journey Map",
     "category": "12. Customer Experience y CRM",
-    "description": "Mapeo integral de la experiencia del cliente para optimizar puntos de contacto."
+    "description": "Mapeo del recorrido del cliente para identificar fricciones, momentos cr\u00edticos y oportunidades de mejora.",
+    "summary": "Mapeo del recorrido del cliente para identificar fricciones, momentos cr\u00edticos y oportunidades de mejora.",
+    "for_who": "Empresas y organizaciones que detectan p\u00e9rdidas de conversi\u00f3n, quejas o quiebres en la experiencia, pero no saben d\u00f3nde ocurren.",
+    "scope_base_catalog": "Sesiones de levantamiento, entrevistas o insumos disponibles, mapa del journey y hallazgos priorizados.",
+    "not_included_catalog": "No incluye redise\u00f1o completo de procesos internos ni ejecuci\u00f3n operativa de todos los cambios detectados.",
+    "value_cases": "Permite ver con m\u00e1s claridad d\u00f3nde se cae la experiencia y qu\u00e9 puntos deben corregirse primero."
   },
   {
+    "service_code": "CX-002",
     "service_name": "Implementaci\u00f3n CRM",
     "category": "12. Customer Experience y CRM",
-    "description": "Configuraci\u00f3n avanzada de plataformas CRM (HubSpot, Salesforce, Brevo) y flujos."
+    "description": "Configuraci\u00f3n de plataformas CRM para organizar leads, oportunidades, seguimiento y visibilidad comercial.",
+    "summary": "Configuraci\u00f3n de plataformas CRM para organizar leads, oportunidades, seguimiento y visibilidad comercial.",
+    "for_who": "Equipos de ventas que actualmente operan usando bases de Excel sueltas y sufren fugas de seguimiento o falta de visibilidad gerencial.",
+    "scope_base_catalog": "Creaci\u00f3n de pipelines de venta, personalizaci\u00f3n de etapas, integraciones con Web/Ads y capacitaci\u00f3n de onboarding ejecutivo (SOP).",
+    "not_included_catalog": "El pago de las licencias extranjeras tipo SaaS a los proveedores de software (Salesforce) no est\u00e1 incluido en la parametrizaci\u00f3n t\u00e9cnica.",
+    "value_cases": "Ordena el proceso comercial, mejora seguimiento y da visibilidad m\u00e1s clara a gerencia y operaci\u00f3n de ventas."
   },
   {
+    "service_code": "CX-003",
     "service_name": "Email Marketing",
     "category": "12. Customer Experience y CRM",
-    "description": "Gesti\u00f3n de campa\u00f1as: segmentaci\u00f3n, flujos automatizados y calendario editorial."
+    "description": "Dise\u00f1o y ejecuci\u00f3n de flujos de email marketing para activaci\u00f3n, nutrici\u00f3n o recompra sobre bases propias.",
+    "summary": "Dise\u00f1o y ejecuci\u00f3n de flujos de email marketing para activaci\u00f3n, nutrici\u00f3n o recompra sobre bases propias.",
+    "for_who": "Negocios que poseen bases de clientes activas y dependen exclusivamente del pago a redes sociales externas para generar recompras.",
+    "scope_base_catalog": "Configuraci\u00f3n de flujos automatizados (Ej. Abandono de Carrito), dise\u00f1o responsivo de plantillas HTML y copywriting secuencial.",
+    "not_included_catalog": "Limpieza manual extrema de bases de datos piratas raspadas de internet; operamos con listas consentidas para evitar bloqueos por Spam.",
+    "value_cases": "Permite activar una base ya existente para sostener relaci\u00f3n, recompra y comunicaci\u00f3n directa sin depender solo de pauta."
   },
   {
+    "service_code": "CX-004",
     "service_name": "Programa de Fidelizaci\u00f3n",
     "category": "12. Customer Experience y CRM",
-    "description": "Dise\u00f1o estrat\u00e9gico de sistemas de lealtad (puntos, niveles y referidos)."
+    "description": "Dise\u00f1o de un programa de fidelizaci\u00f3n para estimular recompra, frecuencia y valor de vida del cliente.",
+    "summary": "Dise\u00f1o de un programa de fidelizaci\u00f3n para estimular recompra, frecuencia y valor de vida del cliente.",
+    "for_who": "Retail, servicios recurrentes y marcas que compiten en recompra, recurrencia o retenci\u00f3n.",
+    "scope_base_catalog": "Estructura de niveles o beneficios, reglas base, l\u00f3gica de recompensas y lineamientos de implementaci\u00f3n.",
+    "not_included_catalog": "No incluye desarrollo completo de una plataforma de lealtad ni integraci\u00f3n tecnol\u00f3gica avanzada sin alcance adicional.",
+    "value_cases": "Fortalece recompra y relaci\u00f3n con clientes actuales, reduciendo dependencia exclusiva de nueva adquisici\u00f3n."
   },
   {
+    "service_code": "CX-005",
     "service_name": "Auditor\u00eda CX",
     "category": "12. Customer Experience y CRM",
-    "description": "Medici\u00f3n de calidad de servicio mediante m\u00e9tricas NPS, CSAT y CES."
+    "description": "Medici\u00f3n cualitativa integral de la calidad de servicio mediante t\u00e1cticas ciegas de mercado evaluativo y sondeos param\u00e9tricos de usuarios reales.",
+    "summary": "Medici\u00f3n cualitativa integral de la calidad de servicio mediante t\u00e1cticas ciegas de mercado evaluativo y sondeos param\u00e9tricos de usuarios reales.",
+    "for_who": "Bancos, concesionarios y cadenas retail que requieren una tasaci\u00f3n forense de por qu\u00e9 sufren oleadas de quejas en redes sobre su atenci\u00f3n en sucursal.",
+    "scope_base_catalog": "Dise\u00f1o de encuestas NPS, ejecuci\u00f3n t\u00e1ctica de Mystery Shopper (Presencial o Grabado Digital) e informes ejecutivos de hallazgos.",
+    "not_included_catalog": "La potestad punitiva y operativa in-house para reprender o cambiar directrices vinculantes con el staff auditado que pertenece al cliente.",
+    "value_cases": "Trasciende la visi\u00f3n interna de los gerentes para revelar datos imparciales verificados del comportamiento real del nivel base hacia el cliente consumidor."
   },
   {
+    "service_code": "CNT-001",
     "service_name": "Estrategia de Contenidos",
     "category": "13. Content Strategy y Copy",
-    "description": "Dise\u00f1o de ecosistema editorial: pilares narrativos, territorios y calendarios."
+    "description": "Definici\u00f3n del sistema editorial que ordena temas, formatos y frecuencia de publicaci\u00f3n para una marca.",
+    "summary": "Definici\u00f3n del sistema editorial que ordena temas, formatos y frecuencia de publicaci\u00f3n para una marca.",
+    "for_who": "Empresas que publican de forma reactiva, inconsistente o sin conexi\u00f3n clara con objetivos de negocio.",
+    "scope_base_catalog": "Pilares tem\u00e1ticos, territorios de contenido, lineamientos editoriales y calendario base.",
+    "not_included_catalog": "No incluye la producci\u00f3n completa de piezas, dise\u00f1o final ni ejecuci\u00f3n mensual salvo acuerdo adicional.",
+    "value_cases": "Ordena la comunicaci\u00f3n org\u00e1nica y facilita que contenido, pauta y ventas conversen bajo una misma l\u00f3gica."
   },
   {
+    "service_code": "CNT-002",
     "service_name": "Brand Voice System",
     "category": "13. Content Strategy y Copy",
-    "description": "Definici\u00f3n de identidad verbal: tono, lenguaje y gu\u00edas de uso por canal."
+    "description": "Sistema de tono de voz y criterios de redacci\u00f3n para unificar c\u00f3mo se expresa la marca en todos sus canales.",
+    "summary": "Sistema de tono de voz y criterios de redacci\u00f3n para unificar c\u00f3mo se expresa la marca en todos sus canales.",
+    "for_who": "Marcas con varios equipos o proveedores que hoy escriben de forma inconsistente.",
+    "scope_base_catalog": "Tono verbal, principios de escritura, vocabulario recomendado y ejemplos de aplicaci\u00f3n por canal.",
+    "not_included_catalog": "No incluye revisi\u00f3n permanente de todas las comunicaciones del equipo ni rebranding visual completo.",
+    "value_cases": "Mejora coherencia de marca y reduce fricci\u00f3n entre marketing, ventas, atenci\u00f3n y automatizaciones."
   },
   {
+    "service_code": "CNT-003",
     "service_name": "Arquitectura de Mensajes",
     "category": "13. Content Strategy y Copy",
-    "description": "Jerarquizaci\u00f3n de propuestas de valor, claims publicitarios y narrativa central."
+    "description": "Jerarqu\u00eda de mensajes clave para explicar mejor la propuesta de valor de la empresa, producto o servicio.",
+    "summary": "Jerarqu\u00eda de mensajes clave para explicar mejor la propuesta de valor de la empresa, producto o servicio.",
+    "for_who": "Marcas que saben lo que hacen, pero no logran comunicarlo de forma clara al mercado.",
+    "scope_base_catalog": "Mensaje principal, claims, proof points, mensajes por segmento y estructura argumental base.",
+    "not_included_catalog": "No incluye campa\u00f1a creativa completa, producci\u00f3n audiovisual ni registro legal de slogans.",
+    "value_cases": "Ayuda a vender con m\u00e1s claridad y consistencia en web, presentaciones, pauta y materiales comerciales."
   },
   {
-    "service_name": "Estrategia de Influencers",
+    "service_code": "IMK-001",
+    "service_name": "Estrategia de Influencer Marketing",
     "category": "14. Influencer Marketing",
-    "description": "Dise\u00f1o de campa\u00f1as con creadores: criterios de selecci\u00f3n, alcance y KPIs."
+    "description": "Definici\u00f3n estrat\u00e9gica de c\u00f3mo usar creadores de contenido para ampliar alcance, consideraci\u00f3n o conversi\u00f3n.",
+    "summary": "Definici\u00f3n estrat\u00e9gica de c\u00f3mo usar creadores de contenido para ampliar alcance, consideraci\u00f3n o conversi\u00f3n.",
+    "for_who": "Marcas que quieren trabajar con influencers, pero necesitan criterios claros de selecci\u00f3n, objetivos y medici\u00f3n.",
+    "scope_base_catalog": "Criterios de selecci\u00f3n, estructura de campa\u00f1a, perfiles sugeridos y KPIs de referencia.",
+    "not_included_catalog": "No incluye pago a talentos, contrataci\u00f3n legal ni gesti\u00f3n operativa completa salvo acuerdo adicional.",
+    "value_cases": "Permite usar influencia de forma m\u00e1s controlada, evitando campa\u00f1as improvisadas o mal alineadas con la marca."
   },
   {
-    "service_name": "Gesti\u00f3n con Creadores",
+    "service_code": "IMK-002",
+    "service_name": "Gesti\u00f3n de Campa\u00f1a con Creadores",
     "category": "14. Influencer Marketing",
-    "description": "Coordinaci\u00f3n operativa de colaboraciones, briefs y control de entregables."
+    "description": "Coordinaci\u00f3n operativa de campa\u00f1as con creadores para asegurar ejecuci\u00f3n, cumplimiento y seguimiento.",
+    "summary": "Coordinaci\u00f3n operativa de campa\u00f1as con creadores para asegurar ejecuci\u00f3n, cumplimiento y seguimiento.",
+    "for_who": "Marcas que ya decidieron trabajar con influencers y necesitan gesti\u00f3n de briefs, entregables y control de calidad.",
+    "scope_base_catalog": "Coordinaci\u00f3n de campa\u00f1a, revisi\u00f3n de entregables y seguimiento b\u00e1sico de desempe\u00f1o.",
+    "not_included_catalog": "No incluye honorarios de talentos, pauta adicional ni gesti\u00f3n legal compleja sin acuerdo previo.",
+    "value_cases": "Reduce errores operativos y mejora consistencia entre la marca, el creador y los objetivos de campa\u00f1a."
   },
   {
-    "service_name": "Creator Sourcing",
+    "service_code": "IMK-003",
+    "service_name": "Creator Sourcing y Outreach",
     "category": "14. Influencer Marketing",
-    "description": "Investigaci\u00f3n y contacto estrat\u00e9gico con talentos afines a la marca."
+    "description": "B\u00fasqueda, evaluaci\u00f3n y contacto inicial con creadores alineados a una categor\u00eda, audiencia o territorio.",
+    "summary": "B\u00fasqueda, evaluaci\u00f3n y contacto inicial con creadores alineados a una categor\u00eda, audiencia o territorio.",
+    "for_who": "Marcas que necesitan identificar perfiles adecuados antes de lanzar una campa\u00f1a con influencers.",
+    "scope_base_catalog": "Shortlist de perfiles, criterios de afinidad, validaci\u00f3n b\u00e1sica de fit y contacto inicial.",
+    "not_included_catalog": "No incluye cierre contractual, administraci\u00f3n completa de campa\u00f1a ni garant\u00eda de participaci\u00f3n de cada creador.",
+    "value_cases": "Ahorra tiempo en prospecci\u00f3n y mejora la calidad de los perfiles considerados para una campa\u00f1a."
   },
   {
-    "service_name": "Concepto de Evento",
+    "service_code": "EXP-001",
+    "service_name": "Concepto de Evento o Activaci\u00f3n",
     "category": "15. Experiential y Eventos",
-    "description": "Dise\u00f1o creativo y estrat\u00e9gico de eventos, activaciones y experiencias de marca."
+    "description": "Desarrollo del concepto estrat\u00e9gico y experiencial para eventos, activaciones o lanzamientos.",
+    "summary": "Desarrollo del concepto estrat\u00e9gico y experiencial para eventos, activaciones o lanzamientos.",
+    "for_who": "Marcas que necesitan dar forma a una experiencia presencial con una narrativa clara y alineada al objetivo comercial.",
+    "scope_base_catalog": "Concepto rector, lineamientos creativos, idea de experiencia y propuesta base de recorrido o interacci\u00f3n.",
+    "not_included_catalog": "No incluye producci\u00f3n t\u00e9cnica, locaci\u00f3n, catering ni montaje f\u00edsico salvo acuerdo adicional.",
+    "value_cases": "Ordena el evento desde una idea clara y mejora coherencia entre experiencia, mensaje y ejecuci\u00f3n."
   },
   {
-    "service_name": "Run of Show y Experiencia",
+    "service_code": "EXP-002",
+    "service_name": "Dise\u00f1o de Experiencia y Run of Show",
     "category": "15. Experiential y Eventos",
-    "description": "Planificaci\u00f3n del viaje del asistente, agenda t\u00e9cnica y momentos clave del evento."
+    "description": "Dise\u00f1o del recorrido del asistente y del cronograma operativo del evento.",
+    "summary": "Dise\u00f1o del recorrido del asistente y del cronograma operativo del evento.",
+    "for_who": "Equipos que ya tienen un evento definido y necesitan bajar la experiencia a un plan operativo claro.",
+    "scope_base_catalog": "Journey del asistente, agenda base, momentos clave y run of show operativo.",
+    "not_included_catalog": "No incluye coordinaci\u00f3n total de proveedores ni reemplazo de talentos o staff ante contingencias.",
+    "value_cases": "Reduce improvisaci\u00f3n y ayuda a que el evento se ejecute con mayor claridad para producci\u00f3n y direcci\u00f3n."
   },
   {
+    "service_code": "EXP-003",
     "service_name": "Amplificaci\u00f3n de Evento",
     "category": "15. Experiential y Eventos",
-    "description": "Estrategia de contenidos y relaciones p\u00fablicas para maximizar el impacto post-evento."
+    "description": "Estrategia de contenido y comunicaci\u00f3n para extender el impacto del evento antes, durante y despu\u00e9s de su realizaci\u00f3n.",
+    "summary": "Estrategia de contenido y comunicaci\u00f3n para extender el impacto del evento antes, durante y despu\u00e9s de su realizaci\u00f3n.",
+    "for_who": "Eventos y marcas que necesitan que la inversi\u00f3n presencial tambi\u00e9n genere alcance y activos digitales.",
+    "scope_base_catalog": "Lineamientos de cobertura, piezas de recap, estructura de publicaci\u00f3n y recomendaciones de difusi\u00f3n.",
+    "not_included_catalog": "No incluye pauta de medios ni cobertura ilimitada sin alcance definido.",
+    "value_cases": "Mejora el retorno del evento al convertirlo en contenido \u00fatil para redes, prensa o seguimiento comercial."
   },
   {
-    "service_name": "Estrategia Healthcare",
+    "service_code": "HLT-001",
+    "service_name": "Estrategia Healthcare Marketing",
     "category": "16. Healthcare Marketing",
-    "description": "Marketing \u00e9tico y posicionamiento especializado para el sector salud."
+    "description": "Dise\u00f1o estrat\u00e9gico de comunicaci\u00f3n y captaci\u00f3n para servicios de salud bajo un marco \u00e9tico y regulatorio cuidado.",
+    "summary": "Dise\u00f1o estrat\u00e9gico de comunicaci\u00f3n y captaci\u00f3n para servicios de salud bajo un marco \u00e9tico y regulatorio cuidado.",
+    "for_who": "Cl\u00ednicas, consultorios, laboratorios y marcas del sector salud que necesitan crecer sin comprometer confianza ni cumplimiento.",
+    "scope_base_catalog": "Definici\u00f3n de enfoque estrat\u00e9gico, audiencias, lineamientos de mensaje y criterios base de captaci\u00f3n.",
+    "not_included_catalog": "No incluye asesor\u00eda legal regulatoria especializada ni gesti\u00f3n de crisis cl\u00ednicas.",
+    "value_cases": "Ayuda a comunicar valor m\u00e9dico con mayor claridad, reduciendo riesgos reputacionales y comerciales."
   },
   {
-    "service_name": "Embudo para Pacientes",
+    "service_code": "HLT-002",
+    "service_name": "Embudo de Captaci\u00f3n de Pacientes",
     "category": "16. Healthcare Marketing",
-    "description": "Dise\u00f1o de funnels por especialidad enfocados en confianza y conversi\u00f3n."
+    "description": "Dise\u00f1o de un funnel para atraer, filtrar y convertir consultas o citas en el sector salud.",
+    "summary": "Dise\u00f1o de un funnel para atraer, filtrar y convertir consultas o citas en el sector salud.",
+    "for_who": "Consultorios y centros m\u00e9dicos que necesitan un flujo m\u00e1s ordenado y predecible de pacientes potenciales.",
+    "scope_base_catalog": "Estructura de embudo, puntos de confianza, formularios base y lineamientos de conversi\u00f3n.",
+    "not_included_catalog": "No incluye operaci\u00f3n de call center, confirmaciones manuales ni desarrollo tecnol\u00f3gico completo sin acuerdo adicional.",
+    "value_cases": "Mejora la conversi\u00f3n de interesados a citas con una experiencia m\u00e1s clara y confiable."
   },
   {
-    "service_name": "Contenido Educativo",
+    "service_code": "HLT-003",
+    "service_name": "Contenido Educativo para Pacientes",
     "category": "16. Healthcare Marketing",
-    "description": "Desarrollo de contenidos m\u00e9dicos comprensibles y alineados a regulaciones."
+    "description": "Desarrollo de piezas informativas para explicar tratamientos, procesos o recomendaciones de salud de forma clara.",
+    "summary": "Desarrollo de piezas informativas para explicar tratamientos, procesos o recomendaciones de salud de forma clara.",
+    "for_who": "Especialistas, cl\u00ednicas y marcas del sector salud que necesitan educar mejor a pacientes y familias.",
+    "scope_base_catalog": "Estructura de contenido, piezas educativas base y lineamientos de comunicaci\u00f3n comprensible.",
+    "not_included_catalog": "No reemplaza criterio m\u00e9dico, validaci\u00f3n cl\u00ednica externa ni consulta profesional individual.",
+    "value_cases": "Mejora comprensi\u00f3n, reduce objeciones y fortalece confianza en servicios m\u00e9dicos o preventivos."
   },
   {
-    "service_name": "Estrategia Comunicativa ESG",
+    "service_code": "ESG-001",
+    "service_name": "Estrategia de Comunicaci\u00f3n ESG",
     "category": "17. Sostenibilidad y ESG",
-    "description": "Narrativa institucional de impacto social, ambiental y de gobernanza."
+    "description": "Definici\u00f3n del enfoque de comunicaci\u00f3n para iniciativas de sostenibilidad, impacto social y gobernanza.",
+    "summary": "Definici\u00f3n del enfoque de comunicaci\u00f3n para iniciativas de sostenibilidad, impacto social y gobernanza.",
+    "for_who": "Empresas que necesitan comunicar su agenda ESG con mayor claridad, respaldo y menor riesgo reputacional.",
+    "scope_base_catalog": "Narrativa marco, mensajes clave, criterios anti-greenwashing y lineamientos de comunicaci\u00f3n.",
+    "not_included_catalog": "No incluye auditor\u00eda t\u00e9cnica de sostenibilidad, certificaci\u00f3n ni validaci\u00f3n externa especializada.",
+    "value_cases": "Ayuda a comunicar sostenibilidad de forma m\u00e1s ordenada, defendible y coherente con la estrategia corporativa."
   },
   {
-    "service_name": "Reporte de Sostenibilidad",
+    "service_code": "ESG-002",
+    "service_name": "Reporte de Sostenibilidad Narrativo",
     "category": "17. Sostenibilidad y ESG",
-    "description": "Estructuraci\u00f3n y redacci\u00f3n de memorias e informes narrativos de impacto."
+    "description": "Desarrollo narrativo y editorial de reportes o memorias de sostenibilidad a partir de informaci\u00f3n provista por la empresa.",
+    "summary": "Desarrollo narrativo y editorial de reportes o memorias de sostenibilidad a partir de informaci\u00f3n provista por la empresa.",
+    "for_who": "Organizaciones que necesitan transformar datos e hitos ESG en una pieza clara para stakeholders, directorio o mercado.",
+    "scope_base_catalog": "Estructura editorial, narrativa ejecutiva, organizaci\u00f3n del contenido y maquetaci\u00f3n base del reporte.",
+    "not_included_catalog": "No incluye levantamiento completo de indicadores, assurance externo ni auditor\u00eda t\u00e9cnica de datos.",
+    "value_cases": "Convierte informaci\u00f3n dispersa en un documento m\u00e1s claro para reputaci\u00f3n, rendici\u00f3n de cuentas y comunicaci\u00f3n institucional."
   },
   {
-    "service_name": "Mensajer\u00eda Stakeholders",
+    "service_code": "ESG-003",
+    "service_name": "Mensajer\u00eda para Stakeholders ESG",
     "category": "17. Sostenibilidad y ESG",
-    "description": "Adaptaci\u00f3n de mensajes ESG para inversores, clientes, talento y comunidad."
+    "description": "Adaptaci\u00f3n de mensajes ESG para distintos p\u00fablicos de inter\u00e9s seg\u00fan contexto, sensibilidad y canal.",
+    "summary": "Adaptaci\u00f3n de mensajes ESG para distintos p\u00fablicos de inter\u00e9s seg\u00fan contexto, sensibilidad y canal.",
+    "for_who": "Empresas que necesitan explicar mejor sus iniciativas ESG a comunidad, clientes, aliados, reguladores o equipos internos.",
+    "scope_base_catalog": "Mensajes por audiencia, preguntas frecuentes y lineamientos de vocer\u00eda o comunicaci\u00f3n base.",
+    "not_included_catalog": "No incluye mediaci\u00f3n presencial de conflictos, gesti\u00f3n de crisis compleja ni negociaci\u00f3n comunitaria.",
+    "value_cases": "Mejora claridad y consistencia en conversaciones sensibles donde sostenibilidad y reputaci\u00f3n est\u00e1n en juego."
   }
 ]

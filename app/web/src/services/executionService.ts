@@ -1,5 +1,21 @@
 import type { Brief, Prompt, Agent, Service, Manual, Execution, ExecutionContext, ExecutionResult } from './types';
 
+const getExecutionManuals = (prompt: Prompt, allManuals: Manual[]): Manual[] => {
+  const explicit = allManuals.filter((manual) => prompt.source_of_truth.includes(manual.path));
+  if (explicit.length > 0) return explicit;
+
+  const byPrompt = allManuals.filter((manual) => manual.related_prompts.includes(prompt.id));
+  if (byPrompt.length > 0) return byPrompt;
+
+  const byService = allManuals.filter((manual) =>
+    manual.related_services.some((serviceCode) => prompt.related_services.includes(serviceCode))
+  );
+  if (byService.length > 0) return byService;
+
+  return allManuals.filter((manual) => manual.discipline === prompt.discipline).slice(0, 3);
+};
+import { callAIRuntime } from './runtimeService';
+
 const getRenderType = (deliverableType: string): 'text' | 'checklist' | 'plan' | 'scheme' | 'summary' => {
   const dt = deliverableType.toLowerCase();
   if (dt.includes('checklist') || dt.includes('auditoria') || dt.includes('diagnostico')) return 'checklist';
@@ -29,7 +45,7 @@ export const prepareExecution = (
 ): Execution => {
   const agent = allAgents.find(a => a.name === prompt.agent_core);
   const services = allServices.filter(s => prompt.related_services.includes(s.service_code));
-  const manuals = allManuals.filter(m => prompt.source_of_truth.includes(m.path));
+  const manuals = getExecutionManuals(prompt, allManuals);
 
   const executionContext: ExecutionContext = {
     promptId: prompt.id,
@@ -81,7 +97,29 @@ export const validateExecution = (execution: Execution): { isValid: boolean; war
 };
 
 /**
- * Simulates AI execution (Phase 2C mockup)
+ * Main execution entry point. 
+ * Tries real runtime first, falls back to mock if explicitly requested or in certain dev conditions.
+ */
+export const executePrompt = async (execution: Execution, useMock = false): Promise<Execution> => {
+  if (useMock) {
+    return executeMock(execution);
+  }
+
+  try {
+    const result = await callAIRuntime(execution);
+    return {
+      ...execution,
+      status: 'completed',
+      result
+    };
+  } catch (error) {
+    console.error('Real runtime failed, throwing error to UI.', error);
+    throw error;
+  }
+};
+
+/**
+ * Simulates AI execution (Phase 2C mockup) - Kept as fallback/dev tool
  */
 export const executeMock = async (execution: Execution): Promise<Execution> => {
   // Simulate delay
@@ -98,7 +136,7 @@ export const executeMock = async (execution: Execution): Promise<Execution> => {
     case 'checklist':
       result = {
         type: 'checklist',
-        content: `Checklist operativo para ${execution.brief.promptName}`,
+        content: `[MOCK] Checklist operativo para ${execution.brief.promptName}`,
         structured_data: sectionTitles.map((title, index) => ({
           label: title,
           status: index === 0 ? 'completed' : 'pending',
@@ -109,7 +147,7 @@ export const executeMock = async (execution: Execution): Promise<Execution> => {
     case 'plan':
       result = {
         type: 'plan',
-        content: `Plan Estratégico: ${execution.prompt.deliverable_type}`,
+        content: `[MOCK] Plan Estratégico: ${execution.prompt.deliverable_type}`,
         structured_data: sectionTitles.map((title, index) => ({
           title,
           items: [
@@ -122,7 +160,7 @@ export const executeMock = async (execution: Execution): Promise<Execution> => {
     case 'scheme':
       result = {
         type: 'scheme',
-        content: `Arquitectura de ${execution.prompt.deliverable_type}`,
+        content: `[MOCK] Arquitectura de ${execution.prompt.deliverable_type}`,
         structured_data: sectionTitles.map((title, index) => ({
           id: `step-${index + 1}`,
           label: title,
@@ -133,7 +171,7 @@ export const executeMock = async (execution: Execution): Promise<Execution> => {
     case 'summary':
       result = {
         type: 'summary',
-        content: `Resumen ejecutivo para ${execution.prompt.name}`,
+        content: `[MOCK] Resumen ejecutivo para ${execution.prompt.name}`,
         structured_data: sectionTitles.map((title, index) => ({
           title,
           body: inputLines[index] || execution.executionContext.additionalContext || execution.prompt.objective,
@@ -144,6 +182,7 @@ export const executeMock = async (execution: Execution): Promise<Execution> => {
       result = {
         type: 'text',
         content: [
+          `[MOCK EXECUTED]`,
           `Entregable: ${execution.prompt.deliverable_type}`,
           '',
           `Objetivo: ${execution.prompt.objective}`,

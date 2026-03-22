@@ -44,9 +44,11 @@ const ManualList: React.FC = () => {
             <div className="card-badge">MANUAL</div>
             <div className="card-discipline">{manual.discipline}</div>
             <h3>{manual.name}</h3>
-            <p>Guía de referencia para {manual.discipline}.</p>
+            <p>{manual.scope_base || `Guía de referencia para ${manual.discipline}.`}</p>
             <div className="card-meta">
-              <span>{manual.related_prompts.length} prompts vinculados</span>
+              <span>{manual.type || 'manual'}</span>
+              <span>{manual.related_prompts.length} prompts</span>
+              <span>{manual.related_services.length} servicios</span>
             </div>
           </Link>
         ))}

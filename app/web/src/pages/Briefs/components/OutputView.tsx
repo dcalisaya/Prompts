@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import type { Execution } from '../../../services/types';
 import OutputRenderer from './OutputRenderer';
+import QualityCard from './QualityCard';
+import OutputAssistanceCard from './OutputAssistanceCard';
 
 interface OutputViewProps {
   execution: Execution;
   onRestart: () => void;
+  sessionId?: string;
 }
 
-const OutputView: React.FC<OutputViewProps> = ({ execution, onRestart }) => {
+const OutputView: React.FC<OutputViewProps> = ({ execution, onRestart, sessionId }) => {
   const [showContext, setShowContext] = useState(false);
   const [copyState, setCopyState] = useState<'idle' | 'done' | 'error'>('idle');
   const { result, prompt, agent } = execution;
@@ -44,6 +47,10 @@ const OutputView: React.FC<OutputViewProps> = ({ execution, onRestart }) => {
           <section className="output-card">
             <OutputRenderer result={result} />
           </section>
+
+          <QualityCard execution={execution} />
+          
+          <OutputAssistanceCard execution={execution} sessionId={sessionId} />
 
           <footer className="output-actions-footer">
             <div className="next-steps-info">

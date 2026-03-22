@@ -1,7 +1,9 @@
 import React, { useCallback, useEffect, useMemo, useState, useDeferredValue } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getSearchIndex, normalizeDiscipline } from '../../services/dataService';
-import type { SearchIndexEntry, SearchResourceType } from '../../services/types';
+import { getRecommendationsByQuery } from '../../services/recommendationService';
+import type { SearchIndexEntry, SearchResourceType, Recommendation } from '../../services/types';
+import RecommendationList from '../../components/Recommendation/RecommendationList';
 import './SearchPage.css';
 
 type FilterValue = 'all' | string;
@@ -61,6 +63,7 @@ const SearchPage: React.FC = () => {
   const [disciplineFilter, setDisciplineFilter] = useState<FilterValue>(searchParams.get('discipline') ?? 'all');
   const [stageFilter, setStageFilter] = useState<FilterValue>(searchParams.get('stage') ?? 'all');
   const [categoryFilter, setCategoryFilter] = useState<FilterValue>(searchParams.get('category') ?? 'all');
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([]);
 
   const loadData = useCallback(() => {
     setLoading(true);
@@ -147,6 +150,14 @@ const SearchPage: React.FC = () => {
       { prompt: 0, agent: 0, service: 0, manual: 0 },
     );
   }, [filteredResults]);
+
+  useEffect(() => {
+    if (deferredQuery.trim()) {
+      setRecommendations(getRecommendationsByQuery(deferredQuery, entries));
+    } else {
+      setRecommendations([]);
+    }
+  }, [deferredQuery, entries]);
 
   if (loading) {
     return (
@@ -240,34 +251,57 @@ const SearchPage: React.FC = () => {
       </section>
 
       {filteredResults.length === 0 ? (
-        <div className="state-container">
-          <p>
-            {query.trim()
-              ? 'No encontramos recursos con esos criterios. Ajusta la consulta o prueba con filtros menos estrictos.'
-              : 'Empieza escribiendo una búsqueda o usa los filtros para explorar el índice completo.'}
-          </p>
+        <div className="no-results-container">
+          <div className="state-container">
+            <p>
+              {query.trim()
+                ? 'No encontramos recursos con esos criterios. Ajusta la consulta o prueba con filtros menos estrictos.'
+                : 'Empieza escribiendo una búsqueda o usa los filtros para explorar el índice completo.'}
+            </p>
+          </div>
+          
+          {recommendations.length > 0 && (
+            <div className="search-recommendations">
+              <RecommendationList 
+                recommendations={recommendations} 
+                title="Sugerencias basadas en tu búsqueda"
+              />
+            </div>
+          )}
         </div>
       ) : (
-        <section className="search-results">
-          {filteredResults.map((entry) => (
-            <Link key={`${entry.type}-${entry.id}`} to={entry.route} className="search-result-card">
-              <div className="search-result-top">
-                <span className={`result-type result-type-${entry.type}`}>{TYPE_LABELS[entry.type]}</span>
-                {entry.code && <span className="result-code">{entry.code}</span>}
-              </div>
+        <>
+          {deferredQuery.trim() && recommendations.length > 0 && (
+            <div className="search-top-recommendations">
+              <RecommendationList 
+                recommendations={recommendations.slice(0, 3)} 
+                title="Sugerencias destacadas"
+                layout="scroll"
+              />
+            </div>
+          )}
+          
+          <section className="search-results">
+            {filteredResults.map((entry) => (
+              <Link key={`${entry.type}-${entry.id}`} to={entry.route} className="search-result-card">
+                <div className="search-result-top">
+                  <span className={`result-type result-type-${entry.type}`}>{TYPE_LABELS[entry.type]}</span>
+                  {entry.code && <span className="result-code">{entry.code}</span>}
+                </div>
 
-              <h3>{entry.title}</h3>
-              <p>{buildExcerpt(entry)}</p>
+                <h3>{entry.title}</h3>
+                <p>{buildExcerpt(entry)}</p>
 
-              <div className="result-meta">
-                {entry.discipline && <span>{entry.discipline}</span>}
-                {entry.category && <span>{entry.category}</span>}
-                {entry.family && <span>{entry.family}</span>}
-                {entry.stage && <span>{entry.stage}</span>}
-              </div>
-            </Link>
-          ))}
-        </section>
+                <div className="result-meta">
+                  {entry.discipline && <span>{entry.discipline}</span>}
+                  {entry.category && <span>{entry.category}</span>}
+                  {entry.family && <span>{entry.family}</span>}
+                  {entry.stage && <span>{entry.stage}</span>}
+                </div>
+              </Link>
+            ))}
+          </section>
+        </>
       )}
     </div>
   );

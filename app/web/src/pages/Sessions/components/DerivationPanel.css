@@ -1,0 +1,184 @@
+.derivation-panel {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-top: 3rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.derivation-panel.has-blockers {
+  border-color: #fecaca;
+}
+
+.derivation-header {
+  padding: 1.5rem 2rem;
+  background: #f1f5f9;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.derivation-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #1e293b;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.derivation-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.derivation-body {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.derivation-section h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: 0.05em;
+}
+
+.blockers-section {
+  grid-column: 1 / -1;
+  background: #fef2f2;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #fecaca;
+}
+
+.blockers-list {
+  margin: 0 0 1rem 0;
+  padding-left: 1.5rem;
+  color: #b91c1c;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.blocker-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ef4444;
+  font-style: italic;
+}
+
+.recommendation-card {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.action-step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.step-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.step-value {
+  margin: 0;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.step-value.highlight {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.role-suggestion-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.role-suggestion-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.role-icon {
+  font-size: 1.25rem;
+}
+
+.role-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.role-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.role-meta {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.warnings-section {
+  grid-column: 1 / -1;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.5rem;
+}
+
+.warnings-list-simple {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  color: #9a3412;
+}
+
+.derivation-footer {
+  padding: 1.25rem 2rem;
+  background: #f8fafc;
+  border-top: 1px solid var(--border-color);
+}
+
+.derivation-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .derivation-body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+discipline: "Experiential y Eventos"
+slug: "experiential-eventos"
+nomenclature_folder: "14-Experiential-Eventos"
+canonical_id_prefix: "MAN-EXP"
+service_codes: ["EXP-001", "EXP-002", "EXP-003"]
+manuals: []
+pending:
+  - "Manual de conceptualización de eventos (prioridad media)"
+  - "Guía deamplificación de eventos (prioridad media)"
+  - "Playbook de producción de eventos (pendiente)"
+related_agents:
+  - "ExperientialStrategist"
+related_prompts:
+  - "EXP-001"
+  - "EXP-002"
+notes: "1 agente, 2 prompts operativos. Disciplina en fase inicial."

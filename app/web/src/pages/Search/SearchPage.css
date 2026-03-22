@@ -74,6 +74,20 @@
   margin-bottom: 1.5rem;
 }
 
+.search-top-recommendations {
+  margin-bottom: 2rem;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px dashed var(--border-color);
+}
+
+.search-recommendations {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border-color);
+}
+
 .summary-chip {
   background-color: #e2e8f0;
   color: var(--text-color);

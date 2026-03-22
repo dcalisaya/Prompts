@@ -1,0 +1,24 @@
+discipline: "Data, Analytics e Insights"
+slug: "data-analytics-insights"
+nomenclature_folder: "07-Data-Analytics"
+canonical_id_prefix: "MAN-DAT"
+service_codes: ["DAT-001", "DAT-002", "DAT-003", "DAT-004", "DAT-005"]
+manuals:
+  - id: "MAN-DAT-001"
+    file: "guia_maestra_medicion_digital.md"
+    name: "Guía Maestra de Medición Digital"
+    type: "guia-maestra"
+    created: true
+pending:
+  - "Manual de frameworks de medición (cubierto en MAN-DAT-001)"
+  - "Playbook de dashboard design (pendiente)"
+  - "Manual de análisis de atribución (pendiente)"
+  - "Framework de Insights Accionables (pendiente)"
+related_agents:
+  - "DataAnalyst"
+  - "InsightsStrategist"
+related_prompts:
+  - "DATA-001"
+  - "DATA-002"
+  - "DATA-003"
+notes: "1 manual maestro creado cubriendo GA4, GTM, KPIs, atribución y dashboards. Cubre los 5 servicios DAT y los 3 prompts de la disciplina."

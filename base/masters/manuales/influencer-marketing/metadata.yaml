@@ -1,0 +1,16 @@
+discipline: "Influencer Marketing"
+slug: "influencer-marketing"
+nomenclature_folder: "13-Influencer-Marketing"
+canonical_id_prefix: "MAN-INFL"
+service_codes: ["IMK-001", "IMK-002", "IMK-003"]
+manuals: []
+pending:
+  - "Manual de estrategia de influenciadores (prioridad media)"
+  - "Guía de briefing y outreach (prioridad media)"
+  - "Playbook de medición de ROI (pendiente)"
+related_agents:
+  - "InfluencerStrategist"
+related_prompts:
+  - "INFL-001"
+  - "INFL-002"
+notes: "1 agente, 2 prompts operativos. Disciplina en fase inicial."

@@ -1,0 +1,908 @@
+{
+  "manuals": [
+    {
+      "id": "MAN-CX-001",
+      "name": "Gu\u00eda Maestra de Customer Journey",
+      "category": "Customer Experience y CRM",
+      "discipline": "CX, CRM y Retenci\u00f3n",
+      "discipline_slug": "cx-crm-retencion",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/cx-crm-retencion/guia_maestra_customer_journey.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "CX-001",
+        "CX-002",
+        "CX-003",
+        "CX-004",
+        "CX-005"
+      ],
+      "related_agents": [
+        "CXDesigner",
+        "CRMStrategist"
+      ],
+      "related_prompts": [
+        "CX-001",
+        "CRM-001",
+        "CRM-002"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "customer-journey",
+        "crm",
+        "retention",
+        "email-marketing",
+        "fidelizacion",
+        "ux"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DAT-001",
+      "name": "Gu\u00eda Maestra de Medici\u00f3n Digital",
+      "category": "Data, Analytics e Insights",
+      "discipline": "Data, Analytics e Insights",
+      "discipline_slug": "data-analytics-insights",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/data-analytics-insights/guia_maestra_medicion_digital.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "DAT-001",
+        "DAT-002",
+        "DAT-003",
+        "DAT-004",
+        "DAT-005"
+      ],
+      "related_agents": [
+        "DataAnalyst",
+        "InsightsStrategist"
+      ],
+      "related_prompts": [
+        "DATA-001",
+        "DATA-002",
+        "DATA-003"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "medicion",
+        "analytics",
+        "ga4",
+        "gtm",
+        "kpi",
+        "dashboard",
+        "atribucion"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-002",
+      "name": "Arquitectura Base",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/arquitectura_base.md",
+      "legacy_path": "base/masters/manuales-desarrollo/arquitectura_base.md",
+      "legacy_id": "MAN-DEV-002",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "DEV-009",
+        "DEV-010"
+      ],
+      "related_agents": [
+        "ArquitectoSoftware",
+        "TechLeadFullStack"
+      ],
+      "related_prompts": [
+        "DEV-002"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "arquitectura",
+        "clean-architecture",
+        "patrones",
+        "ddd",
+        "mvc"
+      ],
+      "scope_base": "Este manual documenta los patrones arquitect\u00f3nicos, estilos de dise\u00f1o y principios fundamentales que Live Developer utiliza para construir aplicaciones escalables, mantenibles y robustas.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-003",
+      "name": "Despliegue y Entornos",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "operativo",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/deploy_dev_prod.md",
+      "legacy_path": "base/masters/manuales-desarrollo/deploy_dev_prod.md",
+      "legacy_id": "MAN-DEV-003",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003"
+      ],
+      "related_agents": [
+        "DevOpsEngineer",
+        "TechLeadFullStack"
+      ],
+      "related_prompts": [],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "deploy",
+        "devops",
+        "ci-cd",
+        "docker",
+        "kubernetes"
+      ],
+      "scope_base": "Este manual define los procesos, estrategias y mejores pr\u00e1cticas para el despliegue de aplicaciones en diferentes entornos, asegurando entregas confiables, seguras y con capacidad de reversi\u00f3n (*rollback*) en Live Developer.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-004",
+      "name": "Est\u00e1ndares de C\u00f3digo",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "estandar",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/estandares_codigo.md",
+      "legacy_path": "base/masters/manuales-desarrollo/estandares_codigo.md",
+      "legacy_id": "MAN-DEV-004",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "DEV-009",
+        "DEV-010"
+      ],
+      "related_agents": [
+        "CodeAuditor",
+        "TechLeadFullStack"
+      ],
+      "related_prompts": [
+        "DEV-004"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "codigo",
+        "estilo",
+        "linting",
+        "naming",
+        "solid"
+      ],
+      "scope_base": "Este manual establece las convenciones de estilo de c\u00f3digo, herramientas de an\u00e1lisis est\u00e1tico (*linting*), estructura de archivos y mejores pr\u00e1cticas de documentaci\u00f3n que todo el equipo de Live Developer debe seguir para garantizar la calidad y consistencia t\u00e9cnica en todos los proyectos.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-005",
+      "name": "Flujo de Trabajo Git",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "estandar",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/flujo_git.md",
+      "legacy_path": "base/masters/manuales-desarrollo/flujo_git.md",
+      "legacy_id": "MAN-DEV-005",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "DEV-009",
+        "DEV-010"
+      ],
+      "related_agents": [
+        "TechLeadFullStack",
+        "CodeAuditor"
+      ],
+      "related_prompts": [],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "git",
+        "branching",
+        "commits",
+        "pull-requests",
+        "semver"
+      ],
+      "scope_base": "Este manual define las estrategias de ramificaci\u00f3n (*branching*), las convenciones para las confirmaciones (*commits*), el proceso de revisi\u00f3n de c\u00f3digo (*code review*) y el flujo de lanzamientos (*releases*) que el equipo de Live Developer emplea para garantizar un historial de cambios \u00edntegro y una colaboraci\u00f3n eficiente.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-006",
+      "name": "Seguridad de C\u00f3digo",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "estandar",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/seguridad_codigo.md",
+      "legacy_path": "base/masters/manuales-desarrollo/seguridad_codigo.md",
+      "legacy_id": "MAN-DEV-006",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "DEV-009",
+        "DEV-010"
+      ],
+      "related_agents": [
+        "CodeAuditor",
+        "DevOpsEngineer"
+      ],
+      "related_prompts": [
+        "DEV-004"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "seguridad",
+        "owasp",
+        "injection",
+        "auth",
+        "secrets"
+      ],
+      "scope_base": "Este manual establece los est\u00e1ndares de seguridad que todo el equipo de Live Developer debe implementar para mitigar vulnerabilidades, proteger datos sensibles y garantizar la integridad de las aplicaciones desarrolladas.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-DEV-001",
+      "name": "Stack Tecnol\u00f3gico Live Developer",
+      "category": "Desarrollo de Software y Apps",
+      "discipline": "Desarrollo de Software",
+      "discipline_slug": "desarrollo-software",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/desarrollo-software/stack_tecnologico.md",
+      "legacy_path": "base/masters/manuales-desarrollo/stack_tecnologico.md",
+      "legacy_id": "MAN-DEV-001",
+      "related_services": [
+        "DEV-001",
+        "DEV-002",
+        "DEV-003",
+        "DEV-004",
+        "DEV-005",
+        "DEV-006",
+        "DEV-007",
+        "DEV-008",
+        "DEV-009",
+        "DEV-010"
+      ],
+      "related_agents": [
+        "ArquitectoSoftware",
+        "TechLeadFullStack",
+        "DevOpsEngineer"
+      ],
+      "related_prompts": [
+        "DEV-001",
+        "DEV-002"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "stack",
+        "tecnologias",
+        "frontend",
+        "backend",
+        "database"
+      ],
+      "scope_base": "Este manual define las tecnolog\u00edas, marcos de trabajo (*frameworks*) y herramientas est\u00e1ndares que Live Developer emplea en cada proyecto, garantizando consistencia arquitect\u00f3nica, calidad t\u00e9cnica y eficiencia operativa.",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-006",
+      "name": "Gu\u00eda Maestra de Imagen a Video IA",
+      "category": "Imagen y Video IA",
+      "discipline": "Imagen y Video IA",
+      "discipline_slug": "imagen-video-ia",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/imagen-video-ia/guia_maestra_i2v.md",
+      "legacy_path": "base/masters/manuales-produccion/guia_maestra_i2v.md",
+      "legacy_id": "MAN-PROD-005",
+      "related_services": [
+        "AV-004",
+        "AV-005",
+        "AV-006"
+      ],
+      "related_agents": [
+        "DirectorTecnicoI2V",
+        "ArtistaStoryboard"
+      ],
+      "related_prompts": [
+        "STORY-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "i2v",
+        "video",
+        "ia",
+        "prompting",
+        "runway",
+        "kling"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-007",
+      "name": "Gu\u00eda Maestra de Storyboard para AI",
+      "category": "Imagen y Video IA",
+      "discipline": "Imagen y Video IA",
+      "discipline_slug": "imagen-video-ia",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/imagen-video-ia/guia_maestra_storyboard.md",
+      "legacy_path": "base/masters/manuales-produccion/guia_maestra_storyboard.md",
+      "legacy_id": "MAN-PROD-006",
+      "related_services": [
+        "AV-004",
+        "AV-005",
+        "AV-006",
+        "AV-007"
+      ],
+      "related_agents": [
+        "ArtistaStoryboard",
+        "DirectorFotografiaT2I"
+      ],
+      "related_prompts": [
+        "STORY-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "storyboard",
+        "ia",
+        "t2i",
+        "prompting",
+        "midjourney"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-008",
+      "name": "Gu\u00eda Maestra de Fotograf\u00eda para T2I",
+      "category": "Imagen y Video IA",
+      "discipline": "Imagen y Video IA",
+      "discipline_slug": "imagen-video-ia",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/imagen-video-ia/guia_maestra_t2i.md",
+      "legacy_path": "base/masters/manuales-produccion/guia_maestra_t2i.md",
+      "legacy_id": "MAN-PROD-007",
+      "related_services": [
+        "AV-004",
+        "AV-005",
+        "AV-006",
+        "AV-007"
+      ],
+      "related_agents": [
+        "DirectorFotografiaT2I",
+        "ArtistaStoryboard"
+      ],
+      "related_prompts": [],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "t2i",
+        "fotografia",
+        "ia",
+        "prompting",
+        "midjourney",
+        "sdxl"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-MED-001",
+      "name": "Gu\u00eda Maestra de Media, Performance y SEO",
+      "category": "Media Planning y Performance",
+      "discipline": "Media, Performance y SEO",
+      "discipline_slug": "media-performance-seo",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/media-performance-seo/guia_maestra_media_performance_seo.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "MED-001",
+        "MED-002",
+        "MED-003",
+        "MED-004",
+        "MED-005",
+        "MED-006",
+        "MED-007"
+      ],
+      "related_agents": [
+        "MediaPlanner",
+        "PerformanceMarketer",
+        "TraffickerEspecialista",
+        "SEOSpecialist"
+      ],
+      "related_prompts": [
+        "MEDIA-001",
+        "MEDIA-002",
+        "SEO-001",
+        "ADS-001",
+        "ADS-002",
+        "ADS-003"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "media-planning",
+        "performance",
+        "seo",
+        "pauta",
+        "kpis",
+        "atribucion"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-MED-002",
+      "name": "Playbook de Campa\u00f1as por Plataforma",
+      "category": "Media Planning y Performance",
+      "discipline": "Media, Performance y SEO",
+      "discipline_slug": "media-performance-seo",
+      "type": "playbook",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/media-performance-seo/playbook_campanas_plataforma.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "MED-002",
+        "MED-003",
+        "MED-004"
+      ],
+      "related_agents": [
+        "PerformanceMarketer",
+        "TraffickerEspecialista",
+        "MediaPlanner"
+      ],
+      "related_prompts": [
+        "MEDIA-002",
+        "ADS-001",
+        "ADS-002",
+        "ADS-003"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "meta-ads",
+        "google-ads",
+        "tiktok-ads",
+        "spotify-ads",
+        "plataforma",
+        "pauta"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-PR-002",
+      "name": "Est\u00e1ndar de Comunicados de Prensa",
+      "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+      "discipline": "PR y Comunicaci\u00f3n",
+      "discipline_slug": "pr-comunicacion",
+      "type": "estandar",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/pr-comunicacion/estandar_comunicados_prensa.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "PR-001",
+        "PR-002",
+        "PR-005"
+      ],
+      "related_agents": [
+        "PRStrategist"
+      ],
+      "related_prompts": [
+        "PR-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "comunicado",
+        "prensa",
+        "relaciones-publicas",
+        "formato",
+        "distribucion"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-PR-001",
+      "name": "Gu\u00eda Maestra de Planes de Crisis Comunicacional",
+      "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+      "discipline": "PR y Comunicaci\u00f3n",
+      "discipline_slug": "pr-comunicacion",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/pr-comunicacion/guia_maestra_planes_crisis.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "PR-002",
+        "PR-004",
+        "PR-005"
+      ],
+      "related_agents": [
+        "CrisisManager",
+        "PRStrategist"
+      ],
+      "related_prompts": [
+        "PR-002"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "crisis",
+        "protocolo",
+        "comunicacion",
+        "reputacion",
+        "voceria"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-PR-003",
+      "name": "Playbook de Media Training",
+      "category": "Relaciones P\u00fablicas y Comunicaci\u00f3n",
+      "discipline": "PR y Comunicaci\u00f3n",
+      "discipline_slug": "pr-comunicacion",
+      "type": "playbook",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/pr-comunicacion/playbook_media_training.md",
+      "legacy_path": "",
+      "legacy_id": "",
+      "related_services": [
+        "PR-003"
+      ],
+      "related_agents": [
+        "PRStrategist"
+      ],
+      "related_prompts": [
+        "PR-003"
+      ],
+      "source_of_truth": "true",
+      "migrated": false,
+      "tags": [
+        "media-training",
+        "voceria",
+        "entrevista",
+        "prensa",
+        "tv",
+        "radio"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-002",
+      "name": "Composici\u00f3n Cinematogr\u00e1fica para Fotograf\u00eda",
+      "category": "Producci\u00f3n Audiovisual",
+      "discipline": "Producci\u00f3n Audiovisual",
+      "discipline_slug": "produccion-audiovisual",
+      "type": "fundamento",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/produccion-audiovisual/composicion_cinematografica.md",
+      "legacy_path": "base/masters/manuales-produccion/composicion_cinematografica.md",
+      "legacy_id": "MAN-PROD-002",
+      "related_services": [
+        "AV-001",
+        "AV-002",
+        "AV-003"
+      ],
+      "related_agents": [
+        "DirectorAudiovisual",
+        "DirectorFotografiaT2I"
+      ],
+      "related_prompts": [],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "composicion",
+        "cinematografia",
+        "fotografia",
+        "encuadre"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-003",
+      "name": "Fundamentos del Guion Profesional",
+      "category": "Producci\u00f3n Audiovisual",
+      "discipline": "Producci\u00f3n Audiovisual",
+      "discipline_slug": "produccion-audiovisual",
+      "type": "fundamento",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/produccion-audiovisual/fundamentos_guion.md",
+      "legacy_path": "base/masters/manuales-produccion/fundamentos_guion.md",
+      "legacy_id": "MAN-PROD-003",
+      "related_services": [
+        "AV-001",
+        "AV-002",
+        "AV-013"
+      ],
+      "related_agents": [
+        "GuionistaCinematografico",
+        "DirectorAudiovisual"
+      ],
+      "related_prompts": [
+        "PROD-001",
+        "SCRIPT-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "guion",
+        "narrativa",
+        "estructura",
+        "storytelling"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-004",
+      "name": "Fundamentos del Storyboard",
+      "category": "Producci\u00f3n Audiovisual",
+      "discipline": "Producci\u00f3n Audiovisual",
+      "discipline_slug": "produccion-audiovisual",
+      "type": "fundamento",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/produccion-audiovisual/fundamentos_storyboard.md",
+      "legacy_path": "base/masters/manuales-produccion/fundamentos_storyboard.md",
+      "legacy_id": "MAN-PROD-004",
+      "related_services": [
+        "AV-004",
+        "AV-005",
+        "AV-006",
+        "AV-007"
+      ],
+      "related_agents": [
+        "ArtistaStoryboard"
+      ],
+      "related_prompts": [
+        "STORY-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "storyboard",
+        "produccion",
+        "storyboard",
+        "continuidad"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-001",
+      "name": "Gu\u00eda Maestra de Guion para AI",
+      "category": "Producci\u00f3n Audiovisual",
+      "discipline": "Producci\u00f3n Audiovisual",
+      "discipline_slug": "produccion-audiovisual",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/produccion-audiovisual/guia_maestra_guion.md",
+      "legacy_path": "base/masters/manuales-produccion/guia_maestra_guion.md",
+      "legacy_id": "MAN-PROD-001",
+      "related_services": [
+        "AV-001",
+        "AV-002",
+        "AV-013"
+      ],
+      "related_agents": [
+        "DirectorAudiovisual",
+        "GuionistaCinematografico"
+      ],
+      "related_prompts": [
+        "PROD-001",
+        "SCRIPT-001"
+      ],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "guion",
+        "ia",
+        "audiovisual",
+        "prompting"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    },
+    {
+      "id": "MAN-AV-005",
+      "name": "Gu\u00eda Maestra de Movimientos de C\u00e1mara",
+      "category": "Producci\u00f3n Audiovisual",
+      "discipline": "Producci\u00f3n Audiovisual",
+      "discipline_slug": "produccion-audiovisual",
+      "type": "guia-maestra",
+      "version": "1.0.0",
+      "path": "base/masters/manuales/produccion-audiovisual/movimientos_camara.md",
+      "legacy_path": "base/masters/manuales-produccion/movimientos_camara.md",
+      "legacy_id": "MAN-PROD-008",
+      "related_services": [
+        "AV-001",
+        "AV-002",
+        "AV-003"
+      ],
+      "related_agents": [
+        "DirectorAudiovisual",
+        "DirectorTecnicoI2V"
+      ],
+      "related_prompts": [],
+      "source_of_truth": "true",
+      "migrated": true,
+      "tags": [
+        "camara",
+        "movimientos",
+        "cinematografia",
+        "i2v"
+      ],
+      "scope_base": "",
+      "not_included": ""
+    }
+  ],
+  "disciplines": [
+    {
+      "slug": "branding-diseno",
+      "name": "Branding Diseno",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "comercial-ventas",
+      "name": "Comercial Ventas",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "commerce-ecommerce",
+      "name": "Commerce Ecommerce",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "consultoria-negocio",
+      "name": "Consultoria Negocio",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "content-strategy-copy",
+      "name": "Content Strategy Copy",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "cx-crm-retencion",
+      "name": "CX, CRM y Retenci\u00f3n",
+      "manual_count": 1,
+      "complete": true
+    },
+    {
+      "slug": "data-analytics-insights",
+      "name": "Data, Analytics e Insights",
+      "manual_count": 1,
+      "complete": true
+    },
+    {
+      "slug": "desarrollo-software",
+      "name": "Desarrollo de Software",
+      "manual_count": 6,
+      "complete": true
+    },
+    {
+      "slug": "estrategia-digital",
+      "name": "Estrategia Digital",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "experiential-eventos",
+      "name": "Experiential Eventos",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "healthcare-marketing",
+      "name": "Healthcare Marketing",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "ia-automatizacion",
+      "name": "Ia Automatizacion",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "imagen-video-ia",
+      "name": "Imagen y Video IA",
+      "manual_count": 3,
+      "complete": true
+    },
+    {
+      "slug": "influencer-marketing",
+      "name": "Influencer Marketing",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "infraestructura-web",
+      "name": "Infraestructura Web",
+      "manual_count": 0,
+      "complete": false
+    },
+    {
+      "slug": "media-performance-seo",
+      "name": "Media, Performance y SEO",
+      "manual_count": 2,
+      "complete": true
+    },
+    {
+      "slug": "pr-comunicacion",
+      "name": "PR y Comunicaci\u00f3n",
+      "manual_count": 3,
+      "complete": true
+    },
+    {
+      "slug": "produccion-audiovisual",
+      "name": "Producci\u00f3n Audiovisual",
+      "manual_count": 5,
+      "complete": true
+    },
+    {
+      "slug": "sostenibilidad-esg",
+      "name": "Sostenibilidad Esg",
+      "manual_count": 0,
+      "complete": false
+    }
+  ]
+}

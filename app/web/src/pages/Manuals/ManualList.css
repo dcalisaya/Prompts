@@ -2,3 +2,16 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.manual-list-page .resource-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.manual-list-page .card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+}

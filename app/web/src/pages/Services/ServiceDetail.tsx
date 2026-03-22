@@ -54,15 +54,33 @@ const ServiceDetail: React.FC = () => {
       <div className="detail-grid">
         <div className="main-info">
           <section className="detail-section">
-            <h2>Descripción y Alcance</h2>
-            <p className="large-text">{service.description}</p>
-            {service.scope_base && (
-              <div className="scope-box">
-                <strong>Alcance base:</strong>
-                <p>{service.scope_base}</p>
-              </div>
-            )}
+            <h2>Resumen del Servicio</h2>
+            <p className="large-text">{service.summary || service.description}</p>
           </section>
+
+          {service.for_who && (
+            <section className="detail-section">
+              <h2>Para Quién Es</h2>
+              <p>{service.for_who}</p>
+            </section>
+          )}
+
+          {(service.scope_base_catalog || service.scope_base) && (
+            <section className="detail-section">
+              <h2>Qué Incluye</h2>
+              <div className="scope-box">
+                <strong>Alcance base</strong>
+                <p>{service.scope_base_catalog || service.scope_base}</p>
+              </div>
+            </section>
+          )}
+
+          {service.value_cases && (
+            <section className="detail-section">
+              <h2>Valor / Casos de Uso</h2>
+              <p>{service.value_cases}</p>
+            </section>
+          )}
 
           <section className="detail-section">
             <h2>Detalles de Entrega</h2>
@@ -84,10 +102,10 @@ const ServiceDetail: React.FC = () => {
             </div>
           </section>
 
-          {service.not_included && (
+          {(service.not_included_catalog || service.not_included) && (
             <section className="detail-section warning">
               <h2>No Incluye</h2>
-              <p>{service.not_included}</p>
+              <p>{service.not_included_catalog || service.not_included}</p>
             </section>
           )}
         </div>

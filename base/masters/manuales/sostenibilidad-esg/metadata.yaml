@@ -1,0 +1,16 @@
+discipline: "Sostenibilidad y ESG"
+slug: "sostenibilidad-esg"
+nomenclature_folder: "16-Sostenibilidad-ESG"
+canonical_id_prefix: "MAN-ESG"
+service_codes: ["ESG-001", "ESG-002", "ESG-003"]
+manuals: []
+pending:
+  - "Manual de estrategia ESG (prioridad media)"
+  - "Guía de reporting de sostenibilidad (prioridad media)"
+  - "Playbook de comunicación ESG (pendiente)"
+related_agents:
+  - "ESGStrategist"
+related_prompts:
+  - "ESG-001"
+  - "ESG-002"
+notes: "1 agente, 2 prompts operativos. Disciplina en fase inicial."

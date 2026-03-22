@@ -1,0 +1,17 @@
+discipline: "Estrategia Digital"
+slug: "estrategia-digital"
+nomenclature_folder: "01-Estrategia-Funnels"
+canonical_id_prefix: "MAN-FUN"
+service_codes: ["MK-001", "MK-002"]
+manuals: []
+pending:
+  - "Manual de frameworks de funnel (prioridad alta)"
+  - "Guía de auditoría de ecosistema digital (prioridad alta)"
+  - "Playbook de estrategia multicanal (pendiente)"
+  - "Manual de buyer persona y map (pendiente)"
+related_agents:
+  - "EstrategaDigital"
+related_prompts:
+  - "FUN-001"
+  - "STRAT-002"
+notes: "1 agente, 2 prompts operativos. Necesita manual de frameworks de estrategia digital."

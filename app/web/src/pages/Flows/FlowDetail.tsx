@@ -1,10 +1,12 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { getPrompts, getAgents, getServices, getManuals } from '../../services/dataService';
 import { getFlowById } from '../../services/flowService';
 import { createEmptyBrief, validateBrief } from '../../services/briefService';
 import { prepareExecution, executeMock } from '../../services/executionService';
-import type { Prompt, Brief, Agent, Service, Manual, Execution, Flow } from '../../services/types';
+import { getSession, saveSession, createFromFlow } from '../../services/sessionService';
+import { getStatusConfig, getNextStatuses } from '../../services/statusService';
+import type { Prompt, Brief, Agent, Service, Manual, Execution, Flow, Session, SessionStatus } from '../../services/types';
 import BriefEditor from '../Briefs/BriefEditor';
 import BriefSummary from '../Briefs/BriefSummary';
 import Launcher from '../Briefs/components/Launcher';
@@ -48,6 +50,11 @@ const buildSeedBrief = (prompt: Prompt, previousExecutions: Execution[]): Brief 
 
 const FlowDetail: React.FC = () => {
   const { flowId } = useParams<{ flowId: string }>();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const sessionIdParam = queryParams.get('session');
+
+  const [session, setSession] = useState<Session | null>(null);
   const [flow, setFlow] = useState<Flow | null>(null);
   const [currentStepIdx, setCurrentStepIdx] = useState(0);
   
@@ -55,7 +62,7 @@ const FlowDetail: React.FC = () => {
   const [prompt, setPrompt] = useState<Prompt | null>(null);
   const [brief, setBrief] = useState<Brief | null>(null);
   const [execution, setExecution] = useState<Execution | null>(null);
-  const [allData, setAllData] = useState<{ agents: Agent[], services: Service[], manuals: Manual[] } | null>(null);
+  const [allData, setAllData] = useState<{ prompts: Prompt[], agents: Agent[], services: Service[], manuals: Manual[] } | null>(null);
 
   const [loading, setLoading] = useState(true);
   const [processing, setProcessing] = useState(false);
@@ -64,6 +71,8 @@ const FlowDetail: React.FC = () => {
   const [stepInternal, setStepInternal] = useState<'edit' | 'summary' | 'launcher' | 'output'>('edit');
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [completedExecutions, setCompletedExecutions] = useState<Execution[]>([]);
+  
+  const isInitialMount = useRef(true);
 
   const loadFlowData = useCallback(async () => {
     setLoading(true);
@@ -84,27 +93,99 @@ const FlowDetail: React.FC = () => {
         getManuals()
       ]);
 
-      setAllData({ agents: allAgents, services: allServices, manuals: allManuals });
+      setAllData({ prompts: allPrompts, agents: allAgents, services: allServices, manuals: allManuals });
 
-      const currentStep = foundFlow.steps[currentStepIdx];
-      const foundPrompt = allPrompts.find(p => p.id === currentStep.promptId);
-      
-      if (foundPrompt) {
-        setPrompt(foundPrompt);
-        setBrief(buildSeedBrief(foundPrompt, completedExecutions));
+      // Session Logic
+      let currentSession: Session | undefined;
+      if (sessionIdParam) {
+        currentSession = getSession(sessionIdParam);
+      }
+
+      if (currentSession && currentSession.originId === flowId) {
+        setSession(currentSession);
+        const flowState = currentSession.payload.flowState;
+        const stepIdx = flowState?.currentStepIdx || 0;
+        const prevExecutions = flowState?.completedExecutions || [];
+        
+        setCurrentStepIdx(stepIdx);
+        setCompletedExecutions(prevExecutions);
+        setStepInternal(flowState?.stepInternal || 'edit');
+        setExecution(flowState?.activeExecution || null);
+        
+        const currentStep = foundFlow.steps[stepIdx];
+        const foundPrompt = allPrompts.find(p => p.id === currentStep.promptId);
+        
+        if (foundPrompt) {
+          setPrompt(foundPrompt);
+          setBrief(flowState?.activeBrief || buildSeedBrief(foundPrompt, prevExecutions));
+        }
       } else {
-        setError(`El prompt '${currentStep.promptId}' no existe.`);
+        const newSession = createFromFlow(foundFlow);
+        setSession(newSession);
+        
+        const currentStep = foundFlow.steps[0];
+        const foundPrompt = allPrompts.find(p => p.id === currentStep.promptId);
+        if (foundPrompt) {
+          setPrompt(foundPrompt);
+          setBrief(buildSeedBrief(foundPrompt, []));
+        }
       }
     } catch (err) {
       setError('Error al cargar los datos del flujo.');
     } finally {
       setLoading(false);
     }
-  }, [flowId, currentStepIdx, completedExecutions]);
+  }, [flowId, sessionIdParam]);
 
   useEffect(() => {
     loadFlowData();
   }, [loadFlowData]);
+
+  // Auto-save logic
+  useEffect(() => {
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
+    if (session) {
+      const persistedExecutions =
+        stepInternal === 'output' && execution && flow && currentStepIdx === flow.steps.length - 1
+          ? [...completedExecutions, execution]
+          : completedExecutions;
+
+      // Auto-update status
+      let autoStatus = session.status;
+      const isLastStep = flow && currentStepIdx === flow.steps.length - 1;
+      const isOutputStep = stepInternal === 'output';
+
+      if (isLastStep && isOutputStep) {
+        autoStatus = 'ready_for_review';
+      } else if ((currentStepIdx > 0 || stepInternal !== 'edit') && autoStatus === 'draft') {
+        autoStatus = 'in_progress';
+      }
+
+      const updatedSession: Session = {
+        ...session,
+        status: autoStatus,
+        lastStep: currentStepIdx.toString(),
+        payload: {
+          ...session.payload,
+          flowState: {
+            currentStepIdx,
+            completedExecutions: persistedExecutions,
+            activeBrief: brief || undefined,
+            activeExecution: execution || undefined,
+            stepInternal
+          }
+        }
+      };
+      saveSession(updatedSession);
+      if (autoStatus !== session.status) {
+        setSession(updatedSession);
+      }
+    }
+  }, [currentStepIdx, completedExecutions, session, brief, execution, stepInternal, flow]);
 
   const handleUpdateBrief = (updatedBrief: Brief) => {
     setBrief(updatedBrief);
@@ -112,11 +193,20 @@ const FlowDetail: React.FC = () => {
     setExecutionError(null);
   };
 
+  const handleStatusChange = (newStatus: SessionStatus) => {
+    if (session) {
+      const updatedSession: Session = { ...session, status: newStatus };
+      setSession(updatedSession);
+      saveSession(updatedSession);
+    }
+  };
+
   const handleContinueToSummary = () => {
     if (brief) {
       const validation = validateBrief(brief);
       if (validation.isValid) {
         setStepInternal('summary');
+        setExecutionError(null);
         window.scrollTo(0, 0);
       } else {
         setValidationErrors(validation.errors);
@@ -160,9 +250,39 @@ const FlowDetail: React.FC = () => {
     setCompletedExecutions(nextCompletedExecutions);
 
     if (flow && currentStepIdx < flow.steps.length - 1) {
+      const nextStepIdx = currentStepIdx + 1;
+      const nextPrompt = allData?.prompts.find((item) => item.id === flow.steps[nextStepIdx].promptId) || null;
+
       setCurrentStepIdx(prev => prev + 1);
       setStepInternal('edit');
       setExecution(null);
+      setExecutionError(null);
+      if (nextPrompt) {
+        setPrompt(nextPrompt);
+        setBrief(buildSeedBrief(nextPrompt, nextCompletedExecutions));
+      } else {
+        setPrompt(null);
+        setBrief(null);
+        setError(`El prompt '${flow.steps[nextStepIdx].promptId}' no existe.`);
+      }
+    } else if (session) {
+      const updatedSession: Session = {
+        ...session,
+        status: 'ready_for_review',
+        lastStep: currentStepIdx.toString(),
+        payload: {
+          ...session.payload,
+          flowState: {
+            currentStepIdx,
+            completedExecutions: nextCompletedExecutions,
+            activeBrief: brief || undefined,
+            activeExecution: execution,
+            stepInternal: 'output'
+          }
+        }
+      };
+      setSession(updatedSession);
+      saveSession(updatedSession);
     }
   };
 
@@ -178,6 +298,35 @@ const FlowDetail: React.FC = () => {
       <nav className="breadcrumb">
         <Link to="/flujos">Flujos</Link> / <span>{flow.name}</span>
       </nav>
+
+      <div className="session-header-row">
+        <div className="session-indicator-group">
+          <div className="session-indicator">
+            <span className="dot"></span> 
+            Sesión: <strong>{session?.id}</strong>
+          </div>
+          {session && (
+            <Link to={`/sesiones/${session.id}`} className="trace-link-inline">Ver Trazabilidad</Link>
+          )}
+        </div>
+
+        {session && (
+          <div className="status-selector-wrapper">
+            <label>Estado:</label>
+            <select 
+              value={session.status} 
+              onChange={(e) => handleStatusChange(e.target.value as SessionStatus)}
+              className="status-select"
+              style={{ color: getStatusConfig(session.status).color }}
+            >
+              <option value={session.status}>{getStatusConfig(session.status).label} (Actual)</option>
+              {getNextStatuses(session.status).map(s => (
+                <option key={s} value={s}>{getStatusConfig(s).label}</option>
+              ))}
+            </select>
+          </div>
+        )}
+      </div>
 
       <div className="flow-stepper">
         {flow.steps.map((s, idx) => (

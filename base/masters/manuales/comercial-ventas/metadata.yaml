@@ -1,0 +1,17 @@
+discipline: "Comercial y Ventas"
+slug: "comercial-ventas"
+nomenclature_folder: "04-Atencion-Comercial"
+canonical_id_prefix: "MAN-COM"
+service_codes: []
+manuals: []
+pending:
+  - "Manual deDiscovery y calificación de leads (prioridad alta)"
+  - "Guía deprospección y outreach (prioridad alta)"
+  - "Playbook de cierre y follow-up (pendiente)"
+  - "Manual de herramientas comerciales (pendiente)"
+related_agents:
+  - "AsesorComercialServicios"
+related_prompts:
+  - "COM-001"
+  - "COM-002"
+notes: "Disciplina transversal. 2 prompts operativos. Necesita manual de discovery y calificación."

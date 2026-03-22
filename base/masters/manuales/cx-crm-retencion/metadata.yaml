@@ -1,0 +1,23 @@
+discipline: "CX, CRM y Retención"
+slug: "cx-crm-retencion"
+nomenclature_folder: "11-CX-CRM"
+canonical_id_prefix: "MAN-CX"
+service_codes: ["CX-001", "CX-002", "CX-003", "CX-004", "CX-005"]
+manuals:
+  - id: "MAN-CX-001"
+    file: "guia_maestra_customer_journey.md"
+    name: "Guía Maestra de Customer Journey"
+    type: "guia-maestra"
+    created: true
+pending:
+  - "Playbook de email marketing y automatizaciones (pendiente)"
+  - "Manual de programas de fidelización (pendiente)"
+  - "Manual de estrategia CRM (pendiente)"
+related_agents:
+  - "CXDesigner"
+  - "CRMStrategist"
+related_prompts:
+  - "CX-001"
+  - "CRM-001"
+  - "CRM-002"
+notes: "1 manual maestro creado cubriendo journey mapping, métricas CX, CRM y flows de email. Cubre los 5 servicios CX y los 3 prompts de la disciplina."

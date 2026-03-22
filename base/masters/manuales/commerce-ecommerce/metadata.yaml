@@ -1,0 +1,17 @@
+discipline: "Commerce y E-commerce"
+slug: "commerce-ecommerce"
+nomenclature_folder: "10-Commerce"
+canonical_id_prefix: "MAN-ECO"
+service_codes: ["ECO-001", "ECO-002", "ECO-003", "ECO-004"]
+manuals: []
+pending:
+  - "Manual de estrategia e-commerce (prioridad alta)"
+  - "Guía de optimización de marketplace (prioridad alta)"
+  - "Playbook de CRO y checkout (pendiente)"
+  - "Manual de gestión de catálogo (pendiente)"
+related_agents:
+  - "CommerceStrategist"
+related_prompts:
+  - "ECOM-001"
+  - "ECOM-002"
+notes: "1 agente, 2 prompts operativos. Necesita manual de estrategia e-commerce."

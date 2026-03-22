@@ -42,6 +42,9 @@ Esta carpeta concentra la documentacion de producto, arquitectura funcional y de
 - [PROMPT-AGENTE-BLOQUE-5B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5B.md): prompt operativo para delegar la implementacion del Bloque 5B.
 - [FASE-5-BLOQUE-5C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-5-BLOQUE-5C.md): alcance, contratos y definicion de terminado para asistencia minima de salida.
 - [PROMPT-AGENTE-BLOQUE-5C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5C.md): prompt operativo para delegar la implementacion del Bloque 5C.
+- [FASE-5-BLOQUE-5D.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-5-BLOQUE-5D.md): fase intermedia de runtime de ejecucion real para reemplazar la dependencia principal de mocks antes de abrir Fase 6.
+- [PROMPT-AGENTE-BLOQUE-5D.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5D.md): prompt operativo para delegar la implementacion del Bloque 5D.
+- [ARQUITECTURA-MINIMA-RUNTIME-5D.md](/Users/dcalisaya/Developer/Prompts/docs/ARQUITECTURA-MINIMA-RUNTIME-5D.md): propuesta concreta de arquitectura minima para pasar de ejecucion mock a runtime real sin mezclar este salto con Fase 6.
 - [FASE-6-BLOQUE-6A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-6-BLOQUE-6A.md): alcance, contratos y definicion de terminado para modelo de estado expandido.
 - [PROMPT-AGENTE-BLOQUE-6A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-6A.md): prompt operativo para delegar la implementacion del Bloque 6A.
 - [FASE-6-BLOQUE-6B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-6-BLOQUE-6B.md): alcance, contratos y definicion de terminado para ownership y permisos basicos.

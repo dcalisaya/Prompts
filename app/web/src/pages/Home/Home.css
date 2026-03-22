@@ -42,6 +42,15 @@
   border-color: var(--primary-color);
 }
 
+.entrance-card.highlight {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.entrance-card.highlight:hover {
+  border-color: var(--primary-color);
+}
+
 .entrance-card .icon {
   font-size: 3rem;
   margin-bottom: 1rem;

@@ -1,0 +1,14 @@
+discipline: "IA y Automatización"
+slug: "ia-automatizacion"
+nomenclature_folder: null
+canonical_id_prefix: "MAN-IA"
+service_codes: ["IA-001", "IA-002"]
+manuals: []
+pending:
+  - "Manual de arquitectura de soluciones IA (prioridad alta)"
+  - "Guía de casos de negocio por IA (prioridad alta)"
+  - "Playbook de prompting empresarial (pendiente)"
+  - "Manual de evaluación de vendors IA (pendiente)"
+related_agents: []
+related_prompts: []
+notes: "2 servicios sin ningún activo. Disciplina completamente huérfana."

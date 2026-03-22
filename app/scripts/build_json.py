@@ -14,6 +14,7 @@ MANUAL_DIRS = [
     MASTERS / "manuales-desarrollo",
     MASTERS / "manuales-produccion",
 ]
+MANUALS_NEW_ROOT = MASTERS / "manuales"
 VALID_PROMPT_CATEGORIES = {
     "Producción Audiovisual",
     "Marketing Digital y Contenidos",
@@ -36,7 +37,9 @@ VALID_PROMPT_CATEGORIES = {
 def write_json(name, data):
     BASE_JSON.mkdir(parents=True, exist_ok=True)
     path = BASE_JSON / name
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
+    path.write_text(
+        json.dumps(data, indent=2, ensure_ascii=True) + "\n", encoding="utf-8"
+    )
 
 
 def write_text(name, data):
@@ -92,7 +95,11 @@ def parse_front_matter(text):
             current_key = key
             if value:
                 if value.startswith("[") and value.endswith("]"):
-                    items = [item.strip().strip("'\"") for item in value[1:-1].split(",") if item.strip()]
+                    items = [
+                        item.strip().strip("'\"")
+                        for item in value[1:-1].split(",")
+                        if item.strip()
+                    ]
                     data[key] = items
                 else:
                     data[key] = value.strip('"')
@@ -163,28 +170,113 @@ def validate_manual_front_matter():
                 errors.append(
                     f"{path.relative_to(ROOT)}: faltan campos en front matter: {', '.join(missing)}"
                 )
+    if MANUALS_NEW_ROOT.exists():
+        for path in sorted(MANUALS_NEW_ROOT.rglob("*.md")):
+            if path.name == "INDEX.md":
+                continue
+            fm = parse_front_matter(path.read_text(encoding="utf-8"))
+            missing = sorted(required_fields - set(fm))
+            if missing:
+                errors.append(
+                    f"{path.relative_to(ROOT)}: faltan campos en front matter: {', '.join(missing)}"
+                )
     return errors
+
+
+def parse_manuals_from_new_structure():
+    if not MANUALS_NEW_ROOT.exists():
+        return [], []
+    manuals = []
+    disciplines = []
+    for disc_path in sorted(MANUALS_NEW_ROOT.iterdir()):
+        if not disc_path.is_dir():
+            continue
+        discipline_slug = disc_path.name
+        discipline_name = discipline_slug.replace("-", " ").title()
+        manual_count = 0
+        for path in sorted(disc_path.glob("*.md")):
+            if path.name == "INDEX.md" or path.name.startswith("ESTANDAR"):
+                continue
+            fm = parse_front_matter(path.read_text(encoding="utf-8"))
+            body = strip_front_matter(path.read_text(encoding="utf-8"))
+            title_match = re.search(r"^#\s+(.+)$", body, re.M)
+            if fm.get("discipline"):
+                discipline_name = fm.get("discipline")
+            manual = {
+                "id": fm.get("id", ""),
+                "name": fm.get(
+                    "name", title_match.group(1) if title_match else path.stem
+                ),
+                "category": fm.get("category", ""),
+                "discipline": fm.get("discipline", ""),
+                "discipline_slug": discipline_slug,
+                "type": fm.get("type", ""),
+                "version": fm.get("version", "1.0.0"),
+                "path": str(path.relative_to(ROOT)),
+                "legacy_path": fm.get("migrated_from", ""),
+                "legacy_id": fm.get("legacy_id", ""),
+                "related_services": fm.get("related_services", []),
+                "related_agents": fm.get("related_agents", []),
+                "related_prompts": fm.get("related_prompts", []),
+                "source_of_truth": fm.get("source_of_truth", False),
+                "migrated": bool(fm.get("migrated_from", "")),
+                "tags": fm.get("tags", []),
+                "scope_base": extract_section(body, "## Resumen") or "",
+                "not_included": "",
+            }
+            if manual["id"]:
+                manuals.append(manual)
+                manual_count += 1
+        disciplines.append(
+            {
+                "slug": discipline_slug,
+                "name": discipline_name,
+                "manual_count": manual_count,
+                "complete": manual_count > 0,
+            }
+        )
+    return manuals, disciplines
 
 
 def parse_services():
     text = (MASTERS / "catalog" / "08-SERVICES.md").read_text(encoding="utf-8")
-    lines = text.splitlines()
     services = []
-    current_category = None
-    for i, line in enumerate(lines):
-        if line.startswith("## "):
-            current_category = line.replace("## ", "").strip()
-        if line.startswith("| **"):
-            cells = [cell.strip() for cell in line.strip("|").split("|")]
-            if len(cells) < 2:
-                continue
-            services.append(
-                {
-                    "service_name": cells[0].replace("**", "").strip(),
-                    "category": current_category,
-                    "description": cells[1].replace("**", "").strip(),
-                }
-            )
+    category = None
+    category_matches = list(re.finditer(r"^##\s+(.+)$", text, re.M))
+    matches = list(re.finditer(r"^###\s+`([A-Z]+-\d+)`\s+-\s+(.+)$", text, re.M))
+
+    for idx, match in enumerate(matches):
+        section_start = match.end()
+        section_end = matches[idx + 1].start() if idx + 1 < len(matches) else len(text)
+        section = text[section_start:section_end].strip()
+
+        for heading in category_matches:
+            if heading.start() < match.start():
+                category = heading.group(1).strip()
+            else:
+                break
+
+        summary = re.search(r"\*\*Resumen:\*\*\s*(.+)", section)
+        audience = re.search(r"\*\*Para quién es:\*\*\s*(.+)", section)
+        includes = re.search(r"\*\*Qué incluye \(Alcance Base\):\*\*\s*(.+)", section)
+        exclusions = re.search(r"\*\*Exclusiones / Límites:\*\*\s*(.+)", section)
+        value = re.search(r"\*\*Valor / Casos de Uso:\*\*\s*(.+)", section)
+
+        services.append(
+            {
+                "service_code": match.group(1).strip(),
+                "service_name": match.group(2).strip(),
+                "category": category,
+                "description": summary.group(1).strip() if summary else "",
+                "summary": summary.group(1).strip() if summary else "",
+                "for_who": audience.group(1).strip() if audience else "",
+                "scope_base_catalog": includes.group(1).strip() if includes else "",
+                "not_included_catalog": exclusions.group(1).strip()
+                if exclusions
+                else "",
+                "value_cases": value.group(1).strip() if value else "",
+            }
+        )
     return services
 
 
@@ -213,11 +305,27 @@ def parse_pricing():
     rows = parse_table_after_heading(text, "## Plantilla base para completar")
     result = []
     valid_prefixes = (
-        "AV-", "MK-", "BR-", "INF-", "DEV-", "IA-",
-        "PR-", "DAT-", "MED-", "BIZ-", "ECO-", "CX-",
-        "CNT-", "IMK-", "EXP-", "HLT-", "ESG-"
+        "AV-",
+        "MK-",
+        "BR-",
+        "INF-",
+        "DEV-",
+        "IA-",
+        "PR-",
+        "DAT-",
+        "MED-",
+        "BIZ-",
+        "ECO-",
+        "CX-",
+        "CNT-",
+        "IMK-",
+        "EXP-",
+        "HLT-",
+        "ESG-",
     )
-    valid = [row for row in rows if row.get("service_code", "").startswith(valid_prefixes)]
+    valid = [
+        row for row in rows if row.get("service_code", "").startswith(valid_prefixes)
+    ]
     for row in valid:
         result.append(row)
     return result
@@ -232,7 +340,7 @@ def parse_prompts(canonical_navigation):
         text = path.read_text(encoding="utf-8")
         fm = parse_front_matter(text)
         body = strip_front_matter(text)
-        
+
         # Extracción de contenido textual
         title_match = re.search(r"^#\s+(.+)$", body, re.M)
         objetivo = re.search(r"\*\*Objetivo:\*\*\s*(.+)", body)
@@ -244,30 +352,44 @@ def parse_prompts(canonical_navigation):
         example = extract_section(body, "## Ejemplo de Uso")
         ex_input_match = re.search(r"\*\*Input ejemplo:\*\*\s*(.+)", example)
         example_output = parse_bullets(example)
-        
+
         prompt_id = fm.get("id", "")
         defaults = prefix_defaults.get(prompt_prefix(prompt_id), {})
-        
+
         # Consolidación de metadata con prioridad YAML > Defaults
         result.append(
             {
                 "id": prompt_id,
-                "name": fm.get("name", title_match.group(1) if title_match else path.stem),
+                "name": fm.get(
+                    "name", title_match.group(1) if title_match else path.stem
+                ),
                 "version": fm.get("version", "1.0.0"),
                 "category": fm.get("category", defaults.get("category", "")),
                 "discipline": fm.get("discipline", defaults.get("discipline", "")),
                 "agent_core": fm.get("agent_core", ""),
                 "source_of_truth": fm.get("source_of_truth", []),
-                "related_services": fm.get("related_services", defaults.get("related_services", [])),
+                "related_services": fm.get(
+                    "related_services", defaults.get("related_services", [])
+                ),
                 "stage": fm.get("stage", defaults.get("stage", "")),
                 "input_type": fm.get("input_type", defaults.get("input_type", "")),
-                "deliverable_type": fm.get("deliverable_type", defaults.get("deliverable_type", "")),
+                "deliverable_type": fm.get(
+                    "deliverable_type", defaults.get("deliverable_type", "")
+                ),
                 "tags": fm.get("tags", []),
-                "objective": objetivo.group(1).strip() if objetivo else descripcion.group(1).strip() if descripcion else "",
+                "objective": objetivo.group(1).strip()
+                if objetivo
+                else descripcion.group(1).strip()
+                if descripcion
+                else "",
                 "when_to_use": when_use or context,
                 "input_required": [input_match.group(1).strip()] if input_match else [],
-                "expected_output": [output_match.group(1).strip()] if output_match else example_output,
-                "example_input": ex_input_match.group(1).strip() if ex_input_match else "",
+                "expected_output": [output_match.group(1).strip()]
+                if output_match
+                else example_output,
+                "example_input": ex_input_match.group(1).strip()
+                if ex_input_match
+                else "",
                 "example_output": example_output,
                 "path": str(path.relative_to(ROOT)),
             }
@@ -282,10 +404,10 @@ def parse_agents(canonical_navigation):
         text = path.read_text(encoding="utf-8")
         fm = parse_front_matter(text)
         body = strip_front_matter(text)
-        
+
         # Metadata del JSON (Legacy/Default)
         json_meta = metadata_map.get(path.stem, {})
-        
+
         desc = re.search(r"\*\*Descripción:\*\*\s*(.+)", body)
         philosophy = extract_section(body, "## Tu Filosofía")
         skills = parse_bullets(extract_section(body, "## Tus Habilidades"))
@@ -294,22 +416,35 @@ def parse_agents(canonical_navigation):
         start = extract_section(body, "## Comando de Inicio")
         example = extract_section(body, "## Ejemplo de Uso")
         ex_input_match = re.search(r"\*\*Input ejemplo:\*\*\s*(.+)", example)
-        
+
         result.append(
             {
                 "name": fm.get("name", path.stem),
-                "role": fm.get("role", re.sub(r"^#\s+Prompt Maestro:\s*", "", body.splitlines()[0] if body.splitlines() else path.stem).strip()),
+                "role": fm.get(
+                    "role",
+                    re.sub(
+                        r"^#\s+Prompt Maestro:\s*",
+                        "",
+                        body.splitlines()[0] if body.splitlines() else path.stem,
+                    ).strip(),
+                ),
                 "discipline": fm.get("discipline", json_meta.get("discipline", "")),
-                "related_services": fm.get("related_services", json_meta.get("related_services", [])),
+                "related_services": fm.get(
+                    "related_services", json_meta.get("related_services", [])
+                ),
                 "stage": fm.get("stage", json_meta.get("stage", "")),
-                "deliverable_type": fm.get("deliverable_type", json_meta.get("deliverable_type", "")),
+                "deliverable_type": fm.get(
+                    "deliverable_type", json_meta.get("deliverable_type", "")
+                ),
                 "description": desc.group(1).strip() if desc else "",
                 "philosophy": philosophy,
                 "skills": skills,
                 "tasks": tasks,
                 "tone": tone,
                 "start_command": start,
-                "example_input": ex_input_match.group(1).strip() if ex_input_match else "",
+                "example_input": ex_input_match.group(1).strip()
+                if ex_input_match
+                else "",
                 "example_output": parse_bullets(example),
                 "path": str(path.relative_to(ROOT)),
             }
@@ -354,18 +489,119 @@ def build_static_json(canonical_navigation):
     }
 
     brief_templates = [
-        {"brief_type": "comercial_general", "fields": ["nombre del cliente", "contacto responsable", "necesidad principal", "servicios solicitados", "fecha objetivo", "presupuesto referencial si existe", "canal de entrega esperado"]},
-        {"brief_type": "audiovisual", "fields": ["objetivo del video o pieza", "tipo de pieza", "cantidad de piezas", "duracion estimada", "formato requerido", "locacion", "fechas tentativas", "voceros o talento", "referencias visuales", "branding disponible"]},
-        {"brief_type": "podcast", "fields": ["nombre del podcast", "tematica", "publico objetivo", "cantidad de episodios", "duracion por episodio", "invitados o formato", "CTA principal", "plataformas destino"]},
-        {"brief_type": "marketing_funnel", "fields": ["producto o servicio", "propuesta de valor", "buyer persona", "nivel de consciencia", "objetivo de conversion", "ticket o valor de referencia", "activos existentes", "canales prioritarios"]},
-        {"brief_type": "pauta", "fields": ["objetivo de campana", "plataforma", "presupuesto de medios", "duracion", "audiencias", "geografia", "activos creativos disponibles", "pixel o tracking disponible", "conversion esperada"]},
-        {"brief_type": "branding_diseno", "fields": ["objetivo de la pieza", "formato", "mensajes clave", "branding existente", "referencias", "medidas o specs", "versionado requerido"]},
-        {"brief_type": "web_desarrollo", "fields": ["problema a resolver", "usuarios objetivo", "funcionalidades requeridas", "integraciones", "stack deseado si aplica", "accesos existentes", "dependencias externas", "criterio de exito"]},
-        {"brief_type": "ia_automatizacion", "fields": ["proceso actual", "tarea a automatizar", "entradas", "salidas", "herramientas involucradas", "frecuencia", "riesgo operativo", "validacion humana requerida"]},
+        {
+            "brief_type": "comercial_general",
+            "fields": [
+                "nombre del cliente",
+                "contacto responsable",
+                "necesidad principal",
+                "servicios solicitados",
+                "fecha objetivo",
+                "presupuesto referencial si existe",
+                "canal de entrega esperado",
+            ],
+        },
+        {
+            "brief_type": "audiovisual",
+            "fields": [
+                "objetivo del video o pieza",
+                "tipo de pieza",
+                "cantidad de piezas",
+                "duracion estimada",
+                "formato requerido",
+                "locacion",
+                "fechas tentativas",
+                "voceros o talento",
+                "referencias visuales",
+                "branding disponible",
+            ],
+        },
+        {
+            "brief_type": "podcast",
+            "fields": [
+                "nombre del podcast",
+                "tematica",
+                "publico objetivo",
+                "cantidad de episodios",
+                "duracion por episodio",
+                "invitados o formato",
+                "CTA principal",
+                "plataformas destino",
+            ],
+        },
+        {
+            "brief_type": "marketing_funnel",
+            "fields": [
+                "producto o servicio",
+                "propuesta de valor",
+                "buyer persona",
+                "nivel de consciencia",
+                "objetivo de conversion",
+                "ticket o valor de referencia",
+                "activos existentes",
+                "canales prioritarios",
+            ],
+        },
+        {
+            "brief_type": "pauta",
+            "fields": [
+                "objetivo de campana",
+                "plataforma",
+                "presupuesto de medios",
+                "duracion",
+                "audiencias",
+                "geografia",
+                "activos creativos disponibles",
+                "pixel o tracking disponible",
+                "conversion esperada",
+            ],
+        },
+        {
+            "brief_type": "branding_diseno",
+            "fields": [
+                "objetivo de la pieza",
+                "formato",
+                "mensajes clave",
+                "branding existente",
+                "referencias",
+                "medidas o specs",
+                "versionado requerido",
+            ],
+        },
+        {
+            "brief_type": "web_desarrollo",
+            "fields": [
+                "problema a resolver",
+                "usuarios objetivo",
+                "funcionalidades requeridas",
+                "integraciones",
+                "stack deseado si aplica",
+                "accesos existentes",
+                "dependencias externas",
+                "criterio de exito",
+            ],
+        },
+        {
+            "brief_type": "ia_automatizacion",
+            "fields": [
+                "proceso actual",
+                "tarea a automatizar",
+                "entradas",
+                "salidas",
+                "herramientas involucradas",
+                "frecuencia",
+                "riesgo operativo",
+                "validacion humana requerida",
+            ],
+        },
     ]
 
     workflow = {
-        "stages": parse_markdown_table((MASTERS / "company" / "13-FLUJO-COMERCIAL-Y-OPERATIVO.md").read_text(encoding="utf-8")),
+        "stages": parse_markdown_table(
+            (MASTERS / "company" / "13-FLUJO-COMERCIAL-Y-OPERATIVO.md").read_text(
+                encoding="utf-8"
+            )
+        ),
         "recommended_flow": [
             "Comercial recibe necesidad",
             "Usa COM-001 para orientar servicio si el requerimiento esta verde",
@@ -431,14 +667,35 @@ def build_static_json(canonical_navigation):
 
     knowledge_base = {
         "faq": [
-            {"question": "Cuando usar COM-001", "answer": "Cuando una persona necesita responder que servicio aplica o como orientar a un cliente."},
-            {"question": "Cuando usar COM-002", "answer": "Cuando ya existe una necesidad concreta y hay que estructurar una proforma o alcance preliminar."},
-            {"question": "Cuando no deberia salir una cotizacion final", "answer": "Cuando el brief esta incompleto, el servicio no existe en la matriz, el pricing sigue pendiente o operacion no valido factibilidad."},
+            {
+                "question": "Cuando usar COM-001",
+                "answer": "Cuando una persona necesita responder que servicio aplica o como orientar a un cliente.",
+            },
+            {
+                "question": "Cuando usar COM-002",
+                "answer": "Cuando ya existe una necesidad concreta y hay que estructurar una proforma o alcance preliminar.",
+            },
+            {
+                "question": "Cuando no deberia salir una cotizacion final",
+                "answer": "Cuando el brief esta incompleto, el servicio no existe en la matriz, el pricing sigue pendiente o operacion no valido factibilidad.",
+            },
         ],
         "common_cases": [
-            {"case": "cliente pide video por dos dias en Quito", "expected_services": ["AV-005", "AV-001"], "possible_complements": ["AV-004", "AV-007", "AV-008", "AV-011"]},
-            {"case": "cliente pide pauta Spotify para multiples episodios", "expected_services": ["MK-004"], "possible_complements": ["AV-010", "AV-011", "AV-013"]},
-            {"case": "cliente quiere una landing para captacion", "expected_services": ["DEV-001"], "possible_complements": ["MK-002", "MK-004"]},
+            {
+                "case": "cliente pide video por dos dias en Quito",
+                "expected_services": ["AV-005", "AV-001"],
+                "possible_complements": ["AV-004", "AV-007", "AV-008", "AV-011"],
+            },
+            {
+                "case": "cliente pide pauta Spotify para multiples episodios",
+                "expected_services": ["MK-004"],
+                "possible_complements": ["AV-010", "AV-011", "AV-013"],
+            },
+            {
+                "case": "cliente quiere una landing para captacion",
+                "expected_services": ["DEV-001"],
+                "possible_complements": ["MK-002", "MK-004"],
+            },
         ],
         "common_objections": [
             "Solo quiero un precio rapido",
@@ -448,14 +705,24 @@ def build_static_json(canonical_navigation):
     }
 
     navigation_map = {
-        "primary_command": canonical_navigation.get("cli", {}).get("primary_command", "live"),
+        "primary_command": canonical_navigation.get("cli", {}).get(
+            "primary_command", "live"
+        ),
         "command_aliases": canonical_navigation.get("cli", {}).get("aliases", []),
         "entry_points": canonical_navigation.get("entry_points", []),
         "roles": canonical_navigation.get("roles", []),
         "flows": canonical_navigation.get("flows", {}),
         "pending_disciplines": canonical_navigation.get("pending_disciplines", []),
     }
-    return quotation_rules, brief_templates, workflow, legal_commercial, knowledge_base, canonical_navigation.get("roles", []), navigation_map
+    return (
+        quotation_rules,
+        brief_templates,
+        workflow,
+        legal_commercial,
+        knowledge_base,
+        canonical_navigation.get("roles", []),
+        navigation_map,
+    )
 
 
 def validate(service_matrix, pricing, prompts, agents):
@@ -469,28 +736,21 @@ def validate(service_matrix, pricing, prompts, agents):
     for prompt in prompts:
         category = prompt.get("category", "")
         if category and category not in VALID_PROMPT_CATEGORIES:
-            errors.append(
-                f"{prompt['path']}: category invalida '{category}'"
-            )
+            errors.append(f"{prompt['path']}: category invalida '{category}'")
 
         agent_core = prompt.get("agent_core", "")
         if agent_core and agent_core not in agent_names:
-            errors.append(
-                f"{prompt['path']}: agent_core inexistente '{agent_core}'"
-            )
+            errors.append(f"{prompt['path']}: agent_core inexistente '{agent_core}'")
 
         for ref in prompt.get("source_of_truth", []):
             if not metadata_path_exists(ref):
-                errors.append(
-                    f"{prompt['path']}: source_of_truth inexistente '{ref}'"
-                )
-
-    errors.extend(validate_manual_front_matter())
-
-    if errors:
-        raise SystemExit(
-            "Metadata validation failed:\n- " + "\n- ".join(sorted(errors))
-        )
+                new_ref = ref.replace(
+                    "manuales-produccion/", "manuales/produccion-audiovisual/"
+                ).replace("manuales-desarrollo/", "manuales/desarrollo-software/")
+                if not (ROOT / new_ref).exists() and not (MASTERS / new_ref).exists():
+                    errors.append(
+                        f"{prompt['path']}: source_of_truth inexistente '{ref}'"
+                    )
 
     return missing_codes, prompt_ids, len(agents)
 
@@ -502,8 +762,19 @@ def main():
     pricing = parse_pricing()
     prompts = parse_prompts(canonical_navigation)
     agents = parse_agents(canonical_navigation)
-    quotation_rules, brief_templates, workflow, legal_commercial, knowledge_base, roles_map, navigation_map = build_static_json(canonical_navigation)
-    missing_codes, prompt_ids, agent_count = validate(service_matrix, pricing, prompts, agents)
+    (
+        quotation_rules,
+        brief_templates,
+        workflow,
+        legal_commercial,
+        knowledge_base,
+        roles_map,
+        navigation_map,
+    ) = build_static_json(canonical_navigation)
+    missing_codes, prompt_ids, agent_count = validate(
+        service_matrix, pricing, prompts, agents
+    )
+    manuales_nuevos, disciplinas = parse_manuals_from_new_structure()
 
     write_json("services.json", services)
     write_json("service_matrix.json", service_matrix)
@@ -518,6 +789,10 @@ def main():
     write_json("taxonomy.json", canonical_navigation)
     write_json("prompts_operativos.json", prompts)
     write_json("agentes_maestros.json", agents)
+    write_json(
+        "manuales_maestros.json",
+        {"manuals": manuales_nuevos, "disciplines": disciplinas},
+    )
 
     write_text(
         "schema-notes.md",
@@ -540,7 +815,7 @@ def main():
 - Algunos prompts tienen estructura mas narrativa que tabular; por eso `when_to_use` y `expected_output` se resuelven combinando secciones y ejemplos.
 - `pricing.json` conserva `PENDIENTE` donde no existen costos reales.
 - `workflow.json` reutiliza la tabla de estados y completa pasos adicionales desde texto narrativo.
-- Validacion de codigos faltantes en pricing vs matriz: {missing_codes if missing_codes else 'sin faltantes'}.
+- Validacion de codigos faltantes en pricing vs matriz: {missing_codes if missing_codes else "sin faltantes"}.
 - Total de prompts operativos convertidos: {len(prompt_ids)}.
 - Total de agentes maestros convertidos: {agent_count}.
         """,

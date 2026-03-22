@@ -273,11 +273,44 @@ Bloques implementables:
 - checklist contextual
 - mejoras de entregabilidad
 
+### Bloque 5D. Runtime de ejecucion real
+
+- contrato minimo frontend-runtime
+- adaptador de ejecucion
+- normalizacion de salida
+- manejo de error y fallback controlado
+
 Dependencias:
 
 - Fase 4 cerrada
 
-## 9. Fase 6. Capa de Estado Expandida
+## 9. Fase intermedia. Runtime de Ejecucion Real
+
+Objetivo:
+
+- cerrar la brecha entre UX operativa y ejecucion simulada antes de abrir la capa de estado expandida.
+
+Resultado funcional:
+
+- el sistema ya puede ejecutar de verdad, aunque todavia con arquitectura minima.
+
+Incluye:
+
+- contrato de ejecucion real,
+- adaptador de runtime,
+- normalizacion de outputs,
+- manejo de error y degradacion.
+
+Esta fase debe ocurrir entre Fase 5 y Fase 6.
+
+No debe mezclarse con:
+
+- DB completa,
+- permisos,
+- ownership,
+- multiusuario.
+
+## 10. Fase 6. Capa de Estado Expandida
 
 Objetivo:
 
@@ -296,7 +329,7 @@ Incluye:
 
 Esta fase no debe abrirse antes de validar que las fases anteriores realmente se usan.
 
-## 10. Estrategia de implementacion con agentes
+## 11. Estrategia de implementacion con agentes
 
 La implementación debe pensarse por bloques con ownership claro.
 
@@ -315,7 +348,7 @@ Regla:
 - cada bloque debe integrarse contra contratos ya definidos,
 - y el frontend no debe inventar estructura fuera de `base/json` salvo justificación explícita.
 
-## 11. Criterio de cierre por fase
+## 12. Criterio de cierre por fase
 
 Una fase se considera cerrada cuando:
 
@@ -324,7 +357,7 @@ Una fase se considera cerrada cuando:
 - no depende de heurísticas ad hoc,
 - y puede ser usada por una persona del equipo sin explicación excesiva.
 
-## 12. Definicion ejecutiva
+## 13. Definicion ejecutiva
 
 Si hubiera que resumir este roadmap en una frase:
 

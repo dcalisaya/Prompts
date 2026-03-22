@@ -1,0 +1,14 @@
+discipline: "Branding y Diseño"
+slug: "branding-diseno"
+nomenclature_folder: null
+canonical_id_prefix: "MAN-BR"
+service_codes: ["BR-001", "BR-002", "BR-003", "BR-004", "BR-005", "BR-006", "BR-007", "BR-008"]
+manuals: []
+pending:
+  - "Manual de identidad visual (prioridad alta)"
+  - "Guía de presentaciones corporativas (prioridad alta)"
+  - "Playbook de piezas gráficas por canal (prioridad media)"
+  - "Manual de gestión de activos de marca (pendiente)"
+related_agents: []
+related_prompts: []
+notes: "8 servicios sin ningún activo (sin agente, sin prompts, sin manuales). Disciplina completamente huérfana."
