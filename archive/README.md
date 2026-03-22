@@ -29,3 +29,9 @@ La ruta activa del repo para producto y fases del `app` ahora es:
 - `archive/`
 
 `archive/` no debe usarse como fuente primaria de implementación, salvo consulta histórica.
+
+## Nota sobre proyectos activos
+
+Los proyectos reales que ya fueron reconstruidos con estructura canónica deben vivir en [`projects/`](/Users/dcalisaya/Developer/Prompts/projects), no en `archive/projects/`.
+
+`archive/projects/` queda como histórico de casos no normalizados o material previo a la estandarización.

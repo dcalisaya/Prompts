@@ -149,6 +149,54 @@
     "path": "base/masters/prompts-operativos/02-Produccion-Audiovisual/SCRIPT-001-Guiones-Retencion.md"
   },
   {
+    "id": "STORY-001",
+    "name": "Storyboard y Desglose de Tomas para Producci\u00f3n IA",
+    "version": "1.0.0",
+    "category": "Producci\u00f3n Audiovisual",
+    "discipline": "Producci\u00f3n Audiovisual",
+    "agent_core": "ArtistaStoryboard",
+    "source_of_truth": [
+      "manuales-produccion/fundamentos_storyboard.md",
+      "manuales-produccion/guia_maestra_storyboard.md",
+      "manuales-produccion/guia_maestra_guion.md",
+      "manuales-produccion/guia_maestra_i2v.md"
+    ],
+    "related_services": [
+      "AV-006",
+      "AV-005",
+      "AV-007"
+    ],
+    "stage": "storyboarding",
+    "input_type": "guion, duraci\u00f3n, formato, personajes, geograf\u00eda y estilo visual",
+    "deliverable_type": "storyboard, shot list y base para prompts T2I/I2V",
+    "tags": [
+      "storyboard",
+      "shot-list",
+      "blocking",
+      "continuidad",
+      "raccord",
+      "t2i",
+      "i2v"
+    ],
+    "objective": "Transformar un guion o narraci\u00f3n audiovisual en una secuencia t\u00e9cnica clara de tomas, con geograf\u00eda de escena, continuidad visual y base lista para generaci\u00f3n T2I/I2V.",
+    "when_to_use": "Usa este prompt cuando ya existe un guion o una narrativa audiovisual y se necesita bajar el proyecto a una estructura de storyboard utilizable por direcci\u00f3n, imagen generativa y video IA.",
+    "input_required": [
+      "guion o narraci\u00f3n, duraci\u00f3n, formato, personajes, estilo visual y restricciones de continuidad."
+    ],
+    "expected_output": [
+      "storyboard t\u00e9cnico con shot list, blocking y base de prompts T2I/I2V."
+    ],
+    "example_input": "\"Convierte este guion educativo de 3 minutos para un video animado vertical sobre inclusi\u00f3n social en un storyboard con 20 a 30 tomas, manteniendo dos personajes principales y una comunidad recurrente.\"",
+    "example_output": [
+      "geograf\u00eda de escena,",
+      "assets de personaje,",
+      "shot list secuencial,",
+      "prompts base en ingl\u00e9s para cada toma,",
+      "notas de continuidad y raccord."
+    ],
+    "path": "base/masters/prompts-operativos/02-Produccion-Audiovisual/STORY-001-Storyboard-Desglose-Tomas.md"
+  },
+  {
     "id": "ADS-001",
     "name": "Guionista para Spotify Ads",
     "version": "1.0.0",

@@ -10,6 +10,7 @@ Hoy la ruta activa para avanzar producto y fases es:
 - [`base/json/`](base/json/) como capa estructurada,
 - [`app/`](app/) como capa de implementación,
 - [`docs/`](docs/) como definición de producto,
+- [`projects/`](projects/) como capa de casos reales y trazabilidad de proyectos,
 - [`archive/`](archive/) como preservación de material fuera del camino activo.
 
 ## Puntos de entrada recomendados
@@ -38,6 +39,9 @@ app/
 docs/
   visión, arquitectura, módulos y roadmap del app
 
+projects/
+  proyectos reales documentados con rastro operativo
+
 archive/
   material preservado fuera del camino activo
 ```
@@ -48,6 +52,7 @@ archive/
 2. Se regeneran estructuras con `python3 app/scripts/build_json.py`.
 3. Si se necesita una salida derivada de navegación, se puede regenerar con `python3 app/scripts/build_indices.py`.
 4. La implementación del `app` debe seguir lo definido en `docs/`.
+5. Los casos reales o pilotos que ya tienen brief y entregables deben normalizarse en `projects/`, no quedarse como archivos sueltos en `archive/projects/`.
 
 ## Archivo histórico
 
