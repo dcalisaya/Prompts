@@ -24,6 +24,30 @@ Esta carpeta concentra la documentacion de producto, arquitectura funcional y de
 - [PROMPT-AGENTE-BLOQUE-2C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2C.md): prompt operativo para delegar la implementacion del Bloque 2C.
 - [FASE-2-BLOQUE-2D.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-2-BLOQUE-2D.md): alcance, contratos y definicion de terminado para flujos operativos guiados.
 - [PROMPT-AGENTE-BLOQUE-2D.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-2D.md): prompt operativo para delegar la implementacion del Bloque 2D.
+- [FASE-3-BLOQUE-3A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-3-BLOQUE-3A.md): alcance, contratos y definicion de terminado para la primera capa de sesiones.
+- [PROMPT-AGENTE-BLOQUE-3A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-3A.md): prompt operativo para delegar la implementacion del Bloque 3A.
+- [FASE-3-BLOQUE-3B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-3-BLOQUE-3B.md): alcance, contratos y definicion de terminado para estado operativo minimo usable.
+- [PROMPT-AGENTE-BLOQUE-3B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-3B.md): prompt operativo para delegar la implementacion del Bloque 3B.
+- [FASE-3-BLOQUE-3C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-3-BLOQUE-3C.md): alcance, contratos y definicion de terminado para trazabilidad minima integrada a sesiones.
+- [PROMPT-AGENTE-BLOQUE-3C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-3C.md): prompt operativo para delegar la implementacion del Bloque 3C.
+- [FASE-4-BLOQUE-4A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-4-BLOQUE-4A.md): alcance, contratos y definicion de terminado para calidad minima por disciplina.
+- [PROMPT-AGENTE-BLOQUE-4A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-4A.md): prompt operativo para delegar la implementacion del Bloque 4A.
+- [FASE-4-BLOQUE-4B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-4-BLOQUE-4B.md): alcance, contratos y definicion de terminado para revision de entregables con contexto.
+- [PROMPT-AGENTE-BLOQUE-4B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-4B.md): prompt operativo para delegar la implementacion del Bloque 4B.
+- [FASE-4-BLOQUE-4C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-4-BLOQUE-4C.md): alcance, contratos y definicion de terminado para derivacion minima y siguiente paso.
+- [PROMPT-AGENTE-BLOQUE-4C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-4C.md): prompt operativo para delegar la implementacion del Bloque 4C.
+- [FASE-5-BLOQUE-5A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-5-BLOQUE-5A.md): alcance, contratos y definicion de terminado para recomendacion contextual minima usable.
+- [PROMPT-AGENTE-BLOQUE-5A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5A.md): prompt operativo para delegar la implementacion del Bloque 5A.
+- [FASE-5-BLOQUE-5B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-5-BLOQUE-5B.md): alcance, contratos y definicion de terminado para composicion automatica de contexto.
+- [PROMPT-AGENTE-BLOQUE-5B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5B.md): prompt operativo para delegar la implementacion del Bloque 5B.
+- [FASE-5-BLOQUE-5C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-5-BLOQUE-5C.md): alcance, contratos y definicion de terminado para asistencia minima de salida.
+- [PROMPT-AGENTE-BLOQUE-5C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-5C.md): prompt operativo para delegar la implementacion del Bloque 5C.
+- [FASE-6-BLOQUE-6A.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-6-BLOQUE-6A.md): alcance, contratos y definicion de terminado para modelo de estado expandido.
+- [PROMPT-AGENTE-BLOQUE-6A.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-6A.md): prompt operativo para delegar la implementacion del Bloque 6A.
+- [FASE-6-BLOQUE-6B.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-6-BLOQUE-6B.md): alcance, contratos y definicion de terminado para ownership y permisos basicos.
+- [PROMPT-AGENTE-BLOQUE-6B.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-6B.md): prompt operativo para delegar la implementacion del Bloque 6B.
+- [FASE-6-BLOQUE-6C.md](/Users/dcalisaya/Developer/Prompts/docs/FASE-6-BLOQUE-6C.md): alcance, contratos y definicion de terminado para preparacion de integraciones futuras.
+- [PROMPT-AGENTE-BLOQUE-6C.md](/Users/dcalisaya/Developer/Prompts/docs/PROMPT-AGENTE-BLOQUE-6C.md): prompt operativo para delegar la implementacion del Bloque 6C.
 
 ## Regla de uso
 

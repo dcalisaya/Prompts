@@ -22,7 +22,8 @@ Este documento define como convertir una necesidad del cliente en una proforma o
 
 ## Reglas de armado
 
-- usar nombre exacto del servicio desde [09-SERVICE-MATRIX.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/09-SERVICE-MATRIX.md),
+- usar `service_code` exacto desde [09-SERVICE-MATRIX.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/09-SERVICE-MATRIX.md) como referencia canónica,
+- el nombre comercial puede presentarse en versión legible para humanos, pero no debe romper la relación con su `service_code`,
 - si un requerimiento mezcla varias piezas, cotizar varias lineas,
 - si hay produccion y pauta, separar ambas,
 - si hay diseno y luego impresion, dejarlo claro como servicios distintos si aplica,
