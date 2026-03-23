@@ -6,7 +6,7 @@
 
 ### Bloque 0A. Higiene documental
 - Eliminar borradores residuales, referencias a proyectos ajenos y documentos obsoletos.
-- Confirmar que `projects/web-live-developer/` contiene solo documentación vigente.
+- Confirmar que `projects/web-live-developer/docs` contiene solo documentación vigente.
 - Verificar que ningún documento derivado se presente como fuente de verdad.
 
 ### Bloque 0B. Decisión arquitectónica
