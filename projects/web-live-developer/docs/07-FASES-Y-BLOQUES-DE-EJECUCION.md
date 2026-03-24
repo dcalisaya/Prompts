@@ -1,117 +1,63 @@
-# Fases y Bloques de Ejecución: Web Live Developer
+# Fases y Bloques de Ejecución: Web Institucional Live Developer (v2.0)
 
-**Objetivo del documento:** Definir la secuencia de ejecución del proyecto web institucional de Live Developer en fases y bloques trazables, con criterios claros de salida entre etapas.
+**Objetivo del documento:** Definir la ruta crítica de desarrollo para el sitio web institucional, asegurando una arquitectura limpia basada en Astro y una capa de datos gobernada por los maestros del workspace.
 
-## Fase 0: Normalización y Cierre Estratégico
+---
 
-### Bloque 0A. Higiene documental
-- Eliminar borradores residuales, referencias a proyectos ajenos y documentos obsoletos.
-- Confirmar que `projects/web-live-developer/docs` contiene solo documentación vigente.
-- Verificar que ningún documento derivado se presente como fuente de verdad.
+## Fase 1: Setup y Capa de Datos (Bloque Técnico)
+*Objetivo: Establecer los cimientos del proyecto en `site/` y la sincronización automatizada.*
 
-### Bloque 0B. Decisión arquitectónica
-- Confirmar Astro como stack base.
-- Confirmar `projects/web-live-developer/site/` como raíz técnica del proyecto.
-- Definir alcance exacto de uso de React como capa de islas.
+- **1.1. Inicialización del Sitio Astro:**
+    - Configuración de `astro.config.mjs` con integraciones de React y Tailwind.
+    - Definición de estructura: `src/layouts`, `src/pages`, `src/components`, `src/data`, `scripts/`.
+    - Configuración de tokens de diseño en `src/styles/global.css` y `tailwind.config.mjs`.
+- **1.2. Gobernanza de Datos (Sync Script):**
+    - Refactorización de `scripts/sync-data.mjs` para extraer servicios desde `09-SERVICE-MATRIX.md`.
+    - Implementación de lógica de clasificación web (Track: Creativa, Tecnológica, Consultoría) integrada en el proceso de sincronización.
+    - Generación de `src/data/services.json` como derivado oficial para el frontend.
+- **1.3. Layout Maestro y Tipografía:**
+    - Creación de `MainLayout.astro` con soporte para metadatos dinámicos y esquemas de color Dark/Light.
+    - Carga estática de fuentes (`Outfit` e `Instrument Sans`).
 
-### Bloque 0C. Aprobación funcional
-- Validar brief, sitemap, UI system, flujo de conversión y mapeo de servicios.
-- Cerrar vacíos críticos: fecha objetivo, endpoint de captura, contenido bilingüe, activos visuales.
+## Fase 2: Componentes Atómicos y UI (Bloque Visual)
+*Objetivo: Materializar el sistema de diseño mediante islas de interactividad.*
 
-### Criterio de salida Fase 0
-- Documentación alineada.
-- Stack aprobado.
-- Ruta técnica aprobada.
-- Sin residuos heredados.
+- **2.1. Navegación Global:**
+    - Header y Footer en Astro para máximo rendimiento SEO.
+    - Islas React solo para elementos con estado (Toggle de tema, Selectores dinámicos).
+- **2.2. Componentes de Presentación:**
+    - `ServiceCard` para renderizar datos técnicos de forma visual.
+    - Sistema de grillas adaptativas para las categorías de servicios.
 
-## Fase 1: Base Técnica del Proyecto
+## Fase 3: Rutas y Experiencia de Usuario (Bloque de Navegación)
+*Objetivo: Construir el flujo de descubrimiento segmentado.*
 
-### Bloque 1A. Bootstrap del sitio
-- Crear `projects/web-live-developer/site/`.
-- Inicializar Astro con TypeScript.
-- Configurar estructura inicial de layouts, páginas y componentes.
+- **3.1. Landing Selector (The Gate):**
+    - Home indexada que segmenta el tráfico hacia las áreas core.
+- **3.2. Páginas de Área y Silos SEO:**
+    - Rutas dinámicas o estáticas para `/creativa`, `/tecnologica` y `/consultoria`.
+    - Agrupación automática de servicios por categoría canónica sin hardcoding.
 
-### Bloque 1B. Sistema de estilos
-- Instalar y configurar Tailwind CSS dentro del nuevo proyecto.
-- Cargar fuentes y tokens definidos en `03-UI-DESIGN-SYSTEM.md`.
-- Implementar dark/light mode con enfoque consistente y no ornamental.
+## Fase 4: Conversión e Integraciones (Bloque de Negocio)
+*Objetivo: Captura de leads y rastro operativo.*
 
-### Bloque 1C. Capa de datos
-- Definir el mecanismo para derivar data desde la base canónica.
-- Crear script o proceso que consuma servicios y categorías sin romper la fuente oficial.
-- Establecer contratos de datos para categorías, servicios, CTA y navegación.
+- **4.1. Formularios de Captación:**
+    - Integración de formularios reactivos para validación avanzada.
+- **4.2. Analytics y Trazabilidad:**
+    - Implementación de GA4/GTM según estándar `DAT-005`.
 
-### Criterio de salida Fase 1
-- Proyecto compila.
-- Layout base operativo.
-- Tokens visuales implementados.
-- Datos canónicos disponibles en formato consumible.
+## Fase 5: QA y Lanzamiento (Bloque de Excelencia)
+*Objetivo: Validación final y despliegue.*
 
-## Fase 2: Arquitectura de Contenido y Navegación
+- **5.1. Certificación de Datos:**
+    - Verificación de que el 100% de los servicios en `09-SERVICE-MATRIX.md` se visualizan correctamente.
+- **5.2. Optimización de Performance:**
+    - Verificación de Core Web Vitals (LCP < 1.5s).
+- **5.3. Build y Deploy:**
+    - Ejecución de `npm run build` y despliegue a producción.
 
-### Bloque 2A. Home institucional
-- Construir la Home con la narrativa "Razón + Emoción".
-- Implementar hero, propuesta de valor, selector de áreas y rutas principales.
-
-### Bloque 2B. Áreas y categorías
-- Construir navegación por Tecnología, Creatividad y Consultoría.
-- Crear páginas de categoría con estructura uniforme y CTA contextuales.
-
-### Bloque 2C. Servicios y páginas comunes
-- Crear páginas o vistas por servicio según el modelo definido.
-- Implementar `contacto`, `gracias`, `casos` y demás páginas comunes.
-
-### Criterio de salida Fase 2
-- Navegación completa.
-- Páginas principales renderizadas.
-- Coherencia entre taxonomía, rutas y contenido.
-
-## Fase 3: Conversión, Integraciones y Medición
-
-### Bloque 3A. Captación de leads
-- Implementar formulario de contacto.
-- Definir validación, payload y persistencia de contexto de navegación.
-
-### Bloque 3B. Tracking y analítica
-- Configurar GA4, GTM y captura de UTM.
-- Medir selección de áreas, visitas a categorías y envíos de formularios.
-
-### Bloque 3C. Integración operativa
-- Conectar formulario con endpoint o webhook.
-- Integrar entrega al CRM y respuesta automática.
-
-### Criterio de salida Fase 3
-- Conversión funcional de punta a punta.
-- Eventos medidos correctamente.
-- Payload operativo validado.
-
-## Fase 4: QA, Performance y Lanzamiento
-
-### Bloque 4A. QA funcional
-- Probar formularios, navegación, estados vacíos, responsive y accesibilidad base.
-- Revisar consistencia de contenido, etiquetas y CTA.
-
-### Bloque 4B. SEO y rendimiento
-- Validar metadatos, sitemap, enlaces internos y headings.
-- Optimizar LCP, imágenes, fuentes y carga de JavaScript.
-
-### Bloque 4C. Preparación de salida
-- Checklist final de lanzamiento.
-- Documentación de operación y mantenimiento.
-- Handoff técnico y comercial.
-
-### Criterio de salida Fase 4
-- Sitio listo para publicación.
-- QA aprobado.
-- Tracking y SEO validados.
-- Handoff completado.
-
-## Regla de Gobernanza
-
-- Ninguna fase inicia sin criterio de salida cumplido de la anterior.
-- Todo cambio de alcance debe reflejarse primero en la documentación de `projects/web-live-developer/`.
-- La base canónica permanece en `base/masters/`; esta carpeta solo registra la ejecución del proyecto.
+---
 
 ## Acción Requerida
-
-- Usar este documento como secuencia oficial para planificar las siguientes tareas del proyecto.
+- Mantener la Fase 1 como prioridad absoluta antes de avanzar a UI.
+- No utilizar frameworks de enrutamiento adicionales (Astro se encarga del routing).

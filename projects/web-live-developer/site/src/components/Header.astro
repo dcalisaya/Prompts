@@ -1,0 +1,87 @@
+---
+import { Sun, Moon } from 'lucide-react';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const isCreative = currentPath.includes('creativa');
+const isTech = currentPath.includes('tecnologica');
+const isConsult = currentPath.includes('consultoria');
+
+// LD Canonical Colors
+const activeColor = isCreative ? 'text-accent' : isTech ? 'text-primary' : isConsult ? 'text-content' : 'text-primary';
+const buttonBg = isCreative ? 'bg-accent' : isTech ? 'bg-primary' : 'bg-primary';
+---
+
+<nav class="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border px-4 py-4 transition-colors">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <a href="/" class={`text-xl md:text-2xl font-bold font-heading transition-colors hover:opacity-80 ${activeColor}`}>
+      Live Developer
+    </a>
+
+    <div class="flex gap-4 md:gap-8 items-center">
+      <div class="hidden lg:flex gap-6 items-center border-r border-border pr-8">
+        <a 
+          href="/creativa" 
+          class={`text-xs font-bold uppercase tracking-widest transition-colors hover:text-accent ${isCreative ? 'text-accent' : 'text-muted'}`}
+        >
+          Creatividad
+        </a>
+        <a 
+          href="/tecnologica" 
+          class={`text-xs font-bold uppercase tracking-widest transition-colors hover:text-primary ${isTech ? 'text-primary' : 'text-muted'}`}
+        >
+          Tecnología
+        </a>
+        <a 
+          href="/consultoria" 
+          class={`text-xs font-bold uppercase tracking-widest transition-colors hover:text-content ${isConsult ? 'text-content' : 'text-muted'}`}
+        >
+          Consultoría
+        </a>
+      </div>
+
+      <div class="flex gap-3 items-center">
+        <button 
+          id="theme-toggle"
+          class="p-2 rounded-lg border border-border hover:bg-surface transition-colors text-muted hover:text-content"
+          aria-label="Alternar modo de color"
+        >
+          <span class="dark-icon hidden"><Sun size={18} /></span>
+          <span class="light-icon hidden"><Moon size={18} /></span>
+        </button>
+
+        <a 
+          href="/contacto"
+          class={`px-4 md:px-6 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all hover:scale-105 active:scale-95 text-background shadow-lg shadow-black/10 ${buttonBg}`}
+        >
+          Contacto
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  const updateIcons = (theme: string) => {
+    document.querySelector('.dark-icon')?.classList.toggle('hidden', theme !== 'dark');
+    document.querySelector('.light-icon')?.classList.toggle('hidden', theme !== 'light');
+  };
+
+  const initialTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  updateIcons(initialTheme);
+
+  themeToggle?.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('ld_theme', newTheme);
+    updateIcons(newTheme);
+  });
+</script>

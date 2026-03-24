@@ -1,0 +1,21 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Página no encontrada | Live Developer">
+	<main class="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center">
+		<div class="space-y-6">
+      <span class="text-9xl font-black text-border select-none">404</span>
+			<h1 class="text-4xl font-bold font-heading">¿Te has perdido?</h1>
+			<p class="text-muted max-w-sm mx-auto">
+				Parece que el camino que buscas no existe en nuestra arquitectura actual.
+			</p>
+      <div class="pt-6">
+        <a href="/" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Regresar al Hub Principal
+        </a>
+      </div>
+		</div>
+	</main>
+</MainLayout>

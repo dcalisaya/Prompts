@@ -1,0 +1,60 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { ServiceCard } from '../components/ServiceCard';
+import catalog from '../data/services.json';
+
+const creativeServices = catalog.tracks.creativa;
+const categories = [...new Set(creativeServices.map(s => s.category))];
+---
+
+<MainLayout 
+  title="Área Creativa | Narrativa Audiovisual e Impacto Live Developer"
+  description="Producción audiovisual cinematográfica, branding estratégico y marketing de contenidos para marcas con propósito."
+>
+	<main class="max-w-7xl mx-auto px-4 py-16">
+		<header class="mb-24 relative">
+      <div class="absolute -top-12 -left-12 w-48 h-48 bg-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
+			<div class="relative z-10">
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 font-heading leading-tight">
+          Narrativas que <br />
+          <span class="text-accent italic">Generan Impacto</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-muted max-w-3xl font-body leading-relaxed">
+          Producción audiovisual cinematográfica, branding estratégico y contenido que detiene el scroll.
+          Humanizamos su marca para conectar con la audiencia real.
+        </p>
+      </div>
+		</header>
+
+    <div class="space-y-32">
+      {categories.map(category => (
+        <section class="scroll-mt-24">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-b border-border pb-8">
+            <h2 class="text-3xl md:text-5xl font-bold font-heading">{category}</h2>
+            <p class="text-muted md:max-w-md text-sm md:text-base">
+              Expertise creativa en {category.toLowerCase()} con enfoque en retorno de impacto y reputación.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {creativeServices
+              .filter(s => s.category === category)
+              .map(service => (
+                <ServiceCard 
+                  client:visible 
+                  code={service.service_code} 
+                  name={service.service_name} 
+                  summary={service.summary}
+                  scope={service.scope_base} 
+                  area="creativa" 
+                  not_included={service.not_included}
+                  inputs={service.inputs}
+                  unit={service.unit}
+                  value_proposition={service.value_proposition}
+                />
+              ))}
+          </div>
+        </section>
+      ))}
+    </div>
+	</main>
+</MainLayout>

@@ -1,0 +1,95 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title: string;
+	description?: string;
+	image?: string;
+}
+
+const { 
+  title, 
+  description = "Live Developer - Ingeniería de Software y Narrativa Audiovisual integradas para resultados reales. Hub de soluciones B2B.",
+  image = "/og-image.jpg"
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://livedeveloper.com');
+
+// Estructura de Datos (JSON-LD) para SEO Avanzado
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Live Developer",
+  "image": new URL(image, canonicalURL),
+  "url": canonicalURL,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Quito",
+    "addressCountry": "EC"
+  },
+  "description": description,
+  "brand": {
+    "@type": "Brand",
+    "name": "EJECOM S.A.S."
+  }
+};
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+    <!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+		
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@300..700&display=swap" rel="stylesheet">
+
+		<script is:inline>
+			// Bloqueo de FOUC
+			const getTheme = () => {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('ld_theme')) {
+					return localStorage.getItem('ld_theme');
+				}
+				return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+			};
+			document.documentElement.setAttribute('data-theme', getTheme());
+		</script>
+	</head>
+	<body class="bg-background text-content min-h-screen flex flex-col selection:bg-primary/30">
+    <Header currentPath={currentPath} />
+    <div class="flex-grow">
+		  <slot />
+    </div>
+    <Footer />
+	</body>
+</html>

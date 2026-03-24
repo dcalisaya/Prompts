@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark Mode Default - Tokens Canonicos LD */
+  --bg-base: #272223;
+  --bg-surface: #2D2829;
+  --text-main: #FFFFFF;
+  --text-muted: #A0A0A0;
+  --color-primary: #3CB8F2; /* Tecnologia */
+  --color-accent: #FFB03A;  /* Creatividad */
+  --border-color: #3D3839;
+
+  --font-main: "Instrument Sans", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+}
+
+[data-theme='light'] {
+  --bg-base: #F8F9FA;
+  --bg-surface: #FFFFFF;
+  --text-main: #1A1A1A;
+  --text-muted: #666666;
+  --color-primary: #256FA8;
+  --color-accent: #E69526;
+  --border-color: #E0E0E0;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  @apply antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  @apply tracking-tight;
+}
+
+/* Scrollbar minimalista */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

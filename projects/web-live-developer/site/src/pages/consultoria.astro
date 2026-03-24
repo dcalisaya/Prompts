@@ -1,0 +1,60 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { ServiceCard } from '../components/ServiceCard';
+import catalog from '../data/services.json';
+
+const consultoriaServices = catalog.tracks.consultoria;
+const categories = [...new Set(consultoriaServices.map(s => s.category))];
+---
+
+<MainLayout 
+  title="Consultoría y Negocio | Estrategia de Crecimiento Live Developer"
+  description="Asesoría estratégica en madurez digital, Customer Experience y sostenibilidad para empresas que buscan escalar su operación."
+>
+	<main class="max-w-7xl mx-auto px-4 py-16">
+		<header class="mb-24 relative">
+      <div class="absolute -top-12 -left-12 w-48 h-48 bg-content/10 rounded-full blur-[80px] pointer-events-none"></div>
+			<div class="relative z-10">
+        <h1 class="text-5xl md:text-7xl font-bold mb-8 font-heading leading-tight">
+          Estrategia para el <br />
+          <span class="text-content italic">Crecimiento Real</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-muted max-w-3xl font-body leading-relaxed">
+          Consultoría de negocio, Customer Experience y Sostenibilidad. 
+          Alineamos sus procesos con los objetivos estratégicos de la era digital.
+        </p>
+      </div>
+		</header>
+
+    <div class="space-y-32">
+      {categories.map(category => (
+        <section class="scroll-mt-24">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 border-b border-border pb-8">
+            <h2 class="text-3xl md:text-5xl font-bold font-heading">{category}</h2>
+            <p class="text-muted md:max-w-md text-sm md:text-base">
+              Asesoría estratégica en {category.toLowerCase()} enfocada en madurez digital y eficiencia.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {consultoriaServices
+              .filter(s => s.category === category)
+              .map(service => (
+                <ServiceCard 
+                  client:visible 
+                  code={service.service_code} 
+                  name={service.service_name} 
+                  summary={service.summary}
+                  scope={service.scope_base} 
+                  area="consultoria" 
+                  not_included={service.not_included}
+                  inputs={service.inputs}
+                  unit={service.unit}
+                  value_proposition={service.value_proposition}
+                />
+              ))}
+          </div>
+        </section>
+      ))}
+    </div>
+	</main>
+</MainLayout>

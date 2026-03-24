@@ -1,0 +1,5 @@
+# Robots.txt for Live Developer
+User-agent: *
+Allow: /
+
+Sitemap: https://livedeveloper.com/sitemap-index.xml

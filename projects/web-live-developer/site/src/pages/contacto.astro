@@ -1,0 +1,47 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { ContactForm } from '../components/ContactForm';
+---
+
+<MainLayout title="Contacto | Live Developer - Agende su Diagnóstico">
+	<main class="max-w-7xl mx-auto px-4 py-16">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      
+      <!-- Info Column -->
+      <div class="space-y-12">
+        <header class="space-y-6">
+          <div class="inline-block px-4 py-1.5 rounded-full border border-border bg-surface/50 text-xs font-bold tracking-widest uppercase text-muted">
+            Consulta Estratégica
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold font-heading leading-tight">
+            Iniciemos la <br />
+            <span class="text-primary">Transformación</span>
+          </h1>
+          <p class="text-xl text-muted font-body leading-relaxed max-w-lg">
+            Complete el formulario para recibir un diagnóstico preliminar. 
+            Nuestro equipo evaluará sus necesidades técnicas y creativas para proponer una hoja de ruta personalizada.
+          </p>
+        </header>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-border pt-12">
+          <div class="space-y-2">
+            <h4 class="font-bold text-content uppercase tracking-widest text-xs">Ventas & Consultoría</h4>
+            <p class="text-muted">hola@livedeveloper.com</p>
+          </div>
+          <div class="space-y-2">
+            <h4 class="font-bold text-content uppercase tracking-widest text-xs">Ubicación</h4>
+            <p class="text-muted">Distrito Metropolitano <br />Quito, Ecuador</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="relative">
+        <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <ContactForm client:load />
+      </div>
+
+    </div>
+	</main>
+</MainLayout>
