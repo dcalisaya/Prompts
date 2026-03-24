@@ -2,7 +2,7 @@
 
 ## Objetivo general
 
-Incrementar el alcance y posicionamiento digital de la serie de 36 podcasts (36 con video para YouTube y 36 solo audio para Spotify) mediante una estrategia sostenida de contenido promocional y pauta segmentada durante 8 meses, con foco en descubrimiento, reproducción y crecimiento progresivo de audiencia en Quito, Guayaquil, Cuenca, Ambato, Ibarra y Loja.
+Incrementar el alcance y posicionamiento digital de la serie de 36 podcasts (36 con video para YouTube y 36 solo audio para Spotify) mediante una estrategia sostenida de contenido promocional y pauta segmentada durante 8 meses, con foco en descubrimiento, reproducción y crecimiento progresivo de audiencia en Quito, Guayaquil, Cuenca, Ibarra y Loja.
 
 ## Spot promocional + mezcla de clips video
 
@@ -17,18 +17,18 @@ El activo central es un spot promocional único que se adapta a formatos video y
 | Ola | Meses | Ciudad(es) foco | Canales | Piezas | Objetivo |
 |:---|:---|:---|:---|:---|:---|
 | **1. Lanzamiento** | 1‑2 | Quito + Guayaquil | YouTube Video Views, Meta Video Views | Spot principal + cortes hero | Awareness inicial |
-| **2. Tracción** | 3‑5 | Quito, Guayaquil, Cuenca, Ambato | Spotify Audio Ads, Meta Stories/Reels | Spot + mix de clips video | Descubrimiento y reproducciones |
+| **2. Tracción** | 3‑5 | Quito, Guayaquil, Cuenca | Spotify Audio Ads, Meta Stories/Reels | Spot + mix de clips video | Descubrimiento y reproducciones |
 | **3. Retención** | 6‑8 | Loja, Ibarra, soporteed en Quito/Guayaquil | Meta retargeting, YouTube remarketing, Spotify retargeting | Spot + clips destacados + video clip de movilidad | Seguimiento y frecuencia |
 
 ## Distribución geográfica del spend
 
 - Quito + Guayaquil: 60% (`USD 2,040`)  
-- Cuenca + Ambato: 15% (`USD 510`)  
+- Cuenca: 20% (`USD 680`)  
 - Loja: 10% (`USD 340`)  
 - Ibarra: 5% (`USD 170`)  
-- Reserva táctica/ajustes: 10% (`USD 340`)
+- Reserva táctica/ajustes: 5% (`USD 170`)
 
-## Desglose operativo del ítem 3 (USD 5,500)
+## Desglose operativo del ítem 3 (USD 5,550)
 
 | Área | Qué cubre |
 |:--|:--|
@@ -37,7 +37,7 @@ El activo central es un spot promocional único que se adapta a formatos video y
 | Adaptación de piezas y copies | Ajustes de formatos y textos con apoyo de herramientas de IA del repositorio |
 | Gestión, monitoreo y optimización | Seguimiento continuo, consumo de plataformas, suscripciones y tokens de IA |
 | Reporte y cierre | Síntesis de resultados, aprendizajes y recomendaciones para el siguiente trimestre |
-| Inversión publicitaria en plataforma | Compra de medios (YouTube/Meta/Spotify) con cargas financieras e impuestos |
+| Inversión publicitaria en plataforma | Compra de medios (YouTube/Meta/Spotify) con cargas financieras e impuestos (USD 3,450) |
 
 ## Indicadores clave (KPIs)
 
@@ -52,4 +52,4 @@ El activo central es un spot promocional único que se adapta a formatos video y
 
 1. Ejecutar el plan MediaPlanner (MEDIA-001) para generar cronograma diario y flowchart validado.  
 2. Activar el agente de KPI con los indicadores sugeridos para alimentar reportes trimestrales.  
-3. Mantener el presupuesto `USD 3,400` para inversión de medios, sin superar los `USD 14,700` de subtotal y respetando la referencia en euros de la ONG.
+3. Mantener el presupuesto `USD 3,450` para inversión de medios dentro del ítem 3 y sostener el subtotal `USD 14,750` con la referencia en euros de la ONG.

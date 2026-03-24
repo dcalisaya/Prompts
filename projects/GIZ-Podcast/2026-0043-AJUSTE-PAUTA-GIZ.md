@@ -9,7 +9,7 @@ El proyecto original considera:
 
 Con un presupuesto total disponible de hasta `USD 15,000` impuestos incluidos, el margen operativo para el componente de pauta debe mantenerse controlado, especialmente considerando que el ítem 1 ya se encuentra en ejecución y el cliente opera bajo procesos internos de auditoría.
 
-Por esta razón, el componente de pauta se ajusta a un monto total de `USD 5,500`, dejando el proyecto global en `USD 14,700`.
+Por esta razón, el componente de pauta se ajusta a un monto total de `USD 5,550`, dejando el proyecto global en `USD 14,750`.
 
 ## Objetivo del ajuste
 
@@ -17,7 +17,7 @@ Redefinir la estrategia de pautaje para difundir de forma eficiente los contenid
 
 ## Monto aprobado para el pautaje ajustado
 
-**Ítem 3. Estrategia y ejecución de pautaje digital ajustado:** `USD 5,500`
+**Ítem 3. Estrategia y ejecución de pautaje digital ajustado:** `USD 5,550`
 
 ## Desglose presupuestario del ítem 3
 
@@ -28,8 +28,8 @@ Redefinir la estrategia de pautaje para difundir de forma eficiente los contenid
 | Adaptación de piezas y copies | Ajuste de clips, formatos y desarrollo de copies de pauta con apoyo de herramientas de IA del ecosistema operativo | USD 300 |
 | Gestión, monitoreo y optimización | Gestión operativa, monitoreo y optimización de campañas, incluyendo uso de herramientas de análisis, suscripciones y consumo tecnológico asociado al proceso | USD 500 |
 | Reporte y cierre | Consolidación de resultados, hallazgos y reporte final de campaña | USD 300 |
-| **Inversión publicitaria en plataforma** | **Compra de medios para difusión del contenido en plataforma digital, considerando cargas financieras e impositivas aplicables al proceso de pauta internacional** | **USD 3,400** |
-| **Total** |  | **USD 5,500** |
+| **Inversión publicitaria en plataforma** | **Compra de medios para difusión del contenido en plataforma digital, considerando cargas financieras e impositivas aplicables al proceso de pauta internacional** | **USD 3,450** |
+| **Total** |  | **USD 5,550** |
 
 ## Enfoque estratégico de pauta
 
@@ -65,7 +65,7 @@ La pauta no debe distribuirse por igual sobre los `36` podcasts. Para proteger l
 
 ## Criterio de inversión publicitaria
 
-El foco del ajuste está en proteger una bolsa clara de inversión en medios. Por eso se fija explícitamente una partida de `USD 3,400` para compra de pauta.
+El foco del ajuste está en proteger una bolsa clara de inversión en medios. Por eso se fija explícitamente una partida de `USD 3,450` para compra de pauta.
 
 Este enfoque permite:
 
@@ -113,4 +113,4 @@ Dado que se trata de difusión de contenido audiovisual, los indicadores deben c
 
 ## Resumen ejecutivo
 
-Se propone actualizar el componente `2026-0043 Producción de Pautaje GIZ` a un esquema ajustado de `USD 5,500`, orientado a la difusión priorizada de contenidos del proyecto, con énfasis en una inversión publicitaria identificable de `USD 3,400`, una operación de medios más eficiente y KPIs centrados en alcance, reproducciones y desempeño de video.
+Se propone actualizar el componente `2026-0043 Producción de Pautaje GIZ` a un esquema ajustado de `USD 5,550`, orientado a la difusión priorizada de contenidos del proyecto, con énfasis en una inversión publicitaria identificable de `USD 3,450`, una operación de medios más eficiente y KPIs centrados en alcance, reproducciones y desempeño de video.
