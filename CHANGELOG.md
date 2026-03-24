@@ -58,3 +58,18 @@ Cada entrada debería incluir:
   - prompt
   - agente
   - soporte normativo
+
+## 2026-03-24
+
+### Ingesta local para agentes
+
+- se agregó `tools/ingest/` como capa local para lectura de archivos desde `projects/`
+- se incorporó `tools/ingest/read_any.py` como punto de entrada unificado para:
+  - `csv`
+  - `xlsx`
+  - `docx`
+  - `txt`
+  - `md`
+  - `json`
+  - `pdf` con soporte opcional vía `pypdf`
+- se documentó el flujo para que los agentes trabajen sobre archivos operativos sin depender de `app/web`

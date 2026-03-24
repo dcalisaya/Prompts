@@ -10,6 +10,7 @@ Hoy la ruta activa del repo es:
 - [`base/json/`](base/json/) como capa estructurada derivada,
 - [`docs/`](docs/) como definición y decisiones,
 - [`projects/`](projects/) como capa de casos reales y trazabilidad de proyectos,
+- [`tools/`](tools/) como utilidades locales para operación e ingesta por agentes,
 - [`app/web/`](app/web/) como consumidor actual de esa base,
 - [`archive/`](archive/) como preservación de material fuera del camino activo.
 
@@ -56,6 +57,9 @@ base/
 app/
   scripts/      utilidades auxiliares para derivar estructura
   web/          consumidor actual de la base, no fuente de verdad
+
+tools/
+  ingest/       utilidades locales para leer archivos operativos desde projects/
 
 docs/
   visión, arquitectura, decisiones y roadmap
