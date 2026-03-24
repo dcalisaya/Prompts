@@ -37,7 +37,14 @@ El activo central es un spot promocional único que se adapta a formatos video y
 | Adaptación de piezas y copies | Ajustes de formatos y textos con apoyo de herramientas de IA del repositorio |
 | Gestión, monitoreo y optimización | Seguimiento continuo, consumo de plataformas, suscripciones y tokens de IA |
 | Reporte y cierre | Síntesis de resultados, aprendizajes y recomendaciones para el siguiente trimestre |
+| Publicación de videos | Publicación gestionada por el equipo de Live Developer en todas las plataformas relevantes |
 | Inversión publicitaria en plataforma | Compra de medios (YouTube/Meta/Spotify) con cargas financieras e impuestos (USD 3,450) |
+
+## Sistema de monitoreo
+
+- Implementamos un panel operativo con métricas clave (alcance, reproducciones, CPV, frecuencia) para cada ola y ciudad.  
+- Alertas de rendimiento en tiempo real y revisiones quincenales con el cliente.  
+- Toda la operación es rastreada con herramientas de monitoreo de campaign performance y se documenta en el reporte trimestral.
 
 ## Indicadores clave (KPIs)
 
