@@ -17,11 +17,11 @@ Hoy la ruta activa del repo es:
 
 | Punto | Ubicación | Uso |
 | :--- | :--- | :--- |
+| Changelog | [`CHANGELOG.md`](CHANGELOG.md) | Revisar cambios estructurales del workspace |
 | Inicio rápido de la base | [`base/masters/company/00-INICIO-RAPIDO.md`](base/masters/company/00-INICIO-RAPIDO.md) | Entrar a la librería operativa |
 | Visión y decisiones | [`docs/VISION-APP.md`](docs/VISION-APP.md) | Entender contexto, producto y dirección |
 | Arquitectura funcional | [`docs/ARQUITECTURA-FUNCIONAL.md`](docs/ARQUITECTURA-FUNCIONAL.md) | Revisar contratos y capas |
 | Casos reales | [`projects/README.md`](projects/README.md) | Navegar trabajos reales documentados |
-| Roadmap por fases | [`docs/ROADMAP-POR-FASES.md`](docs/ROADMAP-POR-FASES.md) | Planificar bloques de trabajo |
 
 ## Estado actual
 
@@ -83,4 +83,3 @@ Para mantener el repo liviano en contexto para agentes:
 - retirar o deprecar pruebas que no estén conectadas al camino real
 - evitar multiplicar superficies paralelas si `app/web` es la única desarrollada a profundidad
 - `projects/` se mantiene como capa de casos reales y trazabilidad de trabajos ejecutados
-

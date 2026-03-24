@@ -54,6 +54,7 @@ El sistema ya no debe leerse como una librería de marketing aislada. Hoy cubre:
 - [18-NAVEGACION-CANONICA.json](/Users/dcalisaya/Developer/Prompts/base/masters/company/18-NAVEGACION-CANONICA.json): fuente única de taxonomía para roles, flujos y navegación.
 - [19-ESTANDAR-ORGANIZACION-Y-NOMENCLATURA.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/19-ESTANDAR-ORGANIZACION-Y-NOMENCLATURA.md): estándar oficial de nombres y estructura.
 - [20-PLAN-DE-EXPANSION-FASE-2.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/20-PLAN-DE-EXPANSION-FASE-2.md): reserva estructural para áreas complementarias pendientes.
+- [21-MAPA-OPERATIVO-PARA-AGENTES.md](/Users/dcalisaya/Developer/Prompts/base/masters/company/21-MAPA-OPERATIVO-PARA-AGENTES.md): rutas mínimas para que agentes resuelvan servicio, prompt, agente y soporte normativo según la necesidad detectada.
 
 ## Estructura operativa
 

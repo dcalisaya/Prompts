@@ -1,0 +1,217 @@
+{
+  "version": "1.0.0",
+  "source_of_truth": [
+    "base/masters/company/21-MAPA-OPERATIVO-PARA-AGENTES.md",
+    "docs/AGENT-OPERATING-PROTOCOL.md",
+    "docs/AGENT-INTAKE-STANDARD.md",
+    "docs/AGENT-OUTPUT-STANDARD.md"
+  ],
+  "modes": {
+    "discover": {
+      "primary_prompt": "COM-001",
+      "primary_agent": "AsesorComercialServicios",
+      "support_docs": [
+        "08-SERVICES.md"
+      ],
+      "deliverable_type": "recomendacion comercial y siguiente paso"
+    },
+    "quote": {
+      "primary_prompt": "COM-002",
+      "primary_agent": "AsesorComercialServicios",
+      "support_docs": [
+        "09-SERVICE-MATRIX.md",
+        "11-REGLAS-DE-COTIZACION.md",
+        "10-PRICING-INTERNO.md"
+      ],
+      "deliverable_type": "estructura preliminar de propuesta"
+    },
+    "plan": {
+      "primary_prompt": null,
+      "primary_agent": null,
+      "support_docs": [
+        "12-BRIEFS-POR-SERVICIO.md",
+        "13-FLUJO-COMERCIAL-Y-OPERATIVO.md"
+      ],
+      "deliverable_type": "plan de trabajo, fases y dependencias"
+    },
+    "review": {
+      "primary_prompt": null,
+      "primary_agent": "AuditorCalidad",
+      "support_docs": [
+        "05-ESTANDAR-DE-CALIDAD.md"
+      ],
+      "deliverable_type": "hallazgos y ajustes"
+    },
+    "execute": {
+      "primary_prompt": null,
+      "primary_agent": null,
+      "support_docs": [
+        "12-BRIEFS-POR-SERVICIO.md",
+        "13-FLUJO-COMERCIAL-Y-OPERATIVO.md"
+      ],
+      "deliverable_type": "kickoff y secuencia operativa"
+    },
+    "upsell": {
+      "primary_prompt": "COM-001",
+      "primary_agent": "AsesorComercialServicios",
+      "support_docs": [
+        "08-SERVICES.md"
+      ],
+      "deliverable_type": "continuidad o expansión sugerida"
+    }
+  },
+  "common_routes": [
+    {
+      "name": "video_animado_quote",
+      "signals": [
+        "video animado",
+        "proforma",
+        "cotizacion"
+      ],
+      "mode": "quote",
+      "disciplines": [
+        "quotes-proposals",
+        "visual-ai"
+      ],
+      "service_hints": [
+        "AV-006"
+      ],
+      "primary_prompt": "COM-002",
+      "secondary_prompts": [
+        "STORY-001"
+      ],
+      "primary_agent": "AsesorComercialServicios",
+      "secondary_agents": [
+        "ArtistaStoryboard"
+      ],
+      "support_docs": [
+        "08-SERVICES.md",
+        "09-SERVICE-MATRIX.md"
+      ],
+      "deliverable_type": "propuesta preliminar de video animado"
+    },
+    {
+      "name": "podcast_quote_or_plan",
+      "signals": [
+        "podcast",
+        "episodios",
+        "temporada",
+        "grabacion"
+      ],
+      "mode": "quote",
+      "disciplines": [
+        "quotes-proposals",
+        "content-podcast-copy"
+      ],
+      "service_hints": [
+        "AV-013"
+      ],
+      "primary_prompt": "PROD-001",
+      "secondary_prompts": [
+        "COM-002",
+        "SCRIPT-001"
+      ],
+      "primary_agent": "DirectorAudiovisual",
+      "secondary_agents": [
+        "AsesorComercialServicios"
+      ],
+      "support_docs": [
+        "03-FLOW-PODCAST.md",
+        "08-SERVICES.md",
+        "09-SERVICE-MATRIX.md"
+      ],
+      "deliverable_type": "propuesta o plan de podcast"
+    },
+    {
+      "name": "podcast_plus_media",
+      "signals": [
+        "podcast",
+        "pauta",
+        "redes",
+        "ads"
+      ],
+      "mode": "quote",
+      "disciplines": [
+        "quotes-proposals",
+        "content-podcast-copy",
+        "paid-media-performance-seo"
+      ],
+      "service_hints": [
+        "AV-013"
+      ],
+      "primary_prompt": "COM-002",
+      "secondary_prompts": [
+        "PROD-001",
+        "MEDIA-001",
+        "MEDIA-002"
+      ],
+      "primary_agent": "AsesorComercialServicios",
+      "secondary_agents": [
+        "DirectorAudiovisual",
+        "MediaPlanner",
+        "PerformanceMarketer"
+      ],
+      "support_docs": [
+        "03-FLOW-PODCAST.md",
+        "08-SERVICES.md",
+        "09-SERVICE-MATRIX.md"
+      ],
+      "deliverable_type": "propuesta consolidada de produccion y distribucion"
+    },
+    {
+      "name": "campaign_landing_media_crm",
+      "signals": [
+        "landing",
+        "pauta",
+        "automatizacion",
+        "crm"
+      ],
+      "mode": "discover",
+      "disciplines": [
+        "digital-strategy",
+        "paid-media-performance-seo",
+        "cx-crm-retention",
+        "engineering"
+      ],
+      "service_hints": [],
+      "primary_prompt": "COM-001",
+      "secondary_prompts": [
+        "FUN-001",
+        "MEDIA-001",
+        "CRM-001",
+        "DEV-001"
+      ],
+      "primary_agent": "AsesorComercialServicios",
+      "secondary_agents": [
+        "EstrategaDigital",
+        "MediaPlanner",
+        "CRMStrategist",
+        "ArquitectoSoftware"
+      ],
+      "support_docs": [
+        "08-SERVICES.md",
+        "12-BRIEFS-POR-SERVICIO.md"
+      ],
+      "deliverable_type": "lectura multidisciplinaria y ruta preliminar"
+    },
+    {
+      "name": "pre_delivery_review",
+      "signals": [
+        "revisa",
+        "antes de enviar",
+        "valida"
+      ],
+      "mode": "review",
+      "disciplines": [],
+      "service_hints": [],
+      "primary_prompt": null,
+      "secondary_prompts": [],
+      "primary_agent": "AuditorCalidad",
+      "secondary_agents": [],
+      "support_docs": [
+        "05-ESTANDAR-DE-CALIDAD.md"
+      ],
+      "deliverable_type": "revision y hallazgos"
+    }
+  ]
+}
