@@ -5,7 +5,3 @@ __pycache__/
 *.pyc
 projects/*
 !projects/README.md
-!projects/GIZ-Podcast/
-projects/GIZ-Podcast/*
-!projects/GIZ-Podcast/*.md
-!projects/GIZ-Podcast/*.html
